@@ -3,16 +3,15 @@ require "language/node"
 class Artillery < Formula
   desc "Cloud-native performance & reliability testing for developers and SREs"
   homepage "https://artillery.io/"
-  url "https://registry.npmjs.org/artillery/-/artillery-1.7.5.tgz"
-  sha256 "6cf667509b8bfd8570ea80df60f03430848d0a0b538ae860ba1061318c13f171"
+  url "https://registry.npmjs.org/artillery/-/artillery-1.7.8.tgz"
+  sha256 "e96d6b70a0d1cb65b0ab17352d55bce7cd3cf069119177fc5e81c16151dd884e"
   license "MPL-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "3324fb93bdbf1686c3777ab65d14c42671c24677826603cef224d4e727ea6bcd"
-    sha256 cellar: :any_skip_relocation, big_sur:       "7d3d8a7b102377f06edb47e5ce15769f442670b95c38dd2fe1d8924f5c3aedd3"
-    sha256 cellar: :any_skip_relocation, catalina:      "7d3d8a7b102377f06edb47e5ce15769f442670b95c38dd2fe1d8924f5c3aedd3"
-    sha256 cellar: :any_skip_relocation, mojave:        "7d3d8a7b102377f06edb47e5ce15769f442670b95c38dd2fe1d8924f5c3aedd3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cee92bd41736db594a7d2439fcae1159ecda52ccbcc01399d3be5f17b00c2754" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "6e2d6826445ac2658e775242a95058724fa0e8d1ba2573bb6afc13e487cf01bc"
+    sha256 cellar: :any_skip_relocation, big_sur:       "917c441ab7a5f109f002b42250d42a6065ba93a01dbc379d50ad720f29f08697"
+    sha256 cellar: :any_skip_relocation, catalina:      "917c441ab7a5f109f002b42250d42a6065ba93a01dbc379d50ad720f29f08697"
+    sha256 cellar: :any_skip_relocation, mojave:        "917c441ab7a5f109f002b42250d42a6065ba93a01dbc379d50ad720f29f08697"
   end
 
   depends_on "node"
