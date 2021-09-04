@@ -5,13 +5,13 @@ class Wownero < Formula
       tag:      "v0.10.1.0",
       revision: "8ab87421d9321d0b61992c924cfa6e3918118ad0"
   license "BSD-3-Clause"
+  revision 1
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "081e5d143f966063342d63774d83c9e27d9030d692d6e392f58b4d090fc0c8ad"
-    sha256 cellar: :any,                 big_sur:       "268c9bde168c46c08aec0bdb81b380e03ff8715530f57b13ed4ef5cc915c7330"
-    sha256 cellar: :any,                 catalina:      "ba0f3aab8ad49065074b36d8006f6eb4b7ff76d0c876acd1a7bd4eaedc5b5d58"
-    sha256 cellar: :any,                 mojave:        "87774956f2241793c135b8209d1f4c3d03e56e956eec1cb446962ec13a81a1c2"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1b3e734eb776e8f2edfde6158f237872e86872a3548e0ddb69cce122e30af04b" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "ef39a53fc330916136257fa2f8e2019063e544770789b09503b53e4505bea918"
+    sha256 cellar: :any,                 big_sur:       "2a7dc81fcfa03e22dfc74d069ccc505a249823ab116ca2f6eabc3e14d25f28f2"
+    sha256 cellar: :any,                 catalina:      "2713015081577274b00955f18eca366944e1557cd89ec00d852470c40a543ded"
+    sha256 cellar: :any,                 mojave:        "549739d9edb69887b6661b5daa670ac310693c44ff8462ece01629277b6aa263"
   end
 
   depends_on "cmake" => :build
@@ -32,8 +32,13 @@ class Wownero < Formula
   patch :DATA
 
   def install
-    system "cmake", ".", *std_cmake_args
+    # Need to help CMake find `readline` when not using /usr/local prefix
+    system "cmake", ".", *std_cmake_args, "-DReadline_ROOT_DIR=#{Formula["readline"].opt_prefix}"
     system "make", "install"
+
+    # Fix conflict with miniupnpc.
+    # This has been reported at https://github.com/monero-project/monero/issues/3862
+    rm lib/"libminiupnpc.a"
   end
 
   service do

@@ -12,10 +12,10 @@ class Karchive < Formula
   head "https://invent.kde.org/frameworks/karchive.git"
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "4603b87ebd5e4e3fba10c28e31be00ff89a8134aea1361b7f4cefb63f6860f23"
-    sha256 cellar: :any, big_sur:       "39f92e2091f0d15d7c2d778d99ce2b25155487cc5921c10f89ba82a1bb15a20e"
-    sha256 cellar: :any, catalina:      "d4fe94de78ae2f140b2fa97739a42ca1f4ad8edc5953f05501cb05940c0e962b"
-    sha256 cellar: :any, mojave:        "bc17b1ba460d4cd541a207844d328104dceb370c198bb2df4b0ac21cee0e5527"
+    sha256 cellar: :any,                 arm64_big_sur: "4603b87ebd5e4e3fba10c28e31be00ff89a8134aea1361b7f4cefb63f6860f23"
+    sha256 cellar: :any,                 big_sur:       "39f92e2091f0d15d7c2d778d99ce2b25155487cc5921c10f89ba82a1bb15a20e"
+    sha256 cellar: :any,                 catalina:      "d4fe94de78ae2f140b2fa97739a42ca1f4ad8edc5953f05501cb05940c0e962b"
+    sha256 cellar: :any,                 mojave:        "bc17b1ba460d4cd541a207844d328104dceb370c198bb2df4b0ac21cee0e5527"
   end
 
   depends_on "cmake" => [:build, :test]
@@ -28,6 +28,12 @@ class Karchive < Formula
 
   uses_from_macos "bzip2"
   uses_from_macos "zlib"
+
+  on_linux do
+    depends_on "gcc"
+  end
+
+  fails_with gcc: "5"
 
   def install
     args = std_cmake_args
