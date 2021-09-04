@@ -5,6 +5,7 @@ class Cake < Formula
   sha256 "b54e2c67d8de0c88994576ff937471f1f330340915d07f9b189332c37a6e0b27"
   license "MIT"
 
+  depends_on arch: :x86_64 # mono is not yet supported on ARM
   depends_on "mono"
 
   conflicts_with "coffeescript", because: "both install `cake` binaries"
