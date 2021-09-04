@@ -11,7 +11,7 @@ class Gzip < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "46d768ebba1aa240540fd620fe856d259b8e316567204b7002052dd6a6241696"
     sha256 cellar: :any_skip_relocation, catalina:      "50c51fd0770177e688cf98f358b2383e2ebe250b0bd8bf25def80a1b8da1c318"
     sha256 cellar: :any_skip_relocation, mojave:        "2eae57977bdfcade27141c865d01aac1ace6be66828e9e0294f12a473fd7a35d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7993153f7f73005baf13fa6ab5b1dfe011fdd92c188d4cd69aad9bee98e432de"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7993153f7f73005baf13fa6ab5b1dfe011fdd92c188d4cd69aad9bee98e432de" # linuxbrew-core
   end
 
   def install

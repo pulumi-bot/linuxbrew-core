@@ -12,7 +12,7 @@ class Locust < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a4232840aa56769b58a4f5254851db3c5f74fc6069e4063c51d4e91ae730f79b"
     sha256 cellar: :any_skip_relocation, catalina:      "c6bfbc56ed1b299defa5f3fb5b3f13d49596f096c7eeff073fe3014d1cb897b5"
     sha256 cellar: :any_skip_relocation, mojave:        "1d98ac97b351cff24482e45ce68582b0d1eaa6e2b2b02e2a51a1145ce182779d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "17653c08ce5937dd6cbc90eea37894118484bfe405c6effdee3e4ff1c86cb4b2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "17653c08ce5937dd6cbc90eea37894118484bfe405c6effdee3e4ff1c86cb4b2" # linuxbrew-core
   end
 
   depends_on "python@3.9"

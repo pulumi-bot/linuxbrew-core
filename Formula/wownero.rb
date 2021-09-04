@@ -12,7 +12,7 @@ class Wownero < Formula
     sha256 cellar: :any,                 big_sur:       "2a7dc81fcfa03e22dfc74d069ccc505a249823ab116ca2f6eabc3e14d25f28f2"
     sha256 cellar: :any,                 catalina:      "2713015081577274b00955f18eca366944e1557cd89ec00d852470c40a543ded"
     sha256 cellar: :any,                 mojave:        "549739d9edb69887b6661b5daa670ac310693c44ff8462ece01629277b6aa263"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "aaf1a779bb79d4898b9b9a9d560e6385d55553ac864871d9b7f2adf6226e329e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "aaf1a779bb79d4898b9b9a9d560e6385d55553ac864871d9b7f2adf6226e329e" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
