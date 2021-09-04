@@ -10,7 +10,7 @@ class Repo < Formula
   version_scheme 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "03f10a2fe71a3c762a186269a926c4e1c2609064cc6c19c1997251e0e12c1c94"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "03f10a2fe71a3c762a186269a926c4e1c2609064cc6c19c1997251e0e12c1c94" # linuxbrew-core
   end
 
   depends_on "python@3.9"
