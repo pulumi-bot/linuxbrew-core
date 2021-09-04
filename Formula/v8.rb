@@ -17,6 +17,7 @@ class V8 < Formula
     sha256 cellar: :any,                 big_sur:       "fd99ff5ea0e1d8b84bd00991882ed286453c47161cf624b9399c4db09427f127"
     sha256 cellar: :any,                 catalina:      "a7187a1acecba9d9290861411b78d41105e865fd2bac610dac4e74a8f1fe52f5"
     sha256 cellar: :any,                 mojave:        "d0fbae8725488685bfb16f14de16de33eea44eb0ae152c1de65b6cab3c6c6141"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "aece5b13f34c53bfbc4bac26fa92023b93030cabbae367b5ac75d4c788c55ad0"
   end
 
   depends_on "ninja" => :build
