@@ -7,6 +7,10 @@ class Tomcat < Formula
   license "Apache-2.0"
   revision 1
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9a25e1d9137c304a3e133833b60bc489bb0e6a9eff3cb5948fb502dbbb195213"
+  end
+
   depends_on "openjdk"
 
   def install
