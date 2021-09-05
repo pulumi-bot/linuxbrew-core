@@ -5,6 +5,10 @@ class Vcsh < Formula
   sha256 "3ffc0bbb43c76620c8234c98f4ae94d0a99d24bb240497aab730979a8d23ad61"
   license "GPL-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "745592d712de7d72f0b4490f8c6253168b15b920e760959120a4fc85daa3072e"
+  end
+
   def install
     system "./configure", "--with-zsh-completion-dir=#{zsh_completion}",
                           "--with-bash-completion-dir=#{bash_completion}",
