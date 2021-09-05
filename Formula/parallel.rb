@@ -13,6 +13,10 @@ class Parallel < Formula
     regex(/GNU Parallel v?(\d{6,8}).*? released \[stable\]/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ef01631e7667c807e9119ffcd632fb4188e53d3479518a42fe493ced96991f0a"
+  end
+
   conflicts_with "moreutils", because: "both install a `parallel` executable"
 
   def install
