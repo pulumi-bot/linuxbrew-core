@@ -11,7 +11,7 @@ class Ipopt < Formula
     sha256 cellar: :any,                 big_sur:       "d72c549e2599a978b7d2da640cd1903d26befa881a5d8aa0d26ab0f36cc3d61e"
     sha256 cellar: :any,                 catalina:      "d86116004dce5542f71fb13ee0a14df8009698ef699d35a71d38b6c0889cfd63"
     sha256 cellar: :any,                 mojave:        "0168e125a87364bf162609c421b474212fc483ccc5545a7cb7bfb0c609f99050"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dc1ff2c117bea83a8118273e094d1758cc2ad30eec5b0b4793b79fac0c9aef1d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dc1ff2c117bea83a8118273e094d1758cc2ad30eec5b0b4793b79fac0c9aef1d" # linuxbrew-core
   end
 
   depends_on "openjdk" => :build

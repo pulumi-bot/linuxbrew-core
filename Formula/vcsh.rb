@@ -6,7 +6,7 @@ class Vcsh < Formula
   license "GPL-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "745592d712de7d72f0b4490f8c6253168b15b920e760959120a4fc85daa3072e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "745592d712de7d72f0b4490f8c6253168b15b920e760959120a4fc85daa3072e" # linuxbrew-core
   end
 
   def install
