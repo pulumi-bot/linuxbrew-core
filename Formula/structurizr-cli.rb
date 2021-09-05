@@ -5,6 +5,10 @@ class StructurizrCli < Formula
   sha256 "f40385ab5b06428ba07bb4a7d19aaf90ae8e54a70716bfcb2236084e60c43c9f"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "42d596b746f3acbfa0969a8cfe7e9483c6ecca5bb453dd5b19e22ec49ec24f0f"
+  end
+
   depends_on "openjdk"
 
   def install
