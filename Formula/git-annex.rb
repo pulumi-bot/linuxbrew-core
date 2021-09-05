@@ -11,6 +11,7 @@ class GitAnnex < Formula
     sha256 cellar: :any,                 big_sur:      "b93354137da15dc01b3f3eecfbc8353afc91e75fe327ef9b2657e9a4698800ee"
     sha256 cellar: :any,                 catalina:     "e71148199954229acfe900d2607540a06c082c5d4a008492f8de5962e4b33337"
     sha256 cellar: :any,                 mojave:       "4d6191e3814107af62ccadcf67073fd9cade70a5e40570b78816c0ecd77bd048"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7d3041e1d43f6bb1df27d5fb0dbdc44091808ff778172c002705b74e5914a05a"
   end
 
   depends_on "cabal-install" => :build
