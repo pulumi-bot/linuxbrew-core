@@ -11,7 +11,7 @@ class Weechat < Formula
     sha256 big_sur:       "33535ba198766d65e0e6aa113eec1fcbb7b42ee10fd95599bc293def1861a2b1"
     sha256 catalina:      "d133800b9ff2027f6f8efe11c457f57e3033f963bc71fb1368bc6a6263c34aa0"
     sha256 mojave:        "c64d2e4761b4bae1c617c04f9d74f674d00a8b22f1da9701a9160ffe9ece52e2"
-    sha256 x86_64_linux:  "683c3b5c3824ad8b1a9469b51343e949204579eebbfdafadca878570f94356ee"
+    sha256 x86_64_linux:  "683c3b5c3824ad8b1a9469b51343e949204579eebbfdafadca878570f94356ee" # linuxbrew-core
   end
 
   depends_on "asciidoctor" => :build

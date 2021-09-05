@@ -12,7 +12,7 @@ class TomcatAT9 < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "56afed5cda654fc655930293d5a1a36c9fa2b1e3b67cf93a70cc3d6851e621e7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "56afed5cda654fc655930293d5a1a36c9fa2b1e3b67cf93a70cc3d6851e621e7" # linuxbrew-core
   end
 
   keg_only :versioned_formula
