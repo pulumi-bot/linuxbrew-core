@@ -1,16 +1,15 @@
 class Pstoedit < Formula
   desc "Convert PostScript and PDF files to editable vector graphics"
   homepage "http://www.pstoedit.net/"
-  url "https://downloads.sourceforge.net/project/pstoedit/pstoedit/3.76/pstoedit-3.76.tar.gz"
-  sha256 "8cfd97eae18f138ef255b88b3d8a405734d20ea1b6acaa7706980b8fd8e4ce41"
+  url "https://downloads.sourceforge.net/project/pstoedit/pstoedit/3.77/pstoedit-3.77.tar.gz"
+  sha256 "9a6c6b02ea91e9f836448ccc5a614caa514a9ba17e94f1d6c0babc72a4395b09"
   license "GPL-2.0-or-later"
 
   bottle do
-    sha256 arm64_big_sur: "9646c975ae5a9f2d4b9f275f35f66209c039caee11cb110006268e32514f3a5b"
-    sha256 big_sur:       "c76b47283e6032cc1a03a3fbd36336df45cc9ef7c9b9754cfcd24ca84a33ebdf"
-    sha256 catalina:      "0c90597e74d743451a0df04969f2f4a424b275b75121d05f2f4da7b5a68dbe82"
-    sha256 mojave:        "9835ffc2e2099f4e0eec8ae34b89a24678d6a360537c529347bdad5efa9b00e6"
-    sha256 x86_64_linux:  "554a5ef2692a5dafbba4b1412ddb34038b61a93b60d31b7ba4ff142dd18584c0" # linuxbrew-core
+    sha256 arm64_big_sur: "dce054c832eec5e05bce925ce70277c877cb8ca623b6ce165de399d47f66836b"
+    sha256 big_sur:       "eeae982fb21d7a8568f1ce4547fae20e363f6a3217da6ebb51ab57c4603137c6"
+    sha256 catalina:      "68ec1bf2168f33a45cd4787b00d666e460115b99aee28b12a30199c1ce260d40"
+    sha256 mojave:        "058c36cd7907d452cabd992a3dbfc71f87d8f2a87ae5a64aeed82418d4cb071e"
   end
 
   depends_on "pkg-config" => :build
