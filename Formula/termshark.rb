@@ -10,6 +10,7 @@ class Termshark < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4e8111a7730d4d042b4654689d0baa4e1cec23c658fc75f62f552d5d7f553843"
     sha256 cellar: :any_skip_relocation, catalina:      "8dc2114b14d2738361021fef34e5069de185371c5828c1528fe7fbd3a5543aec"
     sha256 cellar: :any_skip_relocation, mojave:        "a665f8f658b7699ff18acf7a8ac29658a90b694d368438fb7082b068d0ae426c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "675df117582fa6642221cec464645d3c891d664eb0bed20b1c915517ff375d0d"
   end
 
   depends_on "go" => :build
