@@ -5,14 +5,10 @@ class TomcatAT7 < Formula
   mirror "https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.109/bin/apache-tomcat-7.0.109.tar.gz"
   sha256 "ebfeb051e6da24bce583a4105439bfdafefdc7c5bdd642db2ab07e056211cb31"
   license "Apache-2.0"
+  revision 1
 
   livecheck do
     url :stable
-  end
-
-  bottle do
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5c8fb4abdff431b9aae276c2010e8258fcf817194175dfa614fd22c046882474" # linuxbrew-core
   end
 
   keg_only :versioned_formula
@@ -28,13 +24,13 @@ class TomcatAT7 < Formula
 
     # Install files
     prefix.install %w[NOTICE LICENSE RELEASE-NOTES RUNNING.txt]
+
+    pkgetc.install Dir["conf/*"]
+    (buildpath/"conf").rmdir
+    libexec.install_symlink pkgetc => "conf"
+
     libexec.install Dir["*"]
     (bin/"catalina").write_env_script "#{libexec}/bin/catalina.sh", JAVA_HOME: Formula["openjdk"].opt_prefix
-  end
-
-  def post_install
-    pkgetc.mkpath
-    ln_s pkgetc, libexec/"config" unless (libexec/"config").exist?
   end
 
   def caveats
