@@ -16,7 +16,6 @@ class Bioperl < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c876cdb3cc4f70f3251d57fe47c3fbb6ec9a303df8dbaa276f0b8072ca39d1c9"
     sha256 cellar: :any_skip_relocation, catalina:      "631f46b74bf805d23a414d34961f8e14fe2f0be2224522dfe3eb6f73a7adbb0d"
     sha256 cellar: :any_skip_relocation, mojave:        "a284378a572edc991e964002c99b6991d4fb37610dfcd9f6abd8587b16962896"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6baaf72a4d61a3e466ecd8c02a2943e3408d880177df58a45279c16bfe72b2f2" # linuxbrew-core
   end
 
   depends_on "cpanminus" => :build
