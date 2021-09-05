@@ -10,7 +10,7 @@ class Gdl < Formula
     sha256                               big_sur:       "98cb1563adec26dea9289d5ad3f5b006c26897cc9c586114efe0dcc2214a1a68"
     sha256                               catalina:      "11df5d907431165eb6f9a6b8673f413dfd939199940b5a2e3a3f78eab11c2ce8"
     sha256                               mojave:        "7d91a82fb426e6791aea2e93a9d0fdbf33aa8fb366d375734001614196212564"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "26ae14bf457ab681be21fe8b61fa612af211f80c2d8f52416dbb4a9f55eaa0e7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "26ae14bf457ab681be21fe8b61fa612af211f80c2d8f52416dbb4a9f55eaa0e7" # linuxbrew-core
   end
 
   depends_on "gobject-introspection" => :build
