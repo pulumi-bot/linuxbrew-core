@@ -11,6 +11,7 @@ class Xdotool < Formula
     sha256 cellar: :any,                 big_sur:       "f5210972a8352765068add40fd4c3fe77cf4a687cd3c81ddb719e24c739ffae2"
     sha256 cellar: :any,                 catalina:      "fe7c50b395ca8d9b196deb24046e2d433812478f247d44738396c2c2f3745f1a"
     sha256 cellar: :any,                 mojave:        "8d675d9a6391e70da34bcbea738af0a77b6a53a693fe8ed716f9ce6a4633aaff"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cec125dd2493d3956a23e574283fab5bc60195ef3defd54088fc002a795f1e45"
   end
 
   depends_on "pkg-config" => :build
