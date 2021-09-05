@@ -11,6 +11,7 @@ class Elixir < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "cefbc6925f57d73b244c45c6cfb4c527b83b9c3f24d43035275d8690b50b16dc"
     sha256 cellar: :any_skip_relocation, catalina:      "54af07dcdf6f41708570cb45e0eb5ef7a1658d90028ba8453f3e8cc5e1df8fcc"
     sha256 cellar: :any_skip_relocation, mojave:        "d60b62c1e2cb43410169e748dc603ac34473064ebce70dbf3a397b227a1dc2f9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b55365953653aa46dc22aa74d477292d9976caa4d4cea2321aa01eefa0f58e32"
   end
 
   depends_on "erlang"
