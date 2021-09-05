@@ -7,6 +7,7 @@ class Vcsh < Formula
 
   bottle do
     rebuild 1
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b7df522c5395593910c0f3e83f06626848ab8fe6df58293a7e78c063486b648e"
   end
 
   def install
