@@ -3,20 +3,23 @@ class Vcsh < Formula
   homepage "https://github.com/RichiH/vcsh"
   url "https://github.com/RichiH/vcsh/releases/download/v2.0.2/vcsh-2.0.2.tar.xz"
   sha256 "3ffc0bbb43c76620c8234c98f4ae94d0a99d24bb240497aab730979a8d23ad61"
-  license "GPL-2.0"
+  license "GPL-2.0-or-later"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "745592d712de7d72f0b4490f8c6253168b15b920e760959120a4fc85daa3072e" # linuxbrew-core
+    rebuild 1
   end
 
   def install
+    # Set GIT, SED, and GREP to prevent
+    # hardcoding shim references and absolute paths
     system "./configure", "--with-zsh-completion-dir=#{zsh_completion}",
                           "--with-bash-completion-dir=#{bash_completion}",
+                          "GIT=git", "SED=sed", "GREP=grep",
                           *std_configure_args
     system "make", "install"
 
-    # Remove references to git shim
-    inreplace bin/"vcsh", %r{#{HOMEBREW_SHIMS_PATH}/[^/]+/super/git}o, "git"
+    # Make the shebang uniform across macOS and Linux
+    inreplace bin/"vcsh", %r{^#!/bin/(ba)?sh$}, "#!/usr/bin/env bash"
   end
 
   test do
