@@ -12,6 +12,7 @@ class Snowpack < Formula
     sha256                               big_sur:       "fb13d64f32a7d9bdc58cf4dfd6776bf1254b09029b2778c6b6ae8aa1f3af5897"
     sha256                               catalina:      "abed65f5debef77a9380822f5612b17933df211375766e800fb9e481f2829178"
     sha256                               mojave:        "76e0af8a4e5f7fbc2d2095e8c6524c80a8e03ac2c9f9cbc2b8b319fff3dd7056"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b8c912897f43849e159ca08aa5ee25c2e80068a41e00c2c90fa972df0de496e9"
   end
 
   depends_on "node"
