@@ -6,6 +6,10 @@ class LinuxPam < Formula
   license any_of: ["BSD-3-Clause", "GPL-1.0-only"]
   head "https://github.com/linux-pam/linux-pam.git"
 
+  bottle do
+    sha256 x86_64_linux: "5beee64dc646a1b870bee7b07259cbf2eb66146d2856233f5a17c69db709be4d"
+  end
+
   depends_on "pkg-config" => :build
   depends_on "berkeley-db"
   depends_on "libprelude"
