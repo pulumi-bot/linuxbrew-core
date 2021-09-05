@@ -11,6 +11,7 @@ class Lychee < Formula
     sha256 cellar: :any,                 big_sur:       "82f1909185e475cf9c373e49772f869e2bd97ba867485cbe63a4e2424b0abba0"
     sha256 cellar: :any,                 catalina:      "80e63594eb599cb688b13dc483ce3ca8ae24d7c5bc6ef35337914a9577fef160"
     sha256 cellar: :any,                 mojave:        "26b8aeec96efbea9c8cd2966a0f58c6d57ced02d0b4f9a5b86b58992062ef247"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5cc3fd44df3de7292e003e801868b40985640ddf08902e17937db89946799971"
   end
 
   depends_on "rust" => :build
