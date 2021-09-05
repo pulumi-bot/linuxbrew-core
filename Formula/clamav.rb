@@ -17,6 +17,7 @@ class Clamav < Formula
     sha256 big_sur:       "f4f979fb914bd3f341b45f30335af9909b7a3c13339001e9e8ec943b4f11e008"
     sha256 catalina:      "44bdc057c16215b4d386581b22c6068e3b95c3e7282ffc977ac9d670da029f98"
     sha256 mojave:        "a269e7501d297f303441b3739db9f35f548e410dfb499f19719133b2e69264e5"
+    sha256 x86_64_linux:  "bdd0878f6828015c8f43df6cbbbf2dc00d6afbfd740a293f51002a9614a691a6"
   end
 
   depends_on "cmake" => :build
