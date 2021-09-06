@@ -18,7 +18,7 @@ class Squashfs < Formula
     sha256 cellar: :any,                 big_sur:       "6367ccf7c5ee95740026bf87f9c47b4cc430d03fe2c0bc4d4db78a029cd799b9"
     sha256 cellar: :any,                 catalina:      "1821a023342782230162c1fd3b2a1a760952b1a171bd97482b8aaf9d3e2a4e38"
     sha256 cellar: :any,                 mojave:        "0d78285daf5f932e2c8459242b340fd895a51195c2582c1e6ccc43f3f7f635c1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e5d319d1cafa8de74886f9e41623bcf1a1cb75307d9d62d143220f386d5b5206"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e5d319d1cafa8de74886f9e41623bcf1a1cb75307d9d62d143220f386d5b5206" # linuxbrew-core
   end
 
   depends_on "lz4"

@@ -11,7 +11,7 @@ class Abricate < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "226ad8e8b789110537dc87b7683f2161d47eb660ca61530454dc3da95fe22e7a"
     sha256 cellar: :any_skip_relocation, catalina:      "f2f639f89bfc29f3f4058e82ef2f1fdbf26e32ff09e3d6b542bcd3d50b26ff8f"
     sha256 cellar: :any_skip_relocation, mojave:        "40cd402e2eff5bd1988c45f2ed056bd781869e59da139efac5a738990154ca73"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1758175ec977b93b4d9c6ca271a7091d9d90817c74417d00c52ca46d6237e571"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1758175ec977b93b4d9c6ca271a7091d9d90817c74417d00c52ca46d6237e571" # linuxbrew-core
   end
 
   depends_on "cpanminus" => :build
