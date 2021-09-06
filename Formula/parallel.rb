@@ -14,7 +14,7 @@ class Parallel < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ef01631e7667c807e9119ffcd632fb4188e53d3479518a42fe493ced96991f0a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ef01631e7667c807e9119ffcd632fb4188e53d3479518a42fe493ced96991f0a" # linuxbrew-core
   end
 
   conflicts_with "moreutils", because: "both install a `parallel` executable"

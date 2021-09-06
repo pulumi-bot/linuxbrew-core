@@ -12,7 +12,7 @@ class Byteman < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd05bdb8caaf686dae2c5117372f4c7b4e9f2e9f97504583aedd6352ba13f189"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd05bdb8caaf686dae2c5117372f4c7b4e9f2e9f97504583aedd6352ba13f189" # linuxbrew-core
   end
 
   depends_on "openjdk"
