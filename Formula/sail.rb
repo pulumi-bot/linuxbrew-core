@@ -3,16 +3,15 @@ class Sail < Formula
 
   desc "CLI toolkit to provision and deploy WordPress applications to DigitalOcean"
   homepage "https://sailed.io"
-  url "https://files.pythonhosted.org/packages/7e/e2/3ccfc0cea64c03d8bc5ecf83e4f5f69a6184613ca5d8f59892779c78b3a1/sailed.io-0.9.9.tar.gz"
-  sha256 "e851c356353248c5e3bb43ebed1a8e550d80fb20f7a52ebc8f261a4dfe5baa6b"
+  url "https://files.pythonhosted.org/packages/e2/1c/9c2dc6d5ce5ca8017f1d40271999c7f11e44cbcbd8a6fb68b965284a6dd3/sailed.io-0.9.10.tar.gz"
+  sha256 "d54a504ca6aa8c175727507737ef0c8ceeee1e38cfc5742bc1561b158f13f1ba"
   license "GPL-3.0-only"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "2ffc06ba38aec24ccbf0fd0d64f559c262256d3bd7bf1cbef01e6aa26422cee1"
-    sha256 cellar: :any_skip_relocation, big_sur:       "6e696942b4688bc0af007a0798cbf0e7086278e1616f1241636389811b0de963"
-    sha256 cellar: :any_skip_relocation, catalina:      "6e696942b4688bc0af007a0798cbf0e7086278e1616f1241636389811b0de963"
-    sha256 cellar: :any_skip_relocation, mojave:        "6e696942b4688bc0af007a0798cbf0e7086278e1616f1241636389811b0de963"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fd57fd5fad9148ea4f14e437afd625c870ba6a19b8fa0377d7e61b8fd6e586f5" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "e085b924fb2a102a4e0e53f1a329b0e6f0dcadaa65bdde6accb37f3febe40d77"
+    sha256 cellar: :any_skip_relocation, big_sur:       "c16e44808ec786220d3793b893b53db7f6d2f68d2de37a87f45ee0b685411f3b"
+    sha256 cellar: :any_skip_relocation, catalina:      "c16e44808ec786220d3793b893b53db7f6d2f68d2de37a87f45ee0b685411f3b"
+    sha256 cellar: :any_skip_relocation, mojave:        "c16e44808ec786220d3793b893b53db7f6d2f68d2de37a87f45ee0b685411f3b"
   end
 
   depends_on "python@3.9"
