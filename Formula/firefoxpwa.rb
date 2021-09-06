@@ -1,16 +1,16 @@
 class Firefoxpwa < Formula
   desc "Tool to install, manage and use Progressive Web Apps in Mozilla Firefox"
   homepage "https://github.com/filips123/FirefoxPWA"
-  url "https://github.com/filips123/FirefoxPWA/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "47cb03a8f5773da235e360655a4ef93203d7d3ed760ebf6013692ec20239c2c1"
+  url "https://github.com/filips123/FirefoxPWA/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "e3a18c742cc44d0ffde698753182733da75bfe9a2e331efddeb133c479108328"
   license "MPL-2.0"
-  head "https://github.com/filips123/FirefoxPWA.git"
+  head "https://github.com/filips123/FirefoxPWA.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "34bde79a2cbafaedf07c7e8934146ffba5e1e67a4c274c4e2f3ff0201e1917c3"
-    sha256 cellar: :any_skip_relocation, big_sur:       "1c14a9904573549af2671f3eb32b490fa18c42605c86f4ac07256bd56c742fca"
-    sha256 cellar: :any_skip_relocation, catalina:      "b5b49d08ef4c23e877dd93d9116f5a15128343953bbd2a62f30986a5ae8c5f66"
-    sha256 cellar: :any_skip_relocation, mojave:        "3a0f52cd72431ec43f842c66bc63a1ac6de21ed2671518074a9eea74301cd870"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "b41b90f0feec4bd3520111a8562a1ebb3c7a5b028834646054d729c281437546"
+    sha256 cellar: :any_skip_relocation, big_sur:       "f89de5c0477a2176a74c7724031fe4c514c85adc480b065d917abef4228e7215"
+    sha256 cellar: :any_skip_relocation, catalina:      "6a31680b95444147266384d6c66347e9660c3a8f23ed07137c0fa057979be486"
+    sha256 cellar: :any_skip_relocation, mojave:        "c95fcd4867072e9141cf306b0e9e494396e79a0d52639fc61a1e85f363f5343e"
   end
 
   depends_on "rust" => :build
