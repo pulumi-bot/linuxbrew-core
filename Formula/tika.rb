@@ -11,6 +11,7 @@ class Tika < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8286072b39465e702e61c8992a642058310816112f82e126a43116c3c419d523"
     sha256 cellar: :any_skip_relocation, catalina:      "8286072b39465e702e61c8992a642058310816112f82e126a43116c3c419d523"
     sha256 cellar: :any_skip_relocation, mojave:        "8286072b39465e702e61c8992a642058310816112f82e126a43116c3c419d523"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "55267fe3a78db796ced8d71ad0e0951c1b54937f6522bdf31178e16182ec8bbf"
   end
 
   depends_on "openjdk"
