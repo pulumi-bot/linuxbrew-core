@@ -6,6 +6,10 @@ class Autoenv < Formula
   license "MIT"
   head "https://github.com/hyperupcall/autoenv.git", branch: "master"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "879dc65b4f4740aed9cf1960c2b2da66f877f10c4ad774084373e36097d8efb0"
+  end
+
   def install
     prefix.install "activate.sh"
   end
