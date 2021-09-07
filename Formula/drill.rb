@@ -11,6 +11,7 @@ class Drill < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9a08286617629a63ebefc288604007facab0d3cd5a3a5b6c9caacf02db5f3452"
     sha256 cellar: :any_skip_relocation, catalina:      "3db1f9e4e0d25d84e5aa26e2801ea399f9328b50e32c85fa198894d5e5b54c3e"
     sha256 cellar: :any_skip_relocation, mojave:        "57509a9c9172333d4aebcc18d21476f835bb7fe240ca117c0df75b3901dda663"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "95a041b695a952f05064ee2a1045fe63c0fd27b5fd2cdb85cb0bd44bda05de89"
   end
 
   depends_on "rust" => :build
