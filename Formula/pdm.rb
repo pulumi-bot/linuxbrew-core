@@ -3,17 +3,16 @@ class Pdm < Formula
 
   desc "Modern Python package manager with PEP 582 support"
   homepage "https://pdm.fming.dev"
-  url "https://files.pythonhosted.org/packages/56/f7/27cb2788a86ef776f6c8a986f12b107d7c74663e5029f09d411800f4b4c3/pdm-1.8.2.tar.gz"
-  sha256 "6d44541ad49f1a40fa01c9e9a0ae9afbae339661da881991c95649653ef7dff8"
+  url "https://files.pythonhosted.org/packages/b4/01/b52f19e304c5480c9117fd36812ddd9ddfd1712b266570471310ee3a5e52/pdm-1.8.3.tar.gz"
+  sha256 "5ecf684536352417531eaccd34dc76904a705b88e542c56cceb3e2847fb0c7d1"
   license "MIT"
   head "https://github.com/pdm-project/pdm.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "a1f62c754596436e66f8ea2c8f9681ff0bce3218446fcad8361439bf5d6c1a4a"
-    sha256 cellar: :any_skip_relocation, big_sur:       "11c5f3046c3fb33e4a89cd5f7e77c44944d5727731f08612389da692e11de822"
-    sha256 cellar: :any_skip_relocation, catalina:      "9e52d58b3418a4de3eb955a8922daf535cae473596d951fcd9ff2e248dd98cc1"
-    sha256 cellar: :any_skip_relocation, mojave:        "c62c7b57fef79830134c39a2e5e8495514ed868e48c288858c383f29aadc95b5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4e910f5618cdf1d7deeb8535c6dca87776e9577c92da338bb7887a2e8c4cf628" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "54ccd90593338d0586c1f314e9501af3fc576fb12e275e9b57fe164f87293975"
+    sha256 cellar: :any_skip_relocation, big_sur:       "35639d97759e279fb164cb925043792a74481d2dad66f3ae261d9ccf190dbab5"
+    sha256 cellar: :any_skip_relocation, catalina:      "51eeaf71d3f9ab66ce7b2c9dde2fbeebd515f6df7ee1d625f9aaa31a2729aa8c"
+    sha256 cellar: :any_skip_relocation, mojave:        "498b1039ea1de111a51cf4fdd91fa1e9f0bc45a38189abc517c6261db9facdfb"
   end
 
   depends_on "python@3.9"
