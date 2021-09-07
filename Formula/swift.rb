@@ -141,18 +141,18 @@ class Swift < Formula
     workspace = buildpath.parent
     build = workspace/"build"
 
-    toolchain_prefix = ""
-    install_prefix = "/libexec"
-    on_macos do
+    install_prefix =if OS.mac?
       toolchain_prefix = "/Swift-#{version}.xctoolchain"
-      install_prefix = "#{toolchain_prefix}/usr"
+      "#{toolchain_prefix}/usr"
+    else
+      "/libexec"
     end
 
     ln_sf buildpath, workspace/"swift"
     resources.each { |r| r.stage(workspace/r.name) }
 
     # Fix C++ header path. It wrongly assumes that it's relative to our shims.
-    on_macos do
+    if OS.mac?
       inreplace workspace/"swift/utils/build-script-impl",
                 "HOST_CXX_DIR=$(dirname \"${HOST_CXX}\")",
                 "HOST_CXX_DIR=\"#{MacOS::Xcode.toolchain_path}/usr/bin\""
@@ -167,7 +167,7 @@ class Swift < Formula
     inreplace helpers_using_swiftpm, "swiftpm_args = [", "\\0'--disable-sandbox',"
 
     # Fix finding of brewed sqlite3.h.
-    on_linux do
+    if OS.linux?
       inreplace workspace/"swift-tools-support-core/Sources/TSCclibc/include/module.modulemap",
                 "header \"csqlite3.h\"",
                 "header \"#{Formula["sqlite3"].opt_include/"sqlite3.h"}\""
@@ -194,10 +194,8 @@ class Swift < Formula
         clang-resource-headers compiler-rt clangd
       ]
 
-      on_macos do
-        llvm_components << "dsymutil"
-      end
-      on_linux do
+      llvm_components << "dsymutil" if OS.mac?
+      if OS.linux?
         swift_components += %w[
           stdlib sdk-overlay
           autolink-driver
@@ -236,7 +234,7 @@ class Swift < Formula
       ]
       extra_cmake_options = []
 
-      on_macos do
+      if OS.mac?
         post_args += %W[
           --host-target=macosx-#{Hardware::CPU.arch}
           --swift-darwin-supported-archs=#{Hardware::CPU.arch}
@@ -249,7 +247,7 @@ class Swift < Formula
           -DCMAKE_INSTALL_RPATH=@loader_path
         ]
       end
-      on_linux do
+      if OS.linux?
         pre_args += %w[
           --libcxx
           --foundation
@@ -287,7 +285,7 @@ class Swift < Formula
       system "#{workspace}/swift/utils/build-script", *pre_args, "--", *post_args
     end
 
-    on_macos do
+    if OS.mac?
       # Swift Package Manager binaries bake in the absolute path to the stdlib.
       # Removing them will allow relocatable bottles.
       # Note that the binaries do also already contain the relative path.
@@ -310,7 +308,7 @@ class Swift < Formula
       end
     end
 
-    on_linux do
+    if OS.linux?
       bin.install_symlink Dir["#{libexec}/bin/{swift,sil,sourcekit}*"]
       man1.install_symlink libexec/"share/man/man1/swift.1"
       elisp.install_symlink libexec/"share/emacs/site-lisp/swift-mode.el"

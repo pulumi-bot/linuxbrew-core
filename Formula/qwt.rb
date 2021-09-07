@@ -39,13 +39,12 @@ class Qwt < Formula
     end
 
     args = ["-config", "release", "-spec"]
-    spec = if ENV.compiler == :clang
+    spec = if OS.linux?
+      "linux-g++"
+    elsif ENV.compiler == :clang
       "macx-clang"
     else
       "macx-g++"
-    end
-    on_linux do
-      spec = "linux-g++"
     end
     spec << "-arm64" if Hardware::CPU.arm?
     args << spec
@@ -64,7 +63,7 @@ class Qwt < Formula
         return (curve1 == NULL);
       }
     EOS
-    on_macos do
+    if OS.mac?
       system ENV.cxx, "test.cpp", "-o", "out",
         "-std=c++11",
         "-framework", "qwt", "-framework", "QtCore",
@@ -72,8 +71,7 @@ class Qwt < Formula
         "-I#{lib}/qwt.framework/Headers",
         "-I#{Formula["qt@5"].opt_lib}/QtCore.framework/Versions/5/Headers",
         "-I#{Formula["qt@5"].opt_lib}/QtGui.framework/Versions/5/Headers"
-    end
-    on_linux do
+    else
       system ENV.cxx,
         "-I#{Formula["qt@5"].opt_include}",
         "-I#{Formula["qt@5"].opt_include}/QtCore",
