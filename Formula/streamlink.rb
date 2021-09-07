@@ -13,6 +13,7 @@ class Streamlink < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b31dd9fb5fdd4881269256544379060b065a73688451869d4111c72140d02323"
     sha256 cellar: :any_skip_relocation, catalina:      "b35e07318cc3da02f5d3784273d5f2931d27be4d173761910d0ecb8a6de8bfc0"
     sha256 cellar: :any_skip_relocation, mojave:        "8986287356842960772a48322a8bdf43abb7dd98e1ffe186a9637e0a3e3262fb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1ec7cca4a5cef9fec5c04a48e053e4235f8acbe49f895a75e8fec8d632921eee"
   end
 
   depends_on "python@3.9"
