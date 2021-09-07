@@ -12,6 +12,7 @@ class Wtfutil < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "944f236df1a80ff41fee765dbbc1d85c31d99259dbea6865c3523dd81a69fa33"
     sha256 cellar: :any_skip_relocation, catalina:      "03030e42e0268e6d94c71c3a8c2f55330fc326d041203208335cbc78cf8d8b2e"
     sha256 cellar: :any_skip_relocation, mojave:        "b08d59e515900ab6c677c645fd9aad644313ce9a0c8df1c72751f3a685ef593f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6f5b7eaefbfe895d2f42304269b93a6b88ffb2141034a626891d695cb6c847f7"
   end
 
   depends_on "go" => :build
