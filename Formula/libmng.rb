@@ -10,7 +10,7 @@ class Libmng < Formula
     sha256 cellar: :any,                 big_sur:       "ae1a19ad2cb9cad4f252aafd63c43d8c44b68175ddace7b0b6369d8541514bce"
     sha256 cellar: :any,                 catalina:      "0102c3da599178979dba5b225b6fd15cf7896cd64cb41bd548c2cc2487425db2"
     sha256 cellar: :any,                 mojave:        "e1468ebcdd4fdbb47edf1e0c053206bbaa8792f0ef73fb297cc96f21533965f6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "76a41e2666007dabb0bce0da17d0a55ca7694168e74f31ec6136cb9632642eea"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "76a41e2666007dabb0bce0da17d0a55ca7694168e74f31ec6136cb9632642eea" # linuxbrew-core
   end
 
   depends_on "jpeg"

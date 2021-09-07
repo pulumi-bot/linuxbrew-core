@@ -11,7 +11,7 @@ class Duckdb < Formula
     sha256 cellar: :any,                 big_sur:       "53f34d296151b18be3ec75961e15d7099f5bc90eebecd6fe5a3d376f7de20b2c"
     sha256 cellar: :any,                 catalina:      "19149ad12f65d6c161ad2b4a6d75bfc7bd40dccb0fbab75dfcbb0a6659d7a2d4"
     sha256 cellar: :any,                 mojave:        "481aa4c9fac1c84a6aae4ab6c3897d95bd59cdf0ac69b9773429eedbf92ba109"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d453a4e505db3ee6235c1b47494450340daa26fdff473b490287b08a19a0789a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d453a4e505db3ee6235c1b47494450340daa26fdff473b490287b08a19a0789a" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

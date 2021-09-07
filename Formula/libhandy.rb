@@ -10,7 +10,7 @@ class Libhandy < Formula
     sha256 big_sur:       "337f9be107164821d8436c443c20dcb79d66bc3268fac909ace2878432bcc652"
     sha256 catalina:      "2e04f3f8004ac544fea47905a65a6597908b8ced6dadd5c330d87b8a310951d9"
     sha256 mojave:        "a8972dc9efc8c2d6a6fe0f038ebda941a741c3e0d7be57b51b9c634120d1a479"
-    sha256 x86_64_linux:  "17515106b873bbdbc591ca0daca12c043485e6a52b478cff912f9a835620c825"
+    sha256 x86_64_linux:  "17515106b873bbdbc591ca0daca12c043485e6a52b478cff912f9a835620c825" # linuxbrew-core
   end
 
   depends_on "gettext" => :build

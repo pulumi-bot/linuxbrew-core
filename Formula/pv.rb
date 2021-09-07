@@ -15,7 +15,7 @@ class Pv < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4ea237c542c6eded14c7cea0a1cdbfcbd7a08ee5eb3840f17074cf744ed9029e"
     sha256 cellar: :any_skip_relocation, catalina:      "497f6ce8e29bbf9e0327afede72168c33acfb1ccb6604767862accb98503e909"
     sha256 cellar: :any_skip_relocation, mojave:        "b2c882e0cd98de9b8db1ded95104239e890fe8e9b1f1c34e4fd57183c2d6afb6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "552be68ca20c0222fc5b9a7973375329b8b79f0bef203def9f118760d6104b91"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "552be68ca20c0222fc5b9a7973375329b8b79f0bef203def9f118760d6104b91" # linuxbrew-core
   end
 
   # Patch for macOS 11 on Apple Silicon support. Emailed to the maintainer in January 2021.
