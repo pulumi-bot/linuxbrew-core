@@ -11,6 +11,7 @@ class Zig < Formula
     sha256 cellar: :any,                 big_sur:       "e1be8baf52c6146c23701345969e40f580ffbf4c14273bce206c4be26989f82d"
     sha256 cellar: :any,                 catalina:      "91244d050c13d67518e0311dfc1e2d2233f42102b2fca5be06a9f5dbba8e6970"
     sha256 cellar: :any,                 mojave:        "acd62f790db0e7d1a8379185c36394f9c97c96022e37cd8dbf46a56995543a75"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b0f60191e5f4bdab19e3368f705d43921760eede861efe51cbe0a4207740d60b"
   end
 
   depends_on "cmake" => :build
