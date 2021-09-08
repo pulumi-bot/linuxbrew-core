@@ -11,7 +11,7 @@ class StanfordNer < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ff677742e4d2a82c25841c06c9df83521334df943658f129f85580f420feb0bb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ff677742e4d2a82c25841c06c9df83521334df943658f129f85580f420feb0bb" # linuxbrew-core
   end
 
   depends_on "openjdk"

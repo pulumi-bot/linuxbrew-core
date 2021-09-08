@@ -12,7 +12,7 @@ class HasuraCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5872fb87d2a6fa1551169fa052ac1bda58d8efc79104460c5fefb72d8c7e17c3"
     sha256 cellar: :any_skip_relocation, catalina:      "37071359a0525fe672859fbc3bd4d14af92314d1fb3b2ba7c2f7551e1c2d8b3c"
     sha256 cellar: :any_skip_relocation, mojave:        "d51bacadaf710fef613e1f39276fe5bb3fba78ca25491cc738b35e26b83812a7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "580e0ee999bdeae27b0704cd36083919d14a00ca91925e4fba533f59eeab0592"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "580e0ee999bdeae27b0704cd36083919d14a00ca91925e4fba533f59eeab0592" # linuxbrew-core
   end
 
   depends_on "go" => :build

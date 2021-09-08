@@ -16,7 +16,7 @@ class Syncthing < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8b04909a54196383a1bc58e7b6a2aca93ce52b45aa6021c283f6eef17ce86318"
     sha256 cellar: :any_skip_relocation, catalina:      "3f8c0f6c14c697bf2f209bc8c3a79809d7ca92dc6e9869e9f84d221167557b21"
     sha256 cellar: :any_skip_relocation, mojave:        "3663bc888dddde7764073352de729bd8b89c9389bc133cc0702df1e5fca60775"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "73cd13fd963a5e4f0093688d5e896bf9f583d879692bdb1e7a7bf3989f2a6e93"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "73cd13fd963a5e4f0093688d5e896bf9f583d879692bdb1e7a7bf3989f2a6e93" # linuxbrew-core
   end
 
   depends_on "go" => :build
