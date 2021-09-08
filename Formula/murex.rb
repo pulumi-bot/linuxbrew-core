@@ -10,7 +10,7 @@ class Murex < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "fe10cddb0b82266ac7ea6bc70b0a39088315aa0955bf60b87e8151871aeb6117"
     sha256 cellar: :any_skip_relocation, catalina:      "e48432109b4134c424df4a40627f665e654b1ef146212f691a0d05486f7a404f"
     sha256 cellar: :any_skip_relocation, mojave:        "2ab121297b15a9c46b97ec0fee1c35e45fb44a2a1149fc285eae50f2b1d956f7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "56639ee264f9d05efefd60362bf8b3982bd11f68f34dfc348053e16d7164330b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "56639ee264f9d05efefd60362bf8b3982bd11f68f34dfc348053e16d7164330b" # linuxbrew-core
   end
 
   depends_on "go" => :build

@@ -16,7 +16,7 @@ class Mimalloc < Formula
     sha256 cellar: :any,                 big_sur:       "d9a90d0801403374429de0014eb0a8ce54c943bd933184a02a90312eef9fbcfa"
     sha256 cellar: :any,                 catalina:      "f3a16ec9db7143ff17d0dafba31f952f71299fd3cf121229962f901aeb6a348b"
     sha256 cellar: :any,                 mojave:        "1b8ccb7e87846a9625645a9c6f6fb20ff3812eb28b9dc3f35607be223c16a21c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a52e4812137cb1272b5887a554eaea818ed04bbcb69da2c49a8d2402df02fdcf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a52e4812137cb1272b5887a554eaea818ed04bbcb69da2c49a8d2402df02fdcf" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
