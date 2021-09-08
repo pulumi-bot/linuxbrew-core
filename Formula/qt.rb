@@ -49,7 +49,7 @@ class Qt < Formula
   uses_from_macos "perl"
   uses_from_macos "zlib"
 
-  unless OS.mac?
+  on_macos do
     depends_on "at-spi2-core"
     depends_on "fontconfig"
     depends_on "glib"
