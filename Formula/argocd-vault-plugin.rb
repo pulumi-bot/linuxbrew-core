@@ -11,6 +11,7 @@ class ArgocdVaultPlugin < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c10851045ea0d15ad39017be2ae7f5fccf71a779f215ba752cc2864675bf7bfc"
     sha256 cellar: :any_skip_relocation, catalina:      "c10851045ea0d15ad39017be2ae7f5fccf71a779f215ba752cc2864675bf7bfc"
     sha256 cellar: :any_skip_relocation, mojave:        "c10851045ea0d15ad39017be2ae7f5fccf71a779f215ba752cc2864675bf7bfc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5ffde97112087a75f9dda2d6d13e699a6efd72dbf57612ee38a7b1d9ca15d08f"
   end
 
   depends_on "go" => :build
