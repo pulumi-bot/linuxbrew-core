@@ -1,14 +1,9 @@
 class Singularity < Formula
   desc "Application container and unprivileged sandbox platform for Linux"
   homepage "https://singularity.hpcng.org"
-  url "https://github.com/hpcng/singularity/releases/download/v3.8.2/singularity-3.8.2.tar.gz"
-  sha256 "996611dec402b4d372b8b9456dd9ec1cb43712d08502e455f38521bd199856d3"
+  url "https://github.com/hpcng/singularity/releases/download/v3.8.3/singularity-3.8.3.tar.gz"
+  sha256 "2e22eb9ee1b73fdd51b8783149f0e4d83c0d2d8a0c1edf6034157d50eeefb835"
   license "BSD-3-Clause"
-  revision 1
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "11b69c2d5a1da9baa23209c3bf14ac375128319ce0573504cad10d3c5d376017" # linuxbrew-core
-  end
 
   # No relocation, the localstatedir to find configs etc is compiled into the program
   pour_bottle? only_if: :default_prefix

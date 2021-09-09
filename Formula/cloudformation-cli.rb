@@ -3,16 +3,15 @@ class CloudformationCli < Formula
 
   desc "CloudFormation Provider Development Toolkit"
   homepage "https://github.com/aws-cloudformation/cloudformation-cli/"
-  url "https://files.pythonhosted.org/packages/ee/b7/3541fad6c558f94d622a46cabfd0c69be70fb436a9f4dc3e78838a230659/cloudformation-cli-0.2.17.tar.gz"
-  sha256 "7ad3fd545a8e26f60f7fe6e5eef23dc314699abe0262d448e5a6d0d48e4df3f2"
+  url "https://files.pythonhosted.org/packages/15/b5/00679d95720474c876484e238db869aca9fe43ec6e8e21541910841f2de0/cloudformation-cli-0.2.18.tar.gz"
+  sha256 "e7d025c9f4d9103a9baf783072dd9d40c578e7e68842fc9d0ff79f4fae10a593"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "d3eddd45d5290fb44d3a597c75d3d6d660b8642db859b2f59ad125b136dde713"
-    sha256 cellar: :any_skip_relocation, big_sur:       "5e5ca4569d9819236b90a1332504eb796ec99c927e5fa41ab9eaa8fbd25246b0"
-    sha256 cellar: :any_skip_relocation, catalina:      "6981b3921baa9b0f1b4dd851d00c867c5f7d251a7e5e685313cd59e26d3f60ad"
-    sha256 cellar: :any_skip_relocation, mojave:        "7902a80353b5e451c5fc8632250a3bc9abb51052c4b0f1c71e0122b30c8faa35"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dc1a67ed71beba192134088760cf70969e6019d6604c23569e0b9f25a0384275" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c739fb6251c43ad1af4560948d6691bf20eaaea89364797c021316d56e1856aa"
+    sha256 cellar: :any_skip_relocation, big_sur:       "7ad438ca870df99f95a94fa6ee20a291c6e17e8ce79359599f4ee2371ff74d50"
+    sha256 cellar: :any_skip_relocation, catalina:      "d472ab0bb7d6f532cb8c988ebbfb266d24e58353a568270cdbc341d2d9f5f623"
+    sha256 cellar: :any_skip_relocation, mojave:        "f40f9e2a8a8382ac30b1e26aeef6bb55bebdd98ecfc85c0aeb77269e1e4fecf6"
   end
 
   depends_on "go" => :test

@@ -4,17 +4,17 @@ class ElasticsearchAT6 < Formula
   url "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-oss-6.8.13.tar.gz"
   sha256 "e3a41d1a58898c18e9f80d45b1bf9f413779bdda9621027a6fe87f3a0f59ec90"
   license "Apache-2.0"
+  revision 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, big_sur:      "5a169338be55587bc70f8d297a5ade7ab075540935af491d1eee1ec9e64cc200"
-    sha256 cellar: :any_skip_relocation, catalina:     "21760b4a0752ec2f70597637ebeb255d3b218605f5117764451c382ecabffeec"
-    sha256 cellar: :any_skip_relocation, mojave:       "c5b912c15f7add574bcf572818b4b1ac40f7b27ddbcad3eff0303a15e9acb174"
+    sha256 cellar: :any_skip_relocation, big_sur:      "91758d6c8c408f7b478d9907b4b0585413b1574df2e8a6d48b281ea38f735be4"
+    sha256 cellar: :any_skip_relocation, catalina:     "91758d6c8c408f7b478d9907b4b0585413b1574df2e8a6d48b281ea38f735be4"
+    sha256 cellar: :any_skip_relocation, mojave:       "91758d6c8c408f7b478d9907b4b0585413b1574df2e8a6d48b281ea38f735be4"
   end
 
   keg_only :versioned_formula
 
-  depends_on arch: :x86_64 # openjdk@8 is not supported on ARM
-  depends_on "openjdk@8"
+  depends_on "openjdk"
 
   def cluster_name
     "elasticsearch_#{ENV["USER"]}"
@@ -42,6 +42,11 @@ class ElasticsearchAT6 < Formula
       s.sub!(%r{#\s*path\.logs: /path/to.+$}, "path.logs: #{var}/log/elasticsearch/")
     end
 
+    inreplace "#{libexec}/config/jvm.options" do |s|
+      s.gsub! "logs/gc.log", "#{var}/log/elasticsearch/gc.log"
+      s.gsub! "10-:-XX:UseAVX=2", "# 10-:-XX:UseAVX=2" if Hardware::CPU.arm?
+    end
+
     # Move config files into etc
     (etc/"elasticsearch").install Dir[libexec/"config/*"]
     (libexec/"config").rmtree
@@ -50,7 +55,7 @@ class ElasticsearchAT6 < Formula
                 libexec/"bin/elasticsearch-keystore",
                 libexec/"bin/elasticsearch-plugin",
                 libexec/"bin/elasticsearch-translog"
-    bin.env_script_all_files(libexec/"bin", Language::Java.java_home_env("1.8"))
+    bin.env_script_all_files(libexec/"bin", Language::Java.overridable_java_home_env)
   end
 
   def post_install
