@@ -16,6 +16,7 @@ class Jack < Formula
     sha256 big_sur:       "939c93be6d821e73abe360c69c57b0786086b03bcf95233a0ef1836e18c472f7"
     sha256 catalina:      "fbec3032a541f3e9ce3b327994d4bd305f3f849d1cb3831ec460b2bd2e029c08"
     sha256 mojave:        "b2974079582c370b9056ac2f98308cb321dc767ac3f67229e891e1de6bc86c8f"
+    sha256 x86_64_linux:  "83eb0dfca4705a7380da7a6a0bf628898f1b7103f288c77f1150ddf092843672"
   end
 
   depends_on "autoconf" => :build
