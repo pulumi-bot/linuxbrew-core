@@ -8,7 +8,7 @@ class Marked < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e73b3c547be314e68dd1ad38fbe3156ef8ec8c55abec05462f6aea6d0728c093"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e73b3c547be314e68dd1ad38fbe3156ef8ec8c55abec05462f6aea6d0728c093" # linuxbrew-core
   end
 
   depends_on "node"

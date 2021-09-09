@@ -11,7 +11,7 @@ class BoshCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "28678d820400058c88da66ba1ec0cc776fde16016414c0dd3821f40387a0cf77"
     sha256 cellar: :any_skip_relocation, catalina:      "9140da7993425d6923704309ffd5e759c4a72e73143082a415b398272d443ce2"
     sha256 cellar: :any_skip_relocation, mojave:        "f9eea7483b4df50c47fc3406c981b655af593e4607cfd0ce2a0f3d0b6cf14c14"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c2cef220e8424fc2ab994531c1559ba05e97457decff795a4fbee16cd40ab2b2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c2cef220e8424fc2ab994531c1559ba05e97457decff795a4fbee16cd40ab2b2" # linuxbrew-core
   end
 
   depends_on "go" => :build
