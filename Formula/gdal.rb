@@ -15,6 +15,7 @@ class Gdal < Formula
     sha256 big_sur:       "51d3c97a17843cce22f63232003044f05eb9073f721dd516002c43b54916d7a1"
     sha256 catalina:      "6044c74a6c1fd777f8576ccb10c02eaa4c1dc71ea90709df95e343c80ab6396c"
     sha256 mojave:        "049c7f195c02900eadd2ae3f80eee1e67b580fc3fe3b98e8ac5a1495170f4ead"
+    sha256 x86_64_linux:  "0bc12dbf738f691a75ff44150e10b57b74de16833ccdebd577fb543d7990c5ae"
   end
 
   head do
