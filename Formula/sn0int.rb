@@ -10,6 +10,7 @@ class Sn0int < Formula
     sha256 cellar: :any,                 big_sur:       "047c660782189a8708c3478a0a6c2d9fbd949cf95fcc91f678fde0d24ed324c0"
     sha256 cellar: :any,                 catalina:      "991fd7b49994a29fe6596f1d3dd56104719feb9bf15d865ce7e58ba823e9ea7e"
     sha256 cellar: :any,                 mojave:        "863e8f5dc164cb0345fcf74b8e5bd209a2684697daa0546fffbccdb2c3ac96c7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c72bdb72056a949b1f099f503aa3e665832d2024121fc779794e8d8d2b1afbb0"
   end
 
   depends_on "pkg-config" => :build
