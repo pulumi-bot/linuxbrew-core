@@ -13,7 +13,7 @@ class OciCli < Formula
     sha256 cellar: :any,                 big_sur:       "66682140f4d43ee2efec9066a170ac6578d76f0f0b194ae4bb6e8d4496ae7654"
     sha256 cellar: :any,                 catalina:      "286a55bde93d155db21dfd38260a6d78c14c2fee2b52951144280ba56d9a15da"
     sha256 cellar: :any,                 mojave:        "ec26af7fedded95bc257610cfe66ebace1f2dc7c30d21a0d1185695509a960ef"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b92779e51e4067646e2ff6a9d03e29b5f59fdb07bcf442d56c81b57c696ac627"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b92779e51e4067646e2ff6a9d03e29b5f59fdb07bcf442d56c81b57c696ac627" # linuxbrew-core
   end
 
   depends_on "rust" => :build
