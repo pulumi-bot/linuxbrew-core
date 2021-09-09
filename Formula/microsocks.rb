@@ -11,7 +11,7 @@ class Microsocks < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f80592c439fb03b85318e2356ff0c9481b0dc6643b4224697f359fcbb9d585ce"
     sha256 cellar: :any_skip_relocation, catalina:      "95c80ff1e1fe1f25efa6c5bd2498c969575978c0bac2935b293ae1dc6a0cfef5"
     sha256 cellar: :any_skip_relocation, mojave:        "007187db61ac04906954220f606b66d23d00d04457ce94667b0f59f82ac1bfcc"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4356d57b9e923021407147fb19c46d36223daffc5ed6c2475eae751ca70da3a5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4356d57b9e923021407147fb19c46d36223daffc5ed6c2475eae751ca70da3a5" # linuxbrew-core
   end
 
   def install
