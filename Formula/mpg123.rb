@@ -16,6 +16,7 @@ class Mpg123 < Formula
     sha256 big_sur:       "230c0e10a82c7b64faf1b8c68a5974806fd0c5fb05e700629e2dff2270276d63"
     sha256 catalina:      "ee6a701ac1d90feeaf7320674667ada58ae9c0a7d1cf5601e496011a13a3da8e"
     sha256 mojave:        "0b9dd2fcac658e721a6bb764c409e085bd3accacdac223aaf928f42f1acab6ba"
+    sha256 x86_64_linux:  "4b1d43c7f072efc93f3445001f9adda4b36cb4fc60d699f53571132699ecdc33"
   end
 
   def install
