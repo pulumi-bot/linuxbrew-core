@@ -5,6 +5,7 @@ class Clamav < Formula
   mirror "https://fossies.org/linux/misc/clamav-0.104.0.tar.gz"
   sha256 "a079d64cd55d6184510adfe0f341b2f278f7fb1bcc080d28d374298160f19cb2"
   license "GPL-2.0-or-later"
+  revision 1
   head "https://github.com/Cisco-Talos/clamav-devel.git", branch: "main"
 
   livecheck do
@@ -13,11 +14,10 @@ class Clamav < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "0a23a5fc1c7121ce43aade26688cd0e6cb55444c95c2a3037f485150919eabc8"
-    sha256 big_sur:       "f4f979fb914bd3f341b45f30335af9909b7a3c13339001e9e8ec943b4f11e008"
-    sha256 catalina:      "44bdc057c16215b4d386581b22c6068e3b95c3e7282ffc977ac9d670da029f98"
-    sha256 mojave:        "a269e7501d297f303441b3739db9f35f548e410dfb499f19719133b2e69264e5"
-    sha256 x86_64_linux:  "bdd0878f6828015c8f43df6cbbbf2dc00d6afbfd740a293f51002a9614a691a6" # linuxbrew-core
+    sha256 arm64_big_sur: "a56bdeb2b36da5c13d88cf56ae78f72a0ce03150a50afe02c374bb62bdb85b46"
+    sha256 big_sur:       "2b84fa9ddb9150cbd0affd0d07fbafc8460f42354b0e4b9a7f83ea120dc62f60"
+    sha256 catalina:      "8a9d8cb97ebb5fd9986cf087dbbebd6c78ba2dcff76ba0778e16abf4bf82c6df"
+    sha256 mojave:        "517e16b12c8c467758781e2b3ddd17fe20cbe134fc51f837a3e651e212821a8b"
   end
 
   depends_on "cmake" => :build
@@ -31,6 +31,7 @@ class Clamav < Formula
   uses_from_macos "bzip2"
   uses_from_macos "curl"
   uses_from_macos "libxml2"
+  uses_from_macos "ncurses"
   uses_from_macos "zlib"
 
   on_macos do
@@ -40,15 +41,15 @@ class Clamav < Formula
   skip_clean "share/clamav"
 
   def install
-    args = std_cmake_args + %w[
+    args = std_cmake_args + %W[
+      -DAPP_CONFIG_DIRECTORY=#{etc}/clamav
       -DENABLE_JSON_SHARED=ON
       -DENABLE_STATIC_LIB=ON
       -DENABLE_SHARED_LIB=ON
       -DENABLE_EXAMPLES=OFF
       -DENABLE_TESTS=OFF
+      -DENABLE_MILTER=OFF
     ]
-
-    args << "-DENABLE_MILTER=OFF" if OS.linux?
 
     system "cmake", "-S", ".", "-B", "build", *args
     system "cmake", "--build", "build"
