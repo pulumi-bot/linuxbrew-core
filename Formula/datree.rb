@@ -1,26 +1,19 @@
 class Datree < Formula
   desc "CLI tool to run policies against Kubernetes manifests YAML files or Helm charts"
   homepage "https://www.datree.io/"
-  url "https://github.com/datreeio/datree/archive/0.11.0.tar.gz"
-  sha256 "dcb5e8138d878ad87cc171631ba1bc8ff29b1565e0a7f4ff216d98b7067aabc3"
+  url "https://github.com/datreeio/datree/archive/0.12.1.tar.gz"
+  sha256 "a4ccfd31ef2df7833248627e768f93f3fbb61928e7be8f2288712f189a8908c6"
   license "Apache-2.0"
   head "https://github.com/datreeio/datree.git", branch: "staging"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "5e4f635d7a30f92153a4102da0cb8a29a4eb2eeca64435c45f9d00c5233c1a2d"
-    sha256 cellar: :any_skip_relocation, big_sur:       "d1394c006bbaf48c2f7f76d3b2ec18789b882ff25212255e4f98f0c0e564e943"
-    sha256 cellar: :any_skip_relocation, catalina:      "86c1d8173656ec7654456eb0b151614c9c41f4e51edd4dd7dea0f1203b39cd81"
-    sha256 cellar: :any_skip_relocation, mojave:        "a237ad584c113ce24bf56eec31fbd8c4f8aafa95f00ec2140465f99fd72fdc62"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0d15aa7d05968331c3a8a8accf7394bcd15e7b92ee797e128eb7a5b14dc42fef" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "d3dfeacb6d4db33ee1e7dc6e578c8f79fe05dab6a096cd09b6c1bddb860a8629"
+    sha256 cellar: :any_skip_relocation, big_sur:       "b33f71addc4f2b5897ac1d354ec02ed22152386b1bba8430b1c418d65bb922ed"
+    sha256 cellar: :any_skip_relocation, catalina:      "97f14aafe5fb6f6a6812572b22ad45214662dc9cd914ef883191cdba15e4ce8a"
+    sha256 cellar: :any_skip_relocation, mojave:        "fad3fc1f81349d70436f95e8e3b81c07e6b22fb01f526400b211d337ba522532"
   end
 
   depends_on "go" => :build
-
-  # remove in next release
-  patch do
-    url "https://github.com/datreeio/datree/commit/c0c5fb1c1c8e5766969ebec09e7cdbbcc0f460f0.patch?full_index=1"
-    sha256 "8d57c6f92fa0aaba07c79e2fe8312aea29ef40285dcf77d1397ea18cafe3cd5f"
-  end
 
   def install
     system "go", "build", *std_go_args(ldflags: "-s -w -X github.com/datreeio/datree/cmd.CliVersion=#{version}"), "-tags", "main"

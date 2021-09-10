@@ -4,16 +4,15 @@ class Checkov < Formula
   desc "Prevent cloud misconfigurations during build-time for IaC tools"
   homepage "https://www.checkov.io/"
   # checkov should only be updated every 15 releases on multiples of 15
-  url "https://files.pythonhosted.org/packages/74/65/459f05d2cc7d6f82578bd157e94ac7f5fc2bbe6fe7f172e096300c2bb6c4/checkov-2.0.390.tar.gz"
-  sha256 "f6bcdb29cb93f2d3bde058018d943b9afb5e0cfb62b27f0a5e0e9d5496a1c7f2"
+  url "https://files.pythonhosted.org/packages/04/c4/334063a233898ab1a461c5193d1f2df89913d7602e4bde946ca43e77ee9a/checkov-2.0.405.tar.gz"
+  sha256 "8a09a109184d1a8b177ae09f95648506bc0302b9c2f97484131b465f600557c3"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "b790a49d37029f5a71864647c78bff3b40dda543b981ece8b32787a22fb58a1d"
-    sha256 cellar: :any_skip_relocation, big_sur:       "143cef006ca3a122f38f31300100805a9abcba719bc3ff180c678aa41f9a9fe6"
-    sha256 cellar: :any_skip_relocation, catalina:      "934098eb52207f0be89274d991aba9227e35b7fff0820de12239475452fbf136"
-    sha256 cellar: :any_skip_relocation, mojave:        "074e0e5507d48674219fced1e6cc430c4d24d5f991d8f3513eb00d4db4627834"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a3676e630c8d7382b859e89a2dac4173a6a9ab7885d65b402ea541e421f2309f" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "a11f7f9a5b1f6b9dce2c8db46eda921d28d48f8db057aaf67b28bdd847bf2315"
+    sha256 cellar: :any_skip_relocation, big_sur:       "8e1a14de5dfac58c32fe458f42c4cda9000fb1bc38718ac007d75d8dbefc7918"
+    sha256 cellar: :any_skip_relocation, catalina:      "dbc2d3cef225fc127a187be00261bde5583386cf3e3019af1f422e67a2fff61d"
+    sha256 cellar: :any_skip_relocation, mojave:        "0fbc55beaebf559c6cd208b610b9176f187e6114088d7b6d6b4225ff3f675cee"
   end
 
   depends_on "python-tabulate"
@@ -26,8 +25,8 @@ class Checkov < Formula
   end
 
   resource "beautifulsoup4" do
-    url "https://files.pythonhosted.org/packages/6b/c3/d31704ae558dcca862e4ee8e8388f357af6c9d9acb0cad4ba0fbbd350d9a/beautifulsoup4-4.9.3.tar.gz"
-    sha256 "84729e322ad1d5b4d25f805bfa05b902dd96450f43842c4e99067d5e1369eb25"
+    url "https://files.pythonhosted.org/packages/a1/69/daeee6d8f22c997e522cdbeb59641c4d31ab120aba0f2c799500f7456b7e/beautifulsoup4-4.10.0.tar.gz"
+    sha256 "c23ad23c521d818955a4151a67d81580319d4bf548d3d49f4223ae041ff98891"
   end
 
   resource "boto3" do
@@ -156,8 +155,8 @@ class Checkov < Formula
   end
 
   resource "networkx" do
-    url "https://files.pythonhosted.org/packages/4b/3b/4378599026b81d1987a6e0d6d3d677e8f26308a039491a6b8a1914e58a4c/networkx-2.6.2.tar.gz"
-    sha256 "2306f1950ce772c5a59a57f5486d59bb9cab98497c45fc49cbc45ac0dec119bb"
+    url "https://files.pythonhosted.org/packages/97/ae/7497bc5e1c84af95e585e3f98585c9f06c627fac6340984c4243053e8f44/networkx-2.6.3.tar.gz"
+    sha256 "c0946ed31d71f1b732b5aaa6da5a0388a345019af232ce2f49c766e2d6795c51"
   end
 
   resource "packaging" do
