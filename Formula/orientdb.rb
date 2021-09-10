@@ -10,6 +10,10 @@ class Orientdb < Formula
     regex(/href=.*?orientdb[._-]v?(\d+(?:\.\d+)+)\.zip/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ba6f663a0eec6d06fe235f4426d51fc5418d5b21745534ccc5196c194daf0d00"
+  end
+
   depends_on "maven" => :build
   depends_on "openjdk"
 
