@@ -17,6 +17,7 @@ class OperatorSdk < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0843e544a5aff2813c34308dfcf31b3776fc1a48ac0438541caba441411fc5f0"
     sha256 cellar: :any_skip_relocation, catalina:      "f803282b943e2a55a210d7138363d150a34ad83e96332d2378efdc49c34268ae"
     sha256 cellar: :any_skip_relocation, mojave:        "0b301b84823537a14bb080753598800e7e292b80f9f5e7a0f21fb63eee864822"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "221b114bfc42c49a6d5bb5b27a54794ddcd74b155ba8087aa54ab8991a715601"
   end
 
   depends_on "go"
