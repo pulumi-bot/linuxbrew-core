@@ -11,7 +11,7 @@ class Svgbob < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6f9676ab8effa5a091ea9fdce5e9afc438d0c35b9174580cfd1e090a765909a7"
     sha256 cellar: :any_skip_relocation, catalina:      "e7a40e48c48082fdc20009ca1ab4a916929053a450021fecbbcd1cca00eaf38d"
     sha256 cellar: :any_skip_relocation, mojave:        "cfe41298ae2497a7a5014388229d3ca9fe40888458ae3a191410a44eb768fcb6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "31f6529df1df4d9950d52f5550a847e225ba4e9e5847911dfe8faede81c2fdd7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "31f6529df1df4d9950d52f5550a847e225ba4e9e5847911dfe8faede81c2fdd7" # linuxbrew-core
   end
 
   depends_on "rust" => :build

@@ -6,7 +6,7 @@ class Singularity < Formula
   license "BSD-3-Clause"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ff79e068ce48d7ea7d623863df575fec3d2a33b8e271f596b61a7c4925b63942"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ff79e068ce48d7ea7d623863df575fec3d2a33b8e271f596b61a7c4925b63942" # linuxbrew-core
   end
 
   # No relocation, the localstatedir to find configs etc is compiled into the program
