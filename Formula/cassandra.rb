@@ -14,6 +14,7 @@ class Cassandra < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "531d95b615b56206345341760667a9beb997c861b046b8a526e04d384f36844b"
     sha256 cellar: :any_skip_relocation, catalina:      "95e753b05138dca61b229e455e5058342a9f16b038ea008c303567d909ef7313"
     sha256 cellar: :any_skip_relocation, mojave:        "ff726d5f9303879270d740d89e7195d8145a9e6416fdb50507faa4d6c236dce8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d6ff4ee073bfa42e4cb632e86d024e0b12528d8c7655d0c4ff207e1221063fb7"
   end
 
   depends_on "cython" => :build
