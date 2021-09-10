@@ -11,6 +11,7 @@ class ElasticsearchAT6 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "91758d6c8c408f7b478d9907b4b0585413b1574df2e8a6d48b281ea38f735be4"
     sha256 cellar: :any_skip_relocation, catalina:      "91758d6c8c408f7b478d9907b4b0585413b1574df2e8a6d48b281ea38f735be4"
     sha256 cellar: :any_skip_relocation, mojave:        "91758d6c8c408f7b478d9907b4b0585413b1574df2e8a6d48b281ea38f735be4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c82ecdafef4805227c40d58feff43a4faa21e0ff0b97420c315453a3c14e2117" # linuxbrew-core
   end
 
   keg_only :versioned_formula
