@@ -11,6 +11,7 @@ class Libpulsar < Formula
     sha256 cellar: :any,                 big_sur:       "3dd3fd3c00956ed62b9b2fbb91795889fb06b264e1df331fcb58a445cfa0784d"
     sha256 cellar: :any,                 catalina:      "8538b133cd33c189390d1bcdcaa8d3c41dbac40631697f168f74c415929edf8a"
     sha256 cellar: :any,                 mojave:        "743de257b0996bcf769a74054fcbee90c24a2a3f77584c34960ba3ffdfa153f2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c99cc4079c6bd9ec0dfa37812ca3d59349eb96e873b01d76de7636c7c1f17d42"
   end
 
   depends_on "cmake" => :build
