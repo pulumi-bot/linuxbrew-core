@@ -1,15 +1,15 @@
 class Instead < Formula
   desc "Interpreter of simple text adventures"
   homepage "https://instead.hugeping.ru/"
-  url "https://github.com/instead-hub/instead/archive/3.4.0.tar.gz"
-  sha256 "e69d73a97a846920ee11109e22332b46008117542bd5298ef3c1f4966ed5c604"
+  url "https://github.com/instead-hub/instead/archive/3.4.1.tar.gz"
+  sha256 "8e61b931df2076382fe2a6857478d1d234e46db907390697656ad6754583793e"
   license "MIT"
 
   bottle do
-    sha256 arm64_big_sur: "45d232888010f08061c538508284c8ab88fa32cedf4ecbf40b23185caee9627b"
-    sha256 big_sur:       "ddf0324ef2021262ccc7eb7684a14369e247a9f089ec9dfadcba4a263ae040ff"
-    sha256 catalina:      "7c936d16151915bcf9074abbeeebdf01125219c96946b1852b39826de34309b9"
-    sha256 mojave:        "1d8cb0f60159c4573c2bbc17e71ab7d878466e105a2a785bb598a51b9da1c962"
+    sha256 arm64_big_sur: "49487dd18206b1be817bcf05aa09c3dce2b17f1957b99d7a67bb05479bb8a998"
+    sha256 big_sur:       "93cdfed079bf614ca0d4579ed8e7023ed26b65d4897f3889dcd7feba2a9442b6"
+    sha256 catalina:      "aabf4a3da9ba905f5b565cd65fa9563de50df3dac77f671d58e7ee112f24821b"
+    sha256 mojave:        "70c78465c95c5b5e2a22852af9d0ae7aa15f377dd8ef8a04f23ab0ec26fdeed1"
   end
 
   depends_on "cmake" => :build

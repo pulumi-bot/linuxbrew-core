@@ -1,17 +1,16 @@
 class Folly < Formula
   desc "Collection of reusable C++ library artifacts developed at Facebook"
   homepage "https://github.com/facebook/folly"
-  url "https://github.com/facebook/folly/archive/v2021.08.30.00.tar.gz"
-  sha256 "73c8b65d0f137caf7b2ac328dc0b2c9a9b3d0e29c1c89f0346a846f6467cbeb5"
+  url "https://github.com/facebook/folly/archive/v2021.09.06.00.tar.gz"
+  sha256 "8fb0a5392cbf6da1233c59933fff880dd77bbe61e0e2d578347ff436c776eda5"
   license "Apache-2.0"
   head "https://github.com/facebook/folly.git"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "c8520ba9f4bb8b253109cb76a7b552818e3676a62d5fb14d972313f2281e40a1"
-    sha256 cellar: :any,                 big_sur:       "5b0a55518fb687554ca18bd2060f52ccdee34ef1bca08c990389fcff4497b6e2"
-    sha256 cellar: :any,                 catalina:      "a8d8d3e528cf81a93e8fe32066919b37e03e2c17ca65721295b6ee72d08aee68"
-    sha256 cellar: :any,                 mojave:        "54d0bed0ed819ddd729b88be2d957aa90eac53e564a11b430502f53213a7cc55"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b947669b4bd0890976ef9ade458b4e1f4b44acc9e7dbd1fad52a47566da13d49" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "ef245e121285281a818dee5d4e8fcaf9cfaab11324be2d9d1c4cd1f67c332160"
+    sha256 cellar: :any,                 big_sur:       "8b9f8aecb0dc1c358f2c2fa5906f733300e33ab47ea4bd82e0d69f03c7bf24e0"
+    sha256 cellar: :any,                 catalina:      "7a5329b53d0b1094bdd9a9a7d0e8d5fdbe2a54fb5493bce1333a74ccd4e3b351"
+    sha256 cellar: :any,                 mojave:        "366dbe5cbebf0c17ff7b850665b15c9361d14bfc3bd678b2ec80170b996cf5b2"
   end
 
   depends_on "cmake" => :build

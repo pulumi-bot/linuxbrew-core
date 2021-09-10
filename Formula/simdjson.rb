@@ -7,13 +7,19 @@ class Simdjson < Formula
   head "https://github.com/simdjson/simdjson.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "b3973e31d27a2bbf477ab7b1daa2fe9ae9302340a56f91c6dd2b991af5547ec2"
-    sha256 cellar: :any, big_sur:       "1544c6932b3ac405e24c7c50f5b32f6918c99615a575b56bae19d29295d47e90"
-    sha256 cellar: :any, catalina:      "1abef2e6ba683d83371fcd220578408b7d659b9d57c73bebe87b99281b03e31a"
-    sha256 cellar: :any, mojave:        "f6694a3a2e21b588d3909bd82095a461713021b11aae7d0b683da04c3de732d5"
+    sha256 cellar: :any,                 arm64_big_sur: "b3973e31d27a2bbf477ab7b1daa2fe9ae9302340a56f91c6dd2b991af5547ec2"
+    sha256 cellar: :any,                 big_sur:       "1544c6932b3ac405e24c7c50f5b32f6918c99615a575b56bae19d29295d47e90"
+    sha256 cellar: :any,                 catalina:      "1abef2e6ba683d83371fcd220578408b7d659b9d57c73bebe87b99281b03e31a"
+    sha256 cellar: :any,                 mojave:        "f6694a3a2e21b588d3909bd82095a461713021b11aae7d0b683da04c3de732d5"
   end
 
   depends_on "cmake" => :build
+
+  on_linux do
+    depends_on "gcc"
+  end
+
+  fails_with gcc: "5"
 
   def install
     system "cmake", "-S", ".", "-B", "build", *std_cmake_args, "-DBUILD_SHARED_LIBS=ON"
