@@ -16,7 +16,7 @@ class Srtp < Formula
     sha256 cellar: :any,                 big_sur:       "feeac7058038e22e2259587a6270521c78df2768b05f680e6a0cf5d7deb4d148"
     sha256 cellar: :any,                 catalina:      "5d26a336dd453c35e308c30404bcf1a563cb7ee3af3f3ea38500eeece25384b9"
     sha256 cellar: :any,                 mojave:        "93b0de78bbf5fc52aa8755ac908bd4cc97c6bab1bbe50e7a57c6e6e2f2a9801f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d94a0bfed3b0241806884af7c50ab4432e1c042c5a14c2bab6f48ca21c4bc2b4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d94a0bfed3b0241806884af7c50ab4432e1c042c5a14c2bab6f48ca21c4bc2b4" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

@@ -12,7 +12,7 @@ class Esbuild < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b196ef99aed174592c4d8503a06dafdeae8aaa4b7d006b9cbebe51438970ad9f"
     sha256 cellar: :any_skip_relocation, catalina:      "b196ef99aed174592c4d8503a06dafdeae8aaa4b7d006b9cbebe51438970ad9f"
     sha256 cellar: :any_skip_relocation, mojave:        "b196ef99aed174592c4d8503a06dafdeae8aaa4b7d006b9cbebe51438970ad9f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2be47aa72f7fce852e8b9a3e4b58c734b891e92433725a61ebd33daeb95d17e8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2be47aa72f7fce852e8b9a3e4b58c734b891e92433725a61ebd33daeb95d17e8" # linuxbrew-core
   end
 
   depends_on "node"

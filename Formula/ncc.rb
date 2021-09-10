@@ -8,7 +8,7 @@ class Ncc < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ae62589d23cbd6fd0fff0f78ef26c66194045e3acdc415dd44cbff3e8b349f36"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ae62589d23cbd6fd0fff0f78ef26c66194045e3acdc415dd44cbff3e8b349f36" # linuxbrew-core
   end
 
   depends_on "node"

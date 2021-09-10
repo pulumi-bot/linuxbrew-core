@@ -12,7 +12,7 @@ class OscCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "aa37225fd72496c7872b08a69c39f027a4d37ec9a810dd5ccbe1ce270b2a5b55"
     sha256 cellar: :any_skip_relocation, catalina:      "aa37225fd72496c7872b08a69c39f027a4d37ec9a810dd5ccbe1ce270b2a5b55"
     sha256 cellar: :any_skip_relocation, mojave:        "aa37225fd72496c7872b08a69c39f027a4d37ec9a810dd5ccbe1ce270b2a5b55"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "76cf5ec7e2a32e0ce9531a178c53f8a1f56005e10c4de3806c5cccb8e54a2d15"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "76cf5ec7e2a32e0ce9531a178c53f8a1f56005e10c4de3806c5cccb8e54a2d15" # linuxbrew-core
   end
 
   depends_on "python@3.9"
