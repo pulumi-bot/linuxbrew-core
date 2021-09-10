@@ -10,6 +10,10 @@ class PicardTools < Formula
     strategy :github_latest
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "536cff66abae2ed01387d40b220725831b59d646688cec7591648b7e0cf23018"
+  end
+
   depends_on "openjdk"
 
   def install
