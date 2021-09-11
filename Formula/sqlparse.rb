@@ -12,6 +12,7 @@ class Sqlparse < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "361c451cebe6f78c03e55929ed30d1d98781025e65f5bad09d2f41d55d15a52d"
     sha256 cellar: :any_skip_relocation, catalina:      "361c451cebe6f78c03e55929ed30d1d98781025e65f5bad09d2f41d55d15a52d"
     sha256 cellar: :any_skip_relocation, mojave:        "361c451cebe6f78c03e55929ed30d1d98781025e65f5bad09d2f41d55d15a52d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "180b65725243b7b0746ce80b98d4e4d3522ed720e38f6f02d0c6f98a849e9a33"
   end
 
   depends_on "python@3.9"
