@@ -7,6 +7,10 @@ class Whistle < Formula
   sha256 "9005230006bcd72129c87487701121302b2fc18c038880c2cc85ad62bd100b33"
   license "MIT"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "566b48cc9dc9508282bca9006c362658c3a88caef2283d05d8e38f004a3e0b6d"
+  end
+
   depends_on "node"
 
   def install
