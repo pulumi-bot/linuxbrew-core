@@ -12,6 +12,7 @@ class Snort < Formula
     sha256 cellar: :any,                 big_sur:       "d4e6becc84fb994925e6495b6830c9f766d660d634a92dbc0bc43266f65a06c2"
     sha256 cellar: :any,                 catalina:      "09e072fa6338598fef1cd6a21b799c9f0f19796a88a9258d6025a560a533caa5"
     sha256 cellar: :any,                 mojave:        "4e13be31513a7b1bcdf27fe90a68beeff0e0dbd44120d3a288e99ca4c24e87f7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7698ae40590d6d6ca18163b7cb91f820083653fa167a6f93063410cf0f1ef6cd"
   end
 
   depends_on "cmake" => :build
