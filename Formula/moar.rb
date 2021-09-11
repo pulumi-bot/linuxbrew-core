@@ -10,7 +10,7 @@ class Moar < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e3e51027ec891d2905cadb657838e58e40b9f26ada54fea44e3715a103afd6b9"
     sha256 cellar: :any_skip_relocation, catalina:      "e3e51027ec891d2905cadb657838e58e40b9f26ada54fea44e3715a103afd6b9"
     sha256 cellar: :any_skip_relocation, mojave:        "e3e51027ec891d2905cadb657838e58e40b9f26ada54fea44e3715a103afd6b9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "86a9df716c8956db9a5bfbbebf1305c0808f810f3ac3ed760f9bc120738ff638"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "86a9df716c8956db9a5bfbbebf1305c0808f810f3ac3ed760f9bc120738ff638" # linuxbrew-core
   end
 
   depends_on "go" => :build

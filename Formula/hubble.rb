@@ -10,7 +10,7 @@ class Hubble < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "10554f689224ac17005e2acf60ae0f9447dd923251b2968df60d84eeec05bafc"
     sha256 cellar: :any_skip_relocation, catalina:      "8e7b69d7e5b51709b6c90820bd822d0faf6652166457ec831c12105f7aa47d2b"
     sha256 cellar: :any_skip_relocation, mojave:        "f4605e76aceb5aedd4fb2e51e8674a3d3c840852c068602d251e1b3c150dc45c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4089201813348a6d45aed60860889501fa43a56d5bea17831893e62a1bc50120"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4089201813348a6d45aed60860889501fa43a56d5bea17831893e62a1bc50120" # linuxbrew-core
   end
 
   depends_on "go" => :build

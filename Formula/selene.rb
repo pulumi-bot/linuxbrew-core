@@ -10,7 +10,7 @@ class Selene < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "7f79d5199778de50445897b61ed796ba2f8ed8dc28ba94e3178566120eb5c53e"
     sha256 cellar: :any_skip_relocation, catalina:      "f327afafa10d044c0b295e16741018c368251b79d65318bfdb9def511740fad5"
     sha256 cellar: :any_skip_relocation, mojave:        "748941051771e799dd0afe0e853f007746cd07af86134fb8f912aa5c3c7a5dfe"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e3061b7ea81453f2cca3b71aba7f1069b8de067b24267626e95a7fa891a12607"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e3061b7ea81453f2cca3b71aba7f1069b8de067b24267626e95a7fa891a12607" # linuxbrew-core
   end
 
   depends_on "rust" => :build

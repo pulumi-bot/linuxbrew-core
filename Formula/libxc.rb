@@ -10,7 +10,7 @@ class Libxc < Formula
     sha256 cellar: :any,                 big_sur:       "042fd1f69c5eb656fafb3132e3e74e6243db2d54bb085e825772c78e4ebb1c8e"
     sha256 cellar: :any,                 catalina:      "e35ea54099046a72da1e9ac35e838b12055aef0c5c81be282e579758c640df00"
     sha256 cellar: :any,                 mojave:        "eb030e211e6523a252007c84e330bd0e6248ddc14676d61f5daf1b328ca219b0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "59641b78ef6a37cab93991fba107c4a2dd62a610c54adda0766bed0ba7b38ee6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "59641b78ef6a37cab93991fba107c4a2dd62a610c54adda0766bed0ba7b38ee6" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build

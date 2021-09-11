@@ -11,7 +11,7 @@ class Metabase < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "81211b7a38906f35fd79af49c3fdbb44b281e4ea6912c1e711b6a21e2976c413"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "81211b7a38906f35fd79af49c3fdbb44b281e4ea6912c1e711b6a21e2976c413" # linuxbrew-core
   end
 
   head do
