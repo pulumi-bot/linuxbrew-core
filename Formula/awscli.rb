@@ -6,25 +6,24 @@ class Awscli < Formula
   license "Apache-2.0"
 
   stable do
-    url "https://github.com/aws/aws-cli/archive/2.2.36.tar.gz"
-    sha256 "ce3e469a9316ed5b10b130329d973a8a946cc1b8d59fad057f3396277e807aef"
+    url "https://github.com/aws/aws-cli/archive/2.2.37.tar.gz"
+    sha256 "3a71e4efd262c3c61e6991e3e0ddb8b180ddf3027e1d2ed56c4dedfac51fead3"
 
     # Botocore v2 is not available on PyPI and version commits are not tagged. One way to update:
     # 1. Get `botocore` version at https://github.com/aws/aws-cli/blob/#{version}/setup.py
     # 2. Get commit matching version at https://github.com/boto/botocore/commits/v2
     resource "botocore" do
-      url "https://github.com/boto/botocore/archive/1bdeebfa056550de3000b6623af7117fce4177f1.tar.gz"
-      sha256 "f43d627bcd52820ae9ad212922507918298913709e7b02fc76018bb8939bc4a8"
-      version "2.0.0dev144"
+      url "https://github.com/boto/botocore/archive/981292a6fe9826c0675ae61c025dd93039e30aa6.tar.gz"
+      sha256 "2d5ebbb7343d15f15f2174838ca99eee9f97266d75533def1c47a28d9ba25fcd"
+      version "2.0.0dev145"
     end
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "0585d178cf7cb1ada1dde41eefd794f4c5ce4851cc751669e3c26822b0d32a06"
-    sha256 cellar: :any,                 big_sur:       "fc4a7b31926a48482f4633e91d2fb5dbf3ac97506db4151fdd30254769f7f3c1"
-    sha256 cellar: :any,                 catalina:      "4a9d00d194d491441150e1487e3e5c21359126a5b1117d8ae4b221ae8a1024b3"
-    sha256 cellar: :any,                 mojave:        "1c14a296c3e4b2c97ee6d9009b3bff4feec5228b479c9fe81ef553a4751eeb14"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5175c104e7da70b91a7639fe1fbbf06b6da4af242670a6a5669c2b1f69ea4a88" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "4e6bf964c04b641e89811c6197f93ad1f9aa3ff6cf826a4ea685ead138b3cdb5"
+    sha256 cellar: :any,                 big_sur:       "5f07df400e3aaed34846dd9cbf891581207ba310955289a1cd67cdc455816535"
+    sha256 cellar: :any,                 catalina:      "25d661130171b7002d7e94b1721fcc29610d7d6810d2bfeccb649561aa98dc81"
+    sha256 cellar: :any,                 mojave:        "b420089bd7daa04dee3f77d55994019dcd2937151ef36e281c17a967930eaa07"
   end
 
   head do
