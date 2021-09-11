@@ -10,7 +10,7 @@ class Imageworsener < Formula
     sha256 cellar: :any,                 big_sur:       "6e6ec999be6238848bc4c39f7e39419b39d060dc925273ddbaaa500d63a29f92"
     sha256 cellar: :any,                 catalina:      "a2c33e599d1b1aa2500593919cdc4a9771f5afe71a7f6011a98b125dbfbd9c60"
     sha256 cellar: :any,                 mojave:        "a529b6264397516c763640015683f35632d46befd85fb07a3433ff2ebf2fcd95"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9018d0001a824d65d6e4205cffe1f745248df78b2341a0922e8a5254849bc672"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9018d0001a824d65d6e4205cffe1f745248df78b2341a0922e8a5254849bc672" # linuxbrew-core
   end
 
   head do

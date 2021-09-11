@@ -15,7 +15,7 @@ class YubicoPivTool < Formula
     sha256 cellar: :any,                 big_sur:       "886605cf401ac43e73fc09d7c443977e3fef3bf49dbcc49a68638f43705ad151"
     sha256 cellar: :any,                 catalina:      "c5b6ce9eb6b9501d4dccff86ea593d6ff1451be89712dd01369eb3671ae7fcb8"
     sha256 cellar: :any,                 mojave:        "21e6bea1407cf476c02575caa150e233674abc27abaa5a52d41f97365eb49a41"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5326662395e7d654b2cdf92c9dab7c1b87f7ba1ba4f586c09d0f1a1cc4e15917"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5326662395e7d654b2cdf92c9dab7c1b87f7ba1ba4f586c09d0f1a1cc4e15917" # linuxbrew-core
   end
 
   depends_on "check" => :build

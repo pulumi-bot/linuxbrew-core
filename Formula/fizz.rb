@@ -11,7 +11,7 @@ class Fizz < Formula
     sha256 cellar: :any,                 big_sur:       "71637ebe563e566e6ad66b43b1e61549b13fd734ea46ee44f8d547fa36f62e47"
     sha256 cellar: :any,                 catalina:      "a7a00effdcae1e9ff827e7eb961cd2d20f3ec40ee4e270345a1d22502c5c4a04"
     sha256 cellar: :any,                 mojave:        "d58a8fe639946b509161a7a1cc205184b3e36cd9b12e9aed11cdc2d7dbbcac0a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "61891b72b946c4d998fad6fe5b43126011e441e7cbadd7894ab826b123f2791d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "61891b72b946c4d998fad6fe5b43126011e441e7cbadd7894ab826b123f2791d" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
