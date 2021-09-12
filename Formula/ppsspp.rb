@@ -12,6 +12,7 @@ class Ppsspp < Formula
     sha256 cellar: :any,                 arm64_big_sur: "efb8896e778451364b3d7f3c91507a0f9d390aa8b5255a31c3ca1f6eeac70d46"
     sha256 cellar: :any,                 big_sur:       "15a4c66eb2b8fc4af70e8992714660a95b0546b58979c4eb6c076c7ce398efbc"
     sha256 cellar: :any,                 catalina:      "701e9c89b53df03f4c80c2a0c9a7a957126ec0ab0d5b523e766cd4bc96fec027"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0b2d8d7256fff548fc420f8dbb3ea014a676bd5b977efa0e8bb2b8a0d69001d9"
   end
 
   depends_on "cmake" => :build
