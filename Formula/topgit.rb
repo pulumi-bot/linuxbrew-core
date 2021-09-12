@@ -5,6 +5,10 @@ class Topgit < Formula
   sha256 "eaab17c64c95e70acfcc9d4061e7cc4143eb5f6dbe7bc23a5091cb45885a682c"
   license "GPL-2.0-only"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5f1d4fc904d11ddc99f4a774692587c24e44c210c64a94955ffb9fdd4c53a555"
+  end
+
   def install
     system "make", "install", "prefix=#{prefix}"
   end
