@@ -11,7 +11,7 @@ class PaxConstruct < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "404229633e2df0f70a5c03f0ef8d567d6044ba69626c0212d66e6f0b405b37d2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "404229633e2df0f70a5c03f0ef8d567d6044ba69626c0212d66e6f0b405b37d2" # linuxbrew-core
   end
 
   # Needed at runtime! pax-clone: line 47: exec: mvn: not found

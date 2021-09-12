@@ -10,7 +10,7 @@ class Sniffglue < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f5c6e604ff357fc18299d58ee7fabaf5367c96d74ead8eec5e3fe48a3bc5a094"
     sha256 cellar: :any_skip_relocation, catalina:      "1bd82eb72d4bedc1f6ea571152a56702512aefba276ee91fefa6d615e4d40550"
     sha256 cellar: :any_skip_relocation, mojave:        "5f5c54123a64a027c297df1bb4cc644aef975dc7d037ca06d02b26995c194b48"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d8645c8778588dbf14bef016b6b069e1ccd3c51d8d3692d1d8257421e75a3cd9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d8645c8778588dbf14bef016b6b069e1ccd3c51d8d3692d1d8257421e75a3cd9" # linuxbrew-core
   end
 
   depends_on "rust" => :build

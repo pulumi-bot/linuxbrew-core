@@ -11,7 +11,7 @@ class Pango < Formula
     sha256 cellar: :any, big_sur:       "ea25146681018c99e13404ee299f006679397c082a388c486c7a685ec8d8eca9"
     sha256 cellar: :any, catalina:      "251360bab0dd655f7272a262d35a25d3e9e10514a6c0d0074567e6095c7c92d5"
     sha256 cellar: :any, mojave:        "3328f7fa94c12d18ee87556f817f56516d93dc5bc5c6cefee26f4f471758dfac"
-    sha256               x86_64_linux:  "8d5e2d136b1c8edce54dac94621344e5cb94c5f5a53ccc9aa2b14d722599908f"
+    sha256               x86_64_linux:  "8d5e2d136b1c8edce54dac94621344e5cb94c5f5a53ccc9aa2b14d722599908f" # linuxbrew-core
   end
 
   depends_on "gobject-introspection" => :build

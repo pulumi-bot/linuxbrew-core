@@ -11,7 +11,7 @@ class Fcl < Formula
     sha256 cellar: :any,                 big_sur:       "211e57fdf880e25e2441be78170dd1433d746aee1bb9a98990479abc2037a546"
     sha256 cellar: :any,                 catalina:      "2bac88b84304ad8de56bbf604f7466ee147c31e04484df02ff45ef4aa9c966cc"
     sha256 cellar: :any,                 mojave:        "095c6887a9007ec034751d8326fa7f5052180b78605d5df92223e081a17cad3c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b22e0587c205f53be958cc43c4e2aa1597b61408bfeaf016197ffae8759816f4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b22e0587c205f53be958cc43c4e2aa1597b61408bfeaf016197ffae8759816f4" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

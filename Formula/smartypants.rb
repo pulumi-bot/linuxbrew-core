@@ -10,7 +10,7 @@ class Smartypants < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0a2ba46d5d61456e25f9844222df5afdc0844c33913d598d29e4e73216714df9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0a2ba46d5d61456e25f9844222df5afdc0844c33913d598d29e4e73216714df9" # linuxbrew-core
   end
 
   def install
