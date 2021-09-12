@@ -5,6 +5,10 @@ class Mdds < Formula
   sha256 "5a0fb2dd88a6420e0a69ec4c7259bcd1fe8f4a80b232c150e11f3da4c68236d7"
   license "MIT"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "602a95bcf70ac8445a3c964c67c423108b6a58ca5b743d9eb26f5a017776c63f"
+  end
+
   head do
     url "https://gitlab.com/mdds/mdds.git"
 
