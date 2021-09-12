@@ -5,6 +5,10 @@ class AdwaitaIconTheme < Formula
   sha256 "ef5339d8c35fcad5d10481b70480803f0fa20b3d3cbc339238fcaceeaee01eba"
   license any_of: ["LGPL-3.0-or-later", "CC-BY-SA-3.0"]
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b00bb687bcb075aba1ba256fbbab907cbb385c4ccc66c5b4045bb3d9b6b8f987"
+  end
+
   depends_on "gettext" => :build
   depends_on "gtk+3" => :build # for gtk3-update-icon-cache
   depends_on "intltool" => :build
