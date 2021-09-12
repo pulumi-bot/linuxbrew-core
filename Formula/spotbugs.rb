@@ -5,6 +5,10 @@ class Spotbugs < Formula
   sha256 "341873c7c4a73508aca6f32f03339aad38c926703accb2e799b5b632b0832bd9"
   license "LGPL-2.1-or-later"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "84e1a4d0e6ceca00f9114d5b6b672e6ae94cdf9f27d13a4b5443d885659e2a00"
+  end
+
   head do
     url "https://github.com/spotbugs/spotbugs.git"
 
