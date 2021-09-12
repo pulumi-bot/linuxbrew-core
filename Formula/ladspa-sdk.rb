@@ -10,6 +10,10 @@ class LadspaSdk < Formula
     regex(/href=.*?ladspa[._-]sdk[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    sha256 x86_64_linux: "72ba7e13eb469fb95d31f484047e2cef71faf60a965b91f8e2bdd6239db6c358"
+  end
+
   depends_on "libsndfile"
   depends_on :linux
 
