@@ -11,7 +11,7 @@ class Tflint < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "76b1c0b5c8ce4527bdebc5574ab2ec79e01a2820b3ee5be012ffaf4947f11d23"
     sha256 cellar: :any_skip_relocation, catalina:      "e08e41fb179d0a3b0d55d8e97d94cddbcbb5833dd53ed91fad5c0900d7775e0c"
     sha256 cellar: :any_skip_relocation, mojave:        "a686faab129c544bdf7f1c01bc9b8324d48aeba380dad734aa72e404e531407a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "606bea29f9e8979579d4fa29445ffc5db46b71a84607b69be6a1199f14bce868"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "606bea29f9e8979579d4fa29445ffc5db46b71a84607b69be6a1199f14bce868" # linuxbrew-core
   end
 
   depends_on "go" => :build

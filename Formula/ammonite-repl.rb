@@ -10,7 +10,7 @@ class AmmoniteRepl < Formula
   revision 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3f9c796bc2a83e1ede7061445219ba512d64c488ed1537c4747ca3c84f0b5c87"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3f9c796bc2a83e1ede7061445219ba512d64c488ed1537c4747ca3c84f0b5c87" # linuxbrew-core
   end
 
   depends_on "openjdk"
