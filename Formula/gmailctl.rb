@@ -11,6 +11,7 @@ class Gmailctl < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "3c9080dfdc290ee0747fbd7d70c786166636d22c0114bdfd8dfe27f8ad0ca330"
     sha256 cellar: :any_skip_relocation, catalina:      "6239ab2e534e2b0b013bdf0068a75d88aa51abb91fc9f9b8f079dc3c80abdd41"
     sha256 cellar: :any_skip_relocation, mojave:        "b6a4a9554edec82d0386efa66a88bf4d7503d3cda5d6e96940834afd270c90e4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0f81e41e24be6f157e0694e365005f27b029e49449ad164a0a847bb81704edc6"
   end
 
   depends_on "go" => :build
