@@ -6,7 +6,7 @@ class Topgit < Formula
   license "GPL-2.0-only"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5f1d4fc904d11ddc99f4a774692587c24e44c210c64a94955ffb9fdd4c53a555"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5f1d4fc904d11ddc99f4a774692587c24e44c210c64a94955ffb9fdd4c53a555" # linuxbrew-core
   end
 
   def install

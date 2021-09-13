@@ -14,7 +14,7 @@ class Findent < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "4dfb18b69c58a7fa48d54072829f63f1588a43e0e95d5fc970fd9a37397a2d92"
     sha256 cellar: :any_skip_relocation, catalina:     "0baa0d330bd9c5bf4ce35263736819541f31a8af1d1289472bf0e3a364a20446"
     sha256 cellar: :any_skip_relocation, mojave:       "d8e2ff05dfc1f72761614710a28ddbb93bbcb550a79452eb0aed35bd9e2000ca"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ab21e74bb78bd44418ad39b5a630626ece59e07a9eaf5fcbb069e93661699b87"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ab21e74bb78bd44418ad39b5a630626ece59e07a9eaf5fcbb069e93661699b87" # linuxbrew-core
   end
 
   def install

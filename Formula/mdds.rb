@@ -6,7 +6,7 @@ class Mdds < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "602a95bcf70ac8445a3c964c67c423108b6a58ca5b743d9eb26f5a017776c63f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "602a95bcf70ac8445a3c964c67c423108b6a58ca5b743d9eb26f5a017776c63f" # linuxbrew-core
   end
 
   head do

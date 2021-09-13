@@ -11,7 +11,7 @@ class Binaryen < Formula
     sha256 cellar: :any,                 big_sur:       "580bcfb61bdf0ef6fea0b92af3428ee3484b47a87eb2bf9cee4602a5aec5b3c8"
     sha256 cellar: :any,                 catalina:      "8dc80e3e1d1a6de47acfd1d107cdea836d2a81ea0bee7fe117423052eacc4558"
     sha256 cellar: :any,                 mojave:        "3fbf167d4e89a81d052375286fd46f8e8604ef5875f96336c9ed13fd4a8737a7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "552547c2cab2629e7e8af19977810cd5c1d42afa5d167cf71d6c48a4a088e725"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "552547c2cab2629e7e8af19977810cd5c1d42afa5d167cf71d6c48a4a088e725" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
