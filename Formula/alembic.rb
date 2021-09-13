@@ -11,6 +11,7 @@ class Alembic < Formula
     sha256 cellar: :any,                 big_sur:       "978c247938f12a2f093e3e3caa0d9506186fc2fc922b63c328a9be08c660cc67"
     sha256 cellar: :any,                 catalina:      "b6d5ec59340dde30d36865eb37eb667459d0c5ca8bffbd220ca580ccd9b41a29"
     sha256 cellar: :any,                 mojave:        "c10d048c3c97a4dbd228f9c42b8b2c54e9b6eb4ffceb39e300f5676013547c25"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e34ea6fe7d5801ab0c737f8d0968d087f48ab39b3c90c41b3a54541c2a6bf75c"
   end
 
   depends_on "cmake" => :build
