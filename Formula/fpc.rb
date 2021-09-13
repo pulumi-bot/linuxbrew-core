@@ -15,27 +15,50 @@ class Fpc < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "b4efbb9f568afadfb27aab8ca80895b7f306f58c7ff8a0623f2bd8418338b745"
-    sha256 cellar: :any, big_sur:       "4c3a012398b6136776358206b0cac52ec1096484c27a08c142e7f51afc713956"
-    sha256 cellar: :any, catalina:      "1bbaa4c1b6a616f8a56554b30c69cae267d22849074eb628d77c23af2e911e6e"
-    sha256 cellar: :any, mojave:        "314265a7bff5c2f8a613d1c04db8856f6523d8d00d33435892260ef3fa9cc604"
+    sha256 cellar: :any,                 arm64_big_sur: "b4efbb9f568afadfb27aab8ca80895b7f306f58c7ff8a0623f2bd8418338b745"
+    sha256 cellar: :any,                 big_sur:       "4c3a012398b6136776358206b0cac52ec1096484c27a08c142e7f51afc713956"
+    sha256 cellar: :any,                 catalina:      "1bbaa4c1b6a616f8a56554b30c69cae267d22849074eb628d77c23af2e911e6e"
+    sha256 cellar: :any,                 mojave:        "314265a7bff5c2f8a613d1c04db8856f6523d8d00d33435892260ef3fa9cc604"
   end
 
-  resource "bootstrap" do
-    url "https://downloads.sourceforge.net/project/freepascal/Mac%20OS%20X/3.2.2/fpc-3.2.2.intelarm64-macosx.dmg"
-    sha256 "05d4510c8c887e3c68de20272abf62171aa5b2ef1eba6bce25e4c0bc41ba8b7d"
+  on_macos do
+    resource "bootstrap" do
+      url "https://downloads.sourceforge.net/project/freepascal/Mac%20OS%20X/3.2.2/fpc-3.2.2.intelarm64-macosx.dmg"
+      sha256 "05d4510c8c887e3c68de20272abf62171aa5b2ef1eba6bce25e4c0bc41ba8b7d"
+    end
+  end
+
+  on_linux do
+    # mesa is needed to test GL unit
+    depends_on "mesa" => :test
+
+    resource "bootstrap" do
+      url "https://downloads.sourceforge.net/project/freepascal/Linux/3.2.2/fpc-3.2.2.x86_64-linux.tar"
+      sha256 "5adac308a5534b6a76446d8311fc340747cbb7edeaacfe6b651493ff3fe31e83"
+    end
   end
 
   def install
     fpc_bootstrap = buildpath/"bootstrap"
-    resource("bootstrap").stage do
-      pkg_path = "fpc-3.2.2-intelarm64-macosx.mpkg/Contents/Packages/fpc-3.2.2-intelarm64-macosx.pkg"
-      system "pkgutil", "--expand-full", pkg_path, "contents"
-      (fpc_bootstrap/"fpc-3.2.2").install Dir["contents/Payload/usr/local/*"]
-    end
-
     compiler_name = Hardware::CPU.arm? ? "ppca64" : "ppcx64"
-    fpc_compiler = fpc_bootstrap/"fpc-3.2.2/bin"/compiler_name
+    fpc_compiler = fpc_bootstrap/"bin"/compiler_name
+
+    resource("bootstrap").stage do
+      if OS.mac?
+        pkg_path = "fpc-3.2.2-intelarm64-macosx.mpkg/Contents/Packages/fpc-3.2.2-intelarm64-macosx.pkg"
+        system "pkgutil", "--expand-full", pkg_path, "contents"
+        fpc_bootstrap.install Dir["contents/Payload/usr/local/*"]
+      else
+        mkdir "packages"
+        system "tar", "-xf", "binary.x86_64-linux.tar", "-C", "packages"
+        mkdir_p fpc_bootstrap
+        Dir["packages/*.tar.gz"].each do |tarball|
+          system "tar", "-xzf", tarball, "-C", fpc_bootstrap
+        end
+
+        (fpc_bootstrap/"bin").install_symlink fpc_bootstrap/"lib/fpc/3.2.2"/compiler_name
+      end
+    end
 
     # Help fpc find the startup files (crt1.o and friends)
     sdk = MacOS.sdk_path_if_needed
@@ -51,6 +74,17 @@ class Fpc < Formula
 
     # Generate a default fpc.cfg to set up unit search paths
     system "#{bin}/fpcmkcfg", "-p", "-d", "basepath=#{lib}/fpc/#{version}", "-o", "#{prefix}/etc/fpc.cfg"
+
+    if OS.linux?
+      # On Linux, non-executable IDE support files get built and end up in bin.
+      # Put them somewhere else instead.
+      (pkgshare/"ide").install Dir[bin/"*.{ans,tdf,pt}"]
+
+      # On Linux, config path is hard-coded to #{lib/name/version/compiler_name/"../etc"}
+      # (or home directory or system-level /etc, neither of which are suitable for Homebrew)
+      # so link #{prefix}/etc to where it can be found.
+      (lib/"fpc").install_symlink prefix/"etc"
+    end
   end
 
   test do
