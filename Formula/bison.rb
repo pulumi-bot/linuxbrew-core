@@ -2,19 +2,17 @@ class Bison < Formula
   desc "Parser generator"
   homepage "https://www.gnu.org/software/bison/"
   # X.Y.9Z are beta releases that sometimes get accidentally uploaded to the release FTP
-  url "https://ftp.gnu.org/gnu/bison/bison-3.7.6.tar.xz"
-  mirror "https://ftpmirror.gnu.org/bison/bison-3.7.6.tar.xz"
-  sha256 "67d68ce1e22192050525643fc0a7a22297576682bef6a5c51446903f5aeef3cf"
+  url "https://ftp.gnu.org/gnu/bison/bison-3.8.tar.xz"
+  mirror "https://ftpmirror.gnu.org/bison/bison-3.8.tar.xz"
+  sha256 "1e0a14a8bf52d878e500c33d291026b9ebe969c27b3998d4b4285ab6dbce4527"
   license "GPL-3.0-or-later"
   version_scheme 1
 
   bottle do
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "ee20f2693b08afe6bf50abad5e9a6adf60b629360c64fb580f0512283d87846f"
-    sha256 cellar: :any_skip_relocation, big_sur:       "9f57b6c53d6595330adf79112e72034895f061769ebc8906a9b5afe9f4f873d0"
-    sha256 cellar: :any_skip_relocation, catalina:      "2276ffa48c694379540f63a5241c39b738f1dcb7424aceec54beb2e7be172489"
-    sha256 cellar: :any_skip_relocation, mojave:        "0dca09521f16b6e49e2c21ae9dec6069fee065a9ffd4b8191dca66b1957937d6"
-    sha256                               x86_64_linux:  "223e8a0d0ccda242cb92668da34874e273f3f51da657d4b40f449b1e7cbd6e64" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "77122849bbea244353105d6d820e0ec97f08e511bbef8a5ec9291a77c0f2256e"
+    sha256 cellar: :any_skip_relocation, big_sur:       "ac7e42c9d0356549683eef548e969e2107271a4d5b3e2307b22648056b3d8a10"
+    sha256 cellar: :any_skip_relocation, catalina:      "12d1897e723aa58ec33e149eaba1da6385a1faadaaddf71f9ed97f0f7039c395"
+    sha256 cellar: :any_skip_relocation, mojave:        "f20f2029b67798bebb691be2dbdc5bf3ae752e31fa65d7360b9487a83c37f1c2"
   end
 
   keg_only :provided_by_macos
@@ -24,7 +22,8 @@ class Bison < Formula
   def install
     system "./configure", "--disable-dependency-tracking",
                           "--enable-relocatable",
-                          "--prefix=/output"
+                          "--prefix=/output",
+                          "M4=m4"
     system "make", "install", "DESTDIR=#{buildpath}"
     prefix.install Dir["#{buildpath}/output/*"]
   end
