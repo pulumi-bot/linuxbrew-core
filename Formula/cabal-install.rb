@@ -11,7 +11,7 @@ class CabalInstall < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1588cf8cfff0a991adf3681db660098a02002c3ca62f9dc80f6b4f3f514e8d79"
     sha256 cellar: :any_skip_relocation, catalina:      "be48473b083335fca3ad94a704f726d6c29efcd0833a8e8eaaf4fc59ad50ea7f"
     sha256 cellar: :any_skip_relocation, mojave:        "0f57d19230fa149e0f5e34378e29cf1c4d8061f7e6417faf2d71d87cbc3c1eca"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "84e5b4077ae7d9bf05aec9e2b9c3bc34409e1cb0826f505437c825766d40cfc3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "84e5b4077ae7d9bf05aec9e2b9c3bc34409e1cb0826f505437c825766d40cfc3" # linuxbrew-core
   end
 
   depends_on "ghc"

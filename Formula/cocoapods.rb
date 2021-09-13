@@ -10,7 +10,7 @@ class Cocoapods < Formula
     sha256                               big_sur:       "def97dc0be0678114423091c819134ee289594fdd21cfeccb11ea5f95918dc8c"
     sha256                               catalina:      "c9d588214f088add95aaa6a520e5de0ad9b7cc1fb15536a350b4b3ca24ad2c36"
     sha256 cellar: :any,                 mojave:        "cded84974af0757f6c9ffdcf5a61f448e7d1eae9c6168c493ad6b3af312ca118"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6aa9790ea4a254b02de61fb74e8b9839b962e061b6009610e067e2e2dad1dd02"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6aa9790ea4a254b02de61fb74e8b9839b962e061b6009610e067e2e2dad1dd02" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

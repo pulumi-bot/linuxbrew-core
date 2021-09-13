@@ -16,7 +16,7 @@ class Notmuch < Formula
     sha256 cellar: :any,                 big_sur:       "4a28959d38283bede10d68633d4404c771bed42fa40674142a16741c2b1b3a5f"
     sha256 cellar: :any,                 catalina:      "42493f2b2bdbd8d95272119463b5e71794cfbbbc6b4462898298b072aa67023b"
     sha256 cellar: :any,                 mojave:        "2f63c867cb56de0501c19b81849c3ebdb96f002f79620743d3c1f1f7b21356fa"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1144a79475eaac42977ec227c233830a3853dbe7816800a181c278e545e71c81"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1144a79475eaac42977ec227c233830a3853dbe7816800a181c278e545e71c81" # linuxbrew-core
   end
 
   depends_on "doxygen" => :build
