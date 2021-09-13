@@ -9,6 +9,10 @@ class AmmoniteRepl < Formula
   license "MIT"
   revision 1
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3f9c796bc2a83e1ede7061445219ba512d64c488ed1537c4747ca3c84f0b5c87"
+  end
+
   depends_on "openjdk"
 
   def install
