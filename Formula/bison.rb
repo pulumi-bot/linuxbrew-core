@@ -13,7 +13,7 @@ class Bison < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f3a25f8afa584abf7688824ad8eaa624b4702aa531339599c63947b2234c8dc5"
     sha256 cellar: :any_skip_relocation, catalina:      "7698f085a806dd977569237a92661673233232acc29803087eb4a8784cc621d8"
     sha256 cellar: :any_skip_relocation, mojave:        "80ea46ebdade5d5e8c8dbf6ea0c1e275ae669531b18bb06211b1c47bd27f0c42"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a09ac7dc0fce1ee99508401a60528bf1a9b515283577564af64f8ce4d91407b7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a09ac7dc0fce1ee99508401a60528bf1a9b515283577564af64f8ce4d91407b7" # linuxbrew-core
   end
 
   keg_only :provided_by_macos

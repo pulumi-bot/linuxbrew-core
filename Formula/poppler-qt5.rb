@@ -15,7 +15,7 @@ class PopplerQt5 < Formula
     sha256 big_sur:       "9b32c64fba31bbf0708872dcb8d0e0a919bc2b667a9bf30fb0c1bca77e7074c5"
     sha256 catalina:      "2fbe5e3fdf9292929cc66c6b58326adc39a29de877226738714691bf9ba370a1"
     sha256 mojave:        "2ad64d685a1967e69f90ae24710a9f0cf49838a68e6471a1fd85126e25f1fb31"
-    sha256 x86_64_linux:  "cd0c6d8d9d4625dea9341a2d8fe01afd735e7bce50c9340aa0d7cb3d3f874681"
+    sha256 x86_64_linux:  "cd0c6d8d9d4625dea9341a2d8fe01afd735e7bce50c9340aa0d7cb3d3f874681" # linuxbrew-core
   end
 
   keg_only "it conflicts with poppler"
