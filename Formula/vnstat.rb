@@ -11,6 +11,7 @@ class Vnstat < Formula
     sha256 big_sur:       "fd1ec9717260fdab127a4bedc0b37fa8e7ddf7cbf98f580d4a09ee83c8732fa8"
     sha256 catalina:      "f77d3b9d0d6255cb9e25bf8d55f4b77e65bb4d042e4967994694f86f02efc403"
     sha256 mojave:        "6dcdff6ebc18f04db1c1774a170111147a30a2b9b1fa9c3aede34ef0af7ed683"
+    sha256 x86_64_linux:  "6741cfc8070a737a45db2a57c4a9fc3b9a6e505e4a1cbf97be5b37bbeb33a58e"
   end
 
   depends_on "gd"
