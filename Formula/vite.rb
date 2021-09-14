@@ -12,6 +12,7 @@ class Vite < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "216a8be12f8e2a5e20f2e2ed0db98a260452ad4702483061a8d2d988154b4370"
     sha256 cellar: :any_skip_relocation, catalina:      "216a8be12f8e2a5e20f2e2ed0db98a260452ad4702483061a8d2d988154b4370"
     sha256 cellar: :any_skip_relocation, mojave:        "216a8be12f8e2a5e20f2e2ed0db98a260452ad4702483061a8d2d988154b4370"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ff4382e6dbb0119e5cf6711713276e77d42c2d09c5b21c55ef1a615bf893dd8e"
   end
 
   depends_on "node"
