@@ -8,6 +8,10 @@ class HttpServer < Formula
   license "MIT"
   head "https://github.com/http-party/http-server.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "80ad677e4d19c143aa11656506945f691528e1bd528a27db1eb79ccef93ea407"
+  end
+
   depends_on "node"
 
   def install
