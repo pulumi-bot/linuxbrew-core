@@ -10,6 +10,10 @@ class TomcatAT9 < Formula
     url :stable
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f25c734553974c8944e66366b2b74cb30a845a7a728b83535588e0576767eb80"
+  end
+
   keg_only :versioned_formula
 
   depends_on "openjdk"
