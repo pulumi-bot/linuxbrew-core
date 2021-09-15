@@ -12,7 +12,7 @@ class NewrelicInfraAgent < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "e2cc3d32941798e5f4dd0e8aad7f50214ba4b6863e863cb210d973b028977ae7"
     sha256 cellar: :any_skip_relocation, catalina:     "ed5d80ba8cef45ccd7b3ac75fef36642c08c9e2ec56c09f08fddb09109f0623c"
     sha256 cellar: :any_skip_relocation, mojave:       "567ac22418bafde0e9908aeb52ba66477b9e2f58982e466d283c3685a357d2f0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "24ce175d60f158badae2d6a77259862d1728ad4562b7fec2bf8ad56cf4da4b3c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "24ce175d60f158badae2d6a77259862d1728ad4562b7fec2bf8ad56cf4da4b3c" # linuxbrew-core
   end
 
   # https://github.com/newrelic/infrastructure-agent/issues/723

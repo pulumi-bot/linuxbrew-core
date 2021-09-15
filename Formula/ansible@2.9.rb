@@ -19,7 +19,7 @@ class AnsibleAT29 < Formula
     sha256 cellar: :any,                 big_sur:       "c9cd2f6a84a4403eee1933a70fcda9a1222ac8376b15112fdfcc06d92359c02f"
     sha256 cellar: :any,                 catalina:      "47039882d2c46285fd1965400bdc31d41305aa6d175f2a03979e4d1d3d110d22"
     sha256 cellar: :any,                 mojave:        "a7463629e7d6db8e972ad67894f653e51acf1b148685e44e65e412ef354ada1c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ed7c2b80d6c5bd65b6eec3efcc1f9ef3cc9c596e899501f339cd023d2c3db01"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ed7c2b80d6c5bd65b6eec3efcc1f9ef3cc9c596e899501f339cd023d2c3db01" # linuxbrew-core
   end
 
   keg_only :versioned_formula

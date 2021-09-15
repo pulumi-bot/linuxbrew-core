@@ -11,7 +11,7 @@ class Librist < Formula
     sha256 cellar: :any,                 big_sur:       "32ca4949e0b34daff4eac02cef3fc018a08a29b531a16c5199c5549317292b84"
     sha256 cellar: :any,                 catalina:      "a78e9af5a97225aa3caf5f3a700d819fd7ab011537f742fffc9ffa55ec8be035"
     sha256 cellar: :any,                 mojave:        "4a4e0782ae28a9832313a46cfc5af148b95c0f1760dca560baefd46bf537e828"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9d5676085eb79786f4165816df783eb0662e59a715432c1d5c5700b01b7ee95b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9d5676085eb79786f4165816df783eb0662e59a715432c1d5c5700b01b7ee95b" # linuxbrew-core
   end
 
   depends_on "meson" => :build
