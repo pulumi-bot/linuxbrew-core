@@ -15,6 +15,7 @@ class LibatomicOps < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "017fae77e5ec0d547f9e8fb08cf907af0fbfabd6eeda54d4353a446e37371971"
     sha256 cellar: :any_skip_relocation, catalina:      "c9e0de613f4d3dbd8f0aa005c5ed038d8054ed87f8d9e27d10d182113227c923"
     sha256 cellar: :any_skip_relocation, mojave:        "40c602dbee95c6e67b3c0b63f32a3e4ed81e6281941a1cf484fc8a95394f8f1a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e88da0d1511648aae7d26e80745f9a85884ba0a347733ebdbe6cc043eb6708cc"
   end
 
   def install
