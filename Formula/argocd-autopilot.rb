@@ -11,6 +11,7 @@ class ArgocdAutopilot < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5b7cb2acf8bfe241b298afcd19609dc746a6f7c7101d93e6d4edbd641edf60ac"
     sha256 cellar: :any_skip_relocation, catalina:      "73b4be9d8a1c803f920b7c408b69751eec9b1fbfef822e7919f79ad8e549fcc6"
     sha256 cellar: :any_skip_relocation, mojave:        "8e6cf0dcd454ed5d5fd1288250b270c27ff84ecb4bca1063b288e52649fbe546"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9b33fa463edfddec0967c5778d672804a4ee97d362fdbbd1d85c01d5c173d7d7"
   end
 
   depends_on "go" => :build
