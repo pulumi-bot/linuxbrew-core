@@ -10,6 +10,7 @@ class Openlibm < Formula
     sha256 cellar: :any,                 big_sur:       "99bb06b44d697d843daf534205d825d4e6bc249b4d31784d3af067db01ed08df"
     sha256 cellar: :any,                 catalina:      "63471db2953d8531ca5c2635763113d05a277a9ed6e6e8b2df4a03a45a2404eb"
     sha256 cellar: :any,                 mojave:        "b3158fe12cbff247013753f4fe342822ff93c7d7f5c5c2c5baf1dc5a3cfae8a6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9cb7cb86a325830476a7434c87728d4755b0404afade42c9fb390bf20610cca5"
   end
 
   def install
