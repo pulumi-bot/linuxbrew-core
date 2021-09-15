@@ -11,7 +11,7 @@ class Viu < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "572858e897b2e307b45e02d6814b4e562682554bfaab4c1a827cbb07b679ecf7"
     sha256 cellar: :any_skip_relocation, catalina:      "0029a7093ea3cf9e65b8eaa168ace9a0c424dced8ca233bcb74a67139be10277"
     sha256 cellar: :any_skip_relocation, mojave:        "051cee6ee32390448b48ba56e2e9d60be22c6d9b43687f3713482d9e3dfe6017"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "06d513576fa431015bbc55fd6d118aff7be75a6fa468f5a42ee567439442cb16"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "06d513576fa431015bbc55fd6d118aff7be75a6fa468f5a42ee567439442cb16" # linuxbrew-core
   end
 
   depends_on "rust" => :build

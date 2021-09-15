@@ -16,7 +16,7 @@ class Gromacs < Formula
     sha256 big_sur:       "fdc9c850650ffe6509c8e7e28d6ed4e92de5b967f3ac4ccc3ec5a2feb4aea8fd"
     sha256 catalina:      "6af6a5ec7c57941799723a3b8777619932105e486b9ffa75920d996123ae9b61"
     sha256 mojave:        "a01c61b1eb54a9d11d056dce98b60e048dcf4fb744d5c681f3b517f2c5bcb71b"
-    sha256 x86_64_linux:  "44ff5ded4cf1b2b7e6867851a0aacc4bd4f9b745f1332478588f441e3e17e99c"
+    sha256 x86_64_linux:  "44ff5ded4cf1b2b7e6867851a0aacc4bd4f9b745f1332478588f441e3e17e99c" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

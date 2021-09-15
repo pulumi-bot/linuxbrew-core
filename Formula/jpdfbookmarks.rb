@@ -10,7 +10,7 @@ class Jpdfbookmarks < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "849a02893bc8fea3cd3813695f7c6d30598e53dccb4bba7933d745d221258a24"
     sha256 cellar: :any_skip_relocation, catalina:      "849a02893bc8fea3cd3813695f7c6d30598e53dccb4bba7933d745d221258a24"
     sha256 cellar: :any_skip_relocation, mojave:        "849a02893bc8fea3cd3813695f7c6d30598e53dccb4bba7933d745d221258a24"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a55444d161c8b6a7186b252fd79e2f63831bca8f54e4a0d4633c76988cce96c6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a55444d161c8b6a7186b252fd79e2f63831bca8f54e4a0d4633c76988cce96c6" # linuxbrew-core
   end
 
   depends_on "openjdk"

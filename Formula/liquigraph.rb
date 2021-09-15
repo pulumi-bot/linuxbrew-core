@@ -11,7 +11,7 @@ class Liquigraph < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "888bf68d5125b6c36a89907ae3fab0fbbcef809bf1df7893b02171ba2191edb9"
     sha256 cellar: :any_skip_relocation, catalina:      "7f0ec2c088008c2ba5f96f596dc86dfd4e28e81c93154f14754e33b13ac3978d"
     sha256 cellar: :any_skip_relocation, mojave:        "7f0ec2c088008c2ba5f96f596dc86dfd4e28e81c93154f14754e33b13ac3978d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0db90480818f73f85944a91a17f793d47be8fb25982b6b9fd02a6ff25ee2ac4d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0db90480818f73f85944a91a17f793d47be8fb25982b6b9fd02a6ff25ee2ac4d" # linuxbrew-core
   end
 
   depends_on "maven" => :build
