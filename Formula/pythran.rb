@@ -13,7 +13,7 @@ class Pythran < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d6f83dfa73268cf39ff35f47326b13554d3f01b58be68aa6fd7652311a360af4"
     sha256 cellar: :any_skip_relocation, catalina:      "d6f83dfa73268cf39ff35f47326b13554d3f01b58be68aa6fd7652311a360af4"
     sha256 cellar: :any_skip_relocation, mojave:        "d6f83dfa73268cf39ff35f47326b13554d3f01b58be68aa6fd7652311a360af4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d663943eb426f509e571ac4e29abfdda8a6d969c52e0d9535efceefa3192e2f0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d663943eb426f509e571ac4e29abfdda8a6d969c52e0d9535efceefa3192e2f0" # linuxbrew-core
   end
 
   depends_on "gcc" # for OpenMP
