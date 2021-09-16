@@ -10,7 +10,7 @@ class Zim < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "5fb7a7220942f32c021a72d4ea81134c2b16ef59dc6abc68d7b89be1d215ad1f"
     sha256 cellar: :any_skip_relocation, catalina:     "5fb7a7220942f32c021a72d4ea81134c2b16ef59dc6abc68d7b89be1d215ad1f"
     sha256 cellar: :any_skip_relocation, mojave:       "5fb7a7220942f32c021a72d4ea81134c2b16ef59dc6abc68d7b89be1d215ad1f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "50ebef7d2faa7130822d756466683ab3a39b1427499295ecceb393945f6d7a02"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "50ebef7d2faa7130822d756466683ab3a39b1427499295ecceb393945f6d7a02" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
