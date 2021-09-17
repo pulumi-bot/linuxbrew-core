@@ -7,6 +7,10 @@ class ChalkCli < Formula
   sha256 "0c0a4e8d93b923b23fea33cee5ebb6b3c9029d1adfac5d932b5c1c428e5c0782"
   license "MIT"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "092f65c0a922bfb51cf21d1b3be5dfaddefb61338b06a8c71acb0bc6c15310c2"
+  end
+
   depends_on "node"
 
   def install
