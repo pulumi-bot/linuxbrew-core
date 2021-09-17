@@ -12,6 +12,7 @@ class Helm < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "eda6fb39f3ff1ea035eb17df32da654d0336ab529bf8a7b3661024fa917489c5"
     sha256 cellar: :any_skip_relocation, catalina:      "9e852bf21732e4256ffd789d1a79d070d3291bcd2b45dbd853fecb8be30e5887"
     sha256 cellar: :any_skip_relocation, mojave:        "89551dc9d21cb719d14280bc6d062a7220208a7a8c87a3a089f5692de395421d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bb4184c24b936a479f5be153cd2bcc07cfd70fbed391dc2aab526473eea902ab"
   end
 
   depends_on "go" => :build
