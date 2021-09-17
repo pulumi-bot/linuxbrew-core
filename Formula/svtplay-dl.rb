@@ -12,6 +12,7 @@ class SvtplayDl < Formula
     sha256 cellar: :any,                 big_sur:       "a1a9e655b016e1094c38dee476662122f2297080814f3605dad5ab141b4073df"
     sha256 cellar: :any,                 catalina:      "cb6c24b81c7360095115979ec8ddc4d09d47c971b2c8385f1bf5f5b928804baf"
     sha256 cellar: :any,                 mojave:        "1608dc3d9aa010b220fb2850be47e304bd6a9089af99740ab82d41c5ebcd6687"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e4e008ed69563a4d16ead3fe0867bf6b63bd738137ae0d0756a43759bd385ea1"
   end
 
   depends_on "rust" => :build
