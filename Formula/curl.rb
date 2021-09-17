@@ -15,7 +15,7 @@ class Curl < Formula
     sha256 cellar: :any,                 big_sur:       "b3fa91eaa148fd67283c97a3cd8f7ae501a62e830cdb4a8d514079dafc31400c"
     sha256 cellar: :any,                 catalina:      "288ceac412ec97d4dad5e80b3c0afe847dab5d7d148a7906478fc13d485ed7af"
     sha256 cellar: :any,                 mojave:        "d1a82b42913a6df82d7fc00018185aa6c74ca24ddeb24fc96702a35004a6723e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8a8b1a9a79c2c624a2a40a075b140698f7567d36273fd6a0345b303371c321a7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8a8b1a9a79c2c624a2a40a075b140698f7567d36273fd6a0345b303371c321a7" # linuxbrew-core
   end
 
   head do

@@ -15,7 +15,7 @@ class Pkgconf < Formula
     sha256 big_sur:       "c5a4e284bb365062326df5947cb459cee868538599b3cbb612d79df2e7c40efa"
     sha256 catalina:      "e14c3c64737060d5514792608c0047e336554762a5e9928ab1dddfd8ee565553"
     sha256 mojave:        "c161289fe2bfc1367be2d4e53465d9ebd80a824eb20630fba1d19d35041b5649"
-    sha256 x86_64_linux:  "e0f0f360a8d39ff1e210dc73008952d7374bd86672dc2280396b319227f6dea8"
+    sha256 x86_64_linux:  "e0f0f360a8d39ff1e210dc73008952d7374bd86672dc2280396b319227f6dea8" # linuxbrew-core
   end
 
   def install
