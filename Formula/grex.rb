@@ -10,7 +10,7 @@ class Grex < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4b0cbb149ea3361e6f29372f8c476328615c69e389b65b4e7f6288df7c408637"
     sha256 cellar: :any_skip_relocation, catalina:      "1a6cdbda35cbbe7a8d85e08288f7ea16dca180630483aa1aaecd52641c1169ee"
     sha256 cellar: :any_skip_relocation, mojave:        "b5ddd5d77b6e0ee87f82be555d6b528352e643deff829ee8741578a7ce7ddec7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b679fdd75d513748153a454fc6a1f9e79b3b6e5378a935fc1c527e68978941f4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b679fdd75d513748153a454fc6a1f9e79b3b6e5378a935fc1c527e68978941f4" # linuxbrew-core
   end
 
   depends_on "rust" => :build
