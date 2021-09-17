@@ -11,6 +11,7 @@ class Htmlq < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8ec8b00331597e951f4f449394d26549d47c1090d2a1562047268c9ed0397580"
     sha256 cellar: :any_skip_relocation, catalina:      "9be3c8684ee2f1666837195233bfccd29975555f9c7ae36ca1d3870fe0a5ccfc"
     sha256 cellar: :any_skip_relocation, mojave:        "568439b3497a88d0d2fc3b6d7b0e3330c2b93e6a0e0c9df8de17768321a7e9df"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5ddf92a6715cd368a7b1df1d95b323feeed2e586e08f1503271968c4ace743d9"
   end
 
   depends_on "rust" => :build
