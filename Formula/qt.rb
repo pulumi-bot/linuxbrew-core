@@ -19,6 +19,7 @@ class Qt < Formula
     sha256 cellar: :any,                 big_sur:       "9e29391e63edc3f3d0891f8b3ecd6814cc314e2748dc25c9dc43b60a417ecb69"
     sha256 cellar: :any,                 catalina:      "c24b067cb5fa13ddcb5839bd0cbd94d92cec4d2fef276022a273426d2045013a"
     sha256 cellar: :any,                 mojave:        "ce491f8e34efe83ffaa18f188ccd1030aeaa5c9ed479c4ddaad5c313ffeb47dd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7c576d6535374c0c5962fc1a07731978b5d6b56060ae7b58503bfdf6f0b69600"
   end
 
   depends_on "cmake"      => [:build, :test]
