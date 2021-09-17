@@ -11,7 +11,7 @@ class Ormolu < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "366b87413d6e300e9d089f35e550ca02db32156a837ebd7549bdf83d1188c170"
     sha256 cellar: :any_skip_relocation, catalina:      "bd06fd5e6eb8b540a95bd9e857701f4b4eedd66239c780d9fe5aa01f83517dc4"
     sha256 cellar: :any_skip_relocation, mojave:        "0963f25611342146a3435f4f65610c1a29441ba94ad52670a2a4baa47ff6da56"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d3a5e8d85fdf38ad734ec9b3bba18afe8fa30b2004830ed9e4ef3d23fff3a2ce"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d3a5e8d85fdf38ad734ec9b3bba18afe8fa30b2004830ed9e4ef3d23fff3a2ce" # linuxbrew-core
   end
 
   depends_on "cabal-install" => :build

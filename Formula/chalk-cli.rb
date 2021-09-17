@@ -8,7 +8,7 @@ class ChalkCli < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "092f65c0a922bfb51cf21d1b3be5dfaddefb61338b06a8c71acb0bc6c15310c2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "092f65c0a922bfb51cf21d1b3be5dfaddefb61338b06a8c71acb0bc6c15310c2" # linuxbrew-core
   end
 
   depends_on "node"

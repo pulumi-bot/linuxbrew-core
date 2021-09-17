@@ -16,7 +16,7 @@ class Micronaut < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "493d84f3de354af6511804928d2105aa0d777f842795dca0332ec91a50ac74ea"
     sha256 cellar: :any_skip_relocation, catalina:      "eb811d45baba54fb60f6a3987de1ae72ad22ec14b0f6f4e3b5fa23a03b304b02"
     sha256 cellar: :any_skip_relocation, mojave:        "d671f193cc23d3e5b72d746a954d8603ea5db224e321d1f33248eff2195fbe45"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8a17f2840067063c419b77be91b6afaf5257972288ece1b021b1226696dcfa65"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8a17f2840067063c419b77be91b6afaf5257972288ece1b021b1226696dcfa65" # linuxbrew-core
   end
 
   # Uses a hardcoded list of supported JDKs. Try switching to `openjdk` on update.
