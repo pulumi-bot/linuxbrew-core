@@ -6,7 +6,7 @@ class Allure < Formula
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "efb901aa364242ecfeec70d5949c5962efffbb6cfe2962aa6a13d627fb1b4116"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "efb901aa364242ecfeec70d5949c5962efffbb6cfe2962aa6a13d627fb1b4116" # linuxbrew-core
   end
 
   depends_on "openjdk"

@@ -12,7 +12,7 @@ class Artillery < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "19009ef3f41fe90b0647df579a1a2065bffe7a1a67d6c32c91b7512225f16da5"
     sha256 cellar: :any_skip_relocation, catalina:      "19009ef3f41fe90b0647df579a1a2065bffe7a1a67d6c32c91b7512225f16da5"
     sha256 cellar: :any_skip_relocation, mojave:        "19009ef3f41fe90b0647df579a1a2065bffe7a1a67d6c32c91b7512225f16da5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "06544cc07f4aec9cd8b2ecd16c540752c50d385469287ac2b4aae42806443088"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "06544cc07f4aec9cd8b2ecd16c540752c50d385469287ac2b4aae42806443088" # linuxbrew-core
   end
 
   depends_on "node"
