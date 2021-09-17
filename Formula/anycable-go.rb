@@ -16,6 +16,7 @@ class AnycableGo < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9cfcd34dd576979ac4b61479be2e6cb0768a8f91220ed1186545dec372718258"
     sha256 cellar: :any_skip_relocation, catalina:      "f1d879be44533a9bfbee54b30b0a5418299544ffd92a124176f62e1ec28489e5"
     sha256 cellar: :any_skip_relocation, mojave:        "b537ae6c62cd1ed8fad1bb6c7b2238423df93158e6e11c8c2e8cddb2197aeba2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8f56dadd5ec3a0fcf20afbec6164a8653b3252bd223f394a72580101b1fa98e2"
   end
 
   depends_on "go" => :build
