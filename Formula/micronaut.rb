@@ -4,6 +4,7 @@ class Micronaut < Formula
   url "https://github.com/micronaut-projects/micronaut-starter/archive/v3.0.1.tar.gz"
   sha256 "61b58f5fd46c2986929aba75add112e20fe69d80b1425f6eb4389edead36887f"
   license "Apache-2.0"
+  revision 1
 
   livecheck do
     url :stable
@@ -11,18 +12,14 @@ class Micronaut < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "0f9d85e731f63b5cfb1a1718d8fdd10c5c4492e7322799270c9def222d6ba268"
-    sha256 cellar: :any_skip_relocation, big_sur:       "eab0b936005c6193006e3df8aaf6a53d1ac28ad0d012fca389263ea7efe40e43"
-    sha256 cellar: :any_skip_relocation, catalina:      "9172b51aec0372919f8bbaee10ee210643c1134ee5c9640f5e149227bbff7596"
-    sha256 cellar: :any_skip_relocation, mojave:        "ed5b509b24e0fffd9a2b543ee0b033f22f2ff9a0c1c6538f27b5ccfe72542ef3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6695c3f9cf76ae3e1e78c0ef9c5d655754021c2818fe82d74b20503577b27a0c" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "04070f1c0d03d4929534bd0ed36447fc50c3fcc9ec2fe95eb88ecceb211379b1"
+    sha256 cellar: :any_skip_relocation, big_sur:       "493d84f3de354af6511804928d2105aa0d777f842795dca0332ec91a50ac74ea"
+    sha256 cellar: :any_skip_relocation, catalina:      "eb811d45baba54fb60f6a3987de1ae72ad22ec14b0f6f4e3b5fa23a03b304b02"
+    sha256 cellar: :any_skip_relocation, mojave:        "d671f193cc23d3e5b72d746a954d8603ea5db224e321d1f33248eff2195fbe45"
   end
 
-  if Hardware::CPU.arm?
-    depends_on "openjdk@11"
-  else
-    depends_on "openjdk"
-  end
+  # Uses a hardcoded list of supported JDKs. Try switching to `openjdk` on update.
+  depends_on "openjdk@11"
 
   def install
     system "./gradlew", "micronaut-cli:assemble", "-x", "test"
@@ -32,7 +29,7 @@ class Micronaut < Formula
     mv "starter-cli/build/exploded/lib", libexec/"lib"
 
     bash_completion.install "starter-cli/build/exploded/bin/mn_completion"
-    (bin/"mn").write_env_script libexec/"bin/mn", Language::Java.overridable_java_home_env
+    (bin/"mn").write_env_script libexec/"bin/mn", Language::Java.overridable_java_home_env("11")
   end
 
   test do

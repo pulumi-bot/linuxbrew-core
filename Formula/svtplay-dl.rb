@@ -3,16 +3,15 @@ class SvtplayDl < Formula
 
   desc "Download videos from https://www.svtplay.se/"
   homepage "https://svtplay-dl.se/"
-  url "https://files.pythonhosted.org/packages/cc/98/1606d76a899aa946235bee15b5a355058ac831e0ccbba44aed7428b6e446/svtplay-dl-4.4.tar.gz"
-  sha256 "cc724b58532a6bea62a4efd130b8c8679f50506fe77030d6902a4a13ff1e3c74"
+  url "https://files.pythonhosted.org/packages/14/a4/58237e928c7d9c3318149526a60fc8d2fe2a2a38d9d61fdb3980bfdaec1d/svtplay-dl-4.5.tar.gz"
+  sha256 "d9a4993ba0763efd6a49115e4ee98b5517d73c95748c2da6cb36b9d544b67e3b"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "b19720e11fa39ddfad16a492bb941adc0a32bda26f38cb9d5007e015a9ba3fa7"
-    sha256 cellar: :any,                 big_sur:       "28837293cff035531c737bf2e97670a746c4886ebff3bff9a1206789ba790eda"
-    sha256 cellar: :any,                 catalina:      "aff926c372d83cf46eea2a7b76615a77d59711c825d1f3f82281189daad549c3"
-    sha256 cellar: :any,                 mojave:        "bfbd006ade030249e053ef9f9fb6c34fc7b06872d3932e451fb52949f7cc7cae"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4b0fbf0fded23ba6635953be2b29f1a49930768741df689882aabeb7381685a5" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "e574e69de27a7b041950dc4650dd34d04ff76eb2658fd7d785abd6b545de1dcc"
+    sha256 cellar: :any,                 big_sur:       "a1a9e655b016e1094c38dee476662122f2297080814f3605dad5ab141b4073df"
+    sha256 cellar: :any,                 catalina:      "cb6c24b81c7360095115979ec8ddc4d09d47c971b2c8385f1bf5f5b928804baf"
+    sha256 cellar: :any,                 mojave:        "1608dc3d9aa010b220fb2850be47e304bd6a9089af99740ab82d41c5ebcd6687"
   end
 
   depends_on "rust" => :build
@@ -30,8 +29,8 @@ class SvtplayDl < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/e7/4e/2af0238001648ded297fb54ceb425ca26faa15b341b4fac5371d3938666e/charset-normalizer-2.0.4.tar.gz"
-    sha256 "f23667ebe1084be45f6ae0538e4a5a865206544097e4e8bbcacf42cd02a348f3"
+    url "https://files.pythonhosted.org/packages/68/32/95ddb68b9abeb89efd461852cdff5791d42fc5e4c528536f541091ffded3/charset-normalizer-2.0.5.tar.gz"
+    sha256 "7098e7e862f6370a2a8d1a6398cd359815c45d12626267652c3f13dec58e2367"
   end
 
   resource "cryptography" do
