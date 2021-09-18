@@ -13,6 +13,7 @@ class ApacheArrow < Formula
     sha256 cellar: :any,                 big_sur:       "ffbdf59cca4ce63ddf93f7365a1132d206f16b19de95b7ecefa173f5725efb0a"
     sha256 cellar: :any,                 catalina:      "2381c7c8a40211caa81c494505a5152a9403c30325d6cca05cbb7d46efd40f94"
     sha256 cellar: :any,                 mojave:        "ea4eea599d906fd971268c62c92bc11708b61fe9af95072904000022e35fd08e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "64974698643d313f9de15ad4ad593af547b58489f98d45a7bc250a4d56da30cf"
   end
 
   depends_on "boost" => :build
