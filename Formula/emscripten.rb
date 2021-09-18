@@ -22,6 +22,7 @@ class Emscripten < Formula
     sha256 cellar: :any,                 big_sur:       "5814c4a30b5c5b44658fe25affdd447d2e8020a4092656fa56f5337dcf8d8881"
     sha256 cellar: :any,                 catalina:      "59a8d43ae21dd4942eb65fc77658568acef5a50960371355e85c2f39a2503deb"
     sha256 cellar: :any,                 mojave:        "c29d57a7745b55a45ca6098637d4cc8961171fed89b9f0970f23c047807c327b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "72e54f9cfdf27399c80255e215d9daf460f55c3e0c1b938f6a191112a849f859"
   end
 
   depends_on "cmake" => :build
