@@ -10,6 +10,10 @@ class ClosureCompiler < Formula
     regex(/href=.*?v?(\d{8})/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7a775ca29a59586de8b86b8d416606b2af84fb9ed15e4fcef61aa682a874fbff"
+  end
+
   depends_on "openjdk"
 
   def install
