@@ -10,7 +10,7 @@ class Libpinyin < Formula
     sha256 cellar: :any,                 big_sur:       "758fc82d1e5f0458f23e00cc3b9f38cf4b30099d7ecdef3d969fc40de334787b"
     sha256 cellar: :any,                 catalina:      "7f84e4aa3ca24a3c722a06aedc7a18a16cb188884e2c665c949dbe160506b8c6"
     sha256 cellar: :any,                 mojave:        "f2673713072b32704d2017f4643edc1071b49e8766659831287da96e0c29e783"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "060c13a56d7e849814a5341a13c6b4a0fd146c0d5fa11eb04b7034856ec61138"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "060c13a56d7e849814a5341a13c6b4a0fd146c0d5fa11eb04b7034856ec61138" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build

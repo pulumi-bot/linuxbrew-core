@@ -10,7 +10,7 @@ class Actionlint < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1ee1ba4eacdb3c66c4823d7deb74e3e81a130f86991073a331fa231e0b851715"
     sha256 cellar: :any_skip_relocation, catalina:      "1ee1ba4eacdb3c66c4823d7deb74e3e81a130f86991073a331fa231e0b851715"
     sha256 cellar: :any_skip_relocation, mojave:        "1ee1ba4eacdb3c66c4823d7deb74e3e81a130f86991073a331fa231e0b851715"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "756f96db54523fb72427516142127de6eb93cc35f5e3bffa20502b34b0a7d5ee"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "756f96db54523fb72427516142127de6eb93cc35f5e3bffa20502b34b0a7d5ee" # linuxbrew-core
   end
 
   depends_on "go" => :build
