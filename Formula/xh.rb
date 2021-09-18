@@ -11,6 +11,7 @@ class Xh < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "daf8cdcc24b0ac8a3b25abb4f42871c7af52dd2690bdaf94576433fa78e998cf"
     sha256 cellar: :any_skip_relocation, catalina:      "ea2de87328ac70becf698b04ea9ea8c8d4f04434cae2c42444dedcd02858e90a"
     sha256 cellar: :any_skip_relocation, mojave:        "a3824630363bb66568441a1197133ae8b98534bf033fbbbf6851aa0176fb5e41"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "616f7cbec8789cfe5b175faee47702a0d4765f33c5cbc8be1ead573858f6fc80"
   end
 
   depends_on "rust" => :build
