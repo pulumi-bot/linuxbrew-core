@@ -10,6 +10,7 @@ class OrocosKdl < Formula
     sha256 cellar: :any,                 big_sur:       "1c7f7a1fc384bd107acd0d3b8d302beed12c89198617f19b2c74d89e437e3ee8"
     sha256 cellar: :any,                 catalina:      "4318687278abffc43d727c33539957387dbbab41f7ec9c08a4f5ff7a6061abd1"
     sha256 cellar: :any,                 mojave:        "be089171fe396309561089d802e13ec101e56e91a5d2141207d588c1f703f52b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "76ca5a86d809b86783da8111f4d3aa54f0f3cf6e2eb09dc499e0b5de4e6257f9"
   end
 
   depends_on "cmake" => :build
