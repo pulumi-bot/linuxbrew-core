@@ -13,6 +13,7 @@ class ContentfulCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "380b071eaf5285cfd727c479434ecc2dd9ea12e8920246a04c5c3015540d459d"
     sha256 cellar: :any_skip_relocation, catalina:      "380b071eaf5285cfd727c479434ecc2dd9ea12e8920246a04c5c3015540d459d"
     sha256 cellar: :any_skip_relocation, mojave:        "380b071eaf5285cfd727c479434ecc2dd9ea12e8920246a04c5c3015540d459d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e69d6e6dcc191705072f9d71fec6aca60a7d2dafbd0c2ad70fbc9e65efc9b3e5"
   end
 
   depends_on "node"
