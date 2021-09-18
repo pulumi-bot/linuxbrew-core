@@ -11,6 +11,7 @@ class RedTldr < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b2360f47e129d9f7e5a21f8080b4b3a4026f186372a5075772f50335fcc2631e"
     sha256 cellar: :any_skip_relocation, catalina:      "cf74861e3fafb6015dbc4762d2bc29fd638f76f2e0c3bcf20279221998407e41"
     sha256 cellar: :any_skip_relocation, mojave:        "2e7b44917e4e21e938de91a8a8ae5b3783e56ebe075eb11be51569e9a0ed4aa8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1e10ad40bdbb6280f3303f43439791ed3f76213111d17441f673374819bc4994"
   end
 
   depends_on "go" => :build
