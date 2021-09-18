@@ -9,6 +9,10 @@ class IpRelay < Formula
     regex(/href=.*?ip_relay[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f3ba0f4dc44a7dd0d59d8704661713155ebcee560f04dd0c65db3135ffc669fa"
+  end
+
   def install
     bin.install "ip_relay.pl" => "ip_relay"
   end
