@@ -10,6 +10,7 @@ class Stylua < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "de01dc3c21e4caf37da549b4af85f2ddd87683520dd389e197d4524a0ffd0f86"
     sha256 cellar: :any_skip_relocation, catalina:      "4461d096324b07260fa450d7e518ac69858748be894039abb51253a4876d3768"
     sha256 cellar: :any_skip_relocation, mojave:        "4f3e7f59632fc4c4346967bf5eebbdb19592b570475fb10b3f93c0543b5961bf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9e1b3072a01c7ce663c862242345deda8dd9aee65102e0bcf1b8032b05d77c7f"
   end
 
   depends_on "rust" => :build
