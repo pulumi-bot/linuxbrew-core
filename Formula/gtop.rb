@@ -12,7 +12,6 @@ class Gtop < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d155b9fe2f75deabbd70c7cb6f07ac09cb69158a770b6ed8cca07d6d12cc7e60"
     sha256 cellar: :any_skip_relocation, catalina:      "d155b9fe2f75deabbd70c7cb6f07ac09cb69158a770b6ed8cca07d6d12cc7e60"
     sha256 cellar: :any_skip_relocation, mojave:        "d155b9fe2f75deabbd70c7cb6f07ac09cb69158a770b6ed8cca07d6d12cc7e60"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e5adce5d3f299b11b5a5278e89c8201eb5cc4f2617b1ef88f07020a33b1df655"
   end
 
   depends_on "node"
