@@ -12,7 +12,7 @@ class Helmsman < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "31c620d800cb212f9cfe4d3900770d8245f062714a9bdcd6ef4e2f0c169ec1d8"
     sha256 cellar: :any_skip_relocation, catalina:      "34ec03135cdcd6724a3f40120e5996201e672053bc86a19245d0805f922ebc2e"
     sha256 cellar: :any_skip_relocation, mojave:        "c50a7b47bf741503a5598fc1384fd66f2224e88a8210b0a732a35ec9429f71b2"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d7f33241ee43cc916f0d0022bd43ee4bcd2209ad48fff6585edb6efb7510457e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d7f33241ee43cc916f0d0022bd43ee4bcd2209ad48fff6585edb6efb7510457e" # linuxbrew-core
   end
 
   depends_on "go" => :build

@@ -12,7 +12,7 @@ class Apngasm < Formula
     sha256 cellar: :any,                 big_sur:       "d94b80958f9782e98a7bcd7461b22d5239c376d4b1fb26b49bfb9d5c5c25b6e6"
     sha256 cellar: :any,                 catalina:      "db0dc40f3fd4e8a8b7435da56211356e669b42ba47b8107d0f840777197202cf"
     sha256 cellar: :any,                 mojave:        "569b760c848add596a639397ebe63f631e2ad3faabd1fa77ea6609f24f240e2f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fd723c581739c21323fcba6aaf920532144aac609a0f7b30d124fc69f0487d9c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fd723c581739c21323fcba6aaf920532144aac609a0f7b30d124fc69f0487d9c" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
