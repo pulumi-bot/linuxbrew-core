@@ -10,7 +10,7 @@ class Rfcstrip < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "709ceeee5ef29ea4b5d1d63a1969ac5297592e31c3c16a47139716c946c09907"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "709ceeee5ef29ea4b5d1d63a1969ac5297592e31c3c16a47139716c946c09907" # linuxbrew-core
   end
 
   resource "rfc1149" do

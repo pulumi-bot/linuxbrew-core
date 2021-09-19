@@ -26,7 +26,7 @@ class Clisp < Formula
     sha256 cellar: :any, big_sur:       "ddb6cb44d70ff18bd12bd186679112e8f4fa1f33d4849697fa2564c51195b5fe"
     sha256 cellar: :any, catalina:      "2011ba42953cd6363aab0b23154947d364197fb28305efdb08ebe4640447d311"
     sha256 cellar: :any, mojave:        "2e74f9680f7b060a0d6a71b2fdae0d00fa6e6009af104f9fb7839368b109ae1f"
-    sha256               x86_64_linux:  "d0264d8f82c30bef8a2eef168fe45898e359cb57e82e3a18c7fff452b511c5ec"
+    sha256               x86_64_linux:  "d0264d8f82c30bef8a2eef168fe45898e359cb57e82e3a18c7fff452b511c5ec" # linuxbrew-core
   end
 
   depends_on "libsigsegv"

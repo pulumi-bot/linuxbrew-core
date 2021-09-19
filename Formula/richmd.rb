@@ -12,7 +12,7 @@ class Richmd < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "fcb069cbad9d9cf874b39d88e60a5a8810b4807915d3440ecdb949a9e7b70f07"
     sha256 cellar: :any_skip_relocation, catalina:      "3ce5b82d7d1690c28ee7ba7c07464bf3f1da2ff43eba52504aaf67749703bd70"
     sha256 cellar: :any_skip_relocation, mojave:        "a43cfc5684c948262eafe6fe2606247317636b1ea7c10f335a9db8d96705c528"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3aaba2745cf4922a969cdece148d515f5b98426bbd0de3e2f2d6eb62882db542"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3aaba2745cf4922a969cdece148d515f5b98426bbd0de3e2f2d6eb62882db542" # linuxbrew-core
   end
 
   depends_on "python@3.9"
