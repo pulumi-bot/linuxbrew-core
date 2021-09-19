@@ -10,6 +10,10 @@ class Ntfs3g < Formula
     strategy :github_latest
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4ec7322145e67988020b06ac47004aadc9cc1ffdfea213d82b787ebbb44bfaef"
+  end
+
   head do
     url "https://github.com/tuxera/ntfs-3g.git", branch: "edge"
 
