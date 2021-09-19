@@ -9,6 +9,10 @@ class Rfcstrip < Formula
     regex(/href=.*?rfcstrip[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "709ceeee5ef29ea4b5d1d63a1969ac5297592e31c3c16a47139716c946c09907"
+  end
+
   resource "rfc1149" do
     url "https://www.ietf.org/rfc/rfc1149.txt"
     sha256 "a8660fa4f47bd5e3db1cd5d5baad983d8b6f3f1e8a1a04b8552f3c2ce8f33c18"
