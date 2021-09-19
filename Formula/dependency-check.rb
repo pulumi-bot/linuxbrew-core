@@ -1,17 +1,13 @@
 class DependencyCheck < Formula
   desc "OWASP dependency-check"
   homepage "https://owasp.org/www-project-dependency-check/"
-  url "https://github.com/jeremylong/DependencyCheck/releases/download/v6.3.0/dependency-check-6.3.0-release.zip"
-  sha256 "55cd62cb4095cf02bf327713d0fa1ea0c1bedcd1c78de4aa34ca5a91e88ea2c1"
+  url "https://github.com/jeremylong/DependencyCheck/releases/download/v6.3.1/dependency-check-6.3.1-release.zip"
+  sha256 "3650ef52aa66eeea1cd5f063670aec7304c2f2a3cd4cafd84bcf516660fbdfa2"
   license "Apache-2.0"
 
   livecheck do
     url :homepage
     regex(/href=.*?dependency-check[._-]v?(\d+(?:\.\d+)+)-release\.zip/i)
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0a802d19e3c5fe3a8435276e8c65a8b28de1e1738524264b1a6052615237349e" # linuxbrew-core
   end
 
   depends_on "openjdk"
