@@ -10,6 +10,10 @@ class Xorgproto < Formula
     regex(/href=.*?xorgproto[._-]v?(\d+\.\d+(?:\.([0-8]\d*?)?\d(?:\.\d+)*)?)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "647f61164574adaac89ee12341032122025e3cf8ce97d2e346e8af3e2196146a"
+  end
+
   depends_on "pkg-config" => [:build, :test]
   depends_on "util-macros" => :build
 
