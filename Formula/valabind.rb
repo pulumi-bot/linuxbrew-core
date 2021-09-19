@@ -12,6 +12,7 @@ class Valabind < Formula
     sha256 cellar: :any,                 big_sur:       "bef04beaf352699df3774e1d26423b16cdd487836553755d6777b5d3a20e4413"
     sha256 cellar: :any,                 catalina:      "d1013e81b20cf4c4981b7840c12d281fb2042aebb874317e8dff44d550915954"
     sha256 cellar: :any,                 mojave:        "ca8cb97fd10e22e1ac1a8966889c9eda14f33bedeeae8395811c55748e2740cc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d60a5907d80687fc3bf619f357d525ed856aaedf23dbad26fcd8c80636b37698"
   end
 
   depends_on "pkg-config" => :build
