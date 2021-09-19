@@ -12,6 +12,7 @@ class ValaLanguageServer < Formula
     sha256 cellar: :any, big_sur:       "522ff0afde99dc62e32af3df6d40138c4d115591a7d2c9ddf99a7ffb5c2354d8"
     sha256 cellar: :any, catalina:      "fc5ee5ec8ca3e5d41bc7cb5edd7a85540f5bce64d8d625548d706d884c28f83a"
     sha256 cellar: :any, mojave:        "13333288fba772232a82c3b16c10df48a6d41d4345897cbcba5e21fc0b15a2b4"
+    sha256               x86_64_linux:  "abc6b06e996a54dd2c3c2e8567637cda104b0e4a975c9e3143519095429ab758"
   end
 
   depends_on "meson" => :build
