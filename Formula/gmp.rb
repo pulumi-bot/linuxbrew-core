@@ -17,6 +17,7 @@ class Gmp < Formula
     sha256 cellar: :any,                 big_sur:       "e566452815d2ff5dc66da160bd1cd3d9cf02a17a07284cf0bac46496133383ae"
     sha256 cellar: :any,                 catalina:      "5ee7a460668864c28e541db15420e1480c3d31c5f216797a453a5310106fbc97"
     sha256 cellar: :any,                 mojave:        "b9d7d36c8d263be0e02e17d435350546f9f7008eb21b6e86bf42f719efcba85e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "786ae29f0c0b06ea86e42bd9c6ac2c49bd5757da037dead7053e8bd612c4cf8c"
   end
 
   uses_from_macos "m4" => :build
