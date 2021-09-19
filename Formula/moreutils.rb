@@ -15,6 +15,7 @@ class Moreutils < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "98e36f509fe2556660dec088c1dcf380cf1ce60167fcb4289782614feb381821"
     sha256 cellar: :any_skip_relocation, catalina:      "e7774183139434a9f4707a5931793fb2aed0678fd0257a5860571f320f507c8e"
     sha256 cellar: :any_skip_relocation, mojave:        "099c5b0cc96ae204c211da65446db79bf83469ed0bcbc40d81e5a9e95b5a678c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0890cc88f2e311ec01cc0439cbfa6a7a43166ebaeb54a8bfa9d22fc21fba4bb4"
   end
 
   depends_on "docbook-xsl" => :build
