@@ -13,6 +13,10 @@ class Saxon < Formula
     end
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1e9bc81f7685b4af74ade1619d0fcebdb9d57188297a7651e5774b3f512c18fb"
+  end
+
   depends_on "openjdk"
 
   def install
