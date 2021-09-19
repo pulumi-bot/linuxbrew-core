@@ -10,9 +10,6 @@ class Ntfs3g < Formula
     strategy :github_latest
   end
 
-  bottle do
-  end
-
   head do
     url "https://github.com/tuxera/ntfs-3g.git", branch: "edge"
 
