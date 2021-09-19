@@ -15,7 +15,7 @@ class Lrzip < Formula
     sha256 cellar: :any,                 big_sur:       "33d561fad2bba643625d358fc65cfa2d8f37ae51d3329887da76e884d43b1515"
     sha256 cellar: :any,                 catalina:      "701705808812d442dbd211235510a039a53cd4de9a4b28c014da5ad8a000014d"
     sha256 cellar: :any,                 mojave:        "a3230ecfa68e08deb5f1414cb67736cffcde179ba34748df8e0fcdcb0d2c1ef7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f0da646d86d065dd7468fbb4b50394182ae914cd5345ae15dd08a55965fbf34b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f0da646d86d065dd7468fbb4b50394182ae914cd5345ae15dd08a55965fbf34b" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
