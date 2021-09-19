@@ -10,6 +10,10 @@ class DependencyCheck < Formula
     regex(/href=.*?dependency-check[._-]v?(\d+(?:\.\d+)+)-release\.zip/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "670f40fb3ddd169f30ffacb24e9be8e97831dda6d9be4eaa60abaa0f6ad40bca"
+  end
+
   depends_on "openjdk"
 
   def install
