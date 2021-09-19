@@ -11,6 +11,7 @@ class PkgConfigWrapper < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0c13ac5e30bafee95d4190ba733305bf481195299cc07d665bf25c7b34183f63"
     sha256 cellar: :any_skip_relocation, catalina:      "164299afc7de07a790856a3a6c3aa05a129584e1d60b9d40d0d429775f5b2fff"
     sha256 cellar: :any_skip_relocation, mojave:        "c6d86cb0821de7c39da2ee6f6b4ee30638f61d63a0a851bbd0b6ccc6ea811710"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "75ae3120b73555f3e4bce334a96484087dcfa448e2949ca1fa9bb0e317c22602"
   end
 
   depends_on "go" => :build
