@@ -11,6 +11,7 @@ class Ssdb < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "f92e221d20ca1a85c7ae555acd1417bba60b208a56091eb3a25d98fc788f25a3"
     sha256 cellar: :any_skip_relocation, catalina:     "4253e51c8e447b5d4e0ec5f064ee2fcc3ef57b30734df70f3b24d6399abb9363"
     sha256 cellar: :any_skip_relocation, mojave:       "a10edecc28880cd37e02e75fdc318392ba6bda016f624181a9f4ff10982b211f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "95cd243ea6c81d65dec76e8a48977bcf78996e7959cea20c4f1a2aeb72d954e9"
   end
 
   depends_on "autoconf" => :build
