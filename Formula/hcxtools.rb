@@ -11,7 +11,7 @@ class Hcxtools < Formula
     sha256 cellar: :any,                 big_sur:       "e823f093cc594fcd8cec3c9fe7c5743d37323bfefc1f0c423ae7cab401936830"
     sha256 cellar: :any,                 catalina:      "97f4b6d9401be82a0d1c48ed80be2070147ff374be07a3123b763cc0f7210696"
     sha256 cellar: :any,                 mojave:        "9a93ac0c1f2b3172d3eb2b5f822c9c043a1d269fa881f35172f195f10628ff60"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ad17f6c779701195a56f451f8e862f3b7b6e13739cc4de746b76fd3da4996456"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ad17f6c779701195a56f451f8e862f3b7b6e13739cc4de746b76fd3da4996456" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

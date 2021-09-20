@@ -16,7 +16,7 @@ class Dust < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1e21970d1f6b01d5c472c9a56f4d2415f721d3534fb600cf3dd22782c7b10294"
     sha256 cellar: :any_skip_relocation, catalina:      "1c9527d0399c8b1235c9291b448bfb30c0a4590fd4e9129d17b4bbbbe6ace74a"
     sha256 cellar: :any_skip_relocation, mojave:        "b044d0c3122ea62432349dd64374ca257d5e9265f158973a2e11ceaf8955cb1d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b1025b4476b5c7144d699cd34feee550d01e397b612d3a206991b9f6808fb7a5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b1025b4476b5c7144d699cd34feee550d01e397b612d3a206991b9f6808fb7a5" # linuxbrew-core
   end
 
   depends_on "rust" => :build

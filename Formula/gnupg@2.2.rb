@@ -15,7 +15,7 @@ class GnupgAT22 < Formula
     sha256 big_sur:       "c1515eca53270b84dfc5dca8bcdb7b6da857cb167aa1a4292e5ec3c1e905c739"
     sha256 catalina:      "6f343a4c3c4ead308a6df0e20a5be640c326eadf2aae9b2621ee3297e9c4c1f6"
     sha256 mojave:        "ced2608b0f34f2ef6f609b25325b086b9d5da8fd6e1bce7942d5a59590a1c261"
-    sha256 x86_64_linux:  "fd5bb6a47e65e3ad16c08778076beca083ca4ade8d8db912144632d6bd8e653f"
+    sha256 x86_64_linux:  "fd5bb6a47e65e3ad16c08778076beca083ca4ade8d8db912144632d6bd8e653f" # linuxbrew-core
   end
 
   keg_only :versioned_formula
