@@ -15,6 +15,7 @@ class Pianod < Formula
     sha256 big_sur:       "3aaed35adde0c5e286691e0cec46cf841d21e8990449fe8ce44a1b19206fac81"
     sha256 catalina:      "1eb5a5505c87c7e3507c56770567bfedfd778322989416d028ba964c5177ef06"
     sha256 mojave:        "416d3972a515b932768d6e6ee1412c266e640f9b5bc734f00974a1b35bd40b80"
+    sha256 x86_64_linux:  "639af5a5c17e693c8ae599f20e76f5a58fafb804df91cccf69a7dfc2fd831d3c"
   end
 
   depends_on "pkg-config" => :build
