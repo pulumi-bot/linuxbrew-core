@@ -122,3 +122,31 @@ class UtilLinux < Formula
     assert_equal ["d#{perms}", owner, group, "usr"], out
   end
 end
+
+__END__
+diff --git a/disk-utils/mkswap.c b/disk-utils/mkswap.c
+index c45a3a317..0040198c8 100644
+--- a/disk-utils/mkswap.c
++++ b/disk-utils/mkswap.c
+@@ -30,6 +30,10 @@
+ # include <linux/fiemap.h>
+ #endif
+ 
++#ifdef HAVE_LIBUUID
++# include <uuid.h>
++#endif
++
+ #include "linux_version.h"
+ #include "swapheader.h"
+ #include "strutils.h"
+@@ -42,10 +46,6 @@
+ #include "closestream.h"
+ #include "ismounted.h"
+ 
+-#ifdef HAVE_LIBUUID
+-# include <uuid.h>
+-#endif
+-
+ #ifdef HAVE_LIBBLKID
+ # include <blkid.h>
+ #endif
