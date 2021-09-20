@@ -15,6 +15,7 @@ class Gwenhywfar < Formula
     sha256 big_sur:       "b704822d14013073eb785f0fa8c3a7855afa50bb3e63675e8025ab769a125458"
     sha256 catalina:      "8164abaebbda0065d70383f18b758484c8a6ec2842b42c63e5684031ac712e80"
     sha256 mojave:        "7cba7ca3e0d4288b2701218224ca586eddda6bbd280636b2a84986b2b5db9aae"
+    sha256 x86_64_linux:  "ad88f914809f1e746a7a6374d29107359fd0894d14b7d3e1715773cdf46fae4c"
   end
 
   depends_on "autoconf" => :build
