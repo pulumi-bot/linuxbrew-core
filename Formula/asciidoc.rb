@@ -13,6 +13,10 @@ class Asciidoc < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6a697842eca38197c1dbf98e0d4948d4712ca71ead18f2d47c31a9b333c68280"
+  end
+
   depends_on "autoconf" => :build
   depends_on "docbook-xsl" => :build
   depends_on "docbook"
