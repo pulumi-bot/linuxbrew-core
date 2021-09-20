@@ -16,6 +16,7 @@ class LinkGrammar < Formula
     sha256 big_sur:       "8241b4a41adb497f60591729036512f86eb11976bf3b2277d90b0c30e144d62e"
     sha256 catalina:      "024139fa467dc7c8826e092a9eb22c5f30bba6ada219cf552d60b709b77a04da"
     sha256 mojave:        "0697d8408060f2367970378d5166b311a57d8a0b6fa03eea4e9668b99dc10df4"
+    sha256 x86_64_linux:  "a648e9b28a4c681879bd2096946863bc0f5d2a167dbd2f052b3f38eaed484573"
   end
 
   depends_on "ant" => :build
