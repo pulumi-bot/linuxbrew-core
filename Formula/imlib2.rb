@@ -10,7 +10,7 @@ class Imlib2 < Formula
     sha256 big_sur:       "5705ac8d8c2aa6bcf8931b310742b3fd99cf0c7a2a7914a1dea50296d921fcae"
     sha256 catalina:      "0948b05c33a2037b0bd2044acf87eded935de17946139996692e1bba704ad01f"
     sha256 mojave:        "b0507e4e44035eeaa252add2deb30dc9af1ea1a5d80726a05c4e8698431f9053"
-    sha256 x86_64_linux:  "39c8014ff603d9655a64f8b7ff506b35b41c520340b9735318ba45bee42e816c"
+    sha256 x86_64_linux:  "39c8014ff603d9655a64f8b7ff506b35b41c520340b9735318ba45bee42e816c" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

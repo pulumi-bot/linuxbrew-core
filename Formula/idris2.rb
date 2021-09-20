@@ -10,7 +10,7 @@ class Idris2 < Formula
     sha256 cellar: :any,                 big_sur:      "d0af462a62b3d927f3b6a607620cf4d72296e5b12a30648902050868d94f5c46"
     sha256 cellar: :any,                 catalina:     "b0c3d608d96ad251fa22c99ba66f1f6d71693bfec1714ae815b70b1f85738722"
     sha256 cellar: :any,                 mojave:       "e4528db611ce511cb6e356fd50304692f6aa963f2edbdfd4e5f2ce5e09193540"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c562a4b80d2347b0895fec618c85ec264056f2c31a68b0815bcebfdbe299dd95"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c562a4b80d2347b0895fec618c85ec264056f2c31a68b0815bcebfdbe299dd95" # linuxbrew-core
   end
 
   depends_on "coreutils" => :build

@@ -16,7 +16,7 @@ class Gdal < Formula
     sha256 big_sur:       "cd8c20865000001d808f127737430e5be46124ff74e6b3577184a8f88d52e66f"
     sha256 catalina:      "e5f3ea662fa3683a641994c47d380103e37ce1a7f985bf417a891bf2d92e1c26"
     sha256 mojave:        "41ff6ce70db407eeb712b9700aa12d99a2d11c67d4d13c13e5554ac3fed80c0a"
-    sha256 x86_64_linux:  "045bb638ddf8d61b748c320cfb8ce30aa8dedba555f04d76a0d4e903415d6688"
+    sha256 x86_64_linux:  "045bb638ddf8d61b748c320cfb8ce30aa8dedba555f04d76a0d4e903415d6688" # linuxbrew-core
   end
 
   head do

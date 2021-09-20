@@ -15,7 +15,7 @@ class Po4a < Formula
     sha256 cellar: :any,                 big_sur:       "80abc550f5bbd50a8aaa768842a4edafafeaca49cf1ff89082c8fab02b0abf63"
     sha256 cellar: :any,                 catalina:      "3b54ccc0bad5fd40b0ce169475ae7f19043a107ba3434494ecee1e1cebb397c6"
     sha256 cellar: :any,                 mojave:        "3c076870955edacccc0c14499074db4345426dd64e39723b517f854938d3510c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e45175ca8c12e7a0edc1baf605c869ea883afef8ac6613997b07f142b3fe7b3d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e45175ca8c12e7a0edc1baf605c869ea883afef8ac6613997b07f142b3fe7b3d" # linuxbrew-core
   end
 
   depends_on "docbook-xsl" => :build
