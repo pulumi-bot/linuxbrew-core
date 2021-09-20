@@ -9,7 +9,7 @@ class GupnpAv < Formula
     sha256 big_sur:       "366463a087df79c6303e3e006b1de8c61df120ebdc87807a9e37693f8434fa5c"
     sha256 catalina:      "63a5e6ccc3cc87969fbbfc07714930fb23db1d31ad77f68b6c85d6fa618c2738"
     sha256 mojave:        "77ea79988421bf83540eada6ce6fef863f06b402b074edf5f5b20abbd47361ca"
-    sha256 x86_64_linux:  "cfca8636a650f592bf9e28f67ef37a80aa87d2537b099bba9a98671ae09066a1"
+    sha256 x86_64_linux:  "cfca8636a650f592bf9e28f67ef37a80aa87d2537b099bba9a98671ae09066a1" # linuxbrew-core
   end
 
   depends_on "gobject-introspection" => :build

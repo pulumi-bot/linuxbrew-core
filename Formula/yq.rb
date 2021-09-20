@@ -10,7 +10,7 @@ class Yq < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d9ab80522f15dbfe43b197ea70592c7cf9b6eed12d183ef40277173aa9f5e19d"
     sha256 cellar: :any_skip_relocation, catalina:      "0adf6f47b4e03c7470f6c1abe91f1aa7e558f8f4e1a72f731ec6ffc14c1db61b"
     sha256 cellar: :any_skip_relocation, mojave:        "3a5cdbca03d5a869377b57d3127673977e769c3f6ecdfdedbade3f7a61942d98"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1150b9be9f83877da63ce384289ab4aba5cbb6614bf889510447d16df2428bf5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1150b9be9f83877da63ce384289ab4aba5cbb6614bf889510447d16df2428bf5" # linuxbrew-core
   end
 
   depends_on "go" => :build

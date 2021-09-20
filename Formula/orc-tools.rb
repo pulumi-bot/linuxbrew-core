@@ -15,7 +15,7 @@ class OrcTools < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4a2afb894549011d634dc18b93f8e18c64dbf4a02177fa1347d29a8c9dc321e8"
     sha256 cellar: :any_skip_relocation, catalina:      "4a2afb894549011d634dc18b93f8e18c64dbf4a02177fa1347d29a8c9dc321e8"
     sha256 cellar: :any_skip_relocation, mojave:        "4a2afb894549011d634dc18b93f8e18c64dbf4a02177fa1347d29a8c9dc321e8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "650434bdaf880afab5b34cee38e36def2a8a29a01cb791428b35bcf20b7539ff"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "650434bdaf880afab5b34cee38e36def2a8a29a01cb791428b35bcf20b7539ff" # linuxbrew-core
   end
 
   depends_on "openjdk"

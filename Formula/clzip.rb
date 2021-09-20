@@ -16,7 +16,7 @@ class Clzip < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e82b38513ecfa60b53ea584aa573682fd4b7df5db3e45ccbe633840258f547ee"
     sha256 cellar: :any_skip_relocation, catalina:      "dc96f1ee14b4b904dd1ecfef38cb3fae30cefd7b490eb31b78e57942df72c2b9"
     sha256 cellar: :any_skip_relocation, mojave:        "d4cbf4b08330488cf80bbdf6c16d740038c72028760e1bba043122f217e00721"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0a1ea519aedf9b7ad116ad71caf65ca8fa08f2b0f444945f8127c6faf05fa6c6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0a1ea519aedf9b7ad116ad71caf65ca8fa08f2b0f444945f8127c6faf05fa6c6" # linuxbrew-core
   end
 
   def install

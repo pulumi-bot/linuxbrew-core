@@ -9,7 +9,7 @@ class Coffeescript < Formula
   head "https://github.com/jashkenas/coffeescript.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e58a5435e6c6321655e5b6991d363718b74913537bb92f25a78d7832ad0b27b9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e58a5435e6c6321655e5b6991d363718b74913537bb92f25a78d7832ad0b27b9" # linuxbrew-core
   end
 
   depends_on "node"
