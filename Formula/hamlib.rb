@@ -11,7 +11,7 @@ class Hamlib < Formula
     sha256 cellar: :any,                 big_sur:       "ef3297063fedaf4707a39d20413bf686e0c6385514f922e257f91b2799b2edc0"
     sha256 cellar: :any,                 catalina:      "766097ea2db2ce5a04c1cdd00bdb25498c90bc7c7d11231510719df3970ec72c"
     sha256 cellar: :any,                 mojave:        "60053d4a8c3c84f6c25e67b0adc734ff1e6e04ed6b82303070c4960f3f31c45d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "26df356384a03eb37c3218637e4f7ade77b102ad6f4c5bce880cf67f665f65a4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "26df356384a03eb37c3218637e4f7ade77b102ad6f4c5bce880cf67f665f65a4" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build

@@ -18,7 +18,7 @@ class Openssh < Formula
     sha256 big_sur:       "c7dbb3871f2616f15c9196074d9a306ac5d2ed4c0c27d2dcecbd9408dba36542"
     sha256 catalina:      "a144dd2c036e385140550e4feab9e80b66baeafaf818a508c9a103f5d10de901"
     sha256 mojave:        "73a2155dd5c50d02a43410f29596dc43b0c68a3b13df3bdc4e55701f51477b33"
-    sha256 x86_64_linux:  "13fa748246a2df537899f517c85e45893a12a879bbc8266550a87bde4fcd4bc2"
+    sha256 x86_64_linux:  "13fa748246a2df537899f517c85e45893a12a879bbc8266550a87bde4fcd4bc2" # linuxbrew-core
   end
 
   # Please don't resubmit the keychain patch option. It will never be accepted.

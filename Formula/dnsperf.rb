@@ -16,7 +16,7 @@ class Dnsperf < Formula
     sha256 cellar: :any,                 big_sur:       "66074ebb530ecf810991edfa0134a265770becd71b0aec017fa25048f0642700"
     sha256 cellar: :any,                 catalina:      "40706d91e1cbcbd4e9ac6cfcf7e4d07f037354077a46efb3c88e35accc433825"
     sha256 cellar: :any,                 mojave:        "585622c32de742da18110e29a74b6a13ad5a74106ba49d4c4a5fcedfa0708fb5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ff54261899584d2f5d6ce8c6d69b11f06768ad6e45026c0d2a8a9c88c0e6b80c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ff54261899584d2f5d6ce8c6d69b11f06768ad6e45026c0d2a8a9c88c0e6b80c" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
