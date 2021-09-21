@@ -17,6 +17,7 @@ class Pyenv < Formula
     sha256 cellar: :any,                 big_sur:       "e8f8882207ec4d9d3a6d904ea81afef33e59c9c49dfeed34692e208b857564af"
     sha256 cellar: :any,                 catalina:      "b6a91e6b68d1951141bafd70d1612cdb369b18874a17cc058671cddb763706f2"
     sha256 cellar: :any,                 mojave:        "cde37127f8c2179ff34ff2a888e7b95ad299e1139297c958cbc4bfb2b4d9827f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ffe64a4566542b8bdab0c8ad232004409db1fe58b2930dbc26d3de66923a3fbd"
   end
 
   depends_on "autoconf"
