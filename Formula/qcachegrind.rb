@@ -13,29 +13,36 @@ class Qcachegrind < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "e463fbfe5a4ef00611f34c0a0e049f96df312a1eddc779a0834741f23da1efdb"
-    sha256 cellar: :any, big_sur:       "c97be1624d3b85d6d2b7b947d28571459026d0aa222224e438d4b6a730d2016b"
-    sha256 cellar: :any, catalina:      "8988bd786e8d2d4c0ac589fd747ccb388ae343ddb262742c2231f94c88c39943"
-    sha256 cellar: :any, mojave:        "996472038ca71170dd567f04a37fc44d1c08dfda365f3ea986e057dda1d4c00c"
+    sha256 cellar: :any,                 arm64_big_sur: "e463fbfe5a4ef00611f34c0a0e049f96df312a1eddc779a0834741f23da1efdb"
+    sha256 cellar: :any,                 big_sur:       "c97be1624d3b85d6d2b7b947d28571459026d0aa222224e438d4b6a730d2016b"
+    sha256 cellar: :any,                 catalina:      "8988bd786e8d2d4c0ac589fd747ccb388ae343ddb262742c2231f94c88c39943"
+    sha256 cellar: :any,                 mojave:        "996472038ca71170dd567f04a37fc44d1c08dfda365f3ea986e057dda1d4c00c"
   end
 
   depends_on "graphviz"
   depends_on "qt@5"
 
-  def install
-    spec = (ENV.compiler == :clang) ? "macx-clang" : "macx-g++"
-    spec << "-arm64" if Hardware::CPU.arm?
-    cd "qcachegrind" do
-      system "#{Formula["qt@5"].opt_bin}/qmake", "-spec", spec,
-                                               "-config", "release"
-      system "make"
+  on_linux do
+    depends_on "gcc"
+  end
 
-      if OS.mac?
-        prefix.install "qcachegrind.app"
-        bin.install_symlink prefix/"qcachegrind.app/Contents/MacOS/qcachegrind"
-      else
-        bin.install "qcachegrind/qcachegrind"
-      end
+  fails_with gcc: "5"
+
+  def install
+    args = ["-config", "release", "-spec"]
+    os = OS.mac? ? "macx" : OS.kernel_name.downcase
+    compiler = ENV.compiler.to_s.start_with?("gcc") ? "g++" : ENV.compiler
+    arch = Hardware::CPU.intel? ? "" : "-#{Hardware::CPU.arch}"
+    args << "#{os}-#{compiler}#{arch}"
+
+    system Formula["qt@5"].opt_bin/"qmake", *args
+    system "make"
+
+    if OS.mac?
+      prefix.install "qcachegrind/qcachegrind.app"
+      bin.install_symlink prefix/"qcachegrind.app/Contents/MacOS/qcachegrind"
+    else
+      bin.install "qcachegrind/qcachegrind"
     end
   end
 end
