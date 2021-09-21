@@ -11,6 +11,7 @@ class Luv < Formula
     sha256 cellar: :any,                 big_sur:       "b54904cab847bb6fe8ddf6b9d8cc8aff79339c89f4cd5986d0ccf9dc52a1754c"
     sha256 cellar: :any,                 catalina:      "2741dd32a1eb404de14e58395e2eed255307f456498cfd5391635de964268cd4"
     sha256 cellar: :any,                 mojave:        "bd07948d9f6c3af48b153c591c206553a36242a428ba675ce7fe3e2d635d1f81"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "368050bf1c69408ab73970e90d7024d427c0192ba0978b48c6f97b4bf4a5e1da"
   end
 
   depends_on "cmake" => :build
