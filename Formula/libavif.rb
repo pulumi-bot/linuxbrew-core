@@ -10,7 +10,7 @@ class Libavif < Formula
     sha256 cellar: :any,                 big_sur:       "1362b18e8d3ebb22b44ed1527e848376cfa57c27a19707bd69871e92a4bdccf0"
     sha256 cellar: :any,                 catalina:      "81100a4fd5be5d5ac08d63bf787337e967f1d419fface9563edebec6c5ab3229"
     sha256 cellar: :any,                 mojave:        "0b1f0404f1c3c787b4db1243884991fb4c42d8f9a040cf0ee1348c3f7af9e119"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d9e6e9acc4883857ea3ad44f17b2e98339b281d7cf821249885de9e6a3906d30"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d9e6e9acc4883857ea3ad44f17b2e98339b281d7cf821249885de9e6a3906d30" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
