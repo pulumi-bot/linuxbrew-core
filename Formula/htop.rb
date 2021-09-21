@@ -16,6 +16,7 @@ class Htop < Formula
     sha256 cellar: :any,                 big_sur:       "f651173535b859cecca10d2dfab28ff78c184cf1e16455ec296fae2d509d2aad"
     sha256 cellar: :any,                 catalina:      "2601b6b120df50c7790d5b2f8dcf06848ddae0b35315affec641dec17271fa46"
     sha256 cellar: :any,                 mojave:        "7c9b9ac633b0339fead96c6e611b87bcc6df9f7fe0947dac76908340290707c2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bb5ac6bbfb4109cc5824ae40753bcab7fb08c9dd5b87ff0f41ea76e369d92545"
   end
 
   depends_on "autoconf" => :build
