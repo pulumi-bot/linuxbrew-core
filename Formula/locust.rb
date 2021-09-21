@@ -3,15 +3,15 @@ class Locust < Formula
 
   desc "Scalable user load testing tool written in Python"
   homepage "https://locust.io/"
-  url "https://files.pythonhosted.org/packages/bc/37/7471de26c80a2fa118565605281cdb773ddbd24f928ec414271bed34c8df/locust-2.2.2.tar.gz"
-  sha256 "49f0bf2be646f12b905a50fab8501a70434194510891e236180c59197ba77a4c"
+  url "https://files.pythonhosted.org/packages/48/19/4a288ebebe5e790c2ebfcb109e08e8acfd2496b30f7bd3b9f4e237c7fc4f/locust-2.2.3.tar.gz"
+  sha256 "138df1493c76d4279c9d13bc08e97b7444bf1be4329a7594dd24691179d12bda"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "2f26c758b3128cf3bf7755a24ff19850b9686a60c0cb4186e418776942b891bd"
-    sha256 cellar: :any_skip_relocation, big_sur:       "f4b055e06e3db830f82cbf94497a1adec51c08f2e2f122cea30ea00e2f391163"
-    sha256 cellar: :any_skip_relocation, catalina:      "da4dbff8b45e91d0cffd7507e083173c7ad687c299644586821ce008ca9e4ec7"
-    sha256 cellar: :any_skip_relocation, mojave:        "4f87aecf8a92b8f4ebcc5291a5a7f649f8e92ede432033a9ded551d2c536c446"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "b46daa38853ac6ce3d6c1fddeba91609bbb867cc48e8f07744e6a6256f55c517"
+    sha256 cellar: :any_skip_relocation, big_sur:       "158a1b02956194644dc57846d5fdb15756120fce16d29e64c1975be65f1dcbb3"
+    sha256 cellar: :any_skip_relocation, catalina:      "ea8f5776559e154e21d27029de37b7b17a040c88666539321f547cf1ec23e87d"
+    sha256 cellar: :any_skip_relocation, mojave:        "d3a230cf7ba9dc44fb729e4569eaf7952d9dd0bd83b6a1475a84a8dcf482ea2b"
   end
 
   depends_on "python@3.9"
@@ -28,8 +28,8 @@ class Locust < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/68/32/95ddb68b9abeb89efd461852cdff5791d42fc5e4c528536f541091ffded3/charset-normalizer-2.0.5.tar.gz"
-    sha256 "7098e7e862f6370a2a8d1a6398cd359815c45d12626267652c3f13dec58e2367"
+    url "https://files.pythonhosted.org/packages/eb/7f/a6c278746ddbd7094b019b08d1b2187101b1f596f35f81dc27f57d8fcf7c/charset-normalizer-2.0.6.tar.gz"
+    sha256 "5ec46d183433dcbd0ab716f2d7f29d8dee50505b3fdb40c6b985c7c4f5a3591f"
   end
 
   resource "click" do
@@ -103,8 +103,8 @@ class Locust < Formula
   end
 
   resource "pyzmq" do
-    url "https://files.pythonhosted.org/packages/d6/67/98d0d6ac5c784190a0f9728410902471552cffc78cef37830cd86b9cd70d/pyzmq-22.2.1.tar.gz"
-    sha256 "6d18c76676771fd891ca8e0e68da0bbfb88e30129835c0ade748016adb3b6242"
+    url "https://files.pythonhosted.org/packages/6c/95/d37e7db364d7f569e71068882b1848800f221c58026670e93a4c6d50efe7/pyzmq-22.3.0.tar.gz"
+    sha256 "8eddc033e716f8c91c6a2112f0a8ebc5e00532b4a6ae1eb0ccc48e027f9c671c"
   end
 
   resource "requests" do
