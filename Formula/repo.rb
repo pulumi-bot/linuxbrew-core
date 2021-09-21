@@ -9,6 +9,10 @@ class Repo < Formula
   license "Apache-2.0"
   version_scheme 1
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "83e0d9547697d414580aec9fc2df6cac89d8699d36c73d86cdf9490bb7675e70"
+  end
+
   depends_on "python@3.9"
 
   def install
