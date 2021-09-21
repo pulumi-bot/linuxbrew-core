@@ -10,6 +10,10 @@ class PaxRunner < Formula
     regex(%r{<version>v?(\d+(?:\.\d+)+)</version>}i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "43997ebe4fabf5728e834d1476e4ce6b47a107548ae532f327d374d266cb39c4"
+  end
+
   def install
     (bin+"pax-runner").write <<~EOS
       #!/bin/sh
