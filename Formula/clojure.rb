@@ -11,6 +11,10 @@ class Clojure < Formula
     regex(/url ".*?clojure-tools-v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c88ee7e654e6e6d78378d6b860183923df1da9fb80169c53694792f0d5ce50fd"
+  end
+
   depends_on "openjdk"
   depends_on "rlwrap"
 
