@@ -5,6 +5,10 @@ class Hblock < Formula
   sha256 "1b8eb3c5cb074cbe7b0a8b5e040641c12b519bee21a4a879e1bdd328cd17aa60"
   license "MIT"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "037c4b5c2edbe84e50273a03f752ca6a71ee0a5612307177c5695cfa68eef8b7"
+  end
+
   uses_from_macos "curl"
 
   def install
