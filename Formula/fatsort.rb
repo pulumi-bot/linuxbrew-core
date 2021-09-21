@@ -16,6 +16,7 @@ class Fatsort < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "01b749fcfecc1b3a506b7f4e61562625861d693086803b1251491027be95e682"
     sha256 cellar: :any_skip_relocation, catalina:      "956dec116bc78d27db0553cf8f1bb9dcb499e22d7d162dfc1cd9ec13acc66412"
     sha256 cellar: :any_skip_relocation, mojave:        "8e3d9f4a4a63557db3aa3016a611bf96f4a1c46e15b305cbc803bce2036b28f2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "56f58efa4edaa7205e96e9267d2066dcb56e271c3e9140dd2edbaa63dc9ae617"
   end
 
   depends_on "help2man"
