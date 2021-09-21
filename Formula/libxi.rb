@@ -10,6 +10,7 @@ class Libxi < Formula
     sha256 cellar: :any,                 big_sur:       "29a8ae9f7812ea8ec985367dd8c3bf061bd18a689e3b3c4ff0503773263ac923"
     sha256 cellar: :any,                 catalina:      "63cc1eba03c04eda56ed89aea690805f6dbcaaa7ea82166b64d7ec5d7d7f2bc1"
     sha256 cellar: :any,                 mojave:        "11c296a17b8842fd23ca1ac58c17b3eaca8e91ecea322fc5b19eab91233ca891"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1026c8936f13ff85a1c93091cf37e488510361bdfb69d0c0ec15234a7d281ed5"
   end
 
   depends_on "pkg-config" => :build
