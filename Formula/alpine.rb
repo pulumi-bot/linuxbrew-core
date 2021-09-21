@@ -16,6 +16,7 @@ class Alpine < Formula
     sha256 big_sur:       "665cbc225d2214eec23be609aa4e2bec422b828777bd11b9c64f50b202fc3f6b"
     sha256 catalina:      "bc7aa25d88c44fc92fe74fbef139588917066a5c0648e4cc03565fe4cd095ff7"
     sha256 mojave:        "8d2da04c056a637f0e437550e49c3fb4e7d0145a1efc28c59bcfe0e0eee8f519"
+    sha256 x86_64_linux:  "5e7129395e301cfc72f8b78df95d3cb940696677a2f5c29ddeb48736b4ea424c"
   end
 
   depends_on "openssl@1.1"
