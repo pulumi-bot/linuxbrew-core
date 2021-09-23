@@ -3,16 +3,15 @@ require "language/node"
 class AwsCdk < Formula
   desc "AWS Cloud Development Kit - framework for defining AWS infra as code"
   homepage "https://github.com/aws/aws-cdk"
-  url "https://registry.npmjs.org/aws-cdk/-/aws-cdk-1.123.0.tgz"
-  sha256 "212f717ca577fc623335938f6e9c937a9c3a6cc953d8032b15c7df019b97ba8c"
+  url "https://registry.npmjs.org/aws-cdk/-/aws-cdk-1.124.0.tgz"
+  sha256 "caa4e93bed61217bdb72b835cf9fe5b69f9375c4d091b356bcf4b0a9c0ef2999"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "dc690a861b47c991e91cad5d3424758ef512f1f49a9c11f99abbc9f1715c096b"
-    sha256 cellar: :any_skip_relocation, big_sur:       "d325ce1595d489353cd712dbd52649a8aacc83492f2661f2244b34d8bf82b8cd"
-    sha256 cellar: :any_skip_relocation, catalina:      "d325ce1595d489353cd712dbd52649a8aacc83492f2661f2244b34d8bf82b8cd"
-    sha256 cellar: :any_skip_relocation, mojave:        "d325ce1595d489353cd712dbd52649a8aacc83492f2661f2244b34d8bf82b8cd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "047928eb4fca6fa12db5ad6f27dc147c8438745901e59914289a767d494c6122" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "27a5986216b6d0efe998cd7c69c5bed99b7570fc7a92f8f427ff9466c3e6c01e"
+    sha256 cellar: :any_skip_relocation, big_sur:       "a8033b12852f5dffe8029a6f630f58d5d62ce82accc86cc0d2555e653948c4c0"
+    sha256 cellar: :any_skip_relocation, catalina:      "a8033b12852f5dffe8029a6f630f58d5d62ce82accc86cc0d2555e653948c4c0"
+    sha256 cellar: :any_skip_relocation, mojave:        "a8033b12852f5dffe8029a6f630f58d5d62ce82accc86cc0d2555e653948c4c0"
   end
 
   depends_on "node"

@@ -3,16 +3,15 @@ class Poetry < Formula
 
   desc "Python package management tool"
   homepage "https://python-poetry.org/"
-  url "https://files.pythonhosted.org/packages/f5/b0/0f95f7dae0093ca13a23f1285b0a74f4b25827dcf026c37f762a061fc581/poetry-1.1.9.tar.gz"
-  sha256 "481c6264cecf907c47e82216205e7f8486d70e4d54c721b8c3fc651364b0d0ca"
+  url "https://files.pythonhosted.org/packages/10/04/e89c2691d998955b0c1568be1a034d9568eef700067aa19a28b433ea20f1/poetry-1.1.10.tar.gz"
+  sha256 "284ab7685a2b0549bd34161db0ee3c51d67991f53054564293391a0c8a346b7c"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "e02d2533948a6bd4aa12f2b2ad6d4364d1ae0d7787902e00af60ace8b40236a4"
-    sha256 cellar: :any_skip_relocation, big_sur:       "83f53e5f9e741cddaeb77ca55e6728bb16f62d066111d47865103218f7d8d074"
-    sha256 cellar: :any_skip_relocation, catalina:      "a11eb12cc4cfbf5a0548d15d83dcbdc6268834b75bb46f4b6f527f75b2b13f25"
-    sha256 cellar: :any_skip_relocation, mojave:        "3bbf269f53a109d2adda56d80a2807e33d44a067868e292516996fb7d893da5e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "93ad93e255781ef9c1b53b552545fa2e5f8b978f996300f0b3c56f9d09b85e7f" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "3b42588d2c0b6748487e903770d4ac68779e083499bff2c9631e04d4c8c962ab"
+    sha256 cellar: :any_skip_relocation, big_sur:       "8ccf3845b25897d197081582df800bf5f1bc8b04a93c20ca69124ade4a8efc7c"
+    sha256 cellar: :any_skip_relocation, catalina:      "882b6859f5184cf898025d07b85aa73f683f1330cb57d088d2c17acef9141fbe"
+    sha256 cellar: :any_skip_relocation, mojave:        "bd97a668ac5c00d58e6af04582005a2c147dd9165864ab3b6eb98cb5d917211d"
   end
 
   depends_on "python@3.9"
@@ -124,8 +123,8 @@ class Poetry < Formula
   end
 
   resource "poetry-core" do
-    url "https://files.pythonhosted.org/packages/2b/2a/432ab88b00510e8bac644a57c1446519ab0b517688d033629a7e352d4fcd/poetry-core-1.0.5.tar.gz"
-    sha256 "8cad9893ea70e344b2ce1a75d3834ba3fb1bac8123f89aad758e59e2a5d67805"
+    url "https://files.pythonhosted.org/packages/c8/8a/33c9d7cde6fab76b6978d01be4f8e1cfe2c9ad28fa07d1557e32bf6b0755/poetry-core-1.0.6.tar.gz"
+    sha256 "dd3c97003579242236890306836f2acc86d9741e6bea320dda6f844f16b0d845"
   end
 
   resource "ptyprocess" do

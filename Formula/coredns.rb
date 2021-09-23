@@ -1,8 +1,8 @@
 class Coredns < Formula
   desc "DNS server that chains plugins"
   homepage "https://coredns.io/"
-  url "https://github.com/coredns/coredns/archive/v1.8.4.tar.gz"
-  sha256 "d85c8c52f4d38ab1915eb60523b4e5241ffa19d20e4f7bbce8b0f4fb59171f2a"
+  url "https://github.com/coredns/coredns/archive/v1.8.5.tar.gz"
+  sha256 "3ae75c434557e0accad142d31ffcfeaddc42ded4c21949d0d4efe7a7d9e376eb"
   license "Apache-2.0"
   head "https://github.com/coredns/coredns.git", branch: "master"
 
@@ -12,10 +12,10 @@ class Coredns < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "a29dc1888819650025fd19c1faf2c99b15eb4838e7bc50690f684a686121b3f2"
-    sha256 cellar: :any_skip_relocation, big_sur:       "dd22bbdc9ca2dca3885d64db3ec204f1d2a5e3f72a5ebb17da28935d0574aca2"
-    sha256 cellar: :any_skip_relocation, catalina:      "55ae437286e90671271c534c04511dc70f345038084639074504d94782308015"
-    sha256 cellar: :any_skip_relocation, mojave:        "3f8cb527b416b4221ab2a332d0515566c15179c10ef8dbcc4eb7a0f47aea7025"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "7cd646294eca408805c11310f3791b4ef63b67cd669b5d349dbc3d8b58cc4304"
+    sha256 cellar: :any_skip_relocation, big_sur:       "57785bdeb8d23c2d57d0a00b67256d71b809f521cbf7be1afe60718456aa98b9"
+    sha256 cellar: :any_skip_relocation, catalina:      "683484a7f4185a6bb6b3033ab64d219c709b96f2278fba22c277ce2ac9ef2c11"
+    sha256 cellar: :any_skip_relocation, mojave:        "310dde73b21bfd8e85f1aac99e450c42cb23e7a0c89f7b5d6c0aadd2d7156cb0"
   end
 
   depends_on "go" => :build
