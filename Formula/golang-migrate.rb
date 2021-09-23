@@ -10,6 +10,7 @@ class GolangMigrate < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "89331be62af8d09c5488f04bbb9e8bbaaf2f8308fc80b33d0460a59aef8fb933"
     sha256 cellar: :any_skip_relocation, catalina:      "9e5042348f5365709904256c67be90eb6c58933ba6718f75f0c6fd43fbc284b0"
     sha256 cellar: :any_skip_relocation, mojave:        "a6d8c96b681088ee7ff2d4e5cf4b486b8731771712bf4ce03234df1a18d5b718"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9ab14cdf44a036238183b18580b03166e7886b245b5cc74bb59a33192aacfd38"
   end
 
   depends_on "go" => :build
