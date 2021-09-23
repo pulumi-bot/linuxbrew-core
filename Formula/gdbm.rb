@@ -18,6 +18,7 @@ class Gdbm < Formula
   #
   # Patch taken from:
   # https://puszcza.gnu.org.ua/bugs/?521
+  patch :p0, :DATA
 
   # --enable-libgdbm-compat for dbm.h / gdbm-ndbm.h compatibility:
   #   https://www.gnu.org.ua/software/gdbm/manual/html_chapter/gdbm_19.html
@@ -46,3 +47,22 @@ class Gdbm < Formula
     assert_match "2", pipe_output("#{bin}/gdbmtool --norc test", "fetch 1\nquit\n")
   end
 end
+
+__END__
+--- src/gdbmshell.c.orig
++++ src/gdbmshell.c
+@@ -1010,7 +1010,13 @@ print_snapshot (char const *snapname, FILE *fp)
+       fprintf (fp, "%s: ", snapname);
+       fprintf (fp, "%03o %s ", st.st_mode & 0777,
+         decode_mode (st.st_mode, buf));
+-      fprintf (fp, "%ld.%09ld", st.st_mtim.tv_sec, st.st_mtim.tv_nsec);
++      struct timespec mtimespec;
++#ifdef __APPLE__
++      mtimespec = st.st_mtimespec;
++#else
++      mtimespec = st.st_mtim;
++#endif
++      fprintf (fp, "%ld.%09ld", mtimespec.tv_sec, mtimespec.tv_nsec);
+       if (S_ISREG (st.st_mode))
+  {
+    GDBM_FILE dbf;
