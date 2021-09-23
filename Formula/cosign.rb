@@ -12,6 +12,7 @@ class Cosign < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "eb9c7fd4d3695713dd346e1611fea136d7e92094aeef24d176547087c8591189"
     sha256 cellar: :any_skip_relocation, catalina:      "703a5959c7211e7f4141ad0a9a494cddd75bde937688a70cec816636f71d7b65"
     sha256 cellar: :any_skip_relocation, mojave:        "562aaca8a4a8fa80505fddfd48f2ba607bc289ecdb1a09ffbbf60eafaa67a0d1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ff97e561d860a24885cafc074416e569da802d82d8503ef6f44e8f59cd634302"
   end
 
   depends_on "go" => :build
