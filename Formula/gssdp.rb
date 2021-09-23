@@ -10,7 +10,7 @@ class Gssdp < Formula
     sha256 cellar: :any, big_sur:       "f1b7f55cf138a7b567c9b19f6a053a96e91c9cf1fe74d15d6d45918e80d0ae7b"
     sha256 cellar: :any, catalina:      "0247e477790f650d86a7e093747b7a3d48fd59420e85cdac0700c24eea101fe0"
     sha256 cellar: :any, mojave:        "037dfafa30476082ad6d7c31cdedcda2a45f899a1b2ddba1ab7291f17c59f405"
-    sha256               x86_64_linux:  "cfa9e2da4148c143dbd3359ef7ef8cd7b5c86ba0bb9fa932fa015d4296b40452"
+    sha256               x86_64_linux:  "cfa9e2da4148c143dbd3359ef7ef8cd7b5c86ba0bb9fa932fa015d4296b40452" # linuxbrew-core
   end
 
   depends_on "gobject-introspection" => :build

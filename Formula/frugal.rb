@@ -10,7 +10,7 @@ class Frugal < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "2010feb5c9e7ee315cdb22c94e1ac95336a56a868f553c346f400d297b580db5"
     sha256 cellar: :any_skip_relocation, catalina:      "2010feb5c9e7ee315cdb22c94e1ac95336a56a868f553c346f400d297b580db5"
     sha256 cellar: :any_skip_relocation, mojave:        "2010feb5c9e7ee315cdb22c94e1ac95336a56a868f553c346f400d297b580db5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "19674e735af1211a6f7096df85eb6394c950888496df9d3d035304e87fcf52eb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "19674e735af1211a6f7096df85eb6394c950888496df9d3d035304e87fcf52eb" # linuxbrew-core
   end
 
   depends_on "go" => :build

@@ -10,7 +10,7 @@ class Kubecfg < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4f4984ac3a047e7d0d7dc0a45ddd78096320d66d6642aa8e8685bcdad05fbf8b"
     sha256 cellar: :any_skip_relocation, catalina:      "d8d18d85c19f8537e6905c137f41dbc4afc713486b350a765cdda3bbb9c0c035"
     sha256 cellar: :any_skip_relocation, mojave:        "bb49c7511c9e2eb764834ace4dc32792cab62199ce80381a76673587093ba680"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1a0f5ab3ec4e7388e88c5f1e0e60b2881768de5359b70f8138366207dc8a0f3b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1a0f5ab3ec4e7388e88c5f1e0e60b2881768de5359b70f8138366207dc8a0f3b" # linuxbrew-core
   end
 
   depends_on "go" => :build
