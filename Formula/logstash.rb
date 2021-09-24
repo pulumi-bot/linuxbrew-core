@@ -1,8 +1,8 @@
 class Logstash < Formula
   desc "Tool for managing events and logs"
   homepage "https://www.elastic.co/products/logstash"
-  url "https://github.com/elastic/logstash/archive/v7.14.2.tar.gz"
-  sha256 "094b9e1a1c6031a092d3f9d0cc7bbf2b74302b3ba6912135381f0e4265606fe7"
+  url "https://github.com/elastic/logstash/archive/v7.15.0.tar.gz"
+  sha256 "df6f1c322cbf979e0444263196377325ef8454dbdcfa9cf1f25c3721763ae6b6"
   license "Apache-2.0"
   version_scheme 1
   head "https://github.com/elastic/logstash.git"
@@ -13,10 +13,9 @@ class Logstash < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 big_sur:      "cb6458fa574e9a6a25ce6573f5a44d1e0ef06600f89d5ceefff784eb148b805f"
-    sha256 cellar: :any,                 catalina:     "018bd8974ab5e3689d4923b7b322659a66a8859a9adfd6c07b58cd476f596c3a"
-    sha256 cellar: :any,                 mojave:       "8d1b5df245d99578a255b5cde07e9ac67c1c430d551b72bbe6c223c2ffca3b1a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "25d18c444b3978595a22e541678fe8fcbf1160b2c0f1b1ecf266b274cbc21233" # linuxbrew-core
+    sha256 cellar: :any,                 big_sur:      "52cb47a3641e80a4da46830d028b946810b6281efbd588b2ca9d850d70362fbc"
+    sha256 cellar: :any,                 catalina:     "d799d30943fd733b2bb339cacd54c10b3fef5661a716212cfd482e602a6f0e7d"
+    sha256 cellar: :any,                 mojave:       "50495a782317b0068ec2be3b99495e83733ce8806bc677f229de5c7f426d410a"
   end
 
   depends_on "openjdk@11"

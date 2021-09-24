@@ -3,16 +3,15 @@ class Sail < Formula
 
   desc "CLI toolkit to provision and deploy WordPress applications to DigitalOcean"
   homepage "https://sailed.io"
-  url "https://files.pythonhosted.org/packages/e5/18/ffe88ce1d22a58c5741e86984ff1beb9151870821d2eafb5b0d9077dab75/sailed.io-0.9.13.tar.gz"
-  sha256 "2c19bc467eeabedb675da4433df3f9ad41ec9803862665de22358a622dd36f32"
+  url "https://files.pythonhosted.org/packages/be/bb/ae362ed80eccff1dc7b36139ecabb6a8eabdbed29dce1f8d5ac32231ab1f/sailed.io-0.9.14.tar.gz"
+  sha256 "b4dae70770bab424c0deea2056ad8734098d22dce75971a61b6eb03c1147e487"
   license "GPL-3.0-only"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c4db496ec42c97d36add9078ec8bd908100f0f97f4547cef661095d14459eb09"
-    sha256 cellar: :any_skip_relocation, big_sur:       "7e5ad55f8954556bbcbc8ebf9aa9f4707eea24e775849df24daeac774f8bd666"
-    sha256 cellar: :any_skip_relocation, catalina:      "c5149f9b1287e2111ea2a9f84f353c70848acd9863ad3c4df7b3e299c7a46d96"
-    sha256 cellar: :any_skip_relocation, mojave:        "0a777ff3758f07f9bd7013fd75c26d0b2931a693e4e03f880a19d72c56b3d3c4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c63f0e00d602931613e92052ecb017f9504cfb668b113b53a87fc4d045eff1bb" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "4119b62e8ee568d46d88cf6e9239b9b92d91fcc20b7830d2bd9152a2ca1967e4"
+    sha256 cellar: :any_skip_relocation, big_sur:       "1326d6e9cc2c18462bdb005f4ed0336b82b9d7f36bf598c940a607bcef2c7b6b"
+    sha256 cellar: :any_skip_relocation, catalina:      "bf0e68d74fa4d1cc2589ef52c4ceb7785e8289582410ed8bb3868b8dde3f07f2"
+    sha256 cellar: :any_skip_relocation, mojave:        "95b6731a8c29094002dc5ce1cf99efd8286657b24c91fd108ab9e76a0f1163fb"
   end
 
   depends_on "python@3.9"
@@ -23,8 +22,8 @@ class Sail < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/68/32/95ddb68b9abeb89efd461852cdff5791d42fc5e4c528536f541091ffded3/charset-normalizer-2.0.5.tar.gz"
-    sha256 "7098e7e862f6370a2a8d1a6398cd359815c45d12626267652c3f13dec58e2367"
+    url "https://files.pythonhosted.org/packages/eb/7f/a6c278746ddbd7094b019b08d1b2187101b1f596f35f81dc27f57d8fcf7c/charset-normalizer-2.0.6.tar.gz"
+    sha256 "5ec46d183433dcbd0ab716f2d7f29d8dee50505b3fdb40c6b985c7c4f5a3591f"
   end
 
   resource "click" do
@@ -53,8 +52,8 @@ class Sail < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/4f/5a/597ef5911cb8919efe4d86206aa8b2658616d676a7088f0825ca08bd7cb8/urllib3-1.26.6.tar.gz"
-    sha256 "f57b4c16c62fa2760b7e3d97c35b255512fb6b59a259730f36ba32ce9f8e342f"
+    url "https://files.pythonhosted.org/packages/80/be/3ee43b6c5757cabea19e75b8f46eaf05a2f5144107d7db48c7cf3a864f73/urllib3-1.26.7.tar.gz"
+    sha256 "4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece"
   end
 
   resource "wcwidth" do

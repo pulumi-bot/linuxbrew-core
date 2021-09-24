@@ -3,10 +3,9 @@ class Mesa < Formula
 
   desc "Graphics Library"
   homepage "https://www.mesa3d.org/"
-  url "https://mesa.freedesktop.org/archive/mesa-21.2.1.tar.xz"
-  sha256 "2c65e6710b419b67456a48beefd0be827b32db416772e0e363d5f7d54dc01787"
+  url "https://mesa.freedesktop.org/archive/mesa-21.2.2.tar.xz"
+  sha256 "c4aaf1bf974217ed825e1c536de6ab72a4e266d44bcf69fc4ec499039f99e5c4"
   license "MIT"
-  revision 1
   head "https://gitlab.freedesktop.org/mesa/mesa.git", branch: "main"
 
   livecheck do
@@ -15,11 +14,10 @@ class Mesa < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "e04319312192941e0958a7622eb0ca68fb9cb51d5122affdba32359c7c3a8930"
-    sha256 big_sur:       "322ba38e53336aab63838e86882b478be2fde40204f542215ccaad2a4c654cff"
-    sha256 catalina:      "257bea3d2ee0d5db58f02a454b5fcc6d81ee843d92c3a7964a0aa33e3f8b5775"
-    sha256 mojave:        "3c1bc6f6612fbdcbc80b54ed067a0c40dd54cc51ba24d65325b6ef457dd26060"
-    sha256 x86_64_linux:  "f985dea20697b9a544d23e432e838464878bf0402acf75f9868f415a79b9b7fb" # linuxbrew-core
+    sha256 arm64_big_sur: "b9cd776e06228f8ab10a41fcb4508067d242e3b84764690298b0192c5b577173"
+    sha256 big_sur:       "8242a55cb95ecf089e8719d27bb404b8ccc8a54cd96e57654c799e9bb454bde1"
+    sha256 catalina:      "ebbb6af00f74c47b616ac566c4ce62230a0850a3102a67587d6b271f9115312b"
+    sha256 mojave:        "067ca2014dc31f632439d320502793810926bc4e6a01e1196cdd5c6f02bd5206"
   end
 
   depends_on "meson" => :build
@@ -59,8 +57,8 @@ class Mesa < Formula
   fails_with gcc: "5"
 
   resource "Mako" do
-    url "https://files.pythonhosted.org/packages/5c/db/2d2d88b924aa4674a080aae83b59ea19d593250bfe5ed789947c21736785/Mako-1.1.4.tar.gz"
-    sha256 "17831f0b7087c313c0ffae2bcbbd3c1d5ba9eeac9c38f2eb7b50e8c99fe9d5ab"
+    url "https://files.pythonhosted.org/packages/d1/42/ff293411e980debfc647be9306d89840c8b82ea24571b014f1a35b2ad80f/Mako-1.1.5.tar.gz"
+    sha256 "169fa52af22a91900d852e937400e79f535496191c63712e3b9fda5a9bed6fc3"
   end
 
   resource "glxgears.c" do
