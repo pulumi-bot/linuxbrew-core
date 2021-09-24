@@ -5,6 +5,10 @@ class Conmon < Formula
   sha256 "4b0a98fbe8a63c42f60edac25c19aa6606caa7b1e4fe7846fc7f7de0b566ba25"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f86e041731d0ea90f4bfa25afd79334e5faf06d324ecfc4113174ea53d2d6cf3"
+  end
+
   depends_on "go" => :build
   depends_on "pkg-config" => :build
 
