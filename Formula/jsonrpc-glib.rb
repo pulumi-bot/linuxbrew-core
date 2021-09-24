@@ -10,6 +10,7 @@ class JsonrpcGlib < Formula
     sha256 cellar: :any,                 big_sur:       "ec54de6bc6799ae0b497447de9d3dfe5b4f88ce71d3a826da43785affae68429"
     sha256 cellar: :any,                 catalina:      "ea6e41d579c3e4d3dc33355b3de46277d6605822a78f2f395e329329155a6bf7"
     sha256 cellar: :any,                 mojave:        "ae9d2d930e0b55dcd99e9ed1188d5a4a7adf4523851feb1fb1a01ff15d9de575"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "50fbcd7be2fa9c83aa93fd742e8c678998494c03c27223d47fafb50fbe0f1fe0"
   end
 
   depends_on "gobject-introspection" => :build
