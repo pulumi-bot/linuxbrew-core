@@ -10,6 +10,7 @@ class Gomodifytags < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c3c815e6288c0c3474800937bbb15fa2569e34a7715121b94c713b8575c51203"
     sha256 cellar: :any_skip_relocation, catalina:      "c3c815e6288c0c3474800937bbb15fa2569e34a7715121b94c713b8575c51203"
     sha256 cellar: :any_skip_relocation, mojave:        "c3c815e6288c0c3474800937bbb15fa2569e34a7715121b94c713b8575c51203"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a0cdedf095c819f8b5293dbda500958d18ea93339d2cf4340973e3b3141d9317"
   end
 
   depends_on "go" => :build
