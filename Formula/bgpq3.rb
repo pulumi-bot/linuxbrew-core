@@ -16,7 +16,7 @@ class Bgpq3 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "21400e8e71cc8647ec4acbf90d4dbe1ed01dc483bae6c5fd422ce7856c922bb0"
     sha256 cellar: :any_skip_relocation, catalina:      "20323444446909aa9892ea16f3a2cbdc8ce6665be3270713dc01c3cb0163d35a"
     sha256 cellar: :any_skip_relocation, mojave:        "19d8b27219ecd0988603200ad428df266bacfddea15a4570de15ddfd2a017190"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "55ff963a23fb548d055ae5bea489108a00caeca54c3308db10eb399c400a049d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "55ff963a23fb548d055ae5bea489108a00caeca54c3308db10eb399c400a049d" # linuxbrew-core
   end
 
   # Makefile: upstream has been informed of the patch through email (multiple
