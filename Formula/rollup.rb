@@ -12,7 +12,7 @@ class Rollup < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f4e32e70cdbda7e2ff7adf70ef59fe57e2b239caf9e324679b3e210c61d8044c"
     sha256 cellar: :any_skip_relocation, catalina:      "f4e32e70cdbda7e2ff7adf70ef59fe57e2b239caf9e324679b3e210c61d8044c"
     sha256 cellar: :any_skip_relocation, mojave:        "f4e32e70cdbda7e2ff7adf70ef59fe57e2b239caf9e324679b3e210c61d8044c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "98e42ae04d8aa15dcde7707070074341ae2cfcc847819126b2e64013cd081d8b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "98e42ae04d8aa15dcde7707070074341ae2cfcc847819126b2e64013cd081d8b" # linuxbrew-core
   end
 
   depends_on "node"

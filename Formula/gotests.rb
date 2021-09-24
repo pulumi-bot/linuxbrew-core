@@ -10,7 +10,7 @@ class Gotests < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "222e2a0280ae3d085bbf76080b9bd30e4fe1e9942a0427dc2840d74337621f76"
     sha256 cellar: :any_skip_relocation, catalina:      "717ea92ad6172ab6ca8987b618683c85f4a576161e78bc75c02000966ea3f9ac"
     sha256 cellar: :any_skip_relocation, mojave:        "41417917289de92b26a9182dec51f9d43dc7bcf9c93eb2751143f5f70ecb0c80"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d2f0b6e37e88deaf7713ebf6a2e34baf767e2a7b6168244f31e909ef4b8f8100"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d2f0b6e37e88deaf7713ebf6a2e34baf767e2a7b6168244f31e909ef4b8f8100" # linuxbrew-core
   end
 
   depends_on "go" => :build
