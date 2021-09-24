@@ -10,6 +10,10 @@ class Digdag < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8a561558e9cb93fe1f12d10f9672b9a404e4961f4a5bc5aecadb8080db1868b9"
+  end
+
   depends_on arch: :x86_64 # openjdk@8 is not supported on ARM
   depends_on "openjdk@8"
 
