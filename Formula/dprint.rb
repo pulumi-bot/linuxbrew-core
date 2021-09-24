@@ -1,17 +1,16 @@
 class Dprint < Formula
   desc "Pluggable and configurable code formatting platform written in Rust"
   homepage "https://dprint.dev/"
-  url "https://github.com/dprint/dprint/archive/0.17.1.tar.gz"
-  sha256 "3d4a6693421660c3e7072ef7824a5df34ca79ee386e824621b1df6e3b0e2c895"
+  url "https://github.com/dprint/dprint/archive/0.17.2.tar.gz"
+  sha256 "e5ed8d899ba15f53c8870fcdaad2cff0e82b77077c3d1f770c8341d04ba6d423"
   license "MIT"
   head "https://github.com/dprint/dprint.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "baf1b6055ebf848b637d05bf3eb03ce8d58e055163cc0a29f9520a00335dde63"
-    sha256 cellar: :any_skip_relocation, big_sur:       "1ce5b34603026a40982f0d364abcbca02e72db69151e5bbbcc57053b5d54714a"
-    sha256 cellar: :any_skip_relocation, catalina:      "2910dc20aec62d2b2f1cccd300d13276aa41b687991338af88a1ba9834a7fac6"
-    sha256 cellar: :any_skip_relocation, mojave:        "3f448cdcca828a8763d85a8529522c5c6de294ad4fdf52a65f0cb10d7b82bc85"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0e40a4f8fcf85c9cd50dfd16f3be5c4efdf2e5f152c0ab080ae5aacbe3be6f1c" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "1ff7ec7b2c58f64a1870b56790cb7f4a2b886efefd99257b16de24b5abb062b4"
+    sha256 cellar: :any_skip_relocation, big_sur:       "3fa9c531e87046fe8e271984c9010c9d077d48b37eecc9fa659b612176fc3233"
+    sha256 cellar: :any_skip_relocation, catalina:      "b07135b5c5cf0cfeaca1e0ed4646ad5f901bd60d6717a01ecad3576d24ba2d8f"
+    sha256 cellar: :any_skip_relocation, mojave:        "361999b49deb85b38221d12698933aa0ea52e30e753f0254a86477c1bd8e432b"
   end
 
   depends_on "rust" => :build

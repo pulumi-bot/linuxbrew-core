@@ -2,22 +2,20 @@ class Cbmc < Formula
   desc "C Bounded Model Checker"
   homepage "https://www.cprover.org/cbmc/"
   url "https://github.com/diffblue/cbmc.git",
-      tag:      "cbmc-5.39.2",
-      revision: "8e4b5c6b4f13ca62fa8674eb006d16c8e4ba72c4"
+      tag:      "cbmc-5.39.3",
+      revision: "98bbe743d42d7a890647cb563abb66c5e9b7a3b1"
   license "BSD-4-Clause"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "32646f8dfef5ee84202fe954b61d0853669291e6d16c641b81dac7db48754221"
-    sha256 cellar: :any_skip_relocation, big_sur:       "0b12174446198f981eb02341e8965d4a887fb5e7454b4fd9d5332fff0b83c248"
-    sha256 cellar: :any_skip_relocation, catalina:      "ec08e3408a045179db573579a4461a75a5ccfce00ec03d995a65acfe7bac44dd"
-    sha256 cellar: :any_skip_relocation, mojave:        "02426b3c2597e66701a5a45bab0414b171940d218b2685d271375f608a06d58e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "124c8e1837abf8b567bb5f7f20d1bbbc9d86f0db1b5ef6649e7abfdae2db4510" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "9dc4a17a664f98a9edb4049a95bb5a3f83c192730641d83bab45bfe1abb66892"
+    sha256 cellar: :any_skip_relocation, big_sur:       "9b99034e11d1c03a48e841c4b588e3c566f2e3d77791e141bb4978ed50abe0bf"
+    sha256 cellar: :any_skip_relocation, catalina:      "2a292ac1faef8a7960a9e900e74a998e236f822af829f40c5ce7863460badf17"
+    sha256 cellar: :any_skip_relocation, mojave:        "1eaaeb27c0c1f3fc4557c5e93eeaae2b3315bf2daa83e850e9a553e6d585499f"
   end
 
   depends_on "cmake" => :build
   depends_on "maven" => :build
-  # Java front-end fails to build with openjdk>=17
-  depends_on "openjdk@11" => :build
+  depends_on "openjdk" => :build
 
   uses_from_macos "bison" => :build
   uses_from_macos "flex" => :build
@@ -29,8 +27,6 @@ class Cbmc < Formula
   fails_with gcc: "5"
 
   def install
-    ENV["JAVA_HOME"] = Language::Java.java_home("11")
-
     args = []
     # Workaround borrowed from https://github.com/diffblue/cbmc/issues/4956
     args << "-DCMAKE_C_COMPILER=/usr/bin/clang" if OS.mac?
