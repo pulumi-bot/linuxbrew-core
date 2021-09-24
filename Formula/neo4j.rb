@@ -1,18 +1,14 @@
 class Neo4j < Formula
   desc "Robust (fully ACID) transactional property graph database"
   homepage "https://neo4j.com/"
-  url "https://neo4j.com/artifact.php?name=neo4j-community-4.3.3-unix.tar.gz"
-  sha256 "bb3965c18e613ee738f07af1c7c8da985ba3ca8025054ce66266376c6d4f7065"
+  url "https://neo4j.com/artifact.php?name=neo4j-community-4.3.4-unix.tar.gz"
+  sha256 "7627641eeed3b5d98f1883f18e33d76cd280d88f1c7be3760686e22edd33b9b7"
   license "GPL-3.0-or-later"
 
   livecheck do
     url "https://neo4j.com/download-center/"
     regex(/href=.*?edition=community[^"' >]+release=v?(\d+(?:\.\d+)+)[&"' >]
           |href=.*?release=v?(\d+(?:\.\d+)+)[^"' >]+edition=community/ix)
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2e98e9ddae89034c050ab28ab328cc52ebe2a993501aefb1b7a30377cbdf78fc" # linuxbrew-core
   end
 
   depends_on "openjdk@11"

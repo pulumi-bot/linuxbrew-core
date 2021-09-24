@@ -1,16 +1,15 @@
 class Seal < Formula
   desc "Easy-to-use homomorphic encryption library"
   homepage "https://github.com/microsoft/SEAL"
-  url "https://github.com/microsoft/SEAL/archive/v3.7.0.tar.gz"
-  sha256 "06ea835d6c9cdbbc4edb72a8db4bd4b1115995f075774043b9f31938d0624543"
+  url "https://github.com/microsoft/SEAL/archive/v3.7.1.tar.gz"
+  sha256 "cdc7426d01f879a8b87204a5df9e01339262d4b53962f6fddc2f34a0dec71777"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "0584f2b09c2b026d8a792c6f12db824c1fe75e4a71ef3a9e5f009055928ca5ef"
-    sha256 cellar: :any,                 big_sur:       "0891ff174a498115883c1acb680c5fe3af5468aeeb6bdaa743a410c567152f8e"
-    sha256 cellar: :any,                 catalina:      "cd4065f8a7b4513c81baebbf75bf667cc109abb1ec53e4013a51995ad94c3363"
-    sha256 cellar: :any,                 mojave:        "dc316b93b458de7e53b0e77b1e91d5c2cfd8a57f64a3a66b9807a00470c0e68c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "200bbfba06fd7fb8af220837c5eae450c91870b0eb1925c5e67ce7153c7cffe0" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "23beceb2de3f10406360d6dd91ed9aa386e7e94a368c9457918d3581106c2a7b"
+    sha256 cellar: :any,                 big_sur:       "d6c02002668e4a85b55881dceab6d3e8f4b6ee7ee805c008cd0e8e0b5b991434"
+    sha256 cellar: :any,                 catalina:      "e73d859446af694f6914ee025a73d707cbc873ec3bba65e6f25a88850313f3f4"
+    sha256 cellar: :any,                 mojave:        "94cd84ae736c28a2c234333fb90b5c68933a26e60edbb569c8d2fb00326db170"
   end
 
   depends_on "cmake" => [:build, :test]
