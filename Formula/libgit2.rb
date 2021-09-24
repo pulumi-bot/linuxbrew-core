@@ -16,7 +16,7 @@ class Libgit2 < Formula
     sha256 cellar: :any,                 big_sur:       "3c75789859b0f68b4e2c966cfed99b165ee7782e8cdbdd2399fd9f62b2f87358"
     sha256 cellar: :any,                 catalina:      "6306bc528ea3213ddcbf58b67c3aab853df9e080a2b52fe579d28d522426ab61"
     sha256 cellar: :any,                 mojave:        "4579e5a13904dd0e5b5d974e6add2520d0412900358f8f898a24a91d87c09748"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "411bfb10ca5f2537787970538804cf6563fa033575014ed9f8376af7f20e02c5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "411bfb10ca5f2537787970538804cf6563fa033575014ed9f8376af7f20e02c5" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

@@ -13,7 +13,7 @@ class Gitless < Formula
     sha256 cellar: :any,                 big_sur:       "0160c5293201da74d25714e4080fc31fed8bbfef159f3977392283861ee427e6"
     sha256 cellar: :any,                 catalina:      "12f36a1e497e4bdc96bdb298cde13a47f32dabb83c6a795a924ae85ab3ce8768"
     sha256 cellar: :any,                 mojave:        "008d7fdb94c33b290a8c9a463bda2d9ca3d1f366497aa35a36bd958be5aa1741"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "01aedc835771e08f14c9bb22575ad1aca6fb6fa2a6c016eae0bae02724fda552"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "01aedc835771e08f14c9bb22575ad1aca6fb6fa2a6c016eae0bae02724fda552" # linuxbrew-core
   end
 
   depends_on "libgit2"

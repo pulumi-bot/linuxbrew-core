@@ -17,7 +17,7 @@ class Libgit2Glib < Formula
     sha256 cellar: :any, big_sur:       "a88c609f097bd8afa244f9f2a7dc45d4a5284c957cd9bbdf7a3311ff2bfc2f59"
     sha256 cellar: :any, catalina:      "7f446c1a120e41b442eb68e1fe25c25d5cba3cbd6068341797d42f716c951e8d"
     sha256 cellar: :any, mojave:        "bf08ec07b8a084946425abc689004bc2b0e5bb2a3f0d985e62c8e37260ca5602"
-    sha256               x86_64_linux:  "f2e51cac9d1f152cbb5ab4e39b014068baa10e5431f04d9924b20169cb0dbfc8"
+    sha256               x86_64_linux:  "f2e51cac9d1f152cbb5ab4e39b014068baa10e5431f04d9924b20169cb0dbfc8" # linuxbrew-core
   end
 
   depends_on "gobject-introspection" => :build
