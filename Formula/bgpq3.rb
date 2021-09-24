@@ -21,6 +21,7 @@ class Bgpq3 < Formula
   # Makefile: upstream has been informed of the patch through email (multiple
   # times) but no plans yet to incorporate it https://github.com/snar/bgpq3/pull/2
   # there was discussion about this patch for 0.1.18 and 0.1.19 as well
+  patch :DATA
 
   def install
     system "./configure", "--prefix=#{prefix}", "--mandir=#{man}"
@@ -31,3 +32,18 @@ class Bgpq3 < Formula
     system "#{bin}/bgpq3", "AS-ANY"
   end
 end
+
+__END__
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -32,8 +32,8 @@
+ install: bgpq3
+ 	if test ! -d @bindir@ ; then mkdir -p @bindir@ ; fi
+ 	${INSTALL} -c -s -m 755 bgpq3 @bindir@
+-	if test ! -d @prefix@/man/man8 ; then mkdir -p @prefix@/man/man8 ; fi
+-	${INSTALL} -m 644 bgpq3.8 @prefix@/man/man8
++	if test ! -d @mandir@/man8 ; then mkdir -p @mandir@/man8 ; fi
++	${INSTALL} -m 644 bgpq3.8 @mandir@/man8
+
+ depend:
+ 	makedepend -- $(CFLAGS) -- $(SRCS)
