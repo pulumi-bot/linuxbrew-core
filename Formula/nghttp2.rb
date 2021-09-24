@@ -10,7 +10,7 @@ class Nghttp2 < Formula
     sha256 big_sur:       "9259742cf609ff32e077e3eaa081e36ce8c15a609412ebdb8739dcd45e7c0aa3"
     sha256 catalina:      "e5175c25cb1a5815d4e174c7cd535b65b77ef7a3ed5162bcdb878805d71ea0ac"
     sha256 mojave:        "82aefe904d2c98078bb50401d460073526e239818d6e0d477db0bb65e5bb3a85"
-    sha256 x86_64_linux:  "910df4cce4ff9fcbc82edddf6517d72468db191b4a6144dfcc6e676266c4954a"
+    sha256 x86_64_linux:  "910df4cce4ff9fcbc82edddf6517d72468db191b4a6144dfcc6e676266c4954a" # linuxbrew-core
   end
 
   head do
