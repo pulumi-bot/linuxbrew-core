@@ -13,6 +13,7 @@ class LiterateGit < Formula
     sha256 cellar: :any,                 big_sur:       "01384f677171ddeef94083de2aa681bed34acb27e23c1fd83497720b16397249"
     sha256 cellar: :any,                 catalina:      "cce3e3935b756d27b7519540faf8aa0ef8a1e2ffe1ac0efbf313ab92b3fddbe1"
     sha256 cellar: :any,                 mojave:        "0d73ad846855eb50d8c15ab65291ae43c50e76f1c62aacf346934dbf96ab05b7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "42293729649c7213f4902a67977cf84e2187495482c95ef06e12895a0d299b3f"
   end
 
   depends_on "libgit2"
