@@ -6,14 +6,13 @@ class Gitless < Formula
   url "https://files.pythonhosted.org/packages/9c/2e/457ae38c636c5947d603c84fea1cf51b7fcd0c8a5e4a9f2899b5b71534a0/gitless-0.8.8.tar.gz"
   sha256 "590d9636d2ca743fdd972d9bf1f55027c1d7bc2ab1d5e877868807c3359b78ef"
   license "MIT"
-  revision OS.mac? ? 7 : 9
+  revision OS.mac? ? 8 : 10
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "8fe3da387f2212fe2618a07b2e1682e3bae08be20f105734e21079f0f3df7d79"
-    sha256 cellar: :any, big_sur:       "4c845e5cc5e9fafccda5ab5b2dfeb1e9cbbbe8f67ab9c2f72060c09a8d7743e4"
-    sha256 cellar: :any, catalina:      "1f52f84f5a9f9c9633e7fc9ef7ef8227431abd37ca6629f33986766b61470cc0"
-    sha256 cellar: :any, mojave:        "50884b829598dab4558bc9f338b96b6ac18302c426ad6cfd440d2d721b1cb30a"
-    sha256 cellar: :any, x86_64_linux:  "9c856bebe3d2c1b816e07bfb723a5bb756216f588358235b20530c0917ef001b" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "a75cc978953796b096a5b4e1b70c9083f15a600575f86b7df630523dd3518d64"
+    sha256 cellar: :any,                 big_sur:       "0160c5293201da74d25714e4080fc31fed8bbfef159f3977392283861ee427e6"
+    sha256 cellar: :any,                 catalina:      "12f36a1e497e4bdc96bdb298cde13a47f32dabb83c6a795a924ae85ab3ce8768"
+    sha256 cellar: :any,                 mojave:        "008d7fdb94c33b290a8c9a463bda2d9ca3d1f366497aa35a36bd958be5aa1741"
   end
 
   depends_on "libgit2"
@@ -51,8 +50,15 @@ class Gitless < Formula
   end
 
   resource "pygit2" do
-    url "https://files.pythonhosted.org/packages/3a/42/f69de8c7a1e33f365a91fa39093f4e7a64609c2bd127203536edc813cbf7/pygit2-1.4.0.tar.gz"
-    sha256 "cbeb38ab1df9b5d8896548a11e63aae8a064763ab5f1eabe4475e6b8a78ee1c8"
+    url "https://files.pythonhosted.org/packages/6b/23/a8c5b726a58282fe2cadcc63faaddd4be147c3c8e0bd38b233114adf98fd/pygit2-1.6.1.tar.gz"
+    sha256 "c3303776f774d3e0115c1c4f6e1fc35470d15f113a7ae9401a0b90acfa1661ac"
+
+    # libgit2 1.2+ support
+    # https://github.com/libgit2/pygit2/pull/1089
+    patch do
+      url "https://raw.githubusercontent.com/Homebrew/formula-patches/bf370d7782f7686a4a61d8d7d28068e78e28e48c/pygit2/libgit2-1.2.0.patch"
+      sha256 "b5acca41ff7752ea25adb050d7494939fc6d471f4f91d94a06f4afc9902f4117"
+    end
   end
 
   resource "sh" do

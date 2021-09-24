@@ -1,8 +1,8 @@
 class Libgit2 < Formula
   desc "C library of Git core methods that is re-entrant and linkable"
   homepage "https://libgit2.github.com/"
-  url "https://github.com/libgit2/libgit2/archive/v1.1.1.tar.gz"
-  sha256 "13a525373f64c711a00a058514d890d1512080265f98e0935ab279393f21a620"
+  url "https://github.com/libgit2/libgit2/archive/v1.2.0.tar.gz"
+  sha256 "701a5086a968a46f25e631941b99fc23e4755ca2c56f59371ce1d94b9a0cc643"
   license "GPL-2.0-only"
   head "https://github.com/libgit2/libgit2.git"
 
@@ -12,11 +12,10 @@ class Libgit2 < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "71ddae10a8e81012cdfb6877791ffeefef8421efcc7077e61d995aca5cc85275"
-    sha256 cellar: :any,                 big_sur:       "86c3794bf3890b7cbe622a1838517a93c4ee380682dae5da9f24c24d9256c094"
-    sha256 cellar: :any,                 catalina:      "9284d9a772c9bc29b52a0eef78f5c4f8a5f1ad659eb4024c53ebe6286a50facd"
-    sha256 cellar: :any,                 mojave:        "f8c6f89c82c013531e7355d79643dff7c7bf658bedaa9ff3fdfa44ee440b2abe"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "db3788bd7b4836397f1c2829a104c622f7c8e2be25d15f5d5c4586b120c96e69" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "38bc082cccfd0260b0319aa536ae394d1ff42410c70a78d2a57d1924cb5c12c1"
+    sha256 cellar: :any,                 big_sur:       "3c75789859b0f68b4e2c966cfed99b165ee7782e8cdbdd2399fd9f62b2f87358"
+    sha256 cellar: :any,                 catalina:      "6306bc528ea3213ddcbf58b67c3aab853df9e080a2b52fe579d28d522426ab61"
+    sha256 cellar: :any,                 mojave:        "4579e5a13904dd0e5b5d974e6add2520d0412900358f8f898a24a91d87c09748"
   end
 
   depends_on "cmake" => :build

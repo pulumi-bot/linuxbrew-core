@@ -4,14 +4,13 @@ class Julia < Formula
   url "https://github.com/JuliaLang/julia/releases/download/v1.6.2/julia-1.6.2.tar.gz"
   sha256 "d56422ac75cbd00a9f69ca9ffd5b6b35c8aeded8312134ef45ffbba828918b5e"
   license all_of: ["MIT", "BSD-3-Clause", "Apache-2.0", "BSL-1.0"]
-  revision 2
+  revision 3
   head "https://github.com/JuliaLang/julia.git"
 
   bottle do
-    sha256 cellar: :any,                 big_sur:      "3d27aecf842374458a6f7af2936bf8f781d3f856de5aa7c2d9b88e7c06f3b1c1"
-    sha256 cellar: :any,                 catalina:     "5ec6bcbbb68add91ba2922ed81634dc59c8778f9665a13bd716979e629f414c5"
-    sha256 cellar: :any,                 mojave:       "b956af7c55f00b3ccc7da80a87589d2edc56254e2a384c74e78a9c096785616a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "aed0a70db333329f6e9cbffe50f6f4d3ac1d5f9da4bd30f10894fa627afb4fec" # linuxbrew-core
+    sha256 cellar: :any,                 big_sur:      "f24302531a1fc1bb39977ee592188c301e82d44efea7bd75debf8f8f6dc9f3ed"
+    sha256 cellar: :any,                 catalina:     "0f9b35d897c093c19f2cc00d9684b74ddc555daefe1785b6730bfbf256b6ff34"
+    sha256 cellar: :any,                 mojave:       "fc7d1d0ae0927098d081c8963f97de5c1d09603fbabd0a96ccf41899b28a4bc6"
   end
 
   depends_on "python@3.9" => :build

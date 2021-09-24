@@ -4,7 +4,7 @@ class Libgit2Glib < Formula
   url "https://download.gnome.org/sources/libgit2-glib/0.99/libgit2-glib-0.99.0.1.tar.xz"
   sha256 "e05a75c444d9c8d5991afc4a5a64cd97d731ce21aeb7c1c651ade1a3b465b9de"
   license "LGPL-2.1"
-  revision 2
+  revision 3
   head "https://github.com/GNOME/libgit2-glib.git"
 
   livecheck do
@@ -13,11 +13,10 @@ class Libgit2Glib < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "65222d2fafdeba76b0faf2735b616202a49f8361188a308b6a392e5f963600bd"
-    sha256               big_sur:       "bffdfd6183ae4bdb486f40f9a449ab0582387b40be36c356ce6f83642011bec7"
-    sha256               catalina:      "335de71224cede561e05645cde3709acf3763e168d2da11b13586d3c3605d67e"
-    sha256               mojave:        "308f244da46a0a70ab9e1fb9cf2eae8dd24e26c363b344f5872f5ee65ef9043a"
-    sha256               x86_64_linux:  "54478b53743594a811c3876a6e40d139faf55928df1f78e3ddd329bee688d22d" # linuxbrew-core
+    sha256 cellar: :any, arm64_big_sur: "ea30f5120d215e4c9d97a8f112c133569474ab5a200bb7aad73a85d8ad9e7f87"
+    sha256 cellar: :any, big_sur:       "a88c609f097bd8afa244f9f2a7dc45d4a5284c957cd9bbdf7a3311ff2bfc2f59"
+    sha256 cellar: :any, catalina:      "7f446c1a120e41b442eb68e1fe25c25d5cba3cbd6068341797d42f716c951e8d"
+    sha256 cellar: :any, mojave:        "bf08ec07b8a084946425abc689004bc2b0e5bb2a3f0d985e62c8e37260ca5602"
   end
 
   depends_on "gobject-introspection" => :build

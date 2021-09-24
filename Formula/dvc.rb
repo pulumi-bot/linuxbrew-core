@@ -6,13 +6,13 @@ class Dvc < Formula
   url "https://files.pythonhosted.org/packages/98/11/c869eff8e743d85b67757e9287b6eb557aeb6901ef5723bda59b3a82655a/dvc-2.7.4.tar.gz"
   sha256 "754e2c4e0a79e610a1a9da4cebec56c51fba39430334a6dc2e0583bd44f4a89b"
   license "Apache-2.0"
+  revision 1
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "47fb11989ef4450dc445653c2c0c8922eb2c3d567197daf7b6180544263c9501"
-    sha256 cellar: :any,                 big_sur:       "bcf4bf3790ded2f80f7a5094209d5cd45786f3527884586e866bfa0c0c522364"
-    sha256 cellar: :any,                 catalina:      "eface1eec932f6fa999354c2306200567aa25ef4c7245c8bdb35187304e1b7f3"
-    sha256 cellar: :any,                 mojave:        "38370c7d107318f04f1496579664df0a6fe100a7f258cb82b0fcc2673e919206"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "708ac4c8b3252b008ff8d53be2c2b110d67a9ed3f6b4917c476dec4217e7a958" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "ee12c5acc00152fb627a73e87ffafcd4cf7317d7bf3aa0d8d580974d044fa4e5"
+    sha256 cellar: :any,                 big_sur:       "8d0c14125b02d3647ca8285a328867d565cafabf4726a281e75cc2f2fb29ec18"
+    sha256 cellar: :any,                 catalina:      "c5a6e2071901e2c098ff6462130eb42389c7437cfd71710dad58b417c269c9d1"
+    sha256 cellar: :any,                 mojave:        "6476c5c946182528c16b66dcabc5a3ee4ae2943abf9f30c69182d14dce5adf6d"
   end
 
   depends_on "pkg-config" => :build
@@ -442,6 +442,13 @@ class Dvc < Formula
   resource "pygit2" do
     url "https://files.pythonhosted.org/packages/6b/23/a8c5b726a58282fe2cadcc63faaddd4be147c3c8e0bd38b233114adf98fd/pygit2-1.6.1.tar.gz"
     sha256 "c3303776f774d3e0115c1c4f6e1fc35470d15f113a7ae9401a0b90acfa1661ac"
+
+    # libgit2 1.2+ support
+    # https://github.com/libgit2/pygit2/pull/1089
+    patch do
+      url "https://raw.githubusercontent.com/Homebrew/formula-patches/bf370d7782f7686a4a61d8d7d28068e78e28e48c/pygit2/libgit2-1.2.0.patch"
+      sha256 "b5acca41ff7752ea25adb050d7494939fc6d471f4f91d94a06f4afc9902f4117"
+    end
   end
 
   resource "Pygments" do
