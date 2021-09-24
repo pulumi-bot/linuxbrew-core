@@ -5,6 +5,10 @@ class Cromwell < Formula
   sha256 "b4db18eda06107c3e9675ff6362360f28142fa3ef0e9400f278016a1573c7094"
   license "BSD-3-Clause"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a3f8ffd962929fe80b0ec3628de160100bb4ed2e64de3db572be6c1b00a508d5"
+  end
+
   head do
     url "https://github.com/broadinstitute/cromwell.git"
     depends_on "sbt" => :build
