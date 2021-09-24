@@ -11,6 +11,7 @@ class Starship < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "497ab79648951d3c78c19ad71e58059e1a810cf6acd70bac6e82369c61d7afd6"
     sha256 cellar: :any_skip_relocation, catalina:      "cf3eece649108cd3e0f0a06d60917798baa94df0b9e6cc5b47a9f74946bc5f71"
     sha256 cellar: :any_skip_relocation, mojave:        "b81cf067b32c42429b1509a9349cfd931e6b738429b52e221411c8d00af89098"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b9252b07187ae9a0cfa14d186bfda508c0287596fe5d84a4d6e6b9469bcc640a"
   end
 
   depends_on "rust" => :build
