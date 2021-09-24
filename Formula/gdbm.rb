@@ -54,7 +54,7 @@ __END__
 @@ -1010,7 +1010,13 @@ print_snapshot (char const *snapname, FILE *fp)
        fprintf (fp, "%s: ", snapname);
        fprintf (fp, "%03o %s ", st.st_mode & 0777,
-         decode_mode (st.st_mode, buf));
+ 	       decode_mode (st.st_mode, buf));
 -      fprintf (fp, "%ld.%09ld", st.st_mtim.tv_sec, st.st_mtim.tv_nsec);
 +      struct timespec mtimespec;
 +#ifdef __APPLE__
@@ -64,5 +64,5 @@ __END__
 +#endif
 +      fprintf (fp, "%ld.%09ld", mtimespec.tv_sec, mtimespec.tv_nsec);
        if (S_ISREG (st.st_mode))
-  {
-    GDBM_FILE dbf;
+ 	{
+ 	  GDBM_FILE dbf;
