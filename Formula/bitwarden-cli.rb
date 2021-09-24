@@ -12,7 +12,7 @@ class BitwardenCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "147a06ea8c66d129e89ae300ec1516be284ebe5ab5091a0146393ad6b3ee1ada"
     sha256 cellar: :any_skip_relocation, catalina:      "147a06ea8c66d129e89ae300ec1516be284ebe5ab5091a0146393ad6b3ee1ada"
     sha256 cellar: :any_skip_relocation, mojave:        "147a06ea8c66d129e89ae300ec1516be284ebe5ab5091a0146393ad6b3ee1ada"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "77544d091513b7d17520424e1a48d27f6956c2f378a03bd962f58a92ce6e0809"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "77544d091513b7d17520424e1a48d27f6956c2f378a03bd962f58a92ce6e0809" # linuxbrew-core
   end
 
   depends_on "node"

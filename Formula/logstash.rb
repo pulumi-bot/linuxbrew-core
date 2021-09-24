@@ -16,7 +16,7 @@ class Logstash < Formula
     sha256 cellar: :any,                 big_sur:      "52cb47a3641e80a4da46830d028b946810b6281efbd588b2ca9d850d70362fbc"
     sha256 cellar: :any,                 catalina:     "d799d30943fd733b2bb339cacd54c10b3fef5661a716212cfd482e602a6f0e7d"
     sha256 cellar: :any,                 mojave:       "50495a782317b0068ec2be3b99495e83733ce8806bc677f229de5c7f426d410a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "79b93c9764f936eb51429703c0aa2bf4b98a95b11ffd3cae266ca62aaebb0aa3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "79b93c9764f936eb51429703c0aa2bf4b98a95b11ffd3cae266ca62aaebb0aa3" # linuxbrew-core
   end
 
   depends_on "openjdk@11"
