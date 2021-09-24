@@ -16,7 +16,7 @@ class Spack < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "57a313186f3cf80ac7985f1f86fe415a3a9f179044fa5db2333460043b1809f4"
     sha256 cellar: :any_skip_relocation, catalina:      "57a313186f3cf80ac7985f1f86fe415a3a9f179044fa5db2333460043b1809f4"
     sha256 cellar: :any_skip_relocation, mojave:        "57a313186f3cf80ac7985f1f86fe415a3a9f179044fa5db2333460043b1809f4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e88b8b7697764e9336ac1f849be0e8647627e38299671b208689949071bb0192"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e88b8b7697764e9336ac1f849be0e8647627e38299671b208689949071bb0192" # linuxbrew-core
   end
 
   depends_on "python@3.9"

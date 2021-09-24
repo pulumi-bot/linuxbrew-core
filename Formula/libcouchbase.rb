@@ -11,7 +11,7 @@ class Libcouchbase < Formula
     sha256 big_sur:       "4dc26740d2f96a5e71706bd5d7c2b5bb75c4b13043ea1708f66ac069b385af35"
     sha256 catalina:      "748fd206b182f128d8c2b2ea8b49aa1fcb04d781474adbc8270897db630ba755"
     sha256 mojave:        "d60ad634b1751766750e843ca38ae355c44fa581713846607878378bb62de069"
-    sha256 x86_64_linux:  "403fae65457a1a23e0f608e0731a39bd5f67f383796177f470fb10e59c720b7a"
+    sha256 x86_64_linux:  "403fae65457a1a23e0f608e0731a39bd5f67f383796177f470fb10e59c720b7a" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

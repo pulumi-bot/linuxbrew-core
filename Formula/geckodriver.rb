@@ -39,7 +39,7 @@ class Geckodriver < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "fd96ba611f8d1ba97df0a21d910a6368e683d0a6bd1a05073e5afd27e6aeaf3b"
     sha256 cellar: :any_skip_relocation, catalina:      "d490f9171f301363ee590ea705d1f111c8c90aa68bbfb70e8dcf093b6dbde424"
     sha256 cellar: :any_skip_relocation, mojave:        "c76da857f5accdf0756374fb3688e82567da285c2f4f40eb78fbe45e4756b5a0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2018017cddb38c868421470bec440e62b1fed9737185be11a6a7b971ed04710a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2018017cddb38c868421470bec440e62b1fed9737185be11a6a7b971ed04710a" # linuxbrew-core
   end
 
   depends_on "rust" => :build

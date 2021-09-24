@@ -10,7 +10,7 @@ class Delve < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "3d670046a35b7830ab19244566cd5bf8864b60ccb2470ddfaa79614166eebea8"
     sha256 cellar: :any_skip_relocation, catalina:      "f2ec21f4aa4dffc1c2d183596e439ad202a0e9907689a3f7936b4ce8ac39701a"
     sha256 cellar: :any_skip_relocation, mojave:        "a588cd42cc34a0ecc12b5771092e6516ccaca999c3e5f88c3f1c08251a438ce4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3b3ecac2084ad71d4d6a780da73c7d7c3965fcbc1c108e29cf56ff37c3458aad"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3b3ecac2084ad71d4d6a780da73c7d7c3965fcbc1c108e29cf56ff37c3458aad" # linuxbrew-core
   end
 
   depends_on "go" => :build
