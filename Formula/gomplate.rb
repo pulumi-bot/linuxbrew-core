@@ -11,6 +11,7 @@ class Gomplate < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "92ce5929e369eb6a49e478f71bf2a6fba500094b600c578f4ba3ae0c0546dcc5"
     sha256 cellar: :any_skip_relocation, catalina:      "85ba008a9f271385b4599fe1308fa0846bde36307d96a39424c2aa53396ba12b"
     sha256 cellar: :any_skip_relocation, mojave:        "d08b4521c7140d8391be5aef5ab3cfa9184e080e5abf46dbea079025b49c4a0f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7ea36b582faae30e7df096ab4396f37e8c9a4d50db7b7f493532a8eb15eb0eaf"
   end
 
   depends_on "go" => :build
