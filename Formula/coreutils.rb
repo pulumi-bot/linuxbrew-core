@@ -11,6 +11,7 @@ class Coreutils < Formula
     sha256 big_sur:       "6c6b84b32d923e26b1c67e8c9aee801f7ab2f0b9f94d9b455b784eb3a2dc575c"
     sha256 catalina:      "9b24df176ef9ec342e83af6880c27e0235e4fcc436d0143fb37eb24695de51a6"
     sha256 mojave:        "6755e3bb94c35dae4ebbd525633691bc5ff1dc82a84f5b968b952d7be86652d7"
+    sha256 x86_64_linux:  "6ab4d61127fac0e193a82881b9262e3121ada87566f470abdf6a2b9c63ab6768"
   end
 
   head do
