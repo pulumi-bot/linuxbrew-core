@@ -11,6 +11,7 @@ class Xray < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5347284834dfeda1150dfae1831341be14f12cfd983641da9bd6b49488fd4053"
     sha256 cellar: :any_skip_relocation, catalina:      "42ed8b7eb67b83f0b560363f3a61ee0b3e7a698cb697df08e9a06453a9db4c74"
     sha256 cellar: :any_skip_relocation, mojave:        "47d081dfe999470fbbb7b1b64ce18c0fad7362be4b68d696db87a571c71f540d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3fc53062e26cc87199a676071958fc5f458baae4c68530c7f9315f988d7ed599"
   end
 
   depends_on "go" => :build
