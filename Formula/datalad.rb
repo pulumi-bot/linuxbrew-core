@@ -11,6 +11,7 @@ class Datalad < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "8291a2e4d7501b3fd681d381946c89ee3f92611e7762ddc73635ee2210910c9a"
     sha256 cellar: :any_skip_relocation, catalina:     "a6b21459d0b724e74ed9a02b8ae00f665d5224db775d2b5201a4f85af81c1375"
     sha256 cellar: :any_skip_relocation, mojave:       "6110b7264f5b46b92b11f9af2fb70376adbd2a909bfaa2b771ff3dad1a606e8a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "66a2609bf9312ca7fc07240f53538d872ca8f95b055a8bb113a3fde8d06bfe84"
   end
 
   depends_on "git-annex"
