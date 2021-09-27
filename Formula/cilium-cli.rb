@@ -10,7 +10,7 @@ class CiliumCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d1f58448204e2cc792c6e8864ae8033b1f19a7efadbfe8751280e973f6759843"
     sha256 cellar: :any_skip_relocation, catalina:      "05a99a179f3287de0f53c84687c9f1919c0d05172682d86c122d471314c8533f"
     sha256 cellar: :any_skip_relocation, mojave:        "24722bc7957c2b87783694ff4bf436d46fa1c4447f878e04635ded8b8535eb18"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ace8b86d74337b1badfbd14925363d5632de607bd08cd0ca3198636480edb818"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ace8b86d74337b1badfbd14925363d5632de607bd08cd0ca3198636480edb818" # linuxbrew-core
   end
 
   depends_on "go" => :build

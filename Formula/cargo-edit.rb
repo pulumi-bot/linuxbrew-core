@@ -10,7 +10,7 @@ class CargoEdit < Formula
     sha256 cellar: :any,                 big_sur:       "15c29dd25bcd54c5cd73d31aafb61ad369fbe24344052bf0dc5750f95a2efc3f"
     sha256 cellar: :any,                 catalina:      "80d6f5fe9b40320c5e3df4515ac3b9738875882c72f4c72e23e751a323735857"
     sha256 cellar: :any,                 mojave:        "ede3e81da3f1ef673f61d70a2a7f1732a8c56b08d263164062c4384228e32d09"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c3c50b8455c2c694396d80c631411675411a67ad604b29938d55b1710078a2a3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c3c50b8455c2c694396d80c631411675411a67ad604b29938d55b1710078a2a3" # linuxbrew-core
   end
 
   depends_on "libgit2"

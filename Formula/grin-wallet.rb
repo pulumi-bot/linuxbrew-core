@@ -9,7 +9,7 @@ class GrinWallet < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "a0dfda70b5c6cf1ed883e5af6b61c01aea7ddf18f6f22038aab71e06b5b9801a"
     sha256 cellar: :any_skip_relocation, catalina:     "4b43f745f1b82d9390cdaf4055c9d65e6bea850fe9ad7ebd2818789c33c45dbc"
     sha256 cellar: :any_skip_relocation, mojave:       "3ce2c42866c3d02c527fac13c2393af01eabb9c9591ef25d5503aca073863f50"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c81b264f70dcc7069e7a0c6b909c8d6eba5ce47d071c0095684ea6711d135994"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c81b264f70dcc7069e7a0c6b909c8d6eba5ce47d071c0095684ea6711d135994" # linuxbrew-core
   end
 
   depends_on "rust" => :build

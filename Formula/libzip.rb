@@ -16,7 +16,7 @@ class Libzip < Formula
     sha256 cellar: :any,                 big_sur:       "6f3266d5fd14899d3c67dcc693365fda4531f17dc414039c66a8ad4f0becc819"
     sha256 cellar: :any,                 catalina:      "d708cee97ad3536abd1c4ab0fc4108477c04d944db47c9a427772bc23027d427"
     sha256 cellar: :any,                 mojave:        "5e54afd324365a37e9d6f4adec4ac6ea727012eb7b23931c94e2cf59b95b1bc5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "427e3662982c2fe93ab41303fb55ad75ef3f15c215c09431142c6787f68c3112"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "427e3662982c2fe93ab41303fb55ad75ef3f15c215c09431142c6787f68c3112" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

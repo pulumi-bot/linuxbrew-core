@@ -9,7 +9,7 @@ class Chapel < Formula
     sha256 big_sur:      "beda2be8596ab9a15e88cbd19c5b0289ab15b88d7f63c56d61bb863137276c7a"
     sha256 catalina:     "f4a653976006f3f5c54b57ebada3527f807af9cbc69713591945fa7003a89927"
     sha256 mojave:       "6be57e2cd756b5cb822bf87ab069bea4915b42c141cda9865b6279c45917c6fb"
-    sha256 x86_64_linux: "d1321860437f3f49d5e61a06ecbda2a3a37051793c0f0199b76793fd109bf1ba"
+    sha256 x86_64_linux: "d1321860437f3f49d5e61a06ecbda2a3a37051793c0f0199b76793fd109bf1ba" # linuxbrew-core
   end
 
   depends_on "llvm@11"
