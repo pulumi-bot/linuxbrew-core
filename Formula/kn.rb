@@ -12,6 +12,7 @@ class Kn < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b02d96368c5d026876ecc9168b36b1c494e5b3ff9724853ce470a969f739c5a2"
     sha256 cellar: :any_skip_relocation, catalina:      "b02d96368c5d026876ecc9168b36b1c494e5b3ff9724853ce470a969f739c5a2"
     sha256 cellar: :any_skip_relocation, mojave:        "b02d96368c5d026876ecc9168b36b1c494e5b3ff9724853ce470a969f739c5a2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0f4b4f870fe3845c801cb10108dbd69cbdf1029e1dbf1c24c3c607df0c9eeba1"
   end
 
   depends_on "go" => :build
