@@ -3,17 +3,16 @@ require "language/node"
 class NetlifyCli < Formula
   desc "Netlify command-line tool"
   homepage "https://www.netlify.com/docs/cli"
-  url "https://registry.npmjs.org/netlify-cli/-/netlify-cli-6.9.10.tgz"
-  sha256 "f8229f98b556e5a2b737fd6de486ad4be5b3919a8d52c3303136ee5fff2ec5cd"
+  url "https://registry.npmjs.org/netlify-cli/-/netlify-cli-6.9.15.tgz"
+  sha256 "676ee24c3fb1821f9cdc72861eef3092573b858d1a1c8f8476452ce46028a3c8"
   license "MIT"
   head "https://github.com/netlify/cli.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "3260cbefcbb431b15363972ae241ef11742434a85340b28cc4e0660db9c8b58a"
-    sha256 cellar: :any_skip_relocation, big_sur:       "1be9d50a9f8cff287c5038ede2fc1d6dca80ecaf686e4a9194a62e11cb232fb5"
-    sha256 cellar: :any_skip_relocation, catalina:      "1be9d50a9f8cff287c5038ede2fc1d6dca80ecaf686e4a9194a62e11cb232fb5"
-    sha256 cellar: :any_skip_relocation, mojave:        "1be9d50a9f8cff287c5038ede2fc1d6dca80ecaf686e4a9194a62e11cb232fb5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f39c6a23624d589606ca5b93162c6d4c1ff3be37f1bd6bae48f3229c66261538" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "647c81931cdc5a3075b386a7a59d1fa0d68d560071938c3f3fcc418abf1c5556"
+    sha256 cellar: :any_skip_relocation, big_sur:       "191f0f092e7713694c52ad67be2f01c9327804768bf9048bbfccb7dea0e92851"
+    sha256 cellar: :any_skip_relocation, catalina:      "191f0f092e7713694c52ad67be2f01c9327804768bf9048bbfccb7dea0e92851"
+    sha256 cellar: :any_skip_relocation, mojave:        "191f0f092e7713694c52ad67be2f01c9327804768bf9048bbfccb7dea0e92851"
   end
 
   depends_on "node"
