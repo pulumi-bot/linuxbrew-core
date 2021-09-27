@@ -1,18 +1,16 @@
 class Coreutils < Formula
   desc "GNU File, Shell, and Text utilities"
   homepage "https://www.gnu.org/software/coreutils"
-  url "https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz"
-  mirror "https://ftpmirror.gnu.org/coreutils/coreutils-8.32.tar.xz"
-  sha256 "4458d8de7849df44ccab15e16b1548b285224dbba5f08fac070c1c0e0bcc4cfa"
+  url "https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz"
+  mirror "https://ftpmirror.gnu.org/coreutils/coreutils-9.0.tar.xz"
+  sha256 "ce30acdf4a41bc5bb30dd955e9eaa75fa216b4e3deb08889ed32433c7b3b97ce"
   license "GPL-3.0-or-later"
-  revision 1
 
   bottle do
-    sha256 arm64_big_sur: "ac951f1e7a4f057fad0fa6d0584959a6e3a7fe21a659d022a42081bf08ab358c"
-    sha256 big_sur:       "cdc8a9cbfbd179f8b6934419740c898b07196aafa0cc973e55cb32c21a6e6673"
-    sha256 catalina:      "6c6ba222ca2dfa19070909f14843ab6f15fa58f832b7ebb0b1c81c44b4b022fb"
-    sha256 mojave:        "873d09592121448c57226810a764da1f4ae7769ada6edffce5c33dc8de1ffbe3"
-    sha256 x86_64_linux:  "513ae166dad2a6ea727606e96c82203876f7007dde59dbb5f086b6f4a7be408e" # linuxbrew-core
+    sha256 arm64_big_sur: "875e9ec351a0624e65d19e742a7271fc409ce912fa4a4ad9147ab21eaa126bad"
+    sha256 big_sur:       "6c6b84b32d923e26b1c67e8c9aee801f7ab2f0b9f94d9b455b784eb3a2dc575c"
+    sha256 catalina:      "9b24df176ef9ec342e83af6880c27e0235e4fcc436d0143fb37eb24695de51a6"
+    sha256 mojave:        "6755e3bb94c35dae4ebbd525633691bc5ff1dc82a84f5b968b952d7be86652d7"
   end
 
   head do

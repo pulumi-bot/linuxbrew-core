@@ -4,16 +4,15 @@ class Checkov < Formula
   desc "Prevent cloud misconfigurations during build-time for IaC tools"
   homepage "https://www.checkov.io/"
   # checkov should only be updated every 15 releases on multiples of 15
-  url "https://files.pythonhosted.org/packages/09/fb/3b50311c0f8450d30d8e7dccdf32905f6aab0b052a3caa6a54f3214d2817/checkov-2.0.420.tar.gz"
-  sha256 "cb271993c60e3d34bce418faaa7d5b7239f36a47911cbbe7b4db16467c7f8596"
+  url "https://files.pythonhosted.org/packages/9c/2f/1c2b41ef20cf1e9ecb851809e8512b8f11712810ee2b604500618eae510f/checkov-2.0.435.tar.gz"
+  sha256 "feb9af3c21c710e45e665fd6dda1d7ef44ef9d757c14347cfbed9a770a687ca4"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "5cb09ab24e072d600698329b61d67249022d6977f4cadf0f7226564627641ca0"
-    sha256 cellar: :any_skip_relocation, big_sur:       "a3a10e0b2a881c6031f8a558eb5c1836e80778dd6599d68f7298dc28bbad6533"
-    sha256 cellar: :any_skip_relocation, catalina:      "20cd1b3f9516fbf4a410773c488208aacf3ab42a0be567ff89c98aac08c6afb3"
-    sha256 cellar: :any_skip_relocation, mojave:        "356080897ec6032a3e7a2224b3e26cbe64d7564ad5b8f4b92767b34fe215f237"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1d9492175b1c124ac86ae2d8156b0fe1678561cfbeef7a55701f6233ee1238d7" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "e66851879774c0f30f41a5f1542d5c04259d9a583cf45d6cc57835c58c5b3a8f"
+    sha256 cellar: :any_skip_relocation, big_sur:       "efc98a2f77d9894146f2478a942bba4203dc536004562492d81e04fa440ed908"
+    sha256 cellar: :any_skip_relocation, catalina:      "dc3d11227c81d5fa6ead4498edb5f7e8ef207c765e1ab17812d537bfe9984931"
+    sha256 cellar: :any_skip_relocation, mojave:        "b42c6f28a789d1dbeb1d9512021bd1ee55baf7aaa3f7c8383fab8d387bffc01c"
   end
 
   depends_on "python-tabulate"
@@ -231,8 +230,8 @@ class Checkov < Formula
   end
 
   resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/37/e5/1b54ef934d731576d0145bc8ae22da5b410f96922cec52b91cc29d3ff1b6/tqdm-4.62.2.tar.gz"
-    sha256 "a4d6d112e507ef98513ac119ead1159d286deab17dffedd96921412c2d236ff5"
+    url "https://files.pythonhosted.org/packages/e3/c1/b3e42d5b659ca598508e2a9ef315d5eef0a970f874ef9d3b38d4578765bd/tqdm-4.62.3.tar.gz"
+    sha256 "d359de7217506c9851b7869f3708d8ee53ed70a1b8edbba4dbcb47442592920d"
   end
 
   resource "typing-extensions" do
@@ -246,8 +245,8 @@ class Checkov < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/4f/5a/597ef5911cb8919efe4d86206aa8b2658616d676a7088f0825ca08bd7cb8/urllib3-1.26.6.tar.gz"
-    sha256 "f57b4c16c62fa2760b7e3d97c35b255512fb6b59a259730f36ba32ce9f8e342f"
+    url "https://files.pythonhosted.org/packages/80/be/3ee43b6c5757cabea19e75b8f46eaf05a2f5144107d7db48c7cf3a864f73/urllib3-1.26.7.tar.gz"
+    sha256 "4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece"
   end
 
   resource "websocket-client" do
