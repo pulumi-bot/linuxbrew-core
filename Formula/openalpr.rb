@@ -11,6 +11,7 @@ class Openalpr < Formula
     sha256 big_sur:       "a686b58100f9c397a2be1eb70595c773440e26e652a8539745bcfebd38359b12"
     sha256 catalina:      "c1ba59a1d018a65f019ea162dd44efefc28ef54720f5b702c3763f21b5bdbb65"
     sha256 mojave:        "6b61f23a1832eaea3acebf2ac5333d96eaa2ac9f978b8c1dbe6cfabadf0e980c"
+    sha256 x86_64_linux:  "3bf248717da8025ebd21a2691dd99a4c61650aab1a8bb3ddfc89c84d5d48cc79"
   end
 
   depends_on "cmake" => :build
