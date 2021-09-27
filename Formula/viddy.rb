@@ -11,7 +11,7 @@ class Viddy < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a41c2e1195882c2f7742d534b28f0bb43677b262e0e5a66ff8e556296a039f37"
     sha256 cellar: :any_skip_relocation, catalina:      "1f7190c3d2f026fb06a7b12e1345be3b564de5265d29fadbe89b3d3995869882"
     sha256 cellar: :any_skip_relocation, mojave:        "6f0d8ea45e9a44c3da562a7e0b7ca230517cc9fd4ab153fe6521e4e8988355b0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "48522eaf53c20f2b5d9fe96cb28843962039d27686c065e0c2eac301aff8fce1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "48522eaf53c20f2b5d9fe96cb28843962039d27686c065e0c2eac301aff8fce1" # linuxbrew-core
   end
 
   depends_on "go" => :build

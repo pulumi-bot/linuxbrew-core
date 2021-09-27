@@ -17,7 +17,7 @@ class Libtorch < Formula
     sha256 cellar: :any,                 big_sur:      "259a9ade3880026cddffbadac967405d7a8900cce1d43739456f4acdd826a864"
     sha256 cellar: :any,                 catalina:     "49c7b2cbd6f18a984be41fe3412a7928e54533acb171abdc89311cff0eb9eab5"
     sha256 cellar: :any,                 mojave:       "65e1c0c4b62cbc28eb547f4139f8f42e007c9ad940475cbae74791b6dcb747a1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "871cf46f2c0cf09d4a54c33595ae699e70cea6c7b695dcc37a96244092358b3b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "871cf46f2c0cf09d4a54c33595ae699e70cea6c7b695dcc37a96244092358b3b" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
