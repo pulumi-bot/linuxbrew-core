@@ -6,6 +6,10 @@ class Uftrace < Formula
   license "GPL-2.0-only"
   head "https://github.com/namhyung/uftrace.git", branch: "master"
 
+  bottle do
+    sha256 x86_64_linux: "20893864b64914e83b664d1dc4f6c805285d9f48c4ba1514a8b2ac99e70cc185"
+  end
+
   depends_on "pandoc" => :build
   depends_on "pkg-config" => :build
   depends_on "capstone"
