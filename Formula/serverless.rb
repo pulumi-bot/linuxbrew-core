@@ -13,6 +13,7 @@ class Serverless < Formula
     sha256                               big_sur:       "106eb6b2cf3eb31a9f59e3ca216c9b138e4c14c6408a6b95d8384ed406caa9b3"
     sha256                               catalina:      "c19e90ac7ad5859bd2ad0bb01b4dff8adca145366b06ba470012b1f183db7d6e"
     sha256                               mojave:        "b01e64932191eb180c24f1d6b8357fec532e27e18c45b30082b7eda27eb2a6b6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1129fc5ef9241efb16518b91a21cab08ed28ccb3a9db63b01a38e673db99b134"
   end
 
   depends_on "node"
