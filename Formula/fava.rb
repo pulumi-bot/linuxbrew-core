@@ -3,17 +3,16 @@ class Fava < Formula
 
   desc "Web interface for the double-entry bookkeeping software Beancount"
   homepage "https://beancount.github.io/fava/"
-  url "https://files.pythonhosted.org/packages/5e/1d/fac85c0e333b7c647a228500675db73ad29ba8f5032c93d3e3ba66b29166/fava-1.20.tar.gz"
-  sha256 "d76a1b2cd2959860120848221e915c8a13f0311192a43f4a40c36e5075620c68"
+  url "https://files.pythonhosted.org/packages/25/01/582f2db4c4c4337b39dfdc9f3a323796cad673658975621173588071cb97/fava-1.20.1.tar.gz"
+  sha256 "e2d13041acfeab9a63addb2a56678b126476a277badac6a9fec0b2944f61a037"
   license "MIT"
   head "https://github.com/beancount/fava.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "6e543d115ac68d62d2d7dbd5ebe6e825de191ab5b1023b95a611db9efe9375dc"
-    sha256 cellar: :any_skip_relocation, big_sur:       "c4a7b163bf06e715ff2697fcc530250f90d42cdcf4399a50b45b28ee0619887b"
-    sha256 cellar: :any_skip_relocation, catalina:      "1df57b25ea900ebbefa46392350fe08b9d777df0912cfce48278ed6a3dd6c2ee"
-    sha256 cellar: :any_skip_relocation, mojave:        "73f215d8e4519039fd552a00b969d1e4074549ac6180d8677f39406799261978"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "129034be47e23f6da763f50177666da21813bfbf4546da45810a87549725d943" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "7a2bbf4a29fe6218ea9167deb2e687703493facdc38e96d80ad1b6a196448c68"
+    sha256 cellar: :any_skip_relocation, big_sur:       "365134b5d78611162e2d382194ed67f918ae5ca769a0587757b539bcd1c672b9"
+    sha256 cellar: :any_skip_relocation, catalina:      "fc63fb3226e979af9ec32278aa59361e18e9679520aac6ccd66e47a69a404a83"
+    sha256 cellar: :any_skip_relocation, mojave:        "a7eb116e79980128268b16d1efdc5198a3eb5dee9c21b43e689629f6fc193539"
   end
 
   depends_on "python@3.9"
@@ -92,8 +91,8 @@ class Fava < Formula
   end
 
   resource "google-api-python-client" do
-    url "https://files.pythonhosted.org/packages/ab/63/e9a707841231885772b70e918364c3ed2b380f6ac395391737262ed48ba8/google-api-python-client-2.21.0.tar.gz"
-    sha256 "0c8e81bec3a5f7c8bff8b8680f1a45c2ab34dcb445809dd5b1f8226dc56cc9c4"
+    url "https://files.pythonhosted.org/packages/58/ee/5abde1f3fb697466664c220bc4a1dc4dcb2527b6fc46bd6a7b81f086ac1e/google-api-python-client-2.22.0.tar.gz"
+    sha256 "835892df0dcaac64aef20929d817290bc89a671ea3a91b28fb9f9489b12f069f"
   end
 
   resource "google-auth" do
@@ -252,8 +251,8 @@ class Fava < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/4f/5a/597ef5911cb8919efe4d86206aa8b2658616d676a7088f0825ca08bd7cb8/urllib3-1.26.6.tar.gz"
-    sha256 "f57b4c16c62fa2760b7e3d97c35b255512fb6b59a259730f36ba32ce9f8e342f"
+    url "https://files.pythonhosted.org/packages/80/be/3ee43b6c5757cabea19e75b8f46eaf05a2f5144107d7db48c7cf3a864f73/urllib3-1.26.7.tar.gz"
+    sha256 "4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece"
   end
 
   resource "Werkzeug" do

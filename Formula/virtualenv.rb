@@ -3,17 +3,16 @@ class Virtualenv < Formula
 
   desc "Tool for creating isolated virtual python environments"
   homepage "https://virtualenv.pypa.io/"
-  url "https://files.pythonhosted.org/packages/39/2f/84439468561782ed91d9f9499738fb52a84e4d65f164849e7050db7834e5/virtualenv-20.8.0.tar.gz"
-  sha256 "4da4ac43888e97de9cf4fdd870f48ed864bbfd133d2c46cbdec941fed4a25aef"
+  url "https://files.pythonhosted.org/packages/dd/40/9bc1b32521f78c293c1f8ca423c725737dfa9d09640dbeec61cebca7c5f2/virtualenv-20.8.1.tar.gz"
+  sha256 "bcc17f0b3a29670dd777d6f0755a4c04f28815395bca279cdcb213b97199a6b8"
   license "MIT"
   head "https://github.com/pypa/virtualenv.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "40127b72306e8b72b152143c19c79648b91107feba2ad4b3a45d794fd9e23829"
-    sha256 cellar: :any_skip_relocation, big_sur:       "9674b080a12f4f69e15b7c618331a06fc2821c538092f21985455cb18a53355c"
-    sha256 cellar: :any_skip_relocation, catalina:      "494d45602e726b17f8f8c457d4e87838c667a57d23601854751f18ddb4285254"
-    sha256 cellar: :any_skip_relocation, mojave:        "55a8fdc1b2c16eb93c6c4eeb06b4ef0f4b326c2ef9e4cb1483cb49da07602992"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4dc5164e479d1c1adb6a11bd4df4e0a1fcca2e0758f360bf86af69362f8bf406" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "f4136524cfdbad0c6b818cdc83197b869acb73488d347f6e2b5f25e722ef055b"
+    sha256 cellar: :any_skip_relocation, big_sur:       "d9f59f7a3af68b04669324f162fa87f6f78c8250a553b80e92f44649e5f24971"
+    sha256 cellar: :any_skip_relocation, catalina:      "66874827573539ae8f63d65c9e8f9f4feb94a71defb27f7a7f24409e8fc9b6a3"
+    sha256 cellar: :any_skip_relocation, mojave:        "ce129153ca33977c9959f21f513a70fd36db8932b08057bd1406371b858a8486"
   end
 
   depends_on "python@3.9"
@@ -25,8 +24,8 @@ class Virtualenv < Formula
   end
 
   resource "distlib" do
-    url "https://files.pythonhosted.org/packages/45/97/15fdbef466e12c890553cebb1d8b1995375202e30e0c83a1e51061556143/distlib-0.3.2.zip"
-    sha256 "106fef6dc37dd8c0e2c0a60d3fca3e77460a48907f335fa28420463a6f799736"
+    url "https://files.pythonhosted.org/packages/56/ed/9c876a62efda9901863e2cc8825a13a7fcbda75b4b498103a4286ab1653b/distlib-0.3.3.zip"
+    sha256 "d982d0751ff6eaaab5e2ec8e691d949ee80eddf01a62eaa96ddb11531fe16b05"
   end
 
   resource "filelock" do
