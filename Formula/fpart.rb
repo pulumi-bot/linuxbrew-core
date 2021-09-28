@@ -10,6 +10,7 @@ class Fpart < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "741db79f38bc38921cd62b0fca57195acb793a50e64586ec68a2a6c8cb596aa0"
     sha256 cellar: :any_skip_relocation, catalina:      "0b987e9b4eb542e14cd1d894a318f94d0e9d08affa2c694713d909d7d6bd3dc7"
     sha256 cellar: :any_skip_relocation, mojave:        "b0e2dfd4356d31684bd79f8307217af16cb779448a30c9ad24114673c500e997"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "13304c2e16a01c67c6455cc115e8a486c945deccaf430724e87a47c15bee3bd1"
   end
 
   depends_on "autoconf" => :build
