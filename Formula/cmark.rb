@@ -10,6 +10,7 @@ class Cmark < Formula
     sha256 cellar: :any,                 big_sur:       "957b224ea8c9f23b3260013bf9f60d475cd9a0577ed9fede5ff096ed6035a9b1"
     sha256 cellar: :any,                 catalina:      "59254ee4c9602976612648c361ccc1288e4af8caca6a1ec5f12b263be1f0944d"
     sha256 cellar: :any,                 mojave:        "a4ec36e7473ba3fb80859464f712b9848c86fbd7979137d063ae3f1e7458784e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a519030b76311ae6e1a5772b9e19aad6e3e80ed9edc48b520946e58ab9d5320b"
   end
 
   depends_on "cmake" => :build
