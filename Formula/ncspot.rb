@@ -4,13 +4,13 @@ class Ncspot < Formula
   url "https://github.com/hrkfdn/ncspot/archive/v0.8.2.tar.gz"
   sha256 "86274e3115d11efc5cd14389f0f52674ef1353f2943304b9b014afd7f16122ab"
   license "BSD-2-Clause"
+  revision 1
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "8117c43330eb8b31428e6a1bf7b9a310b23ab7f95febb93ae173d49543735d0e"
-    sha256 cellar: :any,                 big_sur:       "f1eb987148a0db5acd0f5278851ac5432fabd53687a74f3fda3dbd7bc80dd1bb"
-    sha256 cellar: :any,                 catalina:      "c47a959de1dbfd45396162f4eeadac9cfe2aac41de20ab8e760e4cec589a9d75"
-    sha256 cellar: :any,                 mojave:        "d2bee764837f04d29f050fabf1b1d6430ffe6ec8af2cfb426ac8670c8678549e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9bc226c45d4b6297efef64efb3817f2a8f5a499cf441a16a2c15537b686ed03f" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "006908520bb2b297ab38570481fd5b2d51a2668549977ae800a9a2d2ad1ff77b"
+    sha256 cellar: :any,                 big_sur:       "05255511d98f0726723947f1ece3a6ea0bc489a19d39deff5d93729ce6462e6a"
+    sha256 cellar: :any,                 catalina:      "e8ba2b94588303c1cdf4719b9f9470a89a8d4b235f9cb3aea32f3376dbc8fb6b"
+    sha256 cellar: :any,                 mojave:        "28aae6e35fe7d5749ab7b2d81d4905e85f821ad97c565e8ab10b2da8f401f545"
   end
 
   depends_on "python@3.9" => :build
@@ -30,7 +30,7 @@ class Ncspot < Formula
   def install
     ENV["COREAUDIO_SDK_PATH"] = MacOS.sdk_path_if_needed
     system "cargo", "install", "--no-default-features",
-                               "--features", "portaudio_backend,cursive/pancurses-backend",
+                               "--features", "portaudio_backend,cursive/pancurses-backend,share_clipboard",
                                *std_cargo_args
   end
 

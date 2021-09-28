@@ -3,16 +3,15 @@ class PassGitHelper < Formula
 
   desc "Git credential helper interfacing with pass"
   homepage "https://github.com/languitar/pass-git-helper"
-  url "https://github.com/languitar/pass-git-helper/archive/v1.1.1.tar.gz"
-  sha256 "17a4c36d0fe67a7a4a709da3c0649d10efb02df266e62765661eac2ced4bc03d"
+  url "https://github.com/languitar/pass-git-helper/archive/v1.1.2.tar.gz"
+  sha256 "4acfb486d0873014376383167792ee2b46926386718eb2331a1b4564576a2076"
   license "LGPL-3.0-or-later"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "5b307f5511251caa62b883a7b6883e8c1fbc3592f781367191323c2318118c0d"
-    sha256 cellar: :any_skip_relocation, big_sur:       "596a8169fd6f497d1bf3281c705e6b0ae8acfd32932aae43e48767e82dd3bbfa"
-    sha256 cellar: :any_skip_relocation, catalina:      "8119c8268a4b9340b0b13e58488c862f360b76dbd4f0979baa2ab18fbcb64ca7"
-    sha256 cellar: :any_skip_relocation, mojave:        "ceea5bff46e7d2cdb714dd0b4801c21c3279706f7b3bdeccaf9a26e762c7954a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b2e43b3baaa416832ddb54ce05bad41aca8f8376fab6bee6d73c66e573553738" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "da53d4cbc56dc0cd97b63df750c5c6d9600b65e8d7b2f48266cdcaff83715ef1"
+    sha256 cellar: :any_skip_relocation, big_sur:       "02b2eb5b4f2d7fab7bdbe3961b55820321aa87cef907e81bc419d4d30297f155"
+    sha256 cellar: :any_skip_relocation, catalina:      "02b2eb5b4f2d7fab7bdbe3961b55820321aa87cef907e81bc419d4d30297f155"
+    sha256 cellar: :any_skip_relocation, mojave:        "02b2eb5b4f2d7fab7bdbe3961b55820321aa87cef907e81bc419d4d30297f155"
   end
 
   depends_on "gnupg" => :test

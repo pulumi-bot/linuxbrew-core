@@ -1,17 +1,15 @@
 class Julia < Formula
   desc "Fast, Dynamic Programming Language"
   homepage "https://julialang.org/"
-  url "https://github.com/JuliaLang/julia/releases/download/v1.6.2/julia-1.6.2.tar.gz"
-  sha256 "d56422ac75cbd00a9f69ca9ffd5b6b35c8aeded8312134ef45ffbba828918b5e"
+  url "https://github.com/JuliaLang/julia/releases/download/v1.6.3/julia-1.6.3.tar.gz"
+  sha256 "2593def8cc9ef81663d1c6bfb8addc3f10502dd9a1d5a559728316a11dea2594"
   license all_of: ["MIT", "BSD-3-Clause", "Apache-2.0", "BSL-1.0"]
-  revision 3
   head "https://github.com/JuliaLang/julia.git"
 
   bottle do
-    sha256 cellar: :any,                 big_sur:      "f24302531a1fc1bb39977ee592188c301e82d44efea7bd75debf8f8f6dc9f3ed"
-    sha256 cellar: :any,                 catalina:     "0f9b35d897c093c19f2cc00d9684b74ddc555daefe1785b6730bfbf256b6ff34"
-    sha256 cellar: :any,                 mojave:       "fc7d1d0ae0927098d081c8963f97de5c1d09603fbabd0a96ccf41899b28a4bc6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "d78c9e7782cae968a08ba7e6a9215535111795b2b39de43ddc431cb32b55ace9" # linuxbrew-core
+    sha256 cellar: :any,                 big_sur:      "321b88173bf2a9e5a31144afe99ae42eb75dad1a764e593d6f7ffb0bfe89db35"
+    sha256 cellar: :any,                 catalina:     "148229555eb13f101a177ad112a3b6057ae9f40b1e4b772d40ad545117268499"
+    sha256 cellar: :any,                 mojave:       "b7746d8dc021ad4e5a1d911ef316a3532c32bcb5ee8ab1aa493fc0797b99fad0"
   end
 
   depends_on "python@3.9" => :build
