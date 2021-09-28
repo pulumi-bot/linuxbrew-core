@@ -6,6 +6,10 @@ class RubyInstall < Formula
   license "MIT"
   head "https://github.com/postmodern/ruby-install.git", branch: "master"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "dc8ccd83e5f95f77186431f37297226dfc15042ab835da617c03dd052e73e6b7"
+  end
+
   def install
     system "make", "install", "PREFIX=#{prefix}"
 
