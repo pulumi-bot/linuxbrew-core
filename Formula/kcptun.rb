@@ -11,6 +11,7 @@ class Kcptun < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1ad1270e0bba0a7dc12310895df5d16387fe419368e6cfc6a374d818f9c1678b"
     sha256 cellar: :any_skip_relocation, catalina:      "445130c0d80589759e05859e2e999335eed7a00a845709c659432c54773d3a35"
     sha256 cellar: :any_skip_relocation, mojave:        "d2b5d0001b6afed4dcf1804930bc47a8b3df26e75717e18319e38c2b9ebba890"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "74c644d4282ee536136dfa9f2221d9fc01e09359221ea5ae98b620d697683f0a"
   end
 
   depends_on "go" => :build
