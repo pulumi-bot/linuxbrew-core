@@ -10,6 +10,7 @@ class Libmtp < Formula
     sha256 cellar: :any,                 big_sur:       "fe872960e99114fbd0d4be480a15ec26fdc026aad3ed4da3f3e2fd15abb15ae8"
     sha256 cellar: :any,                 catalina:      "f12d61d228ec4e1441c8d8f12dead6c3bebc7123485dbeae515a691c288587b4"
     sha256 cellar: :any,                 mojave:        "09489dbbe7941577ecccf2db5950e9ffb6f72b3caf85f6a4de08affae30f7e29"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "25c0d3a716b3557bcb1e6d839e05b39f8160a22e1e2761476a57ed88d8a64959"
   end
 
   depends_on "pkg-config" => :build
