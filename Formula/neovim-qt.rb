@@ -11,6 +11,7 @@ class NeovimQt < Formula
     sha256 cellar: :any, big_sur:       "42019f88da4ede0e143b06779a6d89c3c02c7b61e5029e97a11966ac62e8a4a8"
     sha256 cellar: :any, catalina:      "14c3958fc58680157c242535783da6b4979667630ca634983ab30700f220f455"
     sha256 cellar: :any, mojave:        "787697eae5c8c23f259fada57c9f3ea2b54c2db356f0635d5982dc2041341c81"
+    sha256               x86_64_linux:  "23dada7f611b7e124eeb7ac6795028ced6da817e6286250e0dd8dc9b8d9c67bb"
   end
 
   depends_on "cmake" => :build
