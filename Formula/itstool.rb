@@ -11,7 +11,7 @@ class Itstool < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "acbdf687a02126c08c69514d248804c3833408331272fe8fb3751eb7d8dc0502"
     sha256 cellar: :any_skip_relocation, catalina:      "acbdf687a02126c08c69514d248804c3833408331272fe8fb3751eb7d8dc0502"
     sha256 cellar: :any_skip_relocation, mojave:        "acbdf687a02126c08c69514d248804c3833408331272fe8fb3751eb7d8dc0502"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "01fcbe25d1551ec84a14e3a880d9565057065d5024491f870626e5d89921565d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "01fcbe25d1551ec84a14e3a880d9565057065d5024491f870626e5d89921565d" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build

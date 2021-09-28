@@ -14,7 +14,7 @@ class Psqlodbc < Formula
     sha256 cellar: :any,                 big_sur:       "8109e135efa71d1e0369b2433181819ef275bec48934a5b3107f99fcdce73efb"
     sha256 cellar: :any,                 catalina:      "6da4ec9d0ec4ce763dc117b4e8c465289a90ea05c5c4d8bc954789334ea8021c"
     sha256 cellar: :any,                 mojave:        "c766f5701dba28974ac654fcba040715fcef30a6fc9974802d7b61a5d63e0584"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "de683e7933da22982cc7d6804a8d5ebb0333c87c8cff49aa3ec23c8e2119ea8b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "de683e7933da22982cc7d6804a8d5ebb0333c87c8cff49aa3ec23c8e2119ea8b" # linuxbrew-core
   end
 
   head do
