@@ -12,6 +12,7 @@ class Goreleaser < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9a0571e4cbc29014df0b3eb46d7f61c4e56c1b218b28c09ff5fd79cb7023aaad"
     sha256 cellar: :any_skip_relocation, catalina:      "fc90857250deff0ac9945943f1bc20337827943918af3347e899f4cf59f01935"
     sha256 cellar: :any_skip_relocation, mojave:        "dfc506524151f8f4a6b866daaffaa1652e39c7f5ac35336cb7f89872212109ac"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "542ca3fdab51317d3e5e7164435480bb4e77ffa4c72fb754c50699711c7580ae"
   end
 
   depends_on "go" => :build
