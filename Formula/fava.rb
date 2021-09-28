@@ -13,7 +13,7 @@ class Fava < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "365134b5d78611162e2d382194ed67f918ae5ca769a0587757b539bcd1c672b9"
     sha256 cellar: :any_skip_relocation, catalina:      "fc63fb3226e979af9ec32278aa59361e18e9679520aac6ccd66e47a69a404a83"
     sha256 cellar: :any_skip_relocation, mojave:        "a7eb116e79980128268b16d1efdc5198a3eb5dee9c21b43e689629f6fc193539"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3557ddffaa1bc89ba3d79b0427572ce5765abed23cddaa443c5255b4d362c2a7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3557ddffaa1bc89ba3d79b0427572ce5765abed23cddaa443c5255b4d362c2a7" # linuxbrew-core
   end
 
   depends_on "python@3.9"

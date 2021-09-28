@@ -11,7 +11,7 @@ class CargoLlvmLines < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "65a2750b5af50dc662e5015af0e86648af4258282bde5bef173edf5ee743bc8b"
     sha256 cellar: :any_skip_relocation, catalina:      "c7d2161ae1981fdab972e20cf41854a1db147dc51955bfe5f60de81fbdb14a19"
     sha256 cellar: :any_skip_relocation, mojave:        "2c964ba29b0a1d5f5c3d0bd6408a434acbe4f1f501319f8c92daf8caea219795"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6fb066c9f466fac2bdf6fb293a7e531dcc4937a930ce417ef5bb622511a75341"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6fb066c9f466fac2bdf6fb293a7e531dcc4937a930ce417ef5bb622511a75341" # linuxbrew-core
   end
 
   depends_on "rust"

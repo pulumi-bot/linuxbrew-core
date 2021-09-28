@@ -13,7 +13,7 @@ class Cruft < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "11874704db77b579f93c0c7702836d9c2fdbac6ab1a8626af6abf0a66880103b"
     sha256 cellar: :any_skip_relocation, catalina:      "14044cf86125f565a8a525f40e6c63bd0ddd1f9051c76b0f8cd4bb0a79e8fec3"
     sha256 cellar: :any_skip_relocation, mojave:        "5ecddcc0e06e81bc3844129b41627981fc8ddfb6c03d2e5e98a8b26625dbf305"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e0c7bb92ec2f1c87384f63d1c9cd54054ff0852ba42aae0121e6d465ba58129c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e0c7bb92ec2f1c87384f63d1c9cd54054ff0852ba42aae0121e6d465ba58129c" # linuxbrew-core
   end
 
   depends_on "poetry" => :build

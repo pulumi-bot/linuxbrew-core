@@ -11,7 +11,7 @@ class Age < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f0e0fc5e332fe33bd31d031ffe0a9b58cdd4f4d6f8091c6746e80adaf68ffd58"
     sha256 cellar: :any_skip_relocation, catalina:      "309d3c08abe1e8559c8cb53cbf178c52d4286a50c85ad8e1a5b6b400f0fdd296"
     sha256 cellar: :any_skip_relocation, mojave:        "ae8a1716f79382d7367d87c28d5b9c77a13d2c85c0680b955378eecd0c446783"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d605619aada179ae390b4f61c17a2bde36429ae70e28a03e4056c2be0139e4d6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d605619aada179ae390b4f61c17a2bde36429ae70e28a03e4056c2be0139e4d6" # linuxbrew-core
   end
 
   depends_on "go" => :build
