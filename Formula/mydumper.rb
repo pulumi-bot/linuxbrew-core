@@ -10,7 +10,7 @@ class Mydumper < Formula
     sha256 cellar: :any,                 big_sur:       "8341325410e05edcd172e0e0cbae1573669f963b2b6c73545541330d1bb2ab27"
     sha256 cellar: :any,                 catalina:      "b7e08a8d5d013f0caaaa02b5edd7058cbbccdec3bc405d8b245f501d907155c3"
     sha256 cellar: :any,                 mojave:        "f5454f9c700b5301bfa103346a9b72f4a8b976c4b2d2e92d549680ebbb583d45"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8b881a54d39e92df54a44f006d9d11a93f2d14e2b840633bc13c80b1c7a40616"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8b881a54d39e92df54a44f006d9d11a93f2d14e2b840633bc13c80b1c7a40616" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
