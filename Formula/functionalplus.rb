@@ -1,9 +1,9 @@
 class Functionalplus < Formula
   desc "Functional Programming Library for C++"
   homepage "https://github.com/Dobiasd/FunctionalPlus"
-  url "https://github.com/Dobiasd/FunctionalPlus/archive/v0.2.15-p0.tar.gz"
-  version "0.2.15"
-  sha256 "4c76104ec8f6da5e66ed768380bdf128e0ba01725056c40a3c1b850cf4b441ad"
+  url "https://github.com/Dobiasd/FunctionalPlus/archive/v0.2.16-p0.tar.gz"
+  version "0.2.16"
+  sha256 "6026e64260afbd6941aaf19559d6e5dc51cbb3e045ef8d8e158d96bcd8651ed6"
   license "BSL-1.0"
   head "https://github.com/Dobiasd/FunctionalPlus.git"
 
@@ -14,10 +14,6 @@ class Functionalplus < Formula
       # Omit `-p0` suffix but allow `-p1`, etc.
       tags.map { |tag| tag[regex, 1]&.sub(/[._-]p0/i, "") }
     end
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ab75da7d297b2258e1e906027bd3d5abe6b7464339288730eae5fec22b931715" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

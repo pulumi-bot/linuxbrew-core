@@ -1,8 +1,9 @@
 class Mandoc < Formula
   desc "UNIX manpage compiler toolset"
   homepage "https://mandoc.bsd.lv/"
-  url "https://mandoc.bsd.lv/snapshots/mandoc-1.14.5.tar.gz"
-  sha256 "8219b42cb56fc07b2aa660574e6211ac38eefdbf21f41b698d3348793ba5d8f7"
+  url "https://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz"
+  sha256 "8bf0d570f01e70a6e124884088870cbed7537f36328d512909eb10cd53179d9c"
+  license "ISC"
   head "anoncvs@mandoc.bsd.lv:/cvs", using: :cvs
 
   livecheck do
@@ -11,13 +12,10 @@ class Mandoc < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "1de7d1e05231afb26c450c435c75b1822b98416405930b4c505df07f9ff6a4c3"
-    sha256 big_sur:       "62085d74ed9eb8c3765e3f187784b0e55842f0ad666de8f8e66463a2db09b791"
-    sha256 catalina:      "f408752db9b1ba4cc1fc8f47fdf41e1ade8abbcf243e947938efbbea550006b4"
-    sha256 mojave:        "78ffbf8bee7e5135ea303bb861f432288f2d48d403d7e932753b1ef962348917"
-    sha256 high_sierra:   "3236fdca9fe2cd8cca29d246d9252eaeea8ceeb7d8f5251574c2bc771a841647"
-    sha256 sierra:        "6176fcab59057d2188db3047849f96170bcb2133bfbe1f8c94845895d6a89bec"
-    sha256 x86_64_linux:  "59ebf51a88060585b467c262034385d3830888f791ac04b429d7ce49dd9e6c49" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "961503c6406f83c6e7969e5dbdfd8788caf68d0ccc613b81d198233f9ca42e60"
+    sha256 cellar: :any_skip_relocation, big_sur:       "e5f577c8cbbe699076db1412944b56ee5c9d6537cef4d69bb4988ac3a1be74b1"
+    sha256 cellar: :any_skip_relocation, catalina:      "8a5308647cb76d0c9a2ff8d6c59cb52319fbfd0eba1135fced543e5f9b3a63a7"
+    sha256 cellar: :any_skip_relocation, mojave:        "1b7c8c7c3cdf95bf6dcb0300aecbfbc591ea48588d23fcf65b8f61f0e65cc86c"
   end
 
   uses_from_macos "zlib"
