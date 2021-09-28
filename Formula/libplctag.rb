@@ -15,6 +15,7 @@ class Libplctag < Formula
     sha256 cellar: :any,                 big_sur:       "6e02a23c1ecfc5bbe739638611de63e29da6c8515e72c812a7144b5c62209542"
     sha256 cellar: :any,                 catalina:      "aac1f8fa13bb852e84752bb6a922a6ebd77cc62b7ec682281c6640e42ac0f66c"
     sha256 cellar: :any,                 mojave:        "254d1b51b49e10089ce00123ede7310783bfa6a6f37609c42cc17d58596279ce"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1bdbe8a3361b5827851d40a7348a89c573270adc21361a3a32668eec3c05087d"
   end
 
   depends_on "cmake" => :build
