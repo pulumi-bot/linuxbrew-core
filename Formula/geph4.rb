@@ -11,7 +11,7 @@ class Geph4 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d78aa96fe152ffbaf59b262fe6ed5fdc78bc71215fc55b3e5893b82e100865f3"
     sha256 cellar: :any_skip_relocation, catalina:      "0d158c47acaa8221ee4db67333eca2d06a9cf6ea58e8dd1a72be463705951713"
     sha256 cellar: :any_skip_relocation, mojave:        "d5de96622d23bc8c574bd662941a415d85a8f0d71823b4014c1074a7606e7d80"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e536f9bd27d003f6fda93d107a498e258fd26666ee03497cf0edfccdeeee8f2d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e536f9bd27d003f6fda93d107a498e258fd26666ee03497cf0edfccdeeee8f2d" # linuxbrew-core
   end
 
   depends_on "rust" => :build

@@ -16,7 +16,7 @@ class RancherCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "eceff7f2924ce3aa42e3e5cb180b38eb41a2747321d29d6d2588d0b17d5b20cc"
     sha256 cellar: :any_skip_relocation, catalina:      "d99b09b8067c46c3bad171bfa9998680a2a13ae658641be7c6fd0830f37a8642"
     sha256 cellar: :any_skip_relocation, mojave:        "f231900ea626c094b98f7620e12921691fe1f86781a66033ae9b07cdd2721bea"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f22314698f65e0c5af34ae3fd342ad57ed052cdc28a684245620a9e1ee364ccc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f22314698f65e0c5af34ae3fd342ad57ed052cdc28a684245620a9e1ee364ccc" # linuxbrew-core
   end
 
   depends_on "go" => :build

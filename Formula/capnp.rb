@@ -16,7 +16,7 @@ class Capnp < Formula
     sha256 big_sur:       "bba67dd6a19595bcf2ca687bcce24a725fb05ee3e862506ddc6cbb7aec87defd"
     sha256 catalina:      "587630a09f37214d09864150ba694cc089b326cc57fe787427a71114b4b26244"
     sha256 mojave:        "b0d06dffe22d722e87a066b80cf667cb41372f175a80cd6877b5d856bfb080ac"
-    sha256 x86_64_linux:  "953ad6aa5c56c6763971affbaf2bd02b761921e872239e5d18fc0ced3193b91f"
+    sha256 x86_64_linux:  "953ad6aa5c56c6763971affbaf2bd02b761921e872239e5d18fc0ced3193b91f" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

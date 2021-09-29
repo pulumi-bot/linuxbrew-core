@@ -11,7 +11,7 @@ class Kubeconform < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "59896d6b0a79a9214e780493a7178e3a2fd376206d079d746c8601a1c39c7572"
     sha256 cellar: :any_skip_relocation, catalina:      "057e364e1e8f55490f97960fbd4f9a155de3198730c91cb24f325fa554bce3bb"
     sha256 cellar: :any_skip_relocation, mojave:        "5342902c7d6a76596cb9fa432dc545e79f8a6397c49313df5acf891c03e7602a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ae4a06a6f2e2ae77140ba4a99a313ef8459e7441f94a7e7aa7ff78ab586fd763"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ae4a06a6f2e2ae77140ba4a99a313ef8459e7441f94a7e7aa7ff78ab586fd763" # linuxbrew-core
   end
 
   depends_on "go" => :build

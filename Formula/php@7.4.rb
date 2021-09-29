@@ -17,7 +17,7 @@ class PhpAT74 < Formula
     sha256 big_sur:       "ad37997f3ef5f09e77ff3398cf1dafb7b7c7f7a9a53e12995c47b11fec58c968"
     sha256 catalina:      "258a6ee57ffe4bdf646224e92ce6f0e08d59952a2559dabe9a2c8e8d4241ff47"
     sha256 mojave:        "2c0c14539922e95653d49dcad3420fd2c6b85fba8061ddc06a62b78bf8dab3a6"
-    sha256 x86_64_linux:  "c400a65b45f7e33af10341c744675e5dd792a3e3b4df0aada5bff56cb4de7808"
+    sha256 x86_64_linux:  "c400a65b45f7e33af10341c744675e5dd792a3e3b4df0aada5bff56cb4de7808" # linuxbrew-core
   end
 
   keg_only :versioned_formula

@@ -10,7 +10,7 @@ class Keptn < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b8d83d543e45bf2a3287abc268d677cf33c79245a735146f12fec42e07278b1b"
     sha256 cellar: :any_skip_relocation, catalina:      "718d29d52f0e5780d0067f9b5eafad4a08a648b3bf605ab83ff939c547492b5c"
     sha256 cellar: :any_skip_relocation, mojave:        "920e3054b80aabed5310763a63c1af4a76ad680943771260cf77f4bffe4ab2b9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bdba46209177a40c557bf9a4a517da9ec045e91065d34c46545b7d0d12f989e8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bdba46209177a40c557bf9a4a517da9ec045e91065d34c46545b7d0d12f989e8" # linuxbrew-core
   end
 
   depends_on "go" => :build

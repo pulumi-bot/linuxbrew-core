@@ -12,7 +12,7 @@ class CyralGimmeDbToken < Formula
     sha256 cellar: :any,                 big_sur:       "66300b8d807d3a4c836216d1215349cb4187121420da3424e46e72e6d07de51c"
     sha256 cellar: :any,                 catalina:      "040741f88d93debbb6a7e05683f0708dca22a0c65f90b8df12340e6e953b0190"
     sha256 cellar: :any,                 mojave:        "380042da028a7c2256439008db9b51918b9c379f48483130a1b56625d1c7d228"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "32bad1be3faf5ba5b444f78d2d484e6a33485fa1b5ddb0ca013d15a4e0292865"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "32bad1be3faf5ba5b444f78d2d484e6a33485fa1b5ddb0ca013d15a4e0292865" # linuxbrew-core
   end
 
   depends_on "rust" => :build # for cryptography

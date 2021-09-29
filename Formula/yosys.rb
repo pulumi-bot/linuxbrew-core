@@ -11,7 +11,7 @@ class Yosys < Formula
     sha256 big_sur:       "20a8b72ea5eea5fb9d3fc8a389bcdb4c054ddac7748f6dca79607b758cc633c4"
     sha256 catalina:      "6fb54383e9cae9397f0ed820d819669e2449f259bd5a30e62e549efe58251252"
     sha256 mojave:        "ba794845f034e803e56eea999c40d784530ae98a3600bb3f12e4fb97140eca9c"
-    sha256 x86_64_linux:  "79c9b9594b72058298df0cd274b66047620b5e19d2cfe6afc73ac309f16de087"
+    sha256 x86_64_linux:  "79c9b9594b72058298df0cd274b66047620b5e19d2cfe6afc73ac309f16de087" # linuxbrew-core
   end
 
   depends_on "bison" => :build
