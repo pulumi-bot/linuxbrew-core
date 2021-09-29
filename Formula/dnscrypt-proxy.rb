@@ -16,7 +16,7 @@ class DnscryptProxy < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "66deed2c2da425b2443ac734e61b83cb55d7298179390b6ea3292fdfdca6f703"
     sha256 cellar: :any_skip_relocation, catalina:      "fcc6afc722e5b3dc444c99f253d2424f82e3d40daf27524de03bcee09ec69c8e"
     sha256 cellar: :any_skip_relocation, mojave:        "b83c086949a3fbbe51c4030db4ad3dccc0f4e48ad502eacbe26e4fe4286f4aef"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "77aae5163ef05d720e2cbad1b65bc5d0a3beee7b245216ba683efbe9e5257a83"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "77aae5163ef05d720e2cbad1b65bc5d0a3beee7b245216ba683efbe9e5257a83" # linuxbrew-core
   end
 
   depends_on "go" => :build

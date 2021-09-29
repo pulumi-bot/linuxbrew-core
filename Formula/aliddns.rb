@@ -12,7 +12,7 @@ class Aliddns < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "107cb79b754c414f6ffc4bf48ad086e502ad1b39aba147177e3490258e840f8b"
     sha256 cellar: :any_skip_relocation, catalina:      "67937c8e5e9379f4eb36adb24f5b1c5330d488dbe032e0cca376709c03f7b29b"
     sha256 cellar: :any_skip_relocation, mojave:        "ee4a2ad57559bd87b208aa6a58d949b2271b99c767c1bc6e6d8a1fb4996f6e36"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c2f2e7a4c81fc402a372ea37b80dbf8f6190595122704088744f4ba7c5fc50ce"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c2f2e7a4c81fc402a372ea37b80dbf8f6190595122704088744f4ba7c5fc50ce" # linuxbrew-core
   end
 
   depends_on "go" => :build
