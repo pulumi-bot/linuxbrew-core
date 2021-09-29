@@ -10,7 +10,7 @@ class Libexif < Formula
     sha256 big_sur:       "17a348763e827089c2d2fb2b2c631f38df87d99234d81f2bbbe1c7219577522c"
     sha256 catalina:      "5b2a8266f5236b9fe1921040976c07d9eda3cc178a2c2d82824254de82df0e2e"
     sha256 mojave:        "85e039d08a8668365cd7f71a9012c587028e4e6d6dfe0a9cc082bcc99ca7b643"
-    sha256 x86_64_linux:  "6b20530c09fffe2d4dcda90dfd9b8c1869e1ff58fe94eb9e74763d2f705f1a9e"
+    sha256 x86_64_linux:  "6b20530c09fffe2d4dcda90dfd9b8c1869e1ff58fe94eb9e74763d2f705f1a9e" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
