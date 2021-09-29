@@ -10,6 +10,7 @@ class Ko < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "2f8e6fcfc3205e830387bff26c4f5ac01ac9d4e9afbc902a7140976dd30cf965"
     sha256 cellar: :any_skip_relocation, catalina:      "bfd196ae4e4184bba5b4e5c6bad6b5dc4fab57af2f22b383d1ab00cb0090c030"
     sha256 cellar: :any_skip_relocation, mojave:        "359497988b2c425ff3ba43ab22e8b6dae276c51372f390e5fe065f448fe74768"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b93b10a18c9e5c04e4d3409e7f109d84680545b945ee53c614a98f6f8673c55b"
   end
 
   depends_on "go" => :build
