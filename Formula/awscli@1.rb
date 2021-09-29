@@ -4,8 +4,8 @@ class AwscliAT1 < Formula
   desc "Official Amazon AWS command-line interface"
   homepage "https://aws.amazon.com/cli/"
   # awscli should only be updated every 10 releases on multiples of 10
-  url "https://files.pythonhosted.org/packages/18/de/c6eebcee4270191be79dae7043386327847a5d1b354d2340e1e8e9d0a6dd/awscli-1.20.40.tar.gz"
-  sha256 "333ed2e78b8750a81d72636a3c587e797007c11eaa5ef388210496455526852c"
+  url "https://files.pythonhosted.org/packages/36/bb/98d52117a262f84b7baba2f69c2a86990bcb4868e7da4858789135ce9b2f/awscli-1.20.50.tar.gz"
+  sha256 "79c91d342f2e380ba76a07276671d057203078cf370f98c5958826bd3f8685a6"
   license "Apache-2.0"
 
   livecheck do
@@ -14,11 +14,10 @@ class AwscliAT1 < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "f12864d56b970d782dd1a062a9cf5e7319f5279473f516e15499214b048faf85"
-    sha256 cellar: :any,                 big_sur:       "87074e270f2ba99e25e7fb0be68337cc473f44bdf5ca616e094f4801d3191ee4"
-    sha256 cellar: :any,                 catalina:      "c54b381b285f3f3752d25c9f95e856fa52731a7bf3a18a62ad717de21a57a546"
-    sha256 cellar: :any,                 mojave:        "4ead210e2c1ba8abe0976c47bb9e680d2bb466d7de7061d16b335cd244ab00e6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "24a00cde7d514be266d762d1ef3c7fc2f124122b3def3b766fd31a87b09c60db" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "e983642976490baee663d67b3caba43726cb752b3f691981b636bf89bc01355a"
+    sha256 cellar: :any,                 big_sur:       "0519caf41cee1ed0d64980de0365abbf6e97d7ee64d08b07c9e5e25e6551740b"
+    sha256 cellar: :any,                 catalina:      "c8a66e6c5d8e74d919e318e5c2d1e3743efa2caf817ee1e5f95cac8f5d3abccb"
+    sha256 cellar: :any,                 mojave:        "784e23b14763e5068193b2316a37c3707a6ef2d2661b3306f3202b80581c8d31"
   end
 
   keg_only :versioned_formula
@@ -31,8 +30,8 @@ class AwscliAT1 < Formula
   uses_from_macos "groff"
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/b7/88/fe628b486c120cef17e2796e4a67636039ac8a18325a1106755aa3cdab5a/botocore-1.21.40.tar.gz"
-    sha256 "95efb127e9149f7a6b12b116cb1e65c11e36bf6d588ac877b2b51a3c9bbcf22a"
+    url "https://files.pythonhosted.org/packages/b1/83/52e321373100098d39e6f1e3b306559d5b3a446e7d7c166fc1d5b9fdebb7/botocore-1.21.50.tar.gz"
+    sha256 "06e4d529071accac2ef93de1f9827dce0b41b0b6d9f81bd81d31aa2342d72631"
   end
 
   resource "colorama" do
@@ -76,8 +75,8 @@ class AwscliAT1 < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/4f/5a/597ef5911cb8919efe4d86206aa8b2658616d676a7088f0825ca08bd7cb8/urllib3-1.26.6.tar.gz"
-    sha256 "f57b4c16c62fa2760b7e3d97c35b255512fb6b59a259730f36ba32ce9f8e342f"
+    url "https://files.pythonhosted.org/packages/80/be/3ee43b6c5757cabea19e75b8f46eaf05a2f5144107d7db48c7cf3a864f73/urllib3-1.26.7.tar.gz"
+    sha256 "4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece"
   end
 
   def install
