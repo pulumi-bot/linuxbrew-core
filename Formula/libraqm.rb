@@ -10,6 +10,7 @@ class Libraqm < Formula
     sha256 cellar: :any,                 big_sur:       "66f14af1e2afb8aa3f89cb6b2bc0e0274a260bf832250364ec691e398296fe8b"
     sha256 cellar: :any,                 catalina:      "d619aee4f8e198220d88df6c68ab19ad4b4dbb1a16a4c910ffe923281461d4a5"
     sha256 cellar: :any,                 mojave:        "cd4063f2520edce76e7a53a676508410ba42bdfe34f3a49c58414f94ea2ab647"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9435ed91d1d18865b406874aedd92b2b7c34e211970d19aaccf550b20a68303a"
   end
 
   depends_on "autoconf" => :build
