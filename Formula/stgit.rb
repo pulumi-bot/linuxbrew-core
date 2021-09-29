@@ -6,6 +6,10 @@ class Stgit < Formula
   license "GPL-2.0-only"
   head "https://github.com/stacked-git/stgit.git", branch: "master"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e3bdca3fa2b8dfd10dd3e89dd08aa7c5760d7fb9159c1abecbb56b53c9241731"
+  end
+
   depends_on "asciidoc" => :build
   depends_on "xmlto" => :build
   depends_on "python@3.9"
