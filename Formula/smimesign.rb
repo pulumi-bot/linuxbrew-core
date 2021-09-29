@@ -1,15 +1,15 @@
 class Smimesign < Formula
   desc "S/MIME signing utility for use with Git"
   homepage "https://github.com/github/smimesign"
-  url "https://github.com/github/smimesign/archive/v0.1.1.tar.gz"
-  sha256 "cc33a5327de86425f7bbcbafaa9b0689da84c1925e387dac181f4a402ffbd759"
+  url "https://github.com/github/smimesign/archive/v0.1.2.tar.gz"
+  sha256 "890b85bd5300dc2b2d4ba7e450d51c103ccb17923a937f06a58673cbedf93dd3"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c3f4c92352787070142ddd12f790f4804ed5ef2b76089625aa30fcfef97afcaa"
-    sha256 cellar: :any_skip_relocation, big_sur:       "bf7f62f82fe0ebb4e193398fac409ac543487e48d68a9f95c23149b5015960c4"
-    sha256 cellar: :any_skip_relocation, catalina:      "2ed575699e487d4d428142f69504785e8cafb7d2bfc316f93481e7d6a4c9935c"
-    sha256 cellar: :any_skip_relocation, mojave:        "91be725d12baa79d08e6cd67bed3528d22f5fe39ce1664001ab0a0c1ceff3093"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "aac8e5874ac87a67c2160119794b058d60a0f05e3a84879b414b8a581d8d7960"
+    sha256 cellar: :any_skip_relocation, big_sur:       "eee6928c9a0910092cac7e40f898ac786680e665dc20eab1e9e6643c8bbefc24"
+    sha256 cellar: :any_skip_relocation, catalina:      "b63db200f9b9303940cde9c64a588e27475fda08bb478f49451316c41d48d71f"
+    sha256 cellar: :any_skip_relocation, mojave:        "b3b5ac68fde1afbb262eaad0cd10d21f8b78212de226a064f763a51444fbe5ba"
   end
 
   depends_on "go" => :build
