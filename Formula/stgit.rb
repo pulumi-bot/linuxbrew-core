@@ -1,14 +1,10 @@
 class Stgit < Formula
   desc "Manage Git commits as a stack of patches"
   homepage "https://stacked-git.github.io"
-  url "https://github.com/stacked-git/stgit/releases/download/v1.1/stgit-1.1.tar.gz"
-  sha256 "fc9674943c8e5534122ad96646078b4f07b7b69fc202b57eaa9b430ee13f0d9b"
+  url "https://github.com/stacked-git/stgit/releases/download/v1.3/stgit-1.3.tar.gz"
+  sha256 "44819a9809dba10ee9664f59f43fd40e5a338c99cb1181667b0a1e6428157e2b"
   license "GPL-2.0-only"
   head "https://github.com/stacked-git/stgit.git", branch: "master"
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0ed960be4bdf25d344c24317b56ab3a9435c9186bb95bdd037708b126c151e17" # linuxbrew-core
-  end
 
   depends_on "asciidoc" => :build
   depends_on "xmlto" => :build

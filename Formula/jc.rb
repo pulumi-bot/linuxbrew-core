@@ -3,16 +3,15 @@ class Jc < Formula
 
   desc "Serializes the output of command-line tools to structured JSON output"
   homepage "https://github.com/kellyjonbrazil/jc"
-  url "https://files.pythonhosted.org/packages/05/90/0b16cc7c290e838dcf2d1236e25ed0aff73f8a6803714a1ea5d6db202cd2/jc-1.16.2.tar.gz"
-  sha256 "6c434a286c3a1cf0af35c7e1ae5a4fcb8be9585171a85605dbaea689380d2def"
+  url "https://files.pythonhosted.org/packages/76/6d/3510650186393a964cb594748e33c6edba23d261ea2e8b9e0dc78aa6d19e/jc-1.17.0.tar.gz"
+  sha256 "b6c62020ad770ce4be249a7422044e7eac39130213b0ce63c80746087c34f5f2"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "fba2bbe08d25cd802a1a9ce0977da12a0c91968251e8e43a9d9fa94ad19beed2"
-    sha256 cellar: :any_skip_relocation, big_sur:       "d9f12665257c306ac7a0e1c316fd9aae0363083494274e6d44ef8af143f24440"
-    sha256 cellar: :any_skip_relocation, catalina:      "48b6c13cf967d281f034ecebaf11976ed3a99f8fa027aec117775f5317355155"
-    sha256 cellar: :any_skip_relocation, mojave:        "a9a7332f540b4cf566a8535404104d24f9ac20bce0c1cebd9597fac76209994e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "99a55014beaee3b2e78016e57a0363a0f04b3c4e2de1a0e905ddd2d1344922fa" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "6c06509b2c7765b3a0025225089826cff9ff1a342e3f91cabbecdead2345249c"
+    sha256 cellar: :any_skip_relocation, big_sur:       "0ec313f4322578ff7c2c258e140c13c485e2477ca787c42076321d8e4fc73f36"
+    sha256 cellar: :any_skip_relocation, catalina:      "3a70be5ca313847e69f53888286f3be7654ba0f85b2c3f9e2f291a4ae4ac6379"
+    sha256 cellar: :any_skip_relocation, mojave:        "68b142be7ebcf8b056eb1af1e54fd58432ada594abcaf1ba1a47fb3035e23e3e"
   end
 
   depends_on "python@3.9"
