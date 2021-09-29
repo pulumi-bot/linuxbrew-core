@@ -5,6 +5,10 @@ class Crun < Formula
   sha256 "ba282aadaf7987976c376d322f770354e210770bd8a53a670ee45f61d03f054e"
   license any_of: ["GPL-2.0-or-later", "LGPL-2.1-or-later"]
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e94459de232f2bbda5e78846113bb7e2ec1660505b2856ffc6c2448ded8cd120"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "go-md2man" => :build
