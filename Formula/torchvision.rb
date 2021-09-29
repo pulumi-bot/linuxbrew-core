@@ -9,6 +9,7 @@ class Torchvision < Formula
     sha256 cellar: :any,                 big_sur:      "538900976b4d7efd2ebc3be711c5565b2e20b5e504f84eb338e8dff4eb0aad2c"
     sha256 cellar: :any,                 catalina:     "fa859b8881a88ea26dc058759752b318a3d163b38256e3000fa5c61a0674d8f6"
     sha256 cellar: :any,                 mojave:       "f7375ac80c721fccfd1275f5d262d636d7584640507dbc3d047016dde36628aa"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5e6189643618843f8eb0871b4e7bc6e2fc92cd4cf66dae6ead2fb6852b1255fa"
   end
 
   depends_on "cmake" => :build
