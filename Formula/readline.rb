@@ -3,8 +3,19 @@ class Readline < Formula
   homepage "https://tiswww.case.edu/php/chet/readline/rltop.html"
   url "https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz"
   mirror "https://ftpmirror.gnu.org/readline/readline-8.1.tar.gz"
+  version "8.1.1"
   sha256 "f8ceb4ee131e3232226a17f51b164afc46cd0b9e6cef344be87c65962cb82b02"
   license "GPL-3.0-or-later"
+
+  %w[
+    001 682a465a68633650565c43d59f0b8cdf149c13a874682d3c20cb4af6709b9144
+  ].each_slice(2) do |p, checksum|
+    patch :p0 do
+      url "https://ftp.gnu.org/gnu/readline/readline-8.1-patches/readline81-#{p}"
+      mirror "https://ftpmirror.gnu.org/readline/readline-8.1-patches/readline81-#{p}"
+      sha256 checksum
+    end
+  end
 
   livecheck do
     url :stable
@@ -12,11 +23,10 @@ class Readline < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_big_sur: "940e7c2b80ef7f59b26726a5669a31fcb8ba7cbbb17eb1f2ca589dafa6e68e5e"
-    sha256 cellar: :any, big_sur:       "2cc3a9582e3c7e21eb3c2c8964abd33e9720fb4a9588c626d8424ff8cc9b1aed"
-    sha256 cellar: :any, catalina:      "fe4de019cf549376a7743dcb0c86db8a08ca2b6d0dd2f8cb796dd7cf973dc2e9"
-    sha256 cellar: :any, mojave:        "1ea5a8050482911b319dc3e1436ee03310ba79d75d855d40114ba6067e01b9c5"
-    sha256 cellar: :any, x86_64_linux:  "cf7ae93f4dc5560c7c7fac35d3fbb7f528a43f3084daf2273e67032d131bdb04" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "bcb228b99fcecebf6ecc2b2ac80ab96a396374a8d5bc13b21034ef501017254f"
+    sha256 cellar: :any,                 big_sur:       "c596199dc30f2542144a10f10ac686e441bebc5707bb63cca34159e55de66e3b"
+    sha256 cellar: :any,                 catalina:      "7a6136c28be474faf630922495ca617ecad1275baa4ef8646bbc31eece3809f4"
+    sha256 cellar: :any,                 mojave:        "0af6c77e4e554d9ee9f60f7c55ccde1cee46aa916ce8baff66ae10ed1ef13ed1"
   end
 
   keg_only :shadowed_by_macos, "macOS provides BSD libedit"
