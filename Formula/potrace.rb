@@ -17,6 +17,7 @@ class Potrace < Formula
     sha256 cellar: :any,                 catalina:      "c3f357a8bd6460384400acd00dab0d8571ad0b1543a81e5b9d5ff49d1ece4fa1"
     sha256 cellar: :any,                 mojave:        "3ad69cce4edecea6e5170b766201845b703a98bbac3c5272ef6a045f828643e2"
     sha256 cellar: :any,                 high_sierra:   "56d821a4d3579bedf64ebf5357fc04f214cb2efbea7ddb681b202e684e71d97e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d47c98611b15465f29e55972018135927d42929e5901153ad99c6579de32863c"
   end
 
   uses_from_macos "zlib"
