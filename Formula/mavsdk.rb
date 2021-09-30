@@ -18,6 +18,7 @@ class Mavsdk < Formula
     sha256 cellar: :any,                 big_sur:       "3b8bc8607f335b7fbb2bede5e1a5ab16db444e61dafab7e2b782d18a661e5e04"
     sha256 cellar: :any,                 catalina:      "b622322db0a9afc0ffb22fb122297f76166a7485310942fc1e1c497b8ab41adb"
     sha256 cellar: :any,                 mojave:        "be9f10799c8b633464594821c1525dc61589e1702d0e90b623495c57d23ca539"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8ec3a40011478edba868965f393bba802504d13d6f89e08d5f6e36e88b1aad28"
   end
 
   depends_on "cmake" => :build
