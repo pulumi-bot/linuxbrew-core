@@ -11,6 +11,7 @@ class GitSeries < Formula
     sha256 cellar: :any,                 big_sur:       "40f73d58772d698175f87acceaf11f97720e3248f2cf7182bae19889899ed61d"
     sha256 cellar: :any,                 catalina:      "944e5375b6975f35b298b03f8ccdd9d530a9991593c6374aa3d93a69a8a0baac"
     sha256 cellar: :any,                 mojave:        "9edf9487a836d8ddb3b822f1a14931d2e2413edd9d3df29b389259a684681190"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f7f0c42ed01d445e7e567b0c591bfab8757ececd81d3f177700309b2284c7c69"
   end
 
   depends_on "cmake" => :build
