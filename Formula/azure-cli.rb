@@ -6,6 +6,7 @@ class AzureCli < Formula
   url "https://github.com/Azure/azure-cli/archive/azure-cli-2.28.0.tar.gz"
   sha256 "25db8848a8b9279e317d347bbce873cbd48c8ce4032b2546b7f19aa325165860"
   license "MIT"
+  revision 1
   head "https://github.com/Azure/azure-cli.git", branch: "dev"
 
   livecheck do
@@ -15,11 +16,10 @@ class AzureCli < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "0295b77b63ffc08f34d6dddde68e488b3c64897faa5a27218092e8b53e4c1f7f"
-    sha256 cellar: :any,                 big_sur:       "8f561adc361ea0ea1076cb1b62bba8f0fdcc0ad724ad4d41916669d301b0ad50"
-    sha256 cellar: :any,                 catalina:      "c8c74eb43913176e7a3cb8f443009b619eb001c028e7fc1ebdbd27d168bcba86"
-    sha256 cellar: :any,                 mojave:        "8e577086d757c6ccf880daf1a244924f05cadca4aa7e01282610018b42060c7e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ce64449dc7d23c437049aa8fa4ba0631ebb0bd4cb6f44a51a536fc4079c1fa15" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "fbed57851de7c945dd042f2f4d99660a0d41e4e22b5b594c80aee25262f72639"
+    sha256 cellar: :any,                 big_sur:       "9aa90d9cc71658917c2ac71c93a7b5b9c122819446854678b037a195da88510c"
+    sha256 cellar: :any,                 catalina:      "ad731f8f1ad87e0145383fd7f3931166491e38d2206bdc4d805aa8e2709f9dbb"
+    sha256 cellar: :any,                 mojave:        "062d59bfa985ab5d5b8a41558294d2347b5899498ef3f6d00616067f20ea702a"
   end
 
   depends_on "openssl@1.1"
@@ -747,7 +747,7 @@ class AzureCli < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python3")
+    venv = virtualenv_create(libexec, "python3", system_site_packages: false)
     venv.pip_install resources
 
     # Get the CLI components we'll install

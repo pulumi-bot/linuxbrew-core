@@ -1,8 +1,8 @@
 class Solidity < Formula
   desc "Contract-oriented programming language"
   homepage "https://soliditylang.org"
-  url "https://github.com/ethereum/solidity/releases/download/v0.8.8/solidity_0.8.8.tar.gz"
-  sha256 "d15827496f4baa47aceabfd2342370aad62a2042fa5d5e501b8138506b288e1d"
+  url "https://github.com/ethereum/solidity/releases/download/v0.8.9/solidity_0.8.9.tar.gz"
+  sha256 "36643d0282998136b610f740808acb4dc6728144bb9ee70e5fd4124cda85ddab"
   license all_of: ["GPL-3.0-or-later", "MIT", "BSD-3-Clause", "Apache-2.0", "CC0-1.0"]
 
   livecheck do
@@ -11,11 +11,10 @@ class Solidity < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "425d7f24bc9925acda01839e86d903071126527dc338539defb4620521feeb0d"
-    sha256 cellar: :any_skip_relocation, big_sur:       "66846e341b2ca3844f535220c87007e09cfe3b961c62035c303133fba3b05966"
-    sha256 cellar: :any_skip_relocation, catalina:      "65c321dae33f2ccc2a8bac0707af73503dbbd7ce315defbfff3fc47cb06a61c0"
-    sha256 cellar: :any_skip_relocation, mojave:        "fcb7a4e094933c31b52e20908edf4dee8c17e368004abbf36937c3644faa0faf"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e954e40eb90525794b9b670213474418ee0caf959cf90bc4ce30908906eed35f" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c9067a3ad9a391e5b44aebe95698e4c2a1dbf2a7ef9cb4d691f82ca161a14d4e"
+    sha256 cellar: :any_skip_relocation, big_sur:       "67eec440aaadb1bfa3b3e79adcc98595ccf4b20a330815463520a066c9e9d44b"
+    sha256 cellar: :any_skip_relocation, catalina:      "27e39f6e750a012dcedab5d7203e6a6a9d905fcada819345a2d1d35365f0f06e"
+    sha256 cellar: :any_skip_relocation, mojave:        "c1f61c3aaa6a0652d4cba95ebda4d7c4919f30f7ebea70ffa1223dc1092bca54"
   end
 
   depends_on "cmake" => :build
