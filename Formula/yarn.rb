@@ -10,7 +10,7 @@ class Yarn < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "873e5056aa1e3ef63dd6f71ade291cd05e66f8ebc0c57dee40050d195dba9b13"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "873e5056aa1e3ef63dd6f71ade291cd05e66f8ebc0c57dee40050d195dba9b13" # linuxbrew-core
   end
 
   depends_on "node"

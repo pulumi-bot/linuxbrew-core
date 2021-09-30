@@ -11,7 +11,7 @@ class CargoC < Formula
     sha256 cellar: :any,                 big_sur:       "c0d11e28fa2082d5768ed4cbe28bcf7cbf56ea615a408eeb48be5a003f9a9e02"
     sha256 cellar: :any,                 catalina:      "951d84ba87b2fc74f91fbf2b020edf3184cdd1dccdbf57216e0b8f50877d67d7"
     sha256 cellar: :any,                 mojave:        "dc2b9506ad82ca0e3ea50052cae0f2eaf30ffc8499f22385f05743468a967be5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "808ca85ec3aad7d74d1dd008bce716e9e052f9db7321ca49ef9df2e1e2f24db1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "808ca85ec3aad7d74d1dd008bce716e9e052f9db7321ca49ef9df2e1e2f24db1" # linuxbrew-core
   end
 
   depends_on "rust" => :build

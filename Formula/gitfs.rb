@@ -10,7 +10,7 @@ class Gitfs < Formula
   head "https://github.com/presslabs/gitfs.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd4a7656a5b75affe826c5a149fb193f13ebbeffc01f2b749526445eb632e302"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fd4a7656a5b75affe826c5a149fb193f13ebbeffc01f2b749526445eb632e302" # linuxbrew-core
   end
 
   depends_on "libgit2"
