@@ -9,7 +9,7 @@ class Profanity < Formula
     sha256 big_sur:      "01f299b832782d3ed87ad78fc432c1a20799b3804140c017671ddde7c5b4fb42"
     sha256 catalina:     "1096a2f8ed2d6bedc3dd67f6247dee1a35ceb17c6af052161c026865fb318c4d"
     sha256 mojave:       "3187f12ce661fbf90021b11e313d9a98b5b65da311d04807283f0722539e4f7b"
-    sha256 x86_64_linux: "1e0abc2724db615d5997766a64fd0b22be03b25fc1e47c4fd07dd509633024ee"
+    sha256 x86_64_linux: "1e0abc2724db615d5997766a64fd0b22be03b25fc1e47c4fd07dd509633024ee" # linuxbrew-core
   end
 
   head do
