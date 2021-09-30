@@ -21,6 +21,7 @@ class BdwGc < Formula
     sha256 cellar: :any,                 big_sur:       "e1657498c65d958779349a5b3b2283e52e5c48cde79e26f761340bacfc3627e9"
     sha256 cellar: :any,                 catalina:      "0473379cc9c7dd97c1d28386e333702af1c2b98ae86b1564e5ef72fda94d395c"
     sha256 cellar: :any,                 mojave:        "45add006a7a827ea1b1828d2e5edb45b991cbb31906370d8270f511b781acfd6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2de2bd6626902c0c6007c718d9bebdc9f653dcd58058f9f1a8cc0346fee8c8c7"
   end
 
   head do
