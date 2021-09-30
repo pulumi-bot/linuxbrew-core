@@ -16,6 +16,7 @@ class Memcached < Formula
     sha256 cellar: :any,                 big_sur:       "3ca31f8a0a9ce8f39bff0cc151e7bf4170e2c70fe56ddcdc85a08f7c3e95ffb7"
     sha256 cellar: :any,                 catalina:      "640996f262c2c0c8e74185ce5608147599f46c29e1cdbfe4fd9e19344422cf5c"
     sha256 cellar: :any,                 mojave:        "67df39d8154409bc39114ff961183b6f4a35bcebe29d4985c317d2ee6990e8dd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c068ec1555a37461db9d902c640121eebc7361405719e5dca9daa69248ff90b5"
   end
 
   depends_on "libevent"
