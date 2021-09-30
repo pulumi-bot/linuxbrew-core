@@ -13,6 +13,7 @@ class Mitmproxy < Formula
     sha256 cellar: :any,                 big_sur:       "f5417353fc4683ea990b9c5646c6b18b29f4fd5ac7e7da52d028931cb33d1290"
     sha256 cellar: :any,                 catalina:      "7a2f8359087d0ed8d54f95bc8c8d1bcb68222c1b6654f258a81b563799302f9a"
     sha256 cellar: :any,                 mojave:        "97f712795c229361cd4bcc0dacb52c11b0334c264c0bf4854fe5d4cbf87ecf53"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "04115bf4c44e037977e1de8435479e83c866dc319fe57968b61f1399afc4f668"
   end
 
   depends_on "rust" => :build # for cryptography
