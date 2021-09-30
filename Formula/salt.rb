@@ -6,15 +6,14 @@ class Salt < Formula
   url "https://files.pythonhosted.org/packages/71/8a/02f957ad4ebfe28002ceef891c8fa0780c4bd75d4882af8c0228dbd2084d/salt-3003.3.tar.gz"
   sha256 "a6f9c8c8b5e2600ea8620b4a67371de17611beb4f8d97e4bb9b0b308a37ed1e2"
   license "Apache-2.0"
-  revision 1
+  revision 2
   head "https://github.com/saltstack/salt.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "61f6a749dc3d2b80d6feb3866ac1658575f8656fbefc1c2f2268b6de635a2bdf"
-    sha256 cellar: :any,                 big_sur:       "1318f10b3d5d42abbbabaa1b5b4be949c59544dc3b54dd8f0c02d25d2976e512"
-    sha256 cellar: :any,                 catalina:      "a287fce3d79c28f0f57c86517a2a129cb14214ae4b1cee48f9b65ab66f6c0e02"
-    sha256 cellar: :any,                 mojave:        "af1e694de878e9cfbb9de63f7d59e8c486d74f4d72d99fa4152188c3c5b9345d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3db0830bc339e76bb66b77e6ebec34bb99f9a2504b3b01ba8897809cdd5e7b41" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "60321612cf3e3cb60c7e7b8433c9b282ef110b5acaaf418ab90157d99640d4a0"
+    sha256 cellar: :any,                 big_sur:       "bb94e0fa189acf66c3c79b2c190cb320e6bc429557ca419d8beafa039d8787b8"
+    sha256 cellar: :any,                 catalina:      "b58b60fe59eb23ab491a2f1311e62dc6d88adba402085d571998277ae67e771a"
+    sha256 cellar: :any,                 mojave:        "ff2d9aa9f6c93ce3f508047a2e1886dad6eb40de0e8cda12ab3b0f863c0cd91b"
   end
 
   depends_on "swig" => :build
@@ -177,11 +176,11 @@ class Salt < Formula
     url "https://files.pythonhosted.org/packages/6b/23/a8c5b726a58282fe2cadcc63faaddd4be147c3c8e0bd38b233114adf98fd/pygit2-1.6.1.tar.gz"
     sha256 "c3303776f774d3e0115c1c4f6e1fc35470d15f113a7ae9401a0b90acfa1661ac"
 
-    # libgit2 1.2+ support
+    # libgit2 1.3 support
     # https://github.com/libgit2/pygit2/pull/1089
     patch do
-      url "https://raw.githubusercontent.com/Homebrew/formula-patches/bf370d7782f7686a4a61d8d7d28068e78e28e48c/pygit2/libgit2-1.2.0.patch"
-      sha256 "b5acca41ff7752ea25adb050d7494939fc6d471f4f91d94a06f4afc9902f4117"
+      url "https://raw.githubusercontent.com/Homebrew/formula-patches/54d3a0d1f241fdd4e9229312ced0d8da85d964b1/pygit2/libgit2-1.3.0.patch"
+      sha256 "4d501c09d6642d50d89a1a4d691980e3a4a2ebcb6de7b45d22cce16a451b9839"
     end
   end
 

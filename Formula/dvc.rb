@@ -6,14 +6,13 @@ class Dvc < Formula
   url "https://files.pythonhosted.org/packages/98/11/c869eff8e743d85b67757e9287b6eb557aeb6901ef5723bda59b3a82655a/dvc-2.7.4.tar.gz"
   sha256 "754e2c4e0a79e610a1a9da4cebec56c51fba39430334a6dc2e0583bd44f4a89b"
   license "Apache-2.0"
-  revision 1
+  revision 2
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "ee12c5acc00152fb627a73e87ffafcd4cf7317d7bf3aa0d8d580974d044fa4e5"
-    sha256 cellar: :any,                 big_sur:       "8d0c14125b02d3647ca8285a328867d565cafabf4726a281e75cc2f2fb29ec18"
-    sha256 cellar: :any,                 catalina:      "c5a6e2071901e2c098ff6462130eb42389c7437cfd71710dad58b417c269c9d1"
-    sha256 cellar: :any,                 mojave:        "6476c5c946182528c16b66dcabc5a3ee4ae2943abf9f30c69182d14dce5adf6d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "51dbd92e46ac5e8253bd329abb554777513314a027d454b4f56f61f6d8b014d0" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "e24575338fe0d2cff72b9b4da5843f788970c89421e73fd4bd4d1d666f599b45"
+    sha256 cellar: :any,                 big_sur:       "51b33155bd779cddfe161bf11b70a918f8b57792ee3e399d2abcd858ab54bf78"
+    sha256 cellar: :any,                 catalina:      "a26a019c3bdf3151183bfc6d6e4e924df7cc655e2138e86c69dd6554dbe7eedc"
+    sha256 cellar: :any,                 mojave:        "1b2ca01b4e427f7c27070a439abe795cd49a0a1b524caabdf2c5fd62593eeb66"
   end
 
   depends_on "pkg-config" => :build
@@ -444,11 +443,11 @@ class Dvc < Formula
     url "https://files.pythonhosted.org/packages/6b/23/a8c5b726a58282fe2cadcc63faaddd4be147c3c8e0bd38b233114adf98fd/pygit2-1.6.1.tar.gz"
     sha256 "c3303776f774d3e0115c1c4f6e1fc35470d15f113a7ae9401a0b90acfa1661ac"
 
-    # libgit2 1.2+ support
+    # libgit2 1.3 support
     # https://github.com/libgit2/pygit2/pull/1089
     patch do
-      url "https://raw.githubusercontent.com/Homebrew/formula-patches/bf370d7782f7686a4a61d8d7d28068e78e28e48c/pygit2/libgit2-1.2.0.patch"
-      sha256 "b5acca41ff7752ea25adb050d7494939fc6d471f4f91d94a06f4afc9902f4117"
+      url "https://raw.githubusercontent.com/Homebrew/formula-patches/54d3a0d1f241fdd4e9229312ced0d8da85d964b1/pygit2/libgit2-1.3.0.patch"
+      sha256 "4d501c09d6642d50d89a1a4d691980e3a4a2ebcb6de7b45d22cce16a451b9839"
     end
   end
 

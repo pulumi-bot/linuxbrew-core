@@ -6,14 +6,13 @@ class LiterateGit < Formula
   url "https://github.com/bennorth/literate-git/archive/v0.3.1.tar.gz"
   sha256 "f1dec77584236a5ab2bcee9169e16b5d976e83cd53d279512136bdc90b04940a"
   license "GPL-3.0-or-later"
-  revision OS.mac? ? 7 : 9
+  revision OS.mac? ? 8 : 10
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "9feb9fb043c4f5ab69028b9478d6b8f5bc0059f0d31f0fccbf5c22d63e4d1448"
-    sha256 cellar: :any,                 big_sur:       "01384f677171ddeef94083de2aa681bed34acb27e23c1fd83497720b16397249"
-    sha256 cellar: :any,                 catalina:      "cce3e3935b756d27b7519540faf8aa0ef8a1e2ffe1ac0efbf313ab92b3fddbe1"
-    sha256 cellar: :any,                 mojave:        "0d73ad846855eb50d8c15ab65291ae43c50e76f1c62aacf346934dbf96ab05b7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "42293729649c7213f4902a67977cf84e2187495482c95ef06e12895a0d299b3f" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "20922d79ddd5bf762340ea3691c6ab22cf83af26c7925442ebe10f098d5bbb9a"
+    sha256 cellar: :any,                 big_sur:       "54097a3b483f888c3b74a3c7daedd7ae79a49066e56397c12de7ba0913061f17"
+    sha256 cellar: :any,                 catalina:      "cd7416b4d31ac322771395488d77246bf11945ed4121c9ae4d310f5a03c90831"
+    sha256 cellar: :any,                 mojave:        "3e46e63388b8de0765c764b1c16867f08d0208f74202e97d46199418a15273f7"
   end
 
   depends_on "libgit2"
@@ -64,11 +63,11 @@ class LiterateGit < Formula
     url "https://files.pythonhosted.org/packages/6b/23/a8c5b726a58282fe2cadcc63faaddd4be147c3c8e0bd38b233114adf98fd/pygit2-1.6.1.tar.gz"
     sha256 "c3303776f774d3e0115c1c4f6e1fc35470d15f113a7ae9401a0b90acfa1661ac"
 
-    # libgit2 1.2+ support
+    # libgit2 1.3 support
     # https://github.com/libgit2/pygit2/pull/1089
     patch do
-      url "https://raw.githubusercontent.com/Homebrew/formula-patches/bf370d7782f7686a4a61d8d7d28068e78e28e48c/pygit2/libgit2-1.2.0.patch"
-      sha256 "b5acca41ff7752ea25adb050d7494939fc6d471f4f91d94a06f4afc9902f4117"
+      url "https://raw.githubusercontent.com/Homebrew/formula-patches/54d3a0d1f241fdd4e9229312ced0d8da85d964b1/pygit2/libgit2-1.3.0.patch"
+      sha256 "4d501c09d6642d50d89a1a4d691980e3a4a2ebcb6de7b45d22cce16a451b9839"
     end
   end
 

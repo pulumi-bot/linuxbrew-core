@@ -4,14 +4,13 @@ class GitSeries < Formula
   url "https://github.com/git-series/git-series/archive/0.9.1.tar.gz"
   sha256 "c0362e19d3fa168a7cb0e260fcdecfe070853b163c9f2dfd2ad8213289bc7e5f"
   license "MIT"
-  revision 4
+  revision 5
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "fdac441611169844e14d3493eebede474b613b926744bf2d55f1268107683ed2"
-    sha256 cellar: :any,                 big_sur:       "30077bc67f5175001453e18c38ad3de1662adeca57e4408c753baa19274c7568"
-    sha256 cellar: :any,                 catalina:      "6739bafe09a3232079693b0cb92378e80421cf395577d047fc3f728efda7436e"
-    sha256 cellar: :any,                 mojave:        "13d49cc136dee5bfd78cfbb960af5ee4b5707377aa7e462ff5e98091b28109af"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f378839f4942f279121d61a2a58b398a0e6cfb73b4c8d50b5b91aed91e25c9e4" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "d75d535676dda5c4289d8547cd6959f02aa6d5fa47364ebb561fe8a858683c95"
+    sha256 cellar: :any,                 big_sur:       "40f73d58772d698175f87acceaf11f97720e3248f2cf7182bae19889899ed61d"
+    sha256 cellar: :any,                 catalina:      "944e5375b6975f35b298b03f8ccdd9d530a9991593c6374aa3d93a69a8a0baac"
+    sha256 cellar: :any,                 mojave:        "9edf9487a836d8ddb3b822f1a14931d2e2413edd9d3df29b389259a684681190"
   end
 
   depends_on "cmake" => :build
