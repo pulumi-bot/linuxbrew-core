@@ -14,6 +14,7 @@ class Salt < Formula
     sha256 cellar: :any,                 big_sur:       "bb94e0fa189acf66c3c79b2c190cb320e6bc429557ca419d8beafa039d8787b8"
     sha256 cellar: :any,                 catalina:      "b58b60fe59eb23ab491a2f1311e62dc6d88adba402085d571998277ae67e771a"
     sha256 cellar: :any,                 mojave:        "ff2d9aa9f6c93ce3f508047a2e1886dad6eb40de0e8cda12ab3b0f863c0cd91b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bc53e8c50f37ba8c9d26a38bb8619d7488ef42d45d3ac06f06d7981942205064"
   end
 
   depends_on "swig" => :build
