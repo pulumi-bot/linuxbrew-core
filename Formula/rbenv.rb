@@ -11,6 +11,7 @@ class Rbenv < Formula
     sha256 cellar: :any,                 big_sur:       "8a1b159909d472cc461d0a9b85a192a31ab58860e34f022fcbb33175732d24aa"
     sha256 cellar: :any,                 catalina:      "a2ca52c4fe3b7000d9f84f81836ddcb9b3aea9c20ee092dd71c1e10cf3a6a19a"
     sha256 cellar: :any,                 mojave:        "87ca53a9f4f84aff56ccbf2f823f903d20bc6669dde548018892857cc8871936"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f4be8e4efef32c1fcdaa585312b3262d33b3306d9d7d9c75abd1230227b10bb7"
   end
 
   depends_on "ruby-build"
