@@ -15,6 +15,7 @@ class Libupnp < Formula
     sha256 cellar: :any,                 big_sur:       "b038bdfae801804287fab05ada50d13e12e7b5fa270a962f686ada7231034b07"
     sha256 cellar: :any,                 catalina:      "dcea4c1c6884035cfe6b8be048f8f7998e295a5d611f7549e87e89c549c9433f"
     sha256 cellar: :any,                 mojave:        "12fcbdaceb3fd68ee85a4dc9905dee1f92fe656a8b6f90460cf1864249faf24b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "43231a7cdf7f0b91510dbd5a94d9f120e4f9cbea9d0b7805878a2986218fd207"
   end
 
   def install
