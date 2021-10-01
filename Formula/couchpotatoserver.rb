@@ -6,6 +6,12 @@ class Couchpotatoserver < Formula
   license "GPL-3.0"
   head "https://github.com/CouchPotato/CouchPotatoServer.git", branch: "master"
 
+  bottle do
+    rebuild 1
+  end
+
+  deprecate! date: "2021-09-30", because: :repo_archived
+
   def install
     prefix.install_metafiles
     inreplace_files = %w[

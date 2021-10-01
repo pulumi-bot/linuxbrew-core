@@ -15,6 +15,8 @@ class DockerMachine < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "fbf1391f6ba7ecc6b90de8878297cf695cb700cae687e24b298004c8e108b14e" # linuxbrew-core
   end
 
+  deprecate! date: "2021-09-30", because: :repo_archived
+
   depends_on "automake" => :build
   depends_on "go" => :build
 
