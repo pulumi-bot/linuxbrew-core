@@ -11,6 +11,7 @@ class Sdb < Formula
     sha256 cellar: :any,                 big_sur:       "e6a3c1aeaddcc7558f3c7e1263bf0ae4b336ab1ec2803c0611fdd88a91d5cf5a"
     sha256 cellar: :any,                 catalina:      "3b83ffab7521c5de9794862e6b024412aba61ea62f82ac77b3f9e3c389072f4c"
     sha256 cellar: :any,                 mojave:        "a9e8d136fcb35dcad3b24c3435bd9709c885dd943329c0ec8a820fca364df159"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7de64cba3235caff388c3667dcc42e5a321077179bd21750a7eb497fd7ba69fe"
   end
 
   depends_on "pkg-config" => :build
