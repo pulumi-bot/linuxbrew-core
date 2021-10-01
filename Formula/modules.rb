@@ -1,8 +1,8 @@
 class Modules < Formula
   desc "Dynamic modification of a user's environment via modulefiles"
   homepage "https://modules.sourceforge.io/"
-  url "https://downloads.sourceforge.net/project/modules/Modules/modules-4.8.0/modules-4.8.0.tar.bz2"
-  sha256 "e9254c93efcbd17806a421eb414f7ce22fee37108748b02562cded851b46bfaa"
+  url "https://downloads.sourceforge.net/project/modules/Modules/modules-5.0.0/modules-5.0.0.tar.bz2"
+  sha256 "1e4d0d7a64db85f316b5b8ef83b0df5e13e687a0021d3021b571581569ea71f4"
   license "GPL-2.0-or-later"
 
   livecheck do
@@ -11,11 +11,10 @@ class Modules < Formula
   end
 
   bottle do
-    sha256                               arm64_big_sur: "1e68e132bea8d5133661124ada2eb86e28b2df6f02add99a8db81f0372f7ebf6"
-    sha256                               big_sur:       "f7db523c25f10422709babd29da071fb844fb8207ccd0c8e0ba54948e4119cd3"
-    sha256 cellar: :any,                 catalina:      "ad84ed490ed2640a32799c5fb3ca7d815c45989f90bf246e087354e60ae23537"
-    sha256 cellar: :any,                 mojave:        "92b00fca6d79e453bf2231d10783912342aa45c7c9ef926998c2ff39e2cc3160"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "976d2d481a1d93d231e2f829bfc02e3d81811a41025325862808669f0b70e148" # linuxbrew-core
+    sha256                               arm64_big_sur: "fc00f6fefbed3d9e02cf6577829429da6cd65f42dc0672b480b6ee5a633cb0ba"
+    sha256                               big_sur:       "c61614ac6c3fc7903748b4cf2720d7024dcf1de5d0c8ef8e6ed005f75359da2d"
+    sha256 cellar: :any,                 catalina:      "b0287fc7e40fe32c6069807702f9ec881b3a152814db7d100005da6bf08ef300"
+    sha256 cellar: :any,                 mojave:        "7244741217d5e4e860dea4bbe2a2a828c22ee4f44e292450acd9a9a67af523bd"
   end
 
   depends_on "tcl-tk"
