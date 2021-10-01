@@ -13,6 +13,7 @@ class AwsSsoUtil < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "577c77af9b28f3017fc29552a1e279235d68afd727ef4747c414a1b1ec77fc66"
     sha256 cellar: :any_skip_relocation, catalina:      "ce68c609434752b07673db09a891903c62f5b4f87bde3227f6db882f1c5a10bc"
     sha256 cellar: :any_skip_relocation, mojave:        "4c55fb1fa40d8979de0a17c5fd2c23b7b2b5532a9e03a2081dca5bf7825a250d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5d1561d8ab4184801466dfd1ca0582753b240ab2bec08d87ad920409ceb979c3"
   end
 
   depends_on "rust" => :build
