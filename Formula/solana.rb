@@ -15,7 +15,7 @@ class Solana < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "bd3fb3c6d26802445b9ae1eb411e05c809f8585ebe922996a84f29df546fd3f0"
     sha256 cellar: :any_skip_relocation, catalina:      "c1c8ad375bef7d97085595b3d4f77e37f73eec2594ebb55e3259b09cf05c304c"
     sha256 cellar: :any_skip_relocation, mojave:        "d2466a529e47627a74c371c537df661bccfd8d415e5b8fc76bbd1e544ee68c1f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "df42608d7f52a5c933831df48c0a69b34c0728f7dd0bf40bd8ea856be959ea0f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "df42608d7f52a5c933831df48c0a69b34c0728f7dd0bf40bd8ea856be959ea0f" # linuxbrew-core
   end
 
   depends_on "protobuf" => :build

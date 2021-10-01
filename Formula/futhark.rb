@@ -11,7 +11,7 @@ class Futhark < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ad72e44ea0fc9db137ebe8ad1db5eec6d2a1dee8696b53c84d25fa918531b04b"
     sha256 cellar: :any_skip_relocation, catalina:      "297d35208978002ceee4f0ddde9ee74b985c9b58165a18ba34f34ce6d65aa9af"
     sha256 cellar: :any_skip_relocation, mojave:        "ada26ecee2c0deb32791d04226a52c8025e0e21d61878c163500b7f2fd3b90c1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "33a47fb1d07116bfd451fa1f28d560f124c3e98507183dc82d8091537102ae8c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "33a47fb1d07116bfd451fa1f28d560f124c3e98507183dc82d8091537102ae8c" # linuxbrew-core
   end
 
   depends_on "cabal-install" => :build

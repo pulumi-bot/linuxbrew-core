@@ -10,7 +10,7 @@ class Htmltest < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "02514122a2096f262dbd9fb76726eae3e375d5ed6fa682e465551e694ac48072"
     sha256 cellar: :any_skip_relocation, catalina:      "3bf67d5d510e565c05e18f03cb36efbf07c5f6f9a7a175375b5b662f2ea51037"
     sha256 cellar: :any_skip_relocation, mojave:        "19196540163714c7de59083a8957e8670b4befba3e3c6f2217ff308c3b1be824"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f69d59bdeeafbb3d552668b1d8dc387b90eefbae9ae78489b71fd324463d3658"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f69d59bdeeafbb3d552668b1d8dc387b90eefbae9ae78489b71fd324463d3658" # linuxbrew-core
   end
 
   depends_on "go" => :build

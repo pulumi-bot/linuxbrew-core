@@ -15,7 +15,7 @@ class Modules < Formula
     sha256                               big_sur:       "c61614ac6c3fc7903748b4cf2720d7024dcf1de5d0c8ef8e6ed005f75359da2d"
     sha256 cellar: :any,                 catalina:      "b0287fc7e40fe32c6069807702f9ec881b3a152814db7d100005da6bf08ef300"
     sha256 cellar: :any,                 mojave:        "7244741217d5e4e860dea4bbe2a2a828c22ee4f44e292450acd9a9a67af523bd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7afd9100bd3e96b4ad1e815467c82f46045ded65ad4bd10a8b53bcb718a6bacb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7afd9100bd3e96b4ad1e815467c82f46045ded65ad4bd10a8b53bcb718a6bacb" # linuxbrew-core
   end
 
   depends_on "tcl-tk"

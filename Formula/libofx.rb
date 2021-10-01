@@ -15,7 +15,7 @@ class Libofx < Formula
     sha256 big_sur:       "3cc86d7824a38ab40a26dc862b9edd8aa927615d98787509a8ce0e53a4970e90"
     sha256 catalina:      "0c13380f3316db596f2bc7da653b66cce4da67a57143152582f2915bc75ffd9e"
     sha256 mojave:        "0c964ef5cb85a5783e5e717e2a74a69d446191237ae7da74a3104eb03c77bb66"
-    sha256 x86_64_linux:  "0539cc89e0874fe414f30db5b87edf7cfdc2d899694b8546f4312068ba408273"
+    sha256 x86_64_linux:  "0539cc89e0874fe414f30db5b87edf7cfdc2d899694b8546f4312068ba408273" # linuxbrew-core
   end
 
   depends_on "open-sp"
