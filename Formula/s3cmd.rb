@@ -13,7 +13,7 @@ class S3cmd < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d5f2be02a3127dddc4c032249dcfc6ce97b89be6a5844a601234ba5777ed222a"
     sha256 cellar: :any_skip_relocation, catalina:      "34d336a8fd2ed62fa670100a67a1084d3ab872ccc084b96c8690e7f34c7436a8"
     sha256 cellar: :any_skip_relocation, mojave:        "87cd6686849ccf0377b7d6acf936f1aa9950409414d4aae163ab6c25cb3fbf66"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "585b5f34f09a92c28078e199b5b4ebe8de422952f14b282b8a0128e9f8094c38"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "585b5f34f09a92c28078e199b5b4ebe8de422952f14b282b8a0128e9f8094c38" # linuxbrew-core
   end
 
   # s3cmd version 2.1.0 is not compatible with Python 3.9, know issues are:
