@@ -13,6 +13,7 @@ class Conan < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "185a24d3f7d2e0c7be61ec4aef9fb24707c87c6934aa9afe97b273178d3f606a"
     sha256 cellar: :any_skip_relocation, catalina:      "c379eee825fc97aa359e9b8050d110a1ab28a2b52e2dd027942a063d5e276f87"
     sha256 cellar: :any_skip_relocation, mojave:        "ccd117c210d4456f47a353248e4e1a398fa8ca38c82ed9f219cc12da8033b524"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "af6006629f73918b514e00ccbadf4f2456f9c2b0fe5727fb7bdf88ab67a2dc1c"
   end
 
   depends_on "pkg-config" => :build
