@@ -11,6 +11,7 @@ class Mysqltuner < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c14b590e23a033c3389ec49b2bd7a6b21cb67ff9a7c48722f11f516653d3fb21"
     sha256 cellar: :any_skip_relocation, catalina:      "c14b590e23a033c3389ec49b2bd7a6b21cb67ff9a7c48722f11f516653d3fb21"
     sha256 cellar: :any_skip_relocation, mojave:        "c14b590e23a033c3389ec49b2bd7a6b21cb67ff9a7c48722f11f516653d3fb21"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6359b9361baf215e638d5fe0c721cfb017bc00e80f732270049c03cb0ceca28d"
   end
 
   def install
