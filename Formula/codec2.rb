@@ -11,6 +11,7 @@ class Codec2 < Formula
     sha256 cellar: :any,                 big_sur:       "5d4162b5b10568f57c326983cbebfe34c126bca31bd14923b0388d8f4ca785aa"
     sha256 cellar: :any,                 catalina:      "2834225209e520278515857dcada021ba2cc108f92131e8c6cc786070c336bf9"
     sha256 cellar: :any,                 mojave:        "a86e0264532c78b083ae12358ba569a43588c589c4f91569f620381e30a471b1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0ee9e9d8d105b256e74e35564feadec4228b77f341d3b3aa164873e568169106"
   end
 
   depends_on "cmake" => :build
