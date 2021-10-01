@@ -10,6 +10,7 @@ class Libspng < Formula
     sha256 cellar: :any, big_sur:       "20343c6622470a53ed19ee893f48e1a1a9c529426204b5b1869e590ce83767c3"
     sha256 cellar: :any, catalina:      "ddbcbef115498ac21c7ac10006c8d7de824103413754493edf051ab8c13492d1"
     sha256 cellar: :any, mojave:        "f319bda14642b057ee35abc95ed58bc8529c0028761f8989bdcefb0adf7488b0"
+    sha256               x86_64_linux:  "5f3451f468d58685c26c80f33980d7195f0411d3f4bab347704ca02bf42390b2"
   end
 
   depends_on "meson" => :build
