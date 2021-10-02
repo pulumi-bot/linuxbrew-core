@@ -9,6 +9,10 @@ class Yarn < Formula
     skip("1.x line is frozen and features/bugfixes only happen on 2.x")
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b9a156f01c5a5691efcb5f32731b6e3b3a6950d8882fb54e75662ee6bbfead67"
+  end
+
   depends_on "node"
 
   conflicts_with "hadoop", because: "both install `yarn` binaries"
