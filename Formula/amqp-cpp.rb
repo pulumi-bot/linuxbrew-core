@@ -16,7 +16,7 @@ class AmqpCpp < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b246ab5a6bfb862ee23c89fbf0ebca57eeb99314e219c7c6d9c5a1bb42c81ce2"
     sha256 cellar: :any_skip_relocation, catalina:      "fd48a53d76c86b10729b81bffe84af39435db4c221c9aa0cd021849a6a194f21"
     sha256 cellar: :any_skip_relocation, mojave:        "580fa1d90bac47c4edec0e5ee1b34c1db4953a51fc2ac5ca7022fae2ec0bef3c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4ed9d8149c436e2e1aa3cc000ec637dd3afd1748845e45c22b4b1c88520f1b7d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4ed9d8149c436e2e1aa3cc000ec637dd3afd1748845e45c22b4b1c88520f1b7d" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

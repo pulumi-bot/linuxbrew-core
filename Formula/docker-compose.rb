@@ -11,7 +11,7 @@ class DockerCompose < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0c4315002e6aa8883201184b52828bb3627e7e2a9fba4e6e187101f5b42b072b"
     sha256 cellar: :any_skip_relocation, catalina:      "0c4315002e6aa8883201184b52828bb3627e7e2a9fba4e6e187101f5b42b072b"
     sha256 cellar: :any_skip_relocation, mojave:        "0c4315002e6aa8883201184b52828bb3627e7e2a9fba4e6e187101f5b42b072b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "057710165181a554e568336bada6ba81a2301ace834457a9e2f22959c8cefca5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "057710165181a554e568336bada6ba81a2301ace834457a9e2f22959c8cefca5" # linuxbrew-core
   end
 
   depends_on "go" => :build

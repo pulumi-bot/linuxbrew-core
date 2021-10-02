@@ -12,7 +12,7 @@ class Nox < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "15349b9982cc2ab4f4d7fd036d874dd5206294288396e388243369783dbaaec1"
     sha256 cellar: :any_skip_relocation, catalina:      "e4b4085c12ddec6eed3f4893ee38fb0163d538bbcb573b7bfbb3912f7bba58f2"
     sha256 cellar: :any_skip_relocation, mojave:        "5f305da93b120410a73a65a4d011b0426a35f149a167817ef625443fbf356765"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "16fa0222eaffc5a7b88818c56492e70bc3fc771072d2ecf7a665a47956eed17c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "16fa0222eaffc5a7b88818c56492e70bc3fc771072d2ecf7a665a47956eed17c" # linuxbrew-core
   end
 
   depends_on "python@3.9"
