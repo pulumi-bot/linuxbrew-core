@@ -10,6 +10,7 @@ class Kalker < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c4cfe4d277d2566381117a943fb0f8779d118c1e229db37e1f87bf7172a008c9"
     sha256 cellar: :any_skip_relocation, catalina:      "d756dbc116f55c88490ea1d5424100ba4beca6248d1614e344f46cc87f8c7a90"
     sha256 cellar: :any_skip_relocation, mojave:        "c391af7964351d031a1fc7f0084a2cded41f1e371c4a0caf1d73c7213b02506c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "62db2561f69b86ed3ceeac670a07be05bad881674924cbe4eb67a35cc8bc9446"
   end
 
   depends_on "rust" => :build
