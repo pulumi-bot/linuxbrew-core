@@ -12,11 +12,8 @@ class DockerComposeCompletion < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "edaaa7562b5ef5255da64daa17a086a2c8c45fe2114e7704047b15f155719c1e" # linuxbrew-core
+    rebuild 1
   end
-
-  conflicts_with "docker-compose",
-    because: "docker-compose already includes completion scripts"
 
   def install
     bash_completion.install "contrib/completion/bash/docker-compose"
