@@ -6,15 +6,13 @@ class DockerComposeCompletion < Formula
   license "Apache-2.0"
   head "https://github.com/docker/compose.git"
 
-  livecheck do
-    url :stable
-    strategy :github_latest
-  end
-
   bottle do
     rebuild 1
     sha256 cellar: :any_skip_relocation, x86_64_linux: "daddf263b55ef91e97b0fe1eadb0887bce2c3dda6eabce27a30f775dccedf43b" # linuxbrew-core
   end
+
+  # See: https://github.com/docker/compose/issues/8550
+  deprecate! date: "2021-10-02", because: "no upstream support for v2"
 
   def install
     bash_completion.install "contrib/completion/bash/docker-compose"
