@@ -12,6 +12,10 @@ class ArchiSteamFarm < Formula
     strategy :github_latest
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "078db247b08204956a625e8bf3b562a9c306252cefba2ee248b0a5c5dc73b6aa"
+  end
+
   depends_on arch: :x86_64 # dotnet does not support ARM
   depends_on "dotnet"
 
