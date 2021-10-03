@@ -11,6 +11,10 @@ class JettyRunner < Formula
     regex(/href=.*?jetty-distribution[._-]v?(\d+(?:\.\d+)+(?:\.v\d+)?)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "05f009f06711d8c0eebae1196bf3afbbc7e38376b257165763367067dff0515a"
+  end
+
   depends_on "openjdk"
 
   def install
