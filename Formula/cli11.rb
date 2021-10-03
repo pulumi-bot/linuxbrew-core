@@ -6,6 +6,10 @@ class Cli11 < Formula
   license "BSD-3-Clause"
   head "https://github.com/CLIUtils/CLI11.git", branch: "master"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9a31a1aad95d40ff011b1fcc1c5aa315fee958277ea1e8af31c5cdaa14febaa5"
+  end
+
   depends_on "cmake" => :build
 
   def install
