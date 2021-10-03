@@ -27,6 +27,7 @@ class ClangFormat < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "7c9cf9dcf1d657527109a72a84245c576e46660be33672e8af2aab796a6259be"
     sha256 cellar: :any_skip_relocation, catalina:      "7b894aa194d712708e0eb04ac4445098bf941d748fc1a7920763d1927c5a72a3"
     sha256 cellar: :any_skip_relocation, mojave:        "ff867f295ac041dfafcee2ae960ef373d68295c11d1c9e911b5b4ac1828eb444"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f15d3cfcebe8159631ddfa84dec5d6389bfaf1220c2a26692bbc6cb4e7fa8b7e"
   end
 
   depends_on "cmake" => :build
