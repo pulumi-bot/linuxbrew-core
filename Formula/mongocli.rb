@@ -10,6 +10,7 @@ class Mongocli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "14789d66690f3af076b074535be67ac28f0e34e8e23eeba2a83d97f8f340ea25"
     sha256 cellar: :any_skip_relocation, catalina:      "024ec0fe3adda957c70f239e10aa8a285e9086eab367d2f34c70a8045ab99e1c"
     sha256 cellar: :any_skip_relocation, mojave:        "4af81c5dea666f2445f74726f6816015027f8ce14b9ca4a962b6411c55f22c69"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f5fa42a2daa1a02caecdadf5d08fe4b0c816c65ff18f4b9dda5d8e4705aea49c"
   end
 
   depends_on "go" => :build
