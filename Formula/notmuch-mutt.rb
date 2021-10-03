@@ -15,6 +15,7 @@ class NotmuchMutt < Formula
     sha256 cellar: :any,                 big_sur:       "3e5f77e7c82ae1fa713cdce9ec747da7a2a484dc7aec913e1abe48ea0f7ee736"
     sha256 cellar: :any,                 catalina:      "86d5b44b2b3ae5f09ee34ac8083eb70eee6ad9fedf9a52692988e98afaacd73c"
     sha256 cellar: :any,                 mojave:        "bf075e6136fbd4c99ce2bd5f72588f8611913f2d958e29ef0df1cfb378096d94"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3cb5658f9e8c563154a6054482ff8f360193ec20907e4d86af4bb5cd894c746f"
   end
 
   depends_on "notmuch"
