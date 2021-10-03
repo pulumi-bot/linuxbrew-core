@@ -11,7 +11,7 @@ class Gnunet < Formula
     sha256 cellar: :any,                 big_sur:       "ee3b0b12547986dbea1806833d4a0845a4ac092b5653be75b4bb5a2ff257456e"
     sha256 cellar: :any,                 catalina:      "2d6022911c05c414bb187c58077f3e27e4c7cf710a0c7470b1175e2e0ac74788"
     sha256 cellar: :any,                 mojave:        "0990533dacaf2decb9eb3bc20f7d8e21d1d9999670a74c2de483cb893464f114"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6bb67039350368fce378f5738c23a80429cec01d873b892cce27cfbed8d83012"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6bb67039350368fce378f5738c23a80429cec01d873b892cce27cfbed8d83012" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

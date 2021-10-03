@@ -10,7 +10,7 @@ class GitCliff < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "542b391a9b353fe44c6670cc30372379fd7dd82f189d8983e12d9283b506b22c"
     sha256 cellar: :any_skip_relocation, catalina:      "9b8e80bcc93d8092e80b2f9816f0398f1e52377c8ca7edd881c5a9ff431627d0"
     sha256 cellar: :any_skip_relocation, mojave:        "3a0d7242cabfee1adf2ac47e902734bbcda6354114379a13c7a6adb6a3ccbf36"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c1ee42c114321b446ea2722a3a1281ea76abf877bc72ff85bae297cd1fe32557"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c1ee42c114321b446ea2722a3a1281ea76abf877bc72ff85bae297cd1fe32557" # linuxbrew-core
   end
 
   depends_on "rust" => :build

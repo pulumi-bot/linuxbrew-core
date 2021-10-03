@@ -16,7 +16,7 @@ class Sdl2Mixer < Formula
     sha256 cellar: :any,                 big_sur:       "1529a00916c4066d8adc0987b627e2bc7cf66aca063562cb3af64f8fa5f231f7"
     sha256 cellar: :any,                 catalina:      "9779416544a0d71a8206b45895a3060baca2bf0877441017aaa6b1d6136654a2"
     sha256 cellar: :any,                 mojave:        "9c13dd597aca2e0d5f53f2a7b4a1ea4e5a724c08796ba0eaf71a54f9cc714fbc"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "412de036ef39cab5f7e1907711c2273a3d671e995ddeda320cad9cfedaa72a28"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "412de036ef39cab5f7e1907711c2273a3d671e995ddeda320cad9cfedaa72a28" # linuxbrew-core
   end
 
   head do

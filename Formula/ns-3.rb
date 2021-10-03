@@ -10,7 +10,7 @@ class Ns3 < Formula
     sha256 cellar: :any, big_sur:       "d41f6602cec43fb95b1e7633dc5661509224380f632aed0af5e02e02928c4d1d"
     sha256 cellar: :any, catalina:      "0cb4ec8959765ef9ad5057370209eb80ff8cc44054c8a780501e2849a2bf446f"
     sha256 cellar: :any, mojave:        "2159e2209f5605a2b3619e7c56429faa1969bab07e5b939964a2365b4a3685d2"
-    sha256               x86_64_linux:  "66650c3e493946bca1113f05ca50160b162dea772eea3ee94deb6345e93c9f80"
+    sha256               x86_64_linux:  "66650c3e493946bca1113f05ca50160b162dea772eea3ee94deb6345e93c9f80" # linuxbrew-core
   end
 
   depends_on "boost" => :build
