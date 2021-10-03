@@ -11,6 +11,7 @@ class Hidapi < Formula
     sha256 cellar: :any,                 big_sur:       "33612c008465ce62b39f1aeb519eaa58bd1d8e1296b118894765d4729b505f2b"
     sha256 cellar: :any,                 catalina:      "a90ba3cd69ce428830a5dfba205cf375fd962b19b5653a702b7c1d8616fa62d0"
     sha256 cellar: :any,                 mojave:        "35827213bd2b8b87c8574d7cf5f4fd18795dbf267d0b9355b4d0e528f9894b4f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5c1381768f1dc088e5290799d8e08135c7d864e22c01a80721d706b671bcdc57"
   end
 
   depends_on "cmake" => :build
