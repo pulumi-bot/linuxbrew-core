@@ -12,6 +12,7 @@ class Ocrmypdf < Formula
     sha256 cellar: :any,                 big_sur:       "96406d6e816785231f6c8da345b8ccbcb8ba07ced4517c3437ecb7a0120e34e5"
     sha256 cellar: :any,                 catalina:      "7dee4477161e313ac8f62b649452919a3acb7c472370ea1a48ff0792f0da2b58"
     sha256 cellar: :any,                 mojave:        "baf66676104168d743f75d99a6cef1851cf1a4592d4d74da23ba85799a658d4d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1c8594bdf9a9006aa0f07b71861ff39978913c1109139d8b516bcfb50608756b"
   end
 
   depends_on "pkg-config" => :build
