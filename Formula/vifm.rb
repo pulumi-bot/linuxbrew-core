@@ -11,6 +11,7 @@ class Vifm < Formula
     sha256 big_sur:       "4517c5ebdcb849db63e098333fff9826a4fb04738c1e834ba2b3a01f69689d3c"
     sha256 catalina:      "6a88bdb18fabe25b5e1540e3c1eab8185743f551a1223b2940567a1025ff71ee"
     sha256 mojave:        "8e1586f13e371c4c88d18efb84ad1f91333b3fbdca97c757c8d6fcdde2ace9d6"
+    sha256 x86_64_linux:  "4a8a8336e7e28fd307f600f87f5490afc56217c38035fec53dc4096f623d4cc4"
   end
 
   uses_from_macos "groff" => :build
