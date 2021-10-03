@@ -10,7 +10,7 @@ class Velero < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "893c0ff0b5fe83162550f8c7daa45f852edd36ec42491e5db804d858bb60a94b"
     sha256 cellar: :any_skip_relocation, catalina:      "d912d7ceaede1a0bf419915e83fb95afce89e23a2b2e308833a17a1909f33ad8"
     sha256 cellar: :any_skip_relocation, mojave:        "cea2ae85961c4ab6e7601847cb1ac8afb441d72f2979a9953b68b98229198496"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7d4b11a0b8deb77c190b697ef714312d402ffaaf30909ca0abe943c917e68d13"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7d4b11a0b8deb77c190b697ef714312d402ffaaf30909ca0abe943c917e68d13" # linuxbrew-core
   end
 
   depends_on "go" => :build

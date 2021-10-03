@@ -15,7 +15,7 @@ class Bibutils < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a8989477b91d3423deea04a5833b83cea7eee836ad197dfb30db9ce9599788b2"
     sha256 cellar: :any_skip_relocation, catalina:      "4f3cd7ce2f12a53e6afd35f92990968e6463a674dc4082315709c295e4869bb6"
     sha256 cellar: :any_skip_relocation, mojave:        "866724d8735e42aa3c62cb4b47e8be77bb41490d23ca2d83f0096ee2b9b4e5fd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bf0f79873c4ce317aed31c0c1516552e937ccddc191f951d3acf8cc3f2e9ca06"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bf0f79873c4ce317aed31c0c1516552e937ccddc191f951d3acf8cc3f2e9ca06" # linuxbrew-core
   end
 
   def install

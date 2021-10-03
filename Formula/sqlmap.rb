@@ -13,7 +13,7 @@ class Sqlmap < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e78113f5458f132f00b2cd002448843713cf5199e77b673bea9327531dc294d6"
     sha256 cellar: :any_skip_relocation, catalina:      "e78113f5458f132f00b2cd002448843713cf5199e77b673bea9327531dc294d6"
     sha256 cellar: :any_skip_relocation, mojave:        "e78113f5458f132f00b2cd002448843713cf5199e77b673bea9327531dc294d6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1623f01d924e179556e3dc108af2cb96ec90a4af3bbb4be59a4c457515ec70ef"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1623f01d924e179556e3dc108af2cb96ec90a4af3bbb4be59a4c457515ec70ef" # linuxbrew-core
   end
 
   depends_on "python@3.9"

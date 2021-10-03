@@ -17,7 +17,7 @@ class Portmidi < Formula
     sha256 cellar: :any,                 big_sur:       "b1f389b0e897e7fe5864bab75a9568bb4f08ede002f96f737f53248b88d49b43"
     sha256 cellar: :any,                 catalina:      "d36a5abe7624c563740d43403605a26d4c697ea4ed917f0263bc2869f1f9a766"
     sha256 cellar: :any,                 mojave:        "79c16a1e0a063781b5d89162d9c04e9bc6ff01a46a61479ea196d6749f0d0aff"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b5ca7cf23b6a2531a129a8c30166a1d605d05f6819bfe8ffaeee154070690e5f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b5ca7cf23b6a2531a129a8c30166a1d605d05f6819bfe8ffaeee154070690e5f" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
