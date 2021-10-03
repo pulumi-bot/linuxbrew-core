@@ -1,17 +1,16 @@
 class Terracognita < Formula
   desc "Reads from existing Cloud Providers and generates Terraform code"
   homepage "https://github.com/cycloidio/terracognita"
-  url "https://github.com/cycloidio/terracognita/archive/v0.6.4.tar.gz"
-  sha256 "b9282055bf2235e0f8b9fbc1ae31c22909986ee3b3df5cc64e644b34f6513485"
+  url "https://github.com/cycloidio/terracognita/archive/v0.7.4.tar.gz"
+  sha256 "7027103c899d29b86dd1dc72e1e2d6d685bec6311673f7fbd31c8127ccd62c82"
   license "MIT"
   head "https://github.com/cycloidio/terracognita.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "2cafed794c34f72a5e390a1bdf821798d33c55c567c6b4fa1348d800f3584711"
-    sha256 cellar: :any_skip_relocation, big_sur:       "7cf78bf712f39334a49d05faed61c57c5ae431b2da03e2978462c51c6108133a"
-    sha256 cellar: :any_skip_relocation, catalina:      "ebe755ce13ebff04cacce0edf79b3af170c490c53265ef2fd3ef0ac87a3359da"
-    sha256 cellar: :any_skip_relocation, mojave:        "2b38f5cdbd101cc038bfc6ec0570c9b989ae358e7ed604134e9bd41a8155b275"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "900ff8642dee9bb7b06c777c95d570ecf7a0e23613c149a3c5c7fbe3ac5d5498" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "d86a19285ec82eb5c63d5f8a1506d5208495ea1824beb87cea1ed24b300fdb68"
+    sha256 cellar: :any_skip_relocation, big_sur:       "2b54d5285bc814e82ddd4a436fad0f0a136f643777a3954ef2ad2c03a5afce03"
+    sha256 cellar: :any_skip_relocation, catalina:      "cbb46e5d8cda59aa40d57db85f05c6e8b86cceb13ce5999887bad3f541029776"
+    sha256 cellar: :any_skip_relocation, mojave:        "0acf733131cc484c14a9276aa8b7c0611f3e7faec0a2d70ebef8149a53f214f8"
   end
 
   depends_on "go" => :build
@@ -23,10 +22,8 @@ class Terracognita < Formula
 
   test do
     assert_match "v#{version}", shell_output("#{bin}/terracognita version")
-
     assert_match "Error: one of --module, --hcl  or --tfstate are required",
       shell_output("#{bin}/terracognita aws 2>&1", 1)
-
     assert_match "aws_instance", shell_output("#{bin}/terracognita aws resources")
   end
 end

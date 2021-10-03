@@ -1,18 +1,14 @@
 class Basex < Formula
   desc "Light-weight XML database and XPath/XQuery processor"
   homepage "https://basex.org"
-  url "https://files.basex.org/releases/9.6.1/BaseX961.zip"
-  version "9.6.1"
-  sha256 "9eb371fb84fe35450b2759424f08e953d2da57dd7127478e795903be5a1c3831"
+  url "https://files.basex.org/releases/9.6.2/BaseX962.zip"
+  version "9.6.2"
+  sha256 "6d6620c2961795ba01b9afae480f20eda25e122395426a789cb4faf62cf0abe2"
   license "BSD-3-Clause"
 
   livecheck do
     url "https://files.basex.org/releases/"
     regex(%r{href=.*?v?(\d+(?:\.\d+)+)/?["' >]}i)
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b33eeeb144a2545bbac432256e99b31ba153544be828500d1a3e0b21875807c4" # linuxbrew-core
   end
 
   depends_on "openjdk"

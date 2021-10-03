@@ -22,6 +22,10 @@ class PkgConfig < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "bc8ac04f3d8e42a748f40544f8e1b7f2471f32608f33e666e903d6108eb4dab2" # linuxbrew-core
   end
 
+  # FIXME: The bottle is mistakenly considered relocatable on Linux.
+  # See https://github.com/Homebrew/homebrew-core/pull/85032.
+  pour_bottle? only_if: :default_prefix
+
   def install
     pc_path = %W[
       #{HOMEBREW_PREFIX}/lib/pkgconfig
