@@ -11,6 +11,7 @@ class Shfmt < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8200fcf756b23f3e06fd07437b332d813280a3bb317e41a1d2b02e1f442a1966"
     sha256 cellar: :any_skip_relocation, catalina:      "73afc11e5d8f378dd818ebb0f7b16ffe1444742b06189a6ae344da867f3eec02"
     sha256 cellar: :any_skip_relocation, mojave:        "a5bd6ad427afcf75b6fe3aea673377d6664f295cc6c5b09bb49825fb1957df40"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d86764086cfff95fb5fbcded14819391eb0edc03db3e180ff42a3a19c8942f94"
   end
 
   depends_on "go" => :build
