@@ -10,6 +10,10 @@ class Libcap < Formula
     regex(/href=.*?libcap[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d5f21943aa23f98b41b791995dfa7dad7f33cde183e28e4e4aae1006d5d6a38f"
+  end
+
   depends_on :linux
 
   def install
