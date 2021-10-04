@@ -6,6 +6,10 @@ class GitExtras < Formula
   license "MIT"
   head "https://github.com/tj/git-extras.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e6d445a34c00d43c1a4804b4b93c34af758c968983779a0781a9ae7bdd0c1882"
+  end
+
   on_linux do
     depends_on "util-linux" # for `column`
   end
