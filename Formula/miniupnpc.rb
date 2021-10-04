@@ -1,8 +1,8 @@
 class Miniupnpc < Formula
   desc "UPnP IGD client library and daemon"
   homepage "https://miniupnp.tuxfamily.org"
-  url "http://miniupnp.tuxfamily.org/files/download.php?file=miniupnpc-2.2.2.tar.gz"
-  sha256 "888fb0976ba61518276fe1eda988589c700a3f2a69d71089260d75562afd3687"
+  url "http://miniupnp.tuxfamily.org/files/download.php?file=miniupnpc-2.2.3.tar.gz"
+  sha256 "dce41b4a4f08521c53a0ab163ad2007d18b5e1aa173ea5803bd47a1be3159c24"
   license "BSD-3-Clause"
 
   # We only match versions with only a major/minor since versions like 2.1 are
@@ -13,12 +13,10 @@ class Miniupnpc < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 cellar: :any,                 arm64_big_sur: "8895acaf9fa55bb5cd0f5feb6cd104512657494035ae1650a8b73dccdded5b0f"
-    sha256 cellar: :any,                 big_sur:       "e1295aef25a9cfbcbbace72d1a2a76aff88c5334848b4ce2f88fde84a326ff62"
-    sha256 cellar: :any,                 catalina:      "5b3510471e85184f82cb7bc594d819c6a303e44d2853b726c708c1b9b2fba245"
-    sha256 cellar: :any,                 mojave:        "59b55d5ef7cb08a7ee55b6c06f7313b58ed520e4f84cf74ca77e6066c3e08d1e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3e3aef0870115f51070432d9421ffc52ed430e8d2ee4deb15638f01a4eed3b53" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "c3e13a0a9a9a29ae1e11b68391c05af3502a38cc8e4c64106cab777453db5027"
+    sha256 cellar: :any,                 big_sur:       "dc8464030d7e318498fbed1aa9964c925285ceb6543a09abcff42b343681b20e"
+    sha256 cellar: :any,                 catalina:      "6a509044ce6d522df1c435ba211ec9cac427328bee216619f8fcd7c6de65ce0a"
+    sha256 cellar: :any,                 mojave:        "03cc532eeef519bf6db64926a70d56b365eccb0e752ab791cf21683da94bddc4"
   end
 
   def install
