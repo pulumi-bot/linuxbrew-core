@@ -13,6 +13,7 @@ class Sip < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0db8a3bc2db45ec99181f435f888711a76fa5316f8a8d2757dc0778836abdda4"
     sha256 cellar: :any_skip_relocation, catalina:      "334ed2ad3ee30c3e209a5ea4663b5d321aa8d39fce1f9208cabf1b952ec5ad0b"
     sha256 cellar: :any_skip_relocation, mojave:        "cfd7abf91ec045eb654c4e8b5ddc1a7e6dfea1cdc23a1d82d57badf7fb0fc059"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f2eeaae883a3722442ac0ba7d39b86b52ca416a56cfe80164a5f62d560ff9beb"
   end
 
   depends_on "python@3.9"
