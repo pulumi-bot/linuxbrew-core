@@ -15,7 +15,7 @@ class Stress < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "00d9ed736381a3967b8eaf0b709328ccb0263640fdc856fe5c2e8f2164ea705d"
     sha256 cellar: :any_skip_relocation, catalina:      "2fb692ddaa54337dfe07eb71ee647e167bbe41db054556c32d7507cba38caa43"
     sha256 cellar: :any_skip_relocation, mojave:        "6220e38d281aa1f7933c582711083d2e33bc36071e32776a55a6c8441e3de209"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b303854895396f0b6b5a75e654b5315ae4eccd5d4c7de451d7d1997edb0a7e7a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b303854895396f0b6b5a75e654b5315ae4eccd5d4c7de451d7d1997edb0a7e7a" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build

@@ -6,7 +6,7 @@ class WaylandProtocols < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "46ff9ea4c52643e3a0c7291e4dcf3badcb3adc64648e6c3e3c949fdca53b4f49"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "46ff9ea4c52643e3a0c7291e4dcf3badcb3adc64648e6c3e3c949fdca53b4f49" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
