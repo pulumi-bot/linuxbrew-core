@@ -21,6 +21,14 @@ class Uncrustify < Formula
 
   fails_with gcc: "5"
 
+  # patches from https://github.com/uncrustify/uncrustify/pull/3178
+  # and https://github.com/uncrustify/uncrustify/pull/3179 that fix build failures
+  # can be removed for 0.74.0
+  patch do
+    url "https://raw.githubusercontent.com/Homebrew/formula-patches/52cd74a3a21841bd6dd6bf2d1e95af8e5e5dfa16/uncrustify/uncrustify-0.73.0.patch"
+    sha256 "9323551298cf2acdeffaa17737d2762241fd3403121272f0523402781cc750ee"
+  end
+
   def install
     ENV.cxx11
 
