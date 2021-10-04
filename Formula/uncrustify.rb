@@ -11,7 +11,7 @@ class Uncrustify < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "aeaebd9ff33c221237ba005017f7d62012e82d7a0c9a10102bfa57ca71fb7358"
     sha256 cellar: :any_skip_relocation, catalina:      "4f50d6e3159241c0f561515465d86b771910a2071407b7b5ed7a4f9d70599e3c"
     sha256 cellar: :any_skip_relocation, mojave:        "58f40e9a613182248edb886953f23d3750580388effc02397ce04760d4f227a3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "32678f052c55b2696840ae939009aed90efbd8a1e83fb324fb36ed98dca29035"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "32678f052c55b2696840ae939009aed90efbd8a1e83fb324fb36ed98dca29035" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

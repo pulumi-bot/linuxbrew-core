@@ -17,7 +17,7 @@ class ClickhouseOdbc < Formula
     sha256 cellar: :any,                 big_sur:       "e6d1f023de5da25925976a49e6e67752ca2f21e03b8830ff29f445b76d494229"
     sha256 cellar: :any,                 catalina:      "321dd3734dac814a4e3d02a407195f700a0217a9edc5c94bc01aa0aec4b161a0"
     sha256 cellar: :any,                 mojave:        "e2087770d6ff73e2ca07bfa972b7a59b6b38eb02a1262fc8a537282ac78b07b1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "74109cc6c7dee2b57b34c349a3615c77d3988a09023caeed2b8949d5f25211cd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "74109cc6c7dee2b57b34c349a3615c77d3988a09023caeed2b8949d5f25211cd" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
