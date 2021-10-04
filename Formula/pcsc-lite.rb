@@ -15,6 +15,7 @@ class PcscLite < Formula
     sha256 cellar: :any,                 big_sur:       "f5d733e1cccba6a07f87b29ec9a18886d210376ea13d0a42eeacdadb706c97a3"
     sha256 cellar: :any,                 catalina:      "e97ed967e538b00673e7b0e46592adafd3dbc0f69bb67aea921fe24e51c376ff"
     sha256 cellar: :any,                 mojave:        "4afd86caaf938458d6697b216f0c6760e4d1e7b8228995943e316eb6bf315476"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dbbcbdc0bab21c08e55d7f5d8e897cc5f17dd3e387a38c9e11480996c189f050"
   end
 
   keg_only :shadowed_by_macos, "macOS provides PCSC.framework"
