@@ -15,7 +15,7 @@ class S6 < Formula
     sha256 big_sur:       "4d18fc8a563361bdb4cac4b421256e8fa2badb01c82b0692fcddb7d477ed360a"
     sha256 catalina:      "6b651eb8e448c4a97f3446ea3116a8ef7933b28f57d698b3f24bc92e558791a2"
     sha256 mojave:        "cdc4ffac93485352efffc1e169f9d1576d52b06afc65b8ea6bbb7f313f69b860"
-    sha256 x86_64_linux:  "09b1f7acbbbcf942f5126ab84cdff586e869a68b3d9a1496cc2aed1af5e07c7c"
+    sha256 x86_64_linux:  "09b1f7acbbbcf942f5126ab84cdff586e869a68b3d9a1496cc2aed1af5e07c7c" # linuxbrew-core
   end
 
   resource "skalibs" do

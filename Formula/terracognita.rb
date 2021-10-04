@@ -11,7 +11,7 @@ class Terracognita < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "2b54d5285bc814e82ddd4a436fad0f0a136f643777a3954ef2ad2c03a5afce03"
     sha256 cellar: :any_skip_relocation, catalina:      "cbb46e5d8cda59aa40d57db85f05c6e8b86cceb13ce5999887bad3f541029776"
     sha256 cellar: :any_skip_relocation, mojave:        "0acf733131cc484c14a9276aa8b7c0611f3e7faec0a2d70ebef8149a53f214f8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6222d3967d26904d5894855669f39662322f6ead05759ada13776c906f7ed21e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6222d3967d26904d5894855669f39662322f6ead05759ada13776c906f7ed21e" # linuxbrew-core
   end
 
   depends_on "go" => :build

@@ -20,7 +20,7 @@ class Texlive < Formula
     sha256 big_sur:       "499d3a4288ce44171bd03c8302cfed3c82a9c8068b9bc906a561f1ceef09de6c"
     sha256 catalina:      "ff3e7293bdf2febf0320060541a9320ca31ec61dd434eeb2f537a84e4cda0f5b"
     sha256 mojave:        "7c27168b1a8592bc78b82ec0d92a87595bce2a77f7b96d9eb69af49af5c4d9e6"
-    sha256 x86_64_linux:  "2c41919ed21c38afe7a817cd1cf4f3b6ce128fdd9eaf33ddc07d9357ad55f522"
+    sha256 x86_64_linux:  "2c41919ed21c38afe7a817cd1cf4f3b6ce128fdd9eaf33ddc07d9357ad55f522" # linuxbrew-core
   end
 
   depends_on "cairo"

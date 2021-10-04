@@ -26,7 +26,7 @@ class Lammps < Formula
     sha256 cellar: :any,                 big_sur:       "bd9d9cc96fbd15fbeca8f6d5a1c7c39648d5bcc821be10d8d7fe5cb4bf91aefb"
     sha256 cellar: :any,                 catalina:      "cab92149fe5abb3cdac4f145dc78dfe4e2b89db854b4a7f5cdf378a1015cb1f6"
     sha256 cellar: :any,                 mojave:        "98d9d322f31be61b68bbe47377bd662e92f16024269ceb6d014895077f83a1eb"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c022b0213f4587b7beeab0a62b71dcc099a496fda194517e0d8d09922bbfdf6b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c022b0213f4587b7beeab0a62b71dcc099a496fda194517e0d8d09922bbfdf6b" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

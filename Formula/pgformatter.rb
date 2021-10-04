@@ -10,7 +10,7 @@ class Pgformatter < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "597a79f382e5be9ec4af90f3e1499686686912c10092943f659c65b31e97b46c"
     sha256 cellar: :any_skip_relocation, catalina:      "34ea80e6142dfee05233d417713cc517545f7b62555ccf40997acb7b52431383"
     sha256 cellar: :any_skip_relocation, mojave:        "34ea80e6142dfee05233d417713cc517545f7b62555ccf40997acb7b52431383"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7b7ec5b32bafedef008190142250d561b0c577081db09e8df889a101294dc0cb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7b7ec5b32bafedef008190142250d561b0c577081db09e8df889a101294dc0cb" # linuxbrew-core
   end
 
   def install

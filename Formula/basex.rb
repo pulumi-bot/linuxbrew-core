@@ -12,7 +12,7 @@ class Basex < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3f04d81fe626caca9138638faaa6cf4ec73fa1103761fd35651bdea54c881894"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3f04d81fe626caca9138638faaa6cf4ec73fa1103761fd35651bdea54c881894" # linuxbrew-core
   end
 
   depends_on "openjdk"

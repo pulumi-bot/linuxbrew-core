@@ -10,7 +10,7 @@ class Bbtools < Formula
     sha256 cellar: :any,                 big_sur:       "63c494be4d54b01b8fdbbae8d1c9a3479cc00a47d082bf8c43a721d86fda48ff"
     sha256 cellar: :any,                 catalina:      "34ac2edaa8cd697f60e9858d483f2cd0dca2d17bfe2ecd986d8391b50a161348"
     sha256 cellar: :any,                 mojave:        "3548c29585c5b320bc7855f3a33c49639e8035d5fad9757fb24784c46aa17486"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1e8caeefe2ac57585f7cda44463836caeab85f3f92f066e755d74234116b6a37"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1e8caeefe2ac57585f7cda44463836caeab85f3f92f066e755d74234116b6a37" # linuxbrew-core
   end
 
   depends_on "openjdk"
