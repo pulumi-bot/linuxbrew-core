@@ -17,6 +17,7 @@ class Miniupnpc < Formula
     sha256 cellar: :any,                 big_sur:       "dc8464030d7e318498fbed1aa9964c925285ceb6543a09abcff42b343681b20e"
     sha256 cellar: :any,                 catalina:      "6a509044ce6d522df1c435ba211ec9cac427328bee216619f8fcd7c6de65ce0a"
     sha256 cellar: :any,                 mojave:        "03cc532eeef519bf6db64926a70d56b365eccb0e752ab791cf21683da94bddc4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7678fbb53c1fed70bd0e47d4f9539892267bafa8d9c8cad966cf2a49c726a36e"
   end
 
 	# Fix missing references to $(BUILD) in the install rules
