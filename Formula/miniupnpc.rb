@@ -20,10 +20,10 @@ class Miniupnpc < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "7678fbb53c1fed70bd0e47d4f9539892267bafa8d9c8cad966cf2a49c726a36e"
   end
 
-	# Fix missing references to $(BUILD) in the install rules
-	# equivalent to https://github.com/miniupnp/miniupnp/commit/ed1dc4bb5cdc4a53963f3eb01089289e30acc5a3
-	# but modified to start with the miniupnpc folder as root
-	patch :DATA
+  # Fix missing references to $(BUILD) in the install rules
+  # equivalent to https://github.com/miniupnp/miniupnp/commit/ed1dc4bb5cdc4a53963f3eb01089289e30acc5a3
+  # but modified to start with the miniupnpc folder as root
+  patch :DATA
 
   def install
     system "make", "INSTALLPREFIX=#{prefix}", "install"
