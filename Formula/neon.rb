@@ -16,6 +16,7 @@ class Neon < Formula
     sha256 cellar: :any,                 big_sur:       "86819110b5eacedd6be7e53d202b532c4b956062217685ae98bb96e547ad58cd"
     sha256 cellar: :any,                 catalina:      "f5385868f91943383ca9674f2589280e30b55f4156086db05efa160411738467"
     sha256 cellar: :any,                 mojave:        "de9f23227aac7ec30b4a412d783e5dfdb788a51c51e66689f01705207270805e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "307c967a90b5f6eaff01bd65d9c92f5c2f085a7e946984a311367be7af1df2c7"
   end
 
   depends_on "pkg-config" => :build
