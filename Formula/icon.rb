@@ -1,6 +1,6 @@
 class Icon < Formula
   desc "General-purpose programming language"
-  homepage "https://www.cs.arizona.edu/icon/"
+  homepage "https://github.com"
   url "https://github.com/gtownsend/icon/archive/v9.5.21b.tar.gz"
   version "9.5.21b"
   sha256 "5dd46cd4e868c75ff1b50de275f1ec06a09641afcb8c18b072333f97f86d3bcc"
