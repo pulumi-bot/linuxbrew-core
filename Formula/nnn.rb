@@ -11,7 +11,7 @@ class Nnn < Formula
     sha256 cellar: :any,                 big_sur:       "9f99a0bd00d1f224d7a357941e419fadbf6385f6316505108e7592a1b76403fc"
     sha256 cellar: :any,                 catalina:      "63cd86d85ab2464ca084fe671784cf8228b65b6fb6026375845940e8d1827f77"
     sha256 cellar: :any,                 mojave:        "f1aa16087e160457a96cf549135b0f9c4fe875a6a888064fa8bd92cda5c1b6f0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8b431bf5a86d696c6784e9faa375c249d5456bbf5c101606e949a840ed7b6471"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8b431bf5a86d696c6784e9faa375c249d5456bbf5c101606e949a840ed7b6471" # linuxbrew-core
   end
 
   depends_on "gnu-sed"

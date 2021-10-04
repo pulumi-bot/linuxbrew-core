@@ -11,7 +11,7 @@ class Faudio < Formula
     sha256 cellar: :any,                 big_sur:       "d2f0b7ac1fc3b350fd6d8b1e6c15e1bd79b61d623098dc21eee6420638de2e56"
     sha256 cellar: :any,                 catalina:      "13050963df317b4e65a3ba224ee270f67a7cc39191b3dee5546e5bdb54a97318"
     sha256 cellar: :any,                 mojave:        "c707921fb22d6c89579630c365fe5d60b5ee24d9cc017e05e1d82688a6e891c9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "67725e7e2de723c3d643530c6815a27322c1df6b46ed482d8c89b01b0add2988"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "67725e7e2de723c3d643530c6815a27322c1df6b46ed482d8c89b01b0add2988" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

@@ -17,7 +17,7 @@ class Ninja < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a024937b955212892b810dbe09af351b8966448cab497db3d81cd6ca829cd8ec"
     sha256 cellar: :any_skip_relocation, catalina:      "07ce960dd5c57859916a09090ef9b747a28c56892d60cc91c29b85c8cc13d902"
     sha256 cellar: :any_skip_relocation, mojave:        "b9c82b12477142c1a4ed7d030d9227b6c351fbe7747f3533e37607e5497db22b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1bc3c62608270b71128e21762de5ee6722292dce5f6d7e22b748d5a073db56aa"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1bc3c62608270b71128e21762de5ee6722292dce5f6d7e22b748d5a073db56aa" # linuxbrew-core
   end
 
   # Ninja only needs Python for some non-core functionality.
