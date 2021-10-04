@@ -15,6 +15,7 @@ class Libomp < Formula
     sha256 cellar: :any,                 big_sur:       "be00288f6f2901b633774b5a3127302a34ef0c9ab0588116d0193be2a627683d"
     sha256 cellar: :any,                 catalina:      "fe6c16f6998e7648b201f461746fb8466324b6eb1184d3ac5ae55a7793f74b91"
     sha256 cellar: :any,                 mojave:        "145870f8ede6328f26d81b6aa92980b9b74671b36c6f440b02a4ebae39f55239"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a6dac299ff69a68252a73787f49a7c136f146a12694ab760f23c3b013065559e"
   end
 
   depends_on "cmake" => :build
