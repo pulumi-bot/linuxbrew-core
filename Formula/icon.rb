@@ -16,6 +16,7 @@ class Icon < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "26221c72cd120274c75db2dca9926ff6d651f380814946005f1bb20fa8a12be9"
     sha256 cellar: :any_skip_relocation, catalina:      "c59f68713faf7424ff485f8e5b3407367d29cd1412af432355c0f6d525d78f71"
     sha256 cellar: :any_skip_relocation, mojave:        "7882a95b7c29003762ee254bc6fb4e2f1ca857edadc679d0802328dfcd0ab7c2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d34c1cef5d78859389c91a35da2a06d1bee9df2ddb21521dbf8fdc3afafd6a80"
   end
 
   def install
