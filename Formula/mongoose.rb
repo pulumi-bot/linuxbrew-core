@@ -10,6 +10,7 @@ class Mongoose < Formula
     sha256 cellar: :any,                 big_sur:       "f983ab7ccf9331fcb3955ce1a12974345016b95e68e221e206a24b1008efd3a0"
     sha256 cellar: :any,                 catalina:      "633718da5b3cd80405580bdb7e8e1fb49cfcd0750341ea4c3283613a212c1f2d"
     sha256 cellar: :any,                 mojave:        "6af8c2a0736cbf2ea1c69266c6af4bde1f2bc3005e0550f2875ec3acd7b155d5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d03f8869ca3d67dc687cda9e61bfff91aaa9c82f5437dcb0191e9f062890d453"
   end
 
   depends_on "openssl@1.1"
