@@ -151,6 +151,12 @@ class Swift < Formula
     sha256 "0e2c2dc96895931e4444f90533cb2b8e1b04c2591f9a2c0492145661efab1760"
   end
 
+  # Fix arm64 build not being able to use the arm64e standard library.
+  # https://github.com/apple/swift/pull/39083
+  # https://github.com/apple/swift/pull/39315
+  # Remove with Swift 5.6.
+  patch :DATA
+
   def install
     workspace = buildpath.parent
     build = workspace/"build"
@@ -406,3 +412,82 @@ class Swift < Formula
     assert_equal expected_resource_dir, default_resource_dir
   end
 end
+
+__END__
+diff --git a/lib/Serialization/SerializedModuleLoader.cpp b/lib/Serialization/SerializedModuleLoader.cpp
+index 5ba5de6eeebfc..02b21af921d04 100644
+--- a/lib/Serialization/SerializedModuleLoader.cpp
++++ b/lib/Serialization/SerializedModuleLoader.cpp
+@@ -46,8 +46,23 @@ namespace {
+ void forEachTargetModuleBasename(const ASTContext &Ctx,
+                                  llvm::function_ref<void(StringRef)> body) {
+   auto normalizedTarget = getTargetSpecificModuleTriple(Ctx.LangOpts.Target);
++
++  // An arm64 module can import an arm64e module.
++  Optional<llvm::Triple> normalizedAltTarget;
++  if ((normalizedTarget.getArch() == llvm::Triple::ArchType::aarch64) &&
++      (normalizedTarget.getSubArch() !=
++       llvm::Triple::SubArchType::AArch64SubArch_arm64e)) {
++    auto altTarget = normalizedTarget;
++    altTarget.setArchName("arm64e");
++    normalizedAltTarget = getTargetSpecificModuleTriple(altTarget);
++  }
++
+   body(normalizedTarget.str());
+ 
++  if (normalizedAltTarget) {
++    body(normalizedAltTarget->str());
++  }
++
+   // We used the un-normalized architecture as a target-specific
+   // module name. Fall back to that behavior.
+   body(Ctx.LangOpts.Target.getArchName());
+@@ -61,6 +76,10 @@ void forEachTargetModuleBasename(const ASTContext &Ctx,
+   if (Ctx.LangOpts.Target.getArch() == llvm::Triple::ArchType::arm) {
+     body("arm");
+   }
++
++  if (normalizedAltTarget) {
++    body(normalizedAltTarget->getArchName());
++  }
+ }
+ 
+ enum class SearchPathKind {
+diff --git a/lib/Frontend/ModuleInterfaceLoader.cpp b/lib/Frontend/ModuleInterfaceLoader.cpp
+index 85156db2d9ded..537db48daa6e0 100644
+--- a/lib/Frontend/ModuleInterfaceLoader.cpp
++++ b/lib/Frontend/ModuleInterfaceLoader.cpp
+@@ -1604,6 +1604,10 @@ InterfaceSubContextDelegateImpl::runInSubCompilerInstance(StringRef moduleName,
+   // arguments in the textual interface file. So copy to use a new compiler
+   // invocation.
+   CompilerInvocation subInvocation = genericSubInvocation;
++
++  // Save the target triple from the original context.
++  llvm::Triple originalTargetTriple(subInvocation.getLangOptions().Target);
++
+   std::vector<StringRef> BuildArgs(GenericArgs.begin(), GenericArgs.end());
+   assert(BuildArgs.size() == GenericArgs.size());
+   // Configure inputs
+@@ -1653,6 +1657,22 @@ InterfaceSubContextDelegateImpl::runInSubCompilerInstance(StringRef moduleName,
+   if (subInvocation.parseArgs(SubArgs, *Diags)) {
+     return std::make_error_code(std::errc::not_supported);
+   }
++
++  // If the target triple parsed from the Swift interface file differs
++  // only in subarchitecture from the original target triple, then
++  // we have loaded a Swift interface from a different-but-compatible
++  // architecture slice. Use the original subarchitecture.
++  llvm::Triple parsedTargetTriple(subInvocation.getTargetTriple());
++  if (parsedTargetTriple.getSubArch() != originalTargetTriple.getSubArch() &&
++      parsedTargetTriple.getArch() == originalTargetTriple.getArch() &&
++      parsedTargetTriple.getVendor() == originalTargetTriple.getVendor() &&
++      parsedTargetTriple.getOS() == originalTargetTriple.getOS() &&
++      parsedTargetTriple.getEnvironment()
++        == originalTargetTriple.getEnvironment()) {
++    parsedTargetTriple.setArchName(originalTargetTriple.getArchName());
++    subInvocation.setTargetTriple(parsedTargetTriple.str());
++  }
++
+   CompilerInstance subInstance;
+   SubCompilerInstanceInfo info;
+   info.Instance = &subInstance;
