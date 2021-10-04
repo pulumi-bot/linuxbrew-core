@@ -21,6 +21,7 @@ class Cmake < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b9f106823e83911365f96a5f1b4cab26649840f06e1cbc541335143b7e71b237"
     sha256 cellar: :any_skip_relocation, catalina:      "1ab2ae431b90878839404643b926eb81e5b6563d2b59cb860a1ebb03d90a09b7"
     sha256 cellar: :any_skip_relocation, mojave:        "da00844fd5e38040486e1e65c415e92eeab82fcf358d5fe97deceffabc48df80"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "243351958c6d9ed921337240fc446dd75a0716550c884677b68300e79ac0f7fc"
   end
 
   uses_from_macos "ncurses"
