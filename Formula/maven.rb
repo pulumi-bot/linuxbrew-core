@@ -16,7 +16,7 @@ class Maven < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e20b223a764265a88cd00a3a526fcafdda834a038dccfef6ad63d551dd6d5594"
     sha256 cellar: :any_skip_relocation, catalina:      "e20b223a764265a88cd00a3a526fcafdda834a038dccfef6ad63d551dd6d5594"
     sha256 cellar: :any_skip_relocation, mojave:        "e20b223a764265a88cd00a3a526fcafdda834a038dccfef6ad63d551dd6d5594"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "07797e93cf8c6f358b149d6bfc31da7b65b469d2585b2efaa7ce36741bc1887f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "07797e93cf8c6f358b149d6bfc31da7b65b469d2585b2efaa7ce36741bc1887f" # linuxbrew-core
   end
 
   depends_on "openjdk"
