@@ -4,17 +4,16 @@ require "json"
 class Webpack < Formula
   desc "Bundler for JavaScript and friends"
   homepage "https://webpack.js.org/"
-  url "https://registry.npmjs.org/webpack/-/webpack-5.56.0.tgz"
-  sha256 "6c115002e166b6a354279988969f3bf1965426ca07c551d7bbb06d827afb9066"
+  url "https://registry.npmjs.org/webpack/-/webpack-5.56.1.tgz"
+  sha256 "f8b9e522b30c49921d257be7f6cf7aec6824660a6983e118c2f8354ba10eefd0"
   license "MIT"
   head "https://github.com/webpack/webpack.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "b93e2ad83d7c50368ac33175a7986e14fcf16d2390e86f09281ca05cd4b93309"
-    sha256 cellar: :any_skip_relocation, big_sur:       "06d210f92db3a3561148a6397838945774ec7eb754176c66a7fd71ce2a699408"
-    sha256 cellar: :any_skip_relocation, catalina:      "06d210f92db3a3561148a6397838945774ec7eb754176c66a7fd71ce2a699408"
-    sha256 cellar: :any_skip_relocation, mojave:        "06d210f92db3a3561148a6397838945774ec7eb754176c66a7fd71ce2a699408"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3f3b1ef7d2db1f74960b730eb2ac86ccfbfcea5058111151d277f26f1aceb11a" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c29b40b6d459ea3ed8d198a69ac46ccb0e29d273a617cec18b3338c278671642"
+    sha256 cellar: :any_skip_relocation, big_sur:       "90de930c99e936d60bf5ff300ccfa63d4a0d57fed059a015315a23da37f3e6a9"
+    sha256 cellar: :any_skip_relocation, catalina:      "90de930c99e936d60bf5ff300ccfa63d4a0d57fed059a015315a23da37f3e6a9"
+    sha256 cellar: :any_skip_relocation, mojave:        "90de930c99e936d60bf5ff300ccfa63d4a0d57fed059a015315a23da37f3e6a9"
   end
 
   depends_on "node"
