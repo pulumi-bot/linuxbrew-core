@@ -20,7 +20,7 @@ class Getdns < Formula
     sha256 cellar: :any,                 big_sur:       "d98dc03e72b3e2e6814f47c8d947ff7667d65b79cf4b11f3b1913d2e17f51e84"
     sha256 cellar: :any,                 catalina:      "3481bfeb92cb2b50ad019c3cc816fe73c3f26dec20e80b4b52536e83c8ff9752"
     sha256 cellar: :any,                 mojave:        "fabcba2c64119aa84e892266a93260d6c8a6d650e754568b6f5767c9223de001"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bd9e46bc8d092c657341df3c80991a415c7eeea380e61d8ecc4f4d8f7d0068ea"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bd9e46bc8d092c657341df3c80991a415c7eeea380e61d8ecc4f4d8f7d0068ea" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

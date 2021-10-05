@@ -11,7 +11,7 @@ class Srt < Formula
     sha256 cellar: :any,                 big_sur:       "1feec9a3449db0914403420eddd731dc17bd2df8fce2b0471227c79e8e7688f9"
     sha256 cellar: :any,                 catalina:      "078b246649eed71dc3eed9d8d3e2d71b2ce025ecf5933fdc33956f6582251b96"
     sha256 cellar: :any,                 mojave:        "7308578774fd1cdfed6c250044bf013e2b188c19d866ba114fe02c505ae92303"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6cb379f1edd822387425ca2b6463b42c23b0046f6bc50004ce0f63f8cbffb031"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6cb379f1edd822387425ca2b6463b42c23b0046f6bc50004ce0f63f8cbffb031" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
