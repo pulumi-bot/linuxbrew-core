@@ -10,6 +10,7 @@ class Tbb < Formula
     sha256 cellar: :any,                 big_sur:       "292efca6f88d8dc0dd396593ec9cd7fffee60457968f3bf4911e595e67b0e4e5"
     sha256 cellar: :any,                 catalina:      "ceab79696162f301977698d1274dfc220de372ba473845c0b89ce29572e2c54b"
     sha256 cellar: :any,                 mojave:        "d5c1155379f21962bc47d172a9b673c4a72b24656b5f7fed5990d3e34b909c98"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d141bce2293f171c3671d6e5171336d4af8aedc4d65abc30f1ddcea6e7f2b874"
   end
 
   depends_on "cmake" => :build
