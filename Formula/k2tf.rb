@@ -11,6 +11,7 @@ class K2tf < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6b965773a6297eed4bd17d60d37bae417c9d9ec5cb9238bcac4b34685a510d9e"
     sha256 cellar: :any_skip_relocation, catalina:      "3924263dbc837f9298c61add61cbe644b6d33050ac230ade1129288d663eaa8a"
     sha256 cellar: :any_skip_relocation, mojave:        "903d5c2de0b57d9ff6a293803e60d44d470774eae764f2b40e4ce92726b471ce"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bc45397267bcd9a6852d68b9a8c14b1269c4bff60f433c91245e9a12cfb25ef9"
   end
 
   depends_on "go" => :build
