@@ -17,7 +17,7 @@ class KnotResolver < Formula
     sha256 big_sur:       "31379c500b70b0d70012cf117762936110c690760eaedd0ba6082ada5f31ecd0"
     sha256 catalina:      "87c4877aaafd7e7840e24d164cc5df4203caafae54956aca01430f4189f35fc7"
     sha256 mojave:        "fa1691356793d077171f59e9b1fad7462f9b7c26cdaa0246223cafeb9e85cebf"
-    sha256 x86_64_linux:  "e96fce0f10564368866a5dc7cd63a4bf4f889a3aa8057ccb1e8546ce51cfeaf2"
+    sha256 x86_64_linux:  "e96fce0f10564368866a5dc7cd63a4bf4f889a3aa8057ccb1e8546ce51cfeaf2" # linuxbrew-core
   end
 
   depends_on "meson" => :build

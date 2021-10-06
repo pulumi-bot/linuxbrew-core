@@ -11,7 +11,7 @@ class Julia < Formula
     sha256 cellar: :any,                 big_sur:      "9ada693a47c8a932097af78b351b0c5fed8df8f87ded747246c766aaced0c5e3"
     sha256 cellar: :any,                 catalina:     "f117136af33056f2d0c08f394c953570977e616537ced71032b56d11a3fddde7"
     sha256 cellar: :any,                 mojave:       "5a3d1c91f3a32ad2dc6bc57f1a7e2e8f7ec0ef74fd0b3d410a09bd4f60ef4039"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ede57ce2fb181c51fbd8bb52198b1255c82116ae0668e0af5e82b534f8a3af56"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ede57ce2fb181c51fbd8bb52198b1255c82116ae0668e0af5e82b534f8a3af56" # linuxbrew-core
   end
 
   depends_on "python@3.9" => :build
