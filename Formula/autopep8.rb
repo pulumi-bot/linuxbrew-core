@@ -13,6 +13,7 @@ class Autopep8 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f9cde313894b40e47ca85af6ae16424fa6e0c4877a1d603c6c93a3e14e3b02bb"
     sha256 cellar: :any_skip_relocation, catalina:      "f9cde313894b40e47ca85af6ae16424fa6e0c4877a1d603c6c93a3e14e3b02bb"
     sha256 cellar: :any_skip_relocation, mojave:        "f9cde313894b40e47ca85af6ae16424fa6e0c4877a1d603c6c93a3e14e3b02bb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a60d671b1cb79995d36d3a84c380111d3b196763434aa2403c800492deae17a7"
   end
 
   depends_on "python@3.10"
