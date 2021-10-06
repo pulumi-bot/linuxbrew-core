@@ -14,6 +14,7 @@ class Awslogs < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "81a0c2dce4e6ad80585449b305981e6361bfa71ba99535951e0869a838dd3b50"
     sha256 cellar: :any_skip_relocation, catalina:      "9a26d97dc7b768ddbc3d11b08995d45972019b10b089117c98ff75e746ec161b"
     sha256 cellar: :any_skip_relocation, mojave:        "cef5658727d8238b1539f15fe8c34483d1a7deb0d195b2a8eb4bcd540482f145"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "094a5a6aa08832ca5523a3de213a1a48d1035d8386c2cde8d20747a9debfa7da"
   end
 
   depends_on "python@3.10"
