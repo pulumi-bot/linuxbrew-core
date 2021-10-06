@@ -10,6 +10,10 @@ class Repo < Formula
   revision 1
   version_scheme 1
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f2650dff2526243217cd277ba666da81a10466ea66eb5da0cfb7984f931f0a4f"
+  end
+
   depends_on "python@3.10"
 
   def install
