@@ -7,6 +7,10 @@ class Twoping < Formula
   revision 1
   head "https://github.com/rfinnie/2ping.git", branch: "main"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e1847c704c33620ee0aa48c1c9d9dd7cbe5adad99acbbe440daecc8ad8b1444d"
+  end
+
   depends_on "python@3.10"
 
   def install
