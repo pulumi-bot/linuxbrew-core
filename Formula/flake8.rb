@@ -14,6 +14,7 @@ class Flake8 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "87a52580d472a517fa23a80cc27143c208ab53b2c301f7fdf65fe2ac2a725251"
     sha256 cellar: :any_skip_relocation, catalina:      "87a52580d472a517fa23a80cc27143c208ab53b2c301f7fdf65fe2ac2a725251"
     sha256 cellar: :any_skip_relocation, mojave:        "87a52580d472a517fa23a80cc27143c208ab53b2c301f7fdf65fe2ac2a725251"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9a2aacfe74639153bb6c2d2ab76af234212e06e97fec3e32c9d4dedf462c5127"
   end
 
   depends_on "python@3.10"
