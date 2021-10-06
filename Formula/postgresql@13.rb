@@ -15,7 +15,7 @@ class PostgresqlAT13 < Formula
     sha256 big_sur:       "ccfa372d9d36d32fe67e8db01efc96bdc89d09261c77523ff11843a9a39e7a33"
     sha256 catalina:      "e9c8001d59522349069422a196365fbfd79706c4abdcac970adf6a60b01aa82b"
     sha256 mojave:        "ed5091bf32aab906bd0a9ad64549500c0fedede3c9f496f7e886582b8456bfa5"
-    sha256 x86_64_linux:  "1cd995424f9babaf9a65838fb57d9d603ce47cda77961b3897eb7cbab471f8d1"
+    sha256 x86_64_linux:  "1cd995424f9babaf9a65838fb57d9d603ce47cda77961b3897eb7cbab471f8d1" # linuxbrew-core
   end
 
   keg_only :versioned_formula

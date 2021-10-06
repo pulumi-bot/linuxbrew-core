@@ -12,7 +12,7 @@ class Sail < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "01a2bb6b961820e418ee97c1d2877df04378f928aba8f74a118c55c3dd4dc703"
     sha256 cellar: :any_skip_relocation, catalina:      "1a21ca0c8f4dd65a7c82683eaf938c069f8bf4d59f40560e1f0d25f418415db5"
     sha256 cellar: :any_skip_relocation, mojave:        "bb4c18e2443ef18ca0e9516c9cf5ad425f0a516daf11c3f40475a2b7df3cc982"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3275e488bf6f26c1122f3b5ac40c9a2cf1572b95ffcee89aba7c5e24f3724695"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3275e488bf6f26c1122f3b5ac40c9a2cf1572b95ffcee89aba7c5e24f3724695" # linuxbrew-core
   end
 
   depends_on "python@3.9"
