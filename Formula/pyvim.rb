@@ -13,7 +13,7 @@ class Pyvim < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0dab59c0c17cc65d81a0ce2e83102d42e188169f6a2ae91c2c08b8ec2ffb2038"
     sha256 cellar: :any_skip_relocation, catalina:      "fb348c98666df443ca4290cb74fd0c3d9758389bca62ac72ac8595fc3a0025f9"
     sha256 cellar: :any_skip_relocation, mojave:        "7f3586932432c8244a8d48adc731f122380035b233eb0c1c84d6c6ffb2751e88"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d36a0aca27c55edd1c0b3d89964f471d818d55b2d4dd13bdbe4a5899b13d29a7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d36a0aca27c55edd1c0b3d89964f471d818d55b2d4dd13bdbe4a5899b13d29a7" # linuxbrew-core
   end
 
   depends_on "python@3.10"

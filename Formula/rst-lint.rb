@@ -13,7 +13,7 @@ class RstLint < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4e0d8defb5305731e9053120f61fba399c1fc2908367df0ce332acfc09d2550a"
     sha256 cellar: :any_skip_relocation, catalina:      "4e0d8defb5305731e9053120f61fba399c1fc2908367df0ce332acfc09d2550a"
     sha256 cellar: :any_skip_relocation, mojave:        "4e0d8defb5305731e9053120f61fba399c1fc2908367df0ce332acfc09d2550a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f5492b290c6c3b00356c0d956ca4d270855c2852519114ade876c6ea5b183932"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f5492b290c6c3b00356c0d956ca4d270855c2852519114ade876c6ea5b183932" # linuxbrew-core
   end
 
   depends_on "python@3.10"

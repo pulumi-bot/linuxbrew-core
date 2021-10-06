@@ -14,7 +14,7 @@ class YtDlp < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f566dbf5afeff48d37a562a3172b9f24fb7725e62fb8f66e5a8885156e146914"
     sha256 cellar: :any_skip_relocation, catalina:      "7f4ce738f0007aaa57a3ff6938d20dc45b864c83133f557ba48f4029904e12fa"
     sha256 cellar: :any_skip_relocation, mojave:        "00c88209e52e77a8e88dfdfa1e6a08179a22a05f6bb5c4248d075d506fbbe09a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f7a078b78b6be51561f275bd8f33e43f8300a8b1072b4bce9a8654aadc9678da"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f7a078b78b6be51561f275bd8f33e43f8300a8b1072b4bce9a8654aadc9678da" # linuxbrew-core
   end
 
   depends_on "python@3.10"

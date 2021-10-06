@@ -14,7 +14,7 @@ class Rbtools < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "10d468168e0f8a76694e044cfbb775228110e417ff382f675ee966c8eb02c27c"
     sha256 cellar: :any_skip_relocation, catalina:      "f07f1d3b118761076d77532e415fb725d284f1a4e131826119e81128d33b2c04"
     sha256 cellar: :any_skip_relocation, mojave:        "b4a7c29fa71adde81123ce5bc2b9219ea49026ab0726168da7d8e10adc9ad20d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ec29f677833fd5a2ab3d7bc96777ba7f8a3a5dc0ee0a48a030e80d94dc62102e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ec29f677833fd5a2ab3d7bc96777ba7f8a3a5dc0ee0a48a030e80d94dc62102e" # linuxbrew-core
   end
 
   depends_on "python@3.10"
