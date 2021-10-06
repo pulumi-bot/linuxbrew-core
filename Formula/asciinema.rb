@@ -15,6 +15,7 @@ class Asciinema < Formula
     sha256 cellar: :any_skip_relocation, catalina:      "caa76523c644cf5916cde300c407d89282509a0291cfa9c4812d888c26ce7f77"
     sha256 cellar: :any_skip_relocation, mojave:        "b1a1aff9cf3f46328f0df80773a85898db70453fff4785e26e7ee4d6f12ef408"
     sha256 cellar: :any_skip_relocation, high_sierra:   "4ce78d8edeeb635ad7cf2f5edd88770baaa72d623ecc471fb0e8f5e12efb0e04"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0944a5845e9b762331ccd9b072086a3bfaf00cac2e026352aeefa8cb4f768a67"
   end
 
   depends_on "python@3.10"
