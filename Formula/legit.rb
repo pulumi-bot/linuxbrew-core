@@ -14,6 +14,7 @@ class Legit < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "854ec2ea856e780bcc1a37f2c43d8047973cb3592f19614074a8f1267647cab1"
     sha256 cellar: :any_skip_relocation, catalina:      "854ec2ea856e780bcc1a37f2c43d8047973cb3592f19614074a8f1267647cab1"
     sha256 cellar: :any_skip_relocation, mojave:        "854ec2ea856e780bcc1a37f2c43d8047973cb3592f19614074a8f1267647cab1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3d03b6facb4ef010967c9bae4e522347986a42854d931e0bcf39f147484e9acb"
   end
 
   depends_on "python@3.10"
