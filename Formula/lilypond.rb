@@ -15,7 +15,7 @@ class Lilypond < Formula
     sha256 big_sur:       "494460d9f2e9027ef52e8fd6d81869689ebc45d433403c25202e0c9d09c520bd"
     sha256 catalina:      "1273052a8fb3584c5abbcbfa2492c0de3e1ae62496370fffd6550a22caeaa88b"
     sha256 mojave:        "0828c31c729f5621d64d554afd01bc5ccf5d604b976b064f5dd5450ed9a3dd59"
-    sha256 x86_64_linux:  "00855d98c08ca3cc3e9d5f114a5935216ab40d40d54c4c35071930e60154fc1d"
+    sha256 x86_64_linux:  "00855d98c08ca3cc3e9d5f114a5935216ab40d40d54c4c35071930e60154fc1d" # linuxbrew-core
   end
 
   depends_on "bison" => :build # Lilypond requires bison 2.4.1 or above

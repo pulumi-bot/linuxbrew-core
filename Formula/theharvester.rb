@@ -13,7 +13,7 @@ class Theharvester < Formula
     sha256 cellar: :any,                 big_sur:       "106c03d6bed333ba9457e5d26ad27352f2fc8d6f73bed71d92c88a4a8c06c063"
     sha256 cellar: :any,                 catalina:      "8474b55c72ea0a7ce1254202f5e2fdb5fff358c47f9d6e48bc46a19b4fcdbb58"
     sha256 cellar: :any,                 mojave:        "55153d82c76a87d178397d7dee39893db40945a8dd5dbb5d28f4c9cf9c8ccb9d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a9a82413bc9d7df4ac9191a43db609c800cd34d63206b0b384697768da24aa9f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a9a82413bc9d7df4ac9191a43db609c800cd34d63206b0b384697768da24aa9f" # linuxbrew-core
   end
 
   depends_on "maturin" => :build

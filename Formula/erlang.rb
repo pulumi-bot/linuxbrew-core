@@ -16,7 +16,7 @@ class Erlang < Formula
     sha256 cellar: :any,                 big_sur:       "e22bcb4943bb485924d5f18fc4025b7b67f441772226040b79724232837e2296"
     sha256 cellar: :any,                 catalina:      "72b0db6660854bc759d896254d2ef3279d978760a072a82d85f871bafa3914b3"
     sha256 cellar: :any,                 mojave:        "16b6c4bfc2f1f6f674420a56263d548c35b9a7553e1f81113dc250ab59e86126"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bbc94ba95704cb5d7852d2057534fc1d270699b2691c2d48bdadc89845a44745"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bbc94ba95704cb5d7852d2057534fc1d270699b2691c2d48bdadc89845a44745" # linuxbrew-core
   end
 
   head do
