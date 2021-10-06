@@ -8,6 +8,10 @@ class Coffeescript < Formula
   license "MIT"
   head "https://github.com/jashkenas/coffeescript.git", branch: "master"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "43093bd24f42450278f73ee908d5a7893ccb5fb55b8393c90236cd3bacc71a6a"
+  end
+
   depends_on "node"
 
   conflicts_with "cake", because: "both install `cake` binaries"
