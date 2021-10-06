@@ -9,6 +9,10 @@ class Icdiff < Formula
   revision 1
   head "https://github.com/jeffkaufman/icdiff.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fc5be5fa45223aa9fd58fa6230a7e15c65a1878b94add36c62328f5295438b8e"
+  end
+
   depends_on "python@3.10"
 
   def install
