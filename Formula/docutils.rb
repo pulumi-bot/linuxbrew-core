@@ -5,17 +5,16 @@ class Docutils < Formula
   homepage "https://docutils.sourceforge.io"
   url "https://downloads.sourceforge.net/project/docutils/docutils/0.17.1/docutils-0.17.1.tar.gz"
   sha256 "686577d2e4c32380bb50cbb22f575ed742d58168cee37e99117a854bcd88f125"
-  revision 1
+  revision 2
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "b4f3eca7d4566cbb4ba7ecd31a55c6baf8bf3b6d3ff2574d0b91149e627a3b29"
-    sha256 cellar: :any_skip_relocation, big_sur:       "526706f3668d3ea0cfdab76748a9de32835e4a2e901af6a85ecaee399c910503"
-    sha256 cellar: :any_skip_relocation, catalina:      "526706f3668d3ea0cfdab76748a9de32835e4a2e901af6a85ecaee399c910503"
-    sha256 cellar: :any_skip_relocation, mojave:        "526706f3668d3ea0cfdab76748a9de32835e4a2e901af6a85ecaee399c910503"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9f46bdee85bcb11c10c0823dd9c0c113cbfa3dce54095a7d81b15e22248908a8" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "ff5b2092cbe68edf0834516ce550deb95a244274d5a09f858b23e5aecd5a1dad"
+    sha256 cellar: :any_skip_relocation, big_sur:       "0188bab1d52fd5ad0a96332e696255b1a0dadc212c5150a4084e8323db2fc590"
+    sha256 cellar: :any_skip_relocation, catalina:      "0188bab1d52fd5ad0a96332e696255b1a0dadc212c5150a4084e8323db2fc590"
+    sha256 cellar: :any_skip_relocation, mojave:        "0188bab1d52fd5ad0a96332e696255b1a0dadc212c5150a4084e8323db2fc590"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   def install
     virtualenv_install_with_resources
