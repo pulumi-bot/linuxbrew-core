@@ -8,6 +8,10 @@ class Ddgr < Formula
   license "GPL-3.0"
   revision 2
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "eec5e7fe4cc40ceaba669038d3c7c7ff09ab6203eae500022555adccdf92e4ef"
+  end
+
   depends_on "python@3.10"
 
   def install
