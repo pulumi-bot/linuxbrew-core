@@ -14,7 +14,7 @@ class NameThatHash < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "72cc03145f370116ab72ab831a21218e4391351ebea235104dfa0106bd2293e5"
     sha256 cellar: :any_skip_relocation, catalina:      "927a70b55b1cd7812f967f3eae31438a8194c3a3a60c68e76715f352fe8c4270"
     sha256 cellar: :any_skip_relocation, mojave:        "4aad224b7c74a73ebce37574e54a94102b7f2eb2ee60ab02768cec64c24a43bc"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "404824675257036c6a73f240d9ce73110ab72c1df58f03525f7e90537fa5552d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "404824675257036c6a73f240d9ce73110ab72c1df58f03525f7e90537fa5552d" # linuxbrew-core
   end
 
   depends_on "python@3.10"

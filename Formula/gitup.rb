@@ -14,7 +14,7 @@ class Gitup < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "75fd26446950358870cfd58d35f9f354ea7e64c8cda02672e35ee43288a40796"
     sha256 cellar: :any_skip_relocation, catalina:      "75fd26446950358870cfd58d35f9f354ea7e64c8cda02672e35ee43288a40796"
     sha256 cellar: :any_skip_relocation, mojave:        "75fd26446950358870cfd58d35f9f354ea7e64c8cda02672e35ee43288a40796"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ebcd8b41b9e617fd7ef1d7989dc2d3982a2ccfab628f1debfd518d772a445299"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ebcd8b41b9e617fd7ef1d7989dc2d3982a2ccfab628f1debfd518d772a445299" # linuxbrew-core
   end
 
   depends_on "python@3.10"

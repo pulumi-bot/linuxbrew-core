@@ -14,7 +14,7 @@ class TranslateToolkit < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6285d1de148f1c0d7407454194ad3fdb1bd510e73017cab6d6b5d91c07aa5d79"
     sha256 cellar: :any_skip_relocation, catalina:      "c6ac5d4c0f9e945ab107f42f3f74f4f4c3eb42c39055019edc901255b5f2303d"
     sha256 cellar: :any_skip_relocation, mojave:        "c8b8eb31015877d2052636d3cf440be4da5b29936cc2a76bb04d968ba00aa330"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bd2c1adeb663005f98249505678ebd9a4270c13fd3b75f8d060f8df07b5c847d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bd2c1adeb663005f98249505678ebd9a4270c13fd3b75f8d060f8df07b5c847d" # linuxbrew-core
   end
 
   depends_on "python@3.10"

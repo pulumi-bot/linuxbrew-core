@@ -8,7 +8,7 @@ class Honcho < Formula
   head "https://github.com/nickstenning/honcho.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "9f38c7840c832d8f40eb0c6f025357660e575c0281ccb76c5b123e33968efaca"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9f38c7840c832d8f40eb0c6f025357660e575c0281ccb76c5b123e33968efaca" # linuxbrew-core
   end
 
   depends_on "python@3.10"

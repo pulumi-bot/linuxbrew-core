@@ -14,7 +14,7 @@ class GitRevise < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8a6880070fdf65aef264f9e698be293832777a17c2b9aa395338b61da1cf9c39"
     sha256 cellar: :any_skip_relocation, catalina:      "8a6880070fdf65aef264f9e698be293832777a17c2b9aa395338b61da1cf9c39"
     sha256 cellar: :any_skip_relocation, mojave:        "8a6880070fdf65aef264f9e698be293832777a17c2b9aa395338b61da1cf9c39"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f2e420f2730b973463b230a961270614c84a9a10edc2c12e0f4d62d179f35747"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f2e420f2730b973463b230a961270614c84a9a10edc2c12e0f4d62d179f35747" # linuxbrew-core
   end
 
   depends_on "python@3.10"
