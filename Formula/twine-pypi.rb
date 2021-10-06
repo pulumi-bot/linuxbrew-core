@@ -14,6 +14,7 @@ class TwinePypi < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "dce27b0667c19de1f24f39701ccf3c92e5274ec82567185889fec9f870d20fbb"
     sha256 cellar: :any_skip_relocation, catalina:      "322cbc9ab13633d967658f1671d46417e26ec641a2ddb02edf97a496c4d550ae"
     sha256 cellar: :any_skip_relocation, mojave:        "5f28667cbbcff302bf5a967e8d2e5c0762d8ab831063ddd6184bb90a3fb2d39b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "17ebf7e990fa366504237d36435a64bcc8d82bbd93dea84bbbd2f86b9ac5582b"
   end
 
   depends_on "python@3.10"
