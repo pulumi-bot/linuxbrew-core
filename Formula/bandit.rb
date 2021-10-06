@@ -14,6 +14,7 @@ class Bandit < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1b1eacd9dcb2c47aa44fb744a55eb635cd213a14f34a841585dc0c46cd5d76e7"
     sha256 cellar: :any_skip_relocation, catalina:      "1b1eacd9dcb2c47aa44fb744a55eb635cd213a14f34a841585dc0c46cd5d76e7"
     sha256 cellar: :any_skip_relocation, mojave:        "1b1eacd9dcb2c47aa44fb744a55eb635cd213a14f34a841585dc0c46cd5d76e7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d8ec57d1f780fb44aa99e16df2f884d957eab201c5bd6cefa719c04c114527bb"
   end
 
   depends_on "python@3.10"
