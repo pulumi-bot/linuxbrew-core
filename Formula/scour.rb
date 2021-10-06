@@ -15,6 +15,7 @@ class Scour < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f4540d61288bd5dc596393a3d87870d1aad8fe61771379b9fa98a564fc239a71"
     sha256 cellar: :any_skip_relocation, catalina:      "f4540d61288bd5dc596393a3d87870d1aad8fe61771379b9fa98a564fc239a71"
     sha256 cellar: :any_skip_relocation, mojave:        "f4540d61288bd5dc596393a3d87870d1aad8fe61771379b9fa98a564fc239a71"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f1d4f9a36356337522bfcc13866638b977ac217d2602aee271c152b60aa3cd62"
   end
 
   depends_on "python@3.10"
