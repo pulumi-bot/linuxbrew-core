@@ -18,6 +18,7 @@ class Black < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a5af24f1682c20a88340c1fd4750fad764da1af702d0e02e60c55a24593704c9"
     sha256 cellar: :any_skip_relocation, catalina:      "fa198bb727404ffcf910e8062b4b0422708ee1bff47952d8e6769b896d56c2b2"
     sha256 cellar: :any_skip_relocation, mojave:        "602b778078a7d661b40a0a0106bb8e8966d3aa6eeb4e111e534ef11c59df257f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cbd344b43a0ca9ab0215dbc5078b763bad7aca28ebb2ce0f0c021c02c07b3277"
   end
 
   depends_on "python@3.10"
