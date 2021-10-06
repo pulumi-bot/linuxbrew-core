@@ -7,6 +7,10 @@ class EulerPy < Formula
   revision 2
   head "https://github.com/iKevinY/EulerPy.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5fc159b1ad9e6d6cd8fd7f7ab14186f6e894e0be2f46d6966f13f72723effec2"
+  end
+
   depends_on "python@3.10"
 
   resource "click" do
