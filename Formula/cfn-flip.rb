@@ -6,17 +6,16 @@ class CfnFlip < Formula
   url "https://files.pythonhosted.org/packages/76/5a/314a934b75f2f52d1845e4344b9bbdacdd76d82784b678ec27c2ed57fd2c/cfn_flip-1.2.3.tar.gz"
   sha256 "2bed32a1f4dca26dc64178d52511fd4ef778b5ccbcf32559cac884ace75bde6a"
   license "Apache-2.0"
+  revision 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c697eb2c6521e79bbdf5a834866914b9316383789a8ac885d7f1439b2c2774d2"
-    sha256 cellar: :any_skip_relocation, big_sur:       "6e839991d90501ef68afcec82bd4445dcf24242b33a31bd5ebf3004799e81512"
-    sha256 cellar: :any_skip_relocation, catalina:      "e0f813ad41397d94b167cbcae814862abf436cd46b0996f83da0dae5e3d6d717"
-    sha256 cellar: :any_skip_relocation, mojave:        "d22cab76b33a3b6b836aa723242befc46fb8028fe282af1d4ccee64e4a21165a"
-    sha256 cellar: :any_skip_relocation, high_sierra:   "29ecc4856f9b64362498cf82765cef635f7b12f6b8570a19f5c223ca007a4e0c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0bb9522afa19d38889b845636919fdd1231ce99357639cb5efae9845bf080fe5" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "fa9e0a1f4ef0f98dff5a789bfca9bcc07dbc42b8abd36f29f52152f9908cc5a0"
+    sha256 cellar: :any_skip_relocation, big_sur:       "a91993826fa88ef0dce786d49b3ad6ec66870d8589e77386c3e7ea89fea2a10e"
+    sha256 cellar: :any_skip_relocation, catalina:      "a91993826fa88ef0dce786d49b3ad6ec66870d8589e77386c3e7ea89fea2a10e"
+    sha256 cellar: :any_skip_relocation, mojave:        "a91993826fa88ef0dce786d49b3ad6ec66870d8589e77386c3e7ea89fea2a10e"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   resource "click" do
     url "https://files.pythonhosted.org/packages/27/6f/be940c8b1f1d69daceeb0032fee6c34d7bd70e3e649ccac0951500b4720e/click-7.1.2.tar.gz"

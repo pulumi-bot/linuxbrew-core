@@ -6,17 +6,17 @@ class Flake8 < Formula
   url "https://files.pythonhosted.org/packages/9e/47/15b267dfe7e03dca4c4c06e7eadbd55ef4dfd368b13a0bab36d708b14366/flake8-3.9.2.tar.gz"
   sha256 "07528381786f2a6237b061f6e96610a4167b226cb926e2aa2b6b1d78057c576b"
   license "MIT"
+  revision 1
   head "https://gitlab.com/PyCQA/flake8.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "8aeeb7350e52e439082ff355558fd2d18de2f1c133cbbbda22678ec8438c7f0d"
-    sha256 cellar: :any_skip_relocation, big_sur:       "55dc84e2f26fac3cb589098c1906838ce676529667e9e8d7c3b970365977dcec"
-    sha256 cellar: :any_skip_relocation, catalina:      "55dc84e2f26fac3cb589098c1906838ce676529667e9e8d7c3b970365977dcec"
-    sha256 cellar: :any_skip_relocation, mojave:        "55dc84e2f26fac3cb589098c1906838ce676529667e9e8d7c3b970365977dcec"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dcb176172dfc6e92d7e7c0c3746929de31d1021e3873ab9be3b84073e213a91e" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "dc28f983cd59b56dfe54cfc2827e7f68263705cc385a014af8e09c478d75385c"
+    sha256 cellar: :any_skip_relocation, big_sur:       "87a52580d472a517fa23a80cc27143c208ab53b2c301f7fdf65fe2ac2a725251"
+    sha256 cellar: :any_skip_relocation, catalina:      "87a52580d472a517fa23a80cc27143c208ab53b2c301f7fdf65fe2ac2a725251"
+    sha256 cellar: :any_skip_relocation, mojave:        "87a52580d472a517fa23a80cc27143c208ab53b2c301f7fdf65fe2ac2a725251"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   resource "mccabe" do
     url "https://files.pythonhosted.org/packages/06/18/fa675aa501e11d6d6ca0ae73a101b2f3571a565e0f7d38e062eec18a91ee/mccabe-0.6.1.tar.gz"
