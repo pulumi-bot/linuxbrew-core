@@ -7,6 +7,10 @@ class Fades < Formula
   revision OS.mac? ? 2 : 3
   head "https://github.com/PyAr/fades.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4a65adc04b4d016fe965f99d3805ac8617af30e7a05ab0a64c73703f8ccfe547"
+  end
+
   depends_on "python@3.10"
 
   def install
