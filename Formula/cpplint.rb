@@ -13,6 +13,7 @@ class Cpplint < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8f6ae4eafa2e16ecbc84c7f36c9f37376a3e20b4469d3d7a8f53b13e9b9a9d56"
     sha256 cellar: :any_skip_relocation, catalina:      "8f6ae4eafa2e16ecbc84c7f36c9f37376a3e20b4469d3d7a8f53b13e9b9a9d56"
     sha256 cellar: :any_skip_relocation, mojave:        "8f6ae4eafa2e16ecbc84c7f36c9f37376a3e20b4469d3d7a8f53b13e9b9a9d56"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f37dd7a7c63a626a990f6703348e9cafec1e4928b3bd4eee470062fc45a77b0e"
   end
 
   depends_on "python@3.10"
