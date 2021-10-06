@@ -12,6 +12,7 @@ class Docutils < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0188bab1d52fd5ad0a96332e696255b1a0dadc212c5150a4084e8323db2fc590"
     sha256 cellar: :any_skip_relocation, catalina:      "0188bab1d52fd5ad0a96332e696255b1a0dadc212c5150a4084e8323db2fc590"
     sha256 cellar: :any_skip_relocation, mojave:        "0188bab1d52fd5ad0a96332e696255b1a0dadc212c5150a4084e8323db2fc590"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cd5fa6462de930acd899147e725e59693d28089741f330ffa1cb559f66f19bed"
   end
 
   depends_on "python@3.10"
