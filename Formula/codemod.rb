@@ -15,6 +15,7 @@ class Codemod < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b23035b282c74a9394e85d9a0223b1ddb677151c134da0468ad0713ab3658e7e"
     sha256 cellar: :any_skip_relocation, catalina:      "b23035b282c74a9394e85d9a0223b1ddb677151c134da0468ad0713ab3658e7e"
     sha256 cellar: :any_skip_relocation, mojave:        "b23035b282c74a9394e85d9a0223b1ddb677151c134da0468ad0713ab3658e7e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0114d4c09511fe3f16378656b723f73ee8936d0660c85ef72311e11d1bd09c66"
   end
 
   deprecate! date: "2021-07-13", because: :repo_archived
