@@ -6,16 +6,16 @@ class Sail < Formula
   url "https://files.pythonhosted.org/packages/5d/fa/b27aac232947ae87e96a859d00e184fe185c5726c27db9a2a12bb7edeb96/sailed.io-0.9.15.tar.gz"
   sha256 "373bac378122edbd39f2676e8a0df59f810d8f0fbb597213cee91249b6d57a0b"
   license "GPL-3.0-only"
+  revision 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "caecc14745b667baa52f0e13ff01a87f854e17a5fac983a3880366f9e5eaa3ad"
-    sha256 cellar: :any_skip_relocation, big_sur:       "01a2bb6b961820e418ee97c1d2877df04378f928aba8f74a118c55c3dd4dc703"
-    sha256 cellar: :any_skip_relocation, catalina:      "1a21ca0c8f4dd65a7c82683eaf938c069f8bf4d59f40560e1f0d25f418415db5"
-    sha256 cellar: :any_skip_relocation, mojave:        "bb4c18e2443ef18ca0e9516c9cf5ad425f0a516daf11c3f40475a2b7df3cc982"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3275e488bf6f26c1122f3b5ac40c9a2cf1572b95ffcee89aba7c5e24f3724695" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "4b223c3dd9e06ddb9c234ee10b57f9c248d52d05f34ff6a69ff6cd84e799a66d"
+    sha256 cellar: :any_skip_relocation, big_sur:       "4438b62f53ca27b2c20df79bb7d42198985f87a2504c2b76551c643b5ea6a222"
+    sha256 cellar: :any_skip_relocation, catalina:      "f6bec9c6b86ef5c578a1e1309e6fab2e7d3368f1de113d5f42ecc67da4615fcd"
+    sha256 cellar: :any_skip_relocation, mojave:        "83b9a6d489db35d87c1f2ef26526ea5aa8fc4ad66903f0bb682c5c39416e271e"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/6d/78/f8db8d57f520a54f0b8a438319c342c61c22759d8f9a1cd2e2180b5e5ea9/certifi-2021.5.30.tar.gz"
