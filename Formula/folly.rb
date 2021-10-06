@@ -11,7 +11,7 @@ class Folly < Formula
     sha256 cellar: :any,                 big_sur:       "f795fe4f193b470fcb28508c1a26a6b35e5e032496b4682be40cdc09cdc45d8b"
     sha256 cellar: :any,                 catalina:      "7323915550b11dfdb6eb9b36cb228223de776fe7c4b8776bc13db5a267479e71"
     sha256 cellar: :any,                 mojave:        "a1a61783c6cdeda761eb165985a446d772cdb4a8f910052ec8c8258bd361693d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2bde694358bbbe263a1f2592122eaf675e6d6d2ea40ee3b770209e1301cc128c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2bde694358bbbe263a1f2592122eaf675e6d6d2ea40ee3b770209e1301cc128c" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
