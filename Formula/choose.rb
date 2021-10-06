@@ -12,6 +12,7 @@ class Choose < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b22b7b549f0f9621163fc1b6b5923a2de0f79177686e8747ffb1b71201e979d7"
     sha256 cellar: :any_skip_relocation, catalina:      "37aa7b900d689cedd0c834703663f782082f66595d9b84f27405180832311385"
     sha256 cellar: :any_skip_relocation, mojave:        "9d2fb7796ec1e3b55838d9fd932f91dae4c3268f343d1d8cba2cac7ac77b04da"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "eccc6d8da498c1af14b6a7caf2344d79ac652ab706ff9ecb60095f4bea0db043"
   end
 
   depends_on "python@3.10"
