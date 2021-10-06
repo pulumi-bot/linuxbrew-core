@@ -13,6 +13,7 @@ class Airshare < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "181c5fb32702d785260d82e3f3edaf099865a5b84f7545d53d57bc4f395c8c95"
     sha256 cellar: :any_skip_relocation, catalina:      "40b43cb446756313f97ed7b3a3b3b47d2fb9a61ee9cabd2cb365e04ce24882f4"
     sha256 cellar: :any_skip_relocation, mojave:        "bb0a877e8011bd1a2dab9b2a35245706de2a40282937ca6b43094125e9301176"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2cccd2e12f737c727a0baf65336578484ba5a5110cb4b9a32792dd9f117c26f3"
   end
 
   depends_on "python@3.10"
