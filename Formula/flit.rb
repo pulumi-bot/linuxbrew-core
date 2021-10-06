@@ -6,17 +6,17 @@ class Flit < Formula
   url "https://files.pythonhosted.org/packages/b6/86/4f55f5476c1b4aeb8825e4dcac71038b60bad8feb9d3635b5ecfcbbf98dd/flit-3.3.0.tar.gz"
   sha256 "65fbe22aaa7f880b776b20814bd80b0afbf91d1f95b17235b608aa256325ce57"
   license "BSD-3-Clause"
+  revision 1
   head "https://github.com/takluyver/flit.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "bf9aaef9ee63b68c7e64cf241f4263eb3143b715ae7d350a89cb8ca650110687"
-    sha256 cellar: :any_skip_relocation, big_sur:       "1ccecd0a72b34fa8d728bb8caa9dbcb8a9baafd8fb58c83b48e753db9518282b"
-    sha256 cellar: :any_skip_relocation, catalina:      "8453c6efbd221b343c8344d0257555b78dc56d8b903a7c330eca78b4acef0e03"
-    sha256 cellar: :any_skip_relocation, mojave:        "a33f9ac32913dc9aa323910fa747f783d49b00686cf5a38df85f0b7f8296b241"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ed5dad40c5c2e81364693d989dcb10fddb6c5a7bd2ba7cf905538b60bde00f6b" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "05830e9ce70094ce11c8bf1554d9907017c97fd5f3908bfbe5be0374810fcaa4"
+    sha256 cellar: :any_skip_relocation, big_sur:       "2ff7b7ad58ae8bd9d6773bd23e9dec4a22724026ac577407dc74b774013c17ae"
+    sha256 cellar: :any_skip_relocation, catalina:      "d861d6e1317acb4c8bab03a055bbef254aea1ab31505b632eb5e2fa9272738c9"
+    sha256 cellar: :any_skip_relocation, mojave:        "b43610ed186fdd6577dc9d60dfde639314258bc830c3a207e7ee7c93ca6d033a"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/6d/78/f8db8d57f520a54f0b8a438319c342c61c22759d8f9a1cd2e2180b5e5ea9/certifi-2021.5.30.tar.gz"

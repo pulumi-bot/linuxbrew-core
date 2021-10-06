@@ -6,16 +6,16 @@ class EgExamples < Formula
   url "https://files.pythonhosted.org/packages/8b/b7/88e0333b9a3633ec686246b5f1c1ee4cad27246ab5206b511fd5127e506f/eg-1.2.1.tar.gz"
   sha256 "e3608ec0b05fffa0faec0b01baeb85c128e0b3c836477063ee507077a2b2dc0c"
   license "MIT"
+  revision 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "3c3fb055e2133a02b36bf18841ff7cd10d6d769ef77d255ddf07e8485362c256"
-    sha256 cellar: :any_skip_relocation, big_sur:       "348688d0ce1a2c1825d2e84a35f61d2cc4db44e648c338be7459133fe8f5d7c7"
-    sha256 cellar: :any_skip_relocation, catalina:      "4f49955a6032186f8e9013a5c9b458584436873586b7f2363653e0c079531675"
-    sha256 cellar: :any_skip_relocation, mojave:        "0232745391eb98aad737439b0c85ba93d599fef62e906032c9da19df89b916d3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "290e3be53073f1174abc7a1bc5a7a2f903006359672360b0dd9002ea8b090844" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "6d089071964aeefc2ca28062eff414a0c0dea3d940495212c71a2609e4749b36"
+    sha256 cellar: :any_skip_relocation, big_sur:       "9e766b57ef1ede0a5cd68da245d372573860545702af673ba18693159cc95657"
+    sha256 cellar: :any_skip_relocation, catalina:      "9e766b57ef1ede0a5cd68da245d372573860545702af673ba18693159cc95657"
+    sha256 cellar: :any_skip_relocation, mojave:        "9e766b57ef1ede0a5cd68da245d372573860545702af673ba18693159cc95657"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   def install
     virtualenv_install_with_resources

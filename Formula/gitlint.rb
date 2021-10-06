@@ -6,17 +6,17 @@ class Gitlint < Formula
   url "https://files.pythonhosted.org/packages/3e/bd/31f661a621a22094c0f905a228142dd463dacdc71ed2b2a570956062b64e/gitlint-0.15.1.tar.gz"
   sha256 "4b22916dcbdca381244aee6cb8d8743756cfd98f27e7d1f02e78733f07c3c21c"
   license "MIT"
+  revision 1
   head "https://github.com/jorisroovers/gitlint.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "415d16b4b9224c4f35e7e9d1157b369080b215757e841a1b1580e47736fe75ab"
-    sha256 cellar: :any_skip_relocation, big_sur:       "5d5cca443df3d7a86db359642f404da3236983165ed3bf59471b9d1262c95be7"
-    sha256 cellar: :any_skip_relocation, catalina:      "102fd40cb4d4e8d5f1e1b2c23164e327dc9506f59aea5a79a81a963249c3ce50"
-    sha256 cellar: :any_skip_relocation, mojave:        "427ca21ef9d7d31b021c13889b2f291e3a70740ab45d3aff36de8dec04338b08"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9706d061cffe71e11ce47f9eb0af2f3c19a541ec78845bf00e61092496812044" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "e7ec47daa6ce81ef96ffbda7bdace13825e0f6d05a63a6c38f858a3f2cadee50"
+    sha256 cellar: :any_skip_relocation, big_sur:       "5029a4a0eb91128dccfdf00b6834cfdd2d9fb81626d8e2f952c44883495c5770"
+    sha256 cellar: :any_skip_relocation, catalina:      "29ff0c17dce6e8b371bd86a6cd78cbceb8eee6b1c277b14150f03913fdbd4fa8"
+    sha256 cellar: :any_skip_relocation, mojave:        "5d0b6d417829fec781059eaf33f7168dd6bb10ea5aad92b99e82c73015fb2316"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   resource "arrow" do
     url "https://files.pythonhosted.org/packages/f6/72/e8c899f0eef9c0131ffdb1bc25d79ff65c60411f831ab17d29e3809f5812/arrow-1.0.3.tar.gz"
