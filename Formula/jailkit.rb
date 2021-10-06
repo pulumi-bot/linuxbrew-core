@@ -16,6 +16,7 @@ class Jailkit < Formula
     sha256 big_sur:       "7f9fe097188c70df7933bd30d6c78c60455355df8e33a3ad4927002cf70ec2e9"
     sha256 catalina:      "35d7f20d16725ad3ec24dd82592a0fc7ae2e1cfc0b6bf3eaaf04e8118437ca09"
     sha256 mojave:        "9ae118d16ab03810384fb708caf5fcf4429c209c147e40f03f08a45b8c24138d"
+    sha256 x86_64_linux:  "fe136070c9a808323d6919365991597aaf5f2ca6867d8cee66129c205943a8e2"
   end
 
   depends_on "python@3.10"
