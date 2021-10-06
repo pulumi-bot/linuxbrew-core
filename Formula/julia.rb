@@ -4,14 +4,13 @@ class Julia < Formula
   url "https://github.com/JuliaLang/julia/releases/download/v1.6.3/julia-1.6.3.tar.gz"
   sha256 "2593def8cc9ef81663d1c6bfb8addc3f10502dd9a1d5a559728316a11dea2594"
   license all_of: ["MIT", "BSD-3-Clause", "Apache-2.0", "BSL-1.0"]
-  revision 1
+  revision 2
   head "https://github.com/JuliaLang/julia.git"
 
   bottle do
-    sha256 cellar: :any,                 big_sur:      "776dba135311f92faff5662466d21fa486e99075c367c39744eea6164c7df3d6"
-    sha256 cellar: :any,                 catalina:     "ab3476d545f91006a88b1f589b2a4c0621f2f75a75b645c5412b9b01503bbb24"
-    sha256 cellar: :any,                 mojave:       "7651af3384065e50978cba4985af1bddceedf56143d81971cc3753034effebdd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "daa830f70df20a1b90c5dcb8f324b95fc65d1f44dfb65aafdeb657f9409e9f21" # linuxbrew-core
+    sha256 cellar: :any,                 big_sur:      "9ada693a47c8a932097af78b351b0c5fed8df8f87ded747246c766aaced0c5e3"
+    sha256 cellar: :any,                 catalina:     "f117136af33056f2d0c08f394c953570977e616537ced71032b56d11a3fddde7"
+    sha256 cellar: :any,                 mojave:       "5a3d1c91f3a32ad2dc6bc57f1a7e2e8f7ec0ef74fd0b3d410a09bd4f60ef4039"
   end
 
   depends_on "python@3.9" => :build
@@ -21,11 +20,11 @@ class Julia < Formula
   depends_on "gcc" # for gfortran
   depends_on "gmp"
   depends_on "libgit2"
+  depends_on "libnghttp2"
   depends_on "libssh2"
   depends_on "llvm"
   depends_on "mbedtls@2"
   depends_on "mpfr"
-  depends_on "nghttp2"
   depends_on "openblas"
   depends_on "openlibm"
   depends_on "p7zip"

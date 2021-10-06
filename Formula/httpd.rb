@@ -5,19 +5,19 @@ class Httpd < Formula
   mirror "https://archive.apache.org/dist/httpd/httpd-2.4.49.tar.bz2"
   sha256 "65b965d6890ea90d9706595e4b7b9365b5060bec8ea723449480b4769974133b"
   license "Apache-2.0"
+  revision 1
 
   bottle do
-    sha256 arm64_big_sur: "e6ebcb4a1307a3e8c9c8dcb41d5a702398b38ca537e14502dc898acce3c78000"
-    sha256 big_sur:       "ade7dbaf67d42a5e71e08fb34d771df23f2b8be478507679ba6ca9593ca74673"
-    sha256 catalina:      "657cba33ccfe3498613f48112b1e28181237fa56674e3d29bc4be5ab4e6218d6"
-    sha256 mojave:        "645aca6e1cf953f13bc527bb434c765025b270a9b65f52cc4522673a16a2101b"
-    sha256 x86_64_linux:  "7c43dc2976906851c2aac25cce3f34e7a7646190902e49edc4d71c7844ba8d84" # linuxbrew-core
+    sha256 arm64_big_sur: "6e4aa0454a78e654785bf67edc3f1c55aa665a2331dee419157cd6b5ef301865"
+    sha256 big_sur:       "deeccf4f3ec506edc21c8e4438c3d545ca6edd8accbd0cc209e34010aebf54af"
+    sha256 catalina:      "1a05d69e8a401bca0fd8a55921b025a9c0e2df922a7cb73d7f0cf6fcb1f662ba"
+    sha256 mojave:        "2fcf6036f3eb56db0be62a7f50c35ed2740c9445c988bd3e6196cb0299a25d25"
   end
 
   depends_on "apr"
   depends_on "apr-util"
   depends_on "brotli"
-  depends_on "nghttp2"
+  depends_on "libnghttp2"
   depends_on "openssl@1.1"
   depends_on "pcre"
 
@@ -74,7 +74,7 @@ class Httpd < Formula
                           "--with-brotli=#{Formula["brotli"].opt_prefix}",
                           "--with-libxml2=#{libxml2}",
                           "--with-mpm=prefork",
-                          "--with-nghttp2=#{Formula["nghttp2"].opt_prefix}",
+                          "--with-nghttp2=#{Formula["libnghttp2"].opt_prefix}",
                           "--with-ssl=#{Formula["openssl@1.1"].opt_prefix}",
                           "--with-pcre=#{Formula["pcre"].opt_prefix}",
                           "--with-z=#{zlib}",

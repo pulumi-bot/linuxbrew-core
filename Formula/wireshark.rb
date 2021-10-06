@@ -5,6 +5,7 @@ class Wireshark < Formula
   mirror "https://1.eu.dl.wireshark.org/src/all-versions/wireshark-3.4.8.tar.xz"
   sha256 "58a7fa8dfe2010a8c8b7dcf66438c653e6493d47eb936ba48ef49d4aa4dbd725"
   license "GPL-2.0-or-later"
+  revision 1
   head "https://gitlab.com/wireshark/wireshark.git", branch: "master"
 
   livecheck do
@@ -13,11 +14,10 @@ class Wireshark < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "427982aa8c88d9e7a249a6a6f083f3426a91a6b522729ce3ac35a888b240dc26"
-    sha256 big_sur:       "8cbb32962f6026090dd4bdab653df16313f2676f33da89ee6522a5eb4502f6d7"
-    sha256 catalina:      "c898ed4af93b66f82f163916ea3aff9dfb91a81cdb3edaa6cef66c3362957dd1"
-    sha256 mojave:        "b45273d9ad31f2bd02c724c3583b279d5fe267d081e819d4bd4dceb5f49ad636"
-    sha256 x86_64_linux:  "c4889382a2714842f0e8465e4128ff0b268ded82e918912dbb8f275e306e7054" # linuxbrew-core
+    sha256 arm64_big_sur: "5444a0d45239444a147c992dfdd8ded45f55872e1763dc64b86d530db13f00eb"
+    sha256 big_sur:       "5e6757e853f43b3e70dedbd1ada0f68f3dbdebfeb5b43bd5b23f4c4ec611d9c6"
+    sha256 catalina:      "88205408edddb908c29462f40be51b5b5a88112f403da28885b048ea2d84b964"
+    sha256 mojave:        "c716a62b1e2cfb8cd86eabc8a8297d66768aca0117da298ac2a27dfecbc7683c"
   end
 
   depends_on "cmake" => :build
@@ -26,10 +26,10 @@ class Wireshark < Formula
   depends_on "gnutls"
   depends_on "libgcrypt"
   depends_on "libmaxminddb"
+  depends_on "libnghttp2"
   depends_on "libsmi"
   depends_on "libssh"
   depends_on "lua"
-  depends_on "nghttp2"
 
   uses_from_macos "bison" => :build
   uses_from_macos "flex" => :build
