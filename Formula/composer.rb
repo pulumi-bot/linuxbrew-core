@@ -15,6 +15,7 @@ class Composer < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1ba9bd63928798e06c4b2d33ba6089b5ed074a0aa4a7b30ca22c6965503fcdbc"
     sha256 cellar: :any_skip_relocation, catalina:      "1ba9bd63928798e06c4b2d33ba6089b5ed074a0aa4a7b30ca22c6965503fcdbc"
     sha256 cellar: :any_skip_relocation, mojave:        "1ba9bd63928798e06c4b2d33ba6089b5ed074a0aa4a7b30ca22c6965503fcdbc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "742ce90ec5d5cb121c04930ebe928bf694bc75a87cfa37a56f0ca10a144fa821"
   end
 
   uses_from_macos "php"
