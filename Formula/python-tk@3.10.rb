@@ -16,6 +16,7 @@ class PythonTkAT310 < Formula
     sha256 cellar: :any, big_sur:       "9a840114d16d6f0e164e4b7af1b20d95196431bc128473f866fffd69f028eef8"
     sha256 cellar: :any, catalina:      "bd83cb8f690893fb79ec7f4ba8414455bc175f246c764e48ec2991b1a94fb35d"
     sha256 cellar: :any, mojave:        "fde0835103328932bf87517e9737cca4d9bbf0b7b6a17eba99fc7eaa9647c2c8"
+    sha256               x86_64_linux:  "1ba9e84c9b81e82f21dddb3b93e35f832d9dfe3ca95656dee9badd65327bae2e"
   end
 
   keg_only :versioned_formula
