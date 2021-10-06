@@ -14,6 +14,7 @@ class PythonMarkdown < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "17410bd96abac23079f5746f78077457b2abed0fafeb544f0b0e28ee23451587"
     sha256 cellar: :any_skip_relocation, catalina:      "cd69e83d7367882f20a1704c583ea03f8b70af2b9e4b92d6575eaea674951c62"
     sha256 cellar: :any_skip_relocation, mojave:        "4c511d30c1aac5d2db8bc48143cee680c5cfc0447aebf25e225270a1e54ada4f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ffcfa712ec575e026fb75c9d3cbd7b997cf115abddc37beac019c56af2222f44"
   end
 
   depends_on "python@3.10"
