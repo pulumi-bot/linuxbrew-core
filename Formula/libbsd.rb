@@ -5,6 +5,11 @@ class Libbsd < Formula
   sha256 "ff95cf8184151dacae4247832f8d4ea8800fa127dbd15033ecfe839f285b42a1"
   license "BSD-3-Clause"
 
+  livecheck do
+    url "https://libbsd.freedesktop.org/releases/"
+    regex(/href=.*?libbsd[._-]v?(\d+(?:\.\d+)+)\.t/i)
+  end
+
   bottle do
     sha256 cellar: :any_skip_relocation, x86_64_linux: "2de7abc50f241aae786f0ff63a941586a3f0e2ec80e7a128aed59c41e88dca6f" # linuxbrew-core
   end
