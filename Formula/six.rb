@@ -11,6 +11,7 @@ class Six < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "2666aae2260ae1e6fddb95d56a3284838d269dd5164a3eeca016bc5a7e95e49c"
     sha256 cellar: :any_skip_relocation, catalina:      "2666aae2260ae1e6fddb95d56a3284838d269dd5164a3eeca016bc5a7e95e49c"
     sha256 cellar: :any_skip_relocation, mojave:        "2666aae2260ae1e6fddb95d56a3284838d269dd5164a3eeca016bc5a7e95e49c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2666aae2260ae1e6fddb95d56a3284838d269dd5164a3eeca016bc5a7e95e49c"
   end
 
   depends_on "python@3.10" => [:build, :test]
