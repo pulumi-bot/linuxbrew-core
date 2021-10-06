@@ -13,7 +13,7 @@ class DockerSquash < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b6ba076a62ad14d79fde9d02af07a14f6785887fd122dbb35d93878ebf159d05"
     sha256 cellar: :any_skip_relocation, catalina:      "b6ba076a62ad14d79fde9d02af07a14f6785887fd122dbb35d93878ebf159d05"
     sha256 cellar: :any_skip_relocation, mojave:        "b6ba076a62ad14d79fde9d02af07a14f6785887fd122dbb35d93878ebf159d05"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9a0e605e04d8bb0999b32690905a2a1c0c41d1f47862badb74fa34ef65011aa8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9a0e605e04d8bb0999b32690905a2a1c0c41d1f47862badb74fa34ef65011aa8" # linuxbrew-core
   end
 
   depends_on "python@3.10"

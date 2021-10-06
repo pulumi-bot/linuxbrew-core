@@ -14,7 +14,7 @@ class Httpie < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "aa6fdb95027863739c34d53a5788f4dfb4593a6cde1a1f54e2bfb9c25d673ff3"
     sha256 cellar: :any_skip_relocation, catalina:      "ef2d994c88121e8059952c5716ff81246a8a0745ca2e3ed50249093d76d93f12"
     sha256 cellar: :any_skip_relocation, mojave:        "9ebdd4ac816cf6d1ed306e8cbef4a7442c7318bedd6b0f9d3809c8963a46a566"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9467d67654a446eef54bedbbc2e4db790907b088c2868fa61471fa5f69fef9ee"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9467d67654a446eef54bedbbc2e4db790907b088c2868fa61471fa5f69fef9ee" # linuxbrew-core
   end
 
   depends_on "python@3.10"

@@ -14,7 +14,7 @@ class Cookiecutter < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9db1b7554b40b410f51c337f60f6584cfe63f9d13764d6190976a7f83446aea9"
     sha256 cellar: :any_skip_relocation, catalina:      "ccaafe5436a8eb27c99c924b676de2601ca87413f9c980b6697e6144e32e5392"
     sha256 cellar: :any_skip_relocation, mojave:        "ffbc7736257952c954b380cc13a56c746cacb3991778d2a424eb0ab39129dc3f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f925cda14d606c0b6255a248142be6af81d4bb586478117c1d52cad1f0a887a4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f925cda14d606c0b6255a248142be6af81d4bb586478117c1d52cad1f0a887a4" # linuxbrew-core
   end
 
   depends_on "python@3.10"

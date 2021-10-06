@@ -13,7 +13,7 @@ class AwsShell < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "10a2ca9388c9c1dab3f9e591e2ac86139cbd9e50b4becce0ba2f28d23cc51b8a"
     sha256 cellar: :any_skip_relocation, catalina:      "1197cb3c8f0a0450cc1759075a123c5e4c4fab3b22aef31de1e1c386cbba1d1b"
     sha256 cellar: :any_skip_relocation, mojave:        "05da4e2dd7b13c80aa43dcc6d722be02599f6e22a2b0937282cdd9134240188d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "34bbad8a498742f238b300d658798bf83ba4d692a3596d5a7613346399557994"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "34bbad8a498742f238b300d658798bf83ba4d692a3596d5a7613346399557994" # linuxbrew-core
   end
 
   depends_on "python@3.10"

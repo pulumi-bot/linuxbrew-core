@@ -14,7 +14,7 @@ class Vulture < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ede0a34d82eda81423282e75f1fa99d3b86b16b78cb2961928f6a6b3bfb77341"
     sha256 cellar: :any_skip_relocation, catalina:      "480319c78f46a25a94c7e993bc88102d0569895403a06c370551bfc2455c0e95"
     sha256 cellar: :any_skip_relocation, mojave:        "c3e6dffc1ca081ce496cf44351a836a9a1fc6d0984897efc7efeae4d8ae52696"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "af403c8a1697217bb590740849b0a1ac1b562f120e3ae1ad1b3e0378f25e794c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "af403c8a1697217bb590740849b0a1ac1b562f120e3ae1ad1b3e0378f25e794c" # linuxbrew-core
   end
 
   depends_on "python@3.10"

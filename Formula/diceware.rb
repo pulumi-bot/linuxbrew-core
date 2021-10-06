@@ -13,7 +13,7 @@ class Diceware < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "7d3214626147512e9733a5a3e5acafcacf5b2b3321dadf72b932d8c42272f8da"
     sha256 cellar: :any_skip_relocation, catalina:      "7d3214626147512e9733a5a3e5acafcacf5b2b3321dadf72b932d8c42272f8da"
     sha256 cellar: :any_skip_relocation, mojave:        "7d3214626147512e9733a5a3e5acafcacf5b2b3321dadf72b932d8c42272f8da"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4f1d5aa25eb59c32daf1c4469db8a3932fe4fa9c62cee4137d749c4c453e3c01"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4f1d5aa25eb59c32daf1c4469db8a3932fe4fa9c62cee4137d749c4c453e3c01" # linuxbrew-core
   end
 
   depends_on "python@3.10"

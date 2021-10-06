@@ -13,7 +13,7 @@ class Csvtomd < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "2ed6b67a278e0266bda516a475867129cff5e93fad695f4e029e4119b199f123"
     sha256 cellar: :any_skip_relocation, catalina:      "2ed6b67a278e0266bda516a475867129cff5e93fad695f4e029e4119b199f123"
     sha256 cellar: :any_skip_relocation, mojave:        "2ed6b67a278e0266bda516a475867129cff5e93fad695f4e029e4119b199f123"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "20f2da31f61dbc79a32cbe0e231f42cced167bd91db6287c645e3026458e1fdd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "20f2da31f61dbc79a32cbe0e231f42cced167bd91db6287c645e3026458e1fdd" # linuxbrew-core
   end
 
   depends_on "python@3.10"

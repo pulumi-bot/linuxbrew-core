@@ -14,7 +14,7 @@ class Beancount < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "bb3d8a42ccc0ee639acf652756e86850f1948d013960958cecd4e834f5020118"
     sha256 cellar: :any_skip_relocation, catalina:      "801b8cca4e542c6b92b10684fa8faf950e12d54fe510ad2c9e31b7ad46eb5a82"
     sha256 cellar: :any_skip_relocation, mojave:        "5c4f259b3b25ac670d31a2dd1c87acbf788d75d2e4c969eb8453154f17139cfd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a985ee8dbc61c7d062b5ba170de3b6078f642e1a91754fedd74c88cfcfbac8c6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a985ee8dbc61c7d062b5ba170de3b6078f642e1a91754fedd74c88cfcfbac8c6" # linuxbrew-core
   end
 
   depends_on "python@3.10"

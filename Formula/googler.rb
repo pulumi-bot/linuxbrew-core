@@ -10,7 +10,7 @@ class Googler < Formula
   head "https://github.com/jarun/googler.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "18cddbd924b8544fa84dce44221443c08053e1939f4b638538e0da04a696df03"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "18cddbd924b8544fa84dce44221443c08053e1939f4b638538e0da04a696df03" # linuxbrew-core
   end
 
   depends_on "python@3.10"

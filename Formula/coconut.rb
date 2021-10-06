@@ -13,7 +13,7 @@ class Coconut < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f0e394fea611ba1009e0293aac3331e6febf36cbf8d19a7cf70a1778d41675ad"
     sha256 cellar: :any_skip_relocation, catalina:      "8493aee08ef8583cade557c928736c7a61b309d0104d34e6d36382a0b02e6b93"
     sha256 cellar: :any_skip_relocation, mojave:        "b4bf84959c2a863d3ce207c2f6396dcdaa0aad46e8f4b4970fda38e0c9113bcc"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9816c7be8034bfea630ecbf890138ff1e77ba145470a7c853782da53efaa515e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9816c7be8034bfea630ecbf890138ff1e77ba145470a7c853782da53efaa515e" # linuxbrew-core
   end
 
   depends_on "python@3.10"

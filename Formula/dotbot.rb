@@ -13,7 +13,7 @@ class Dotbot < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4eed817693537664519d582af946fa870d40c8c584b9706d9c4742ebe13ba8e4"
     sha256 cellar: :any_skip_relocation, catalina:      "1580a56ae5c22273b996866519a938da04c8fec7adc805f435399b954bebb9df"
     sha256 cellar: :any_skip_relocation, mojave:        "fdb6be14bd6a4ad73c2ca13c3f5a62cc74bb64ff507278a99d4e0b944e09dd75"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3ee5d01bd09300f25efc016250536f757bc7205a43b9b9050b9897fed8b29d8c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3ee5d01bd09300f25efc016250536f757bc7205a43b9b9050b9897fed8b29d8c" # linuxbrew-core
   end
 
   depends_on "python@3.10"

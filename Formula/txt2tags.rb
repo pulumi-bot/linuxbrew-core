@@ -12,7 +12,7 @@ class Txt2tags < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "2d19d074b099ee8318e3d55f291d6b02de4130a5d643120e03e0dd438c9a6311"
     sha256 cellar: :any_skip_relocation, catalina:      "2d19d074b099ee8318e3d55f291d6b02de4130a5d643120e03e0dd438c9a6311"
     sha256 cellar: :any_skip_relocation, mojave:        "2d19d074b099ee8318e3d55f291d6b02de4130a5d643120e03e0dd438c9a6311"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f9b5979bbd085fa0318c11540cf422e3587a9fca6cd51a4eeb4ef2da98d3b27e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f9b5979bbd085fa0318c11540cf422e3587a9fca6cd51a4eeb4ef2da98d3b27e" # linuxbrew-core
   end
 
   depends_on "python@3.10"

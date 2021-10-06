@@ -14,7 +14,7 @@ class Cxxtest < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e1bcaf3c8fbddf83977c8cbbde084f64d3915a22bbf023cb044423b7215c26ee"
     sha256 cellar: :any_skip_relocation, catalina:      "e1bcaf3c8fbddf83977c8cbbde084f64d3915a22bbf023cb044423b7215c26ee"
     sha256 cellar: :any_skip_relocation, mojave:        "e1bcaf3c8fbddf83977c8cbbde084f64d3915a22bbf023cb044423b7215c26ee"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5aa3b11ac7803822ac9ee2609ecdc3e99960a69bab1c76e5c51d29142eb0e447"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5aa3b11ac7803822ac9ee2609ecdc3e99960a69bab1c76e5c51d29142eb0e447" # linuxbrew-core
   end
 
   depends_on "python@3.10"
