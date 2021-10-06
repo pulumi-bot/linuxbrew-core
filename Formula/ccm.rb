@@ -12,6 +12,7 @@ class Ccm < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5be6d025aa61b10990e45c4158cea86bd6722e5aeb677c5a10e3cadc68971bdf"
     sha256 cellar: :any_skip_relocation, catalina:      "cb07fbe35e0dcea161491e1a670f7605e21b13299c28de8d3ed08102a0d641a4"
     sha256 cellar: :any_skip_relocation, mojave:        "076976be7d2278de9591750dcfada9d9856cb217f2869c9e00ddf459e173e933"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "eb8e29fda4d10839bbf3f5d8db9217313103014d36a44dcd79ef879db714cec7"
   end
 
   depends_on "python@3.10"
