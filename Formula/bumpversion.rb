@@ -15,6 +15,7 @@ class Bumpversion < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "67879764a6f7b05d9948a91cad56a18c2a85298037c2dab7c7d92d6b2aa8d534"
     sha256 cellar: :any_skip_relocation, catalina:      "67879764a6f7b05d9948a91cad56a18c2a85298037c2dab7c7d92d6b2aa8d534"
     sha256 cellar: :any_skip_relocation, mojave:        "67879764a6f7b05d9948a91cad56a18c2a85298037c2dab7c7d92d6b2aa8d534"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "86aa4d813e08f5e3d1fb1381f80b87ce61bd62acc17f3b55cbd085cb2fafee91"
   end
 
   depends_on "python@3.10"
