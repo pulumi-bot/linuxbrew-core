@@ -10,7 +10,7 @@ class Uni < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "29aa78a8155cfd349cc51df530c6f1678411e42cd490349e8beed100244d001e"
     sha256 cellar: :any_skip_relocation, catalina:      "861d1048b9716f92236be766bdd9d98ced3596f368e2be76b74bbe923618af42"
     sha256 cellar: :any_skip_relocation, mojave:        "73f1c7ed5340c70681205550b9a3f44c2f7e2c55cc72c6a03a7e2a44425b5750"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2cb2338c4f102a671e7ad16b98d6287643c43f0b40e022a039af5c72293ce0cd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2cb2338c4f102a671e7ad16b98d6287643c43f0b40e022a039af5c72293ce0cd" # linuxbrew-core
   end
 
   depends_on "go" => :build

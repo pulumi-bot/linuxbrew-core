@@ -16,7 +16,7 @@ class Clarinet < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "bf177bfe14e986bf365b3125da290b2260291fe478692403cf1d040051035117"
     sha256 cellar: :any_skip_relocation, catalina:      "95d3188b4131e43005d62edd6663ae5bc3e5d7e874526550e16021e646a0aaf2"
     sha256 cellar: :any_skip_relocation, mojave:        "73348b4239d7f44c6658f16487d9a9cba477334789d1f9589ceb4166e7d23785"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "01dd8c36624f8c3f5b50227dd258c3a02de50089f2b70f7743bae8b5fd57ddc1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "01dd8c36624f8c3f5b50227dd258c3a02de50089f2b70f7743bae8b5fd57ddc1" # linuxbrew-core
   end
 
   depends_on "rust" => :build
