@@ -14,7 +14,7 @@ class VpnSlice < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1c88c94f36629761206f33c6c15fedf999abb119e7cec586c01f1d2fe188ae70"
     sha256 cellar: :any_skip_relocation, catalina:      "d163cd9ca3fe156de8cdc2b77a36e357cdff7317a145115157b545f0703520c4"
     sha256 cellar: :any_skip_relocation, mojave:        "4d16aa1912e1c56a359242288d82c5bf0246c7e9cb0d507d1c267b35f176eee4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1c1e691a28af9d74ef1453b1b4b2e782cd5c8271ea1a991694daf3fab7c4dc3a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1c1e691a28af9d74ef1453b1b4b2e782cd5c8271ea1a991694daf3fab7c4dc3a" # linuxbrew-core
   end
 
   depends_on "python@3.10"

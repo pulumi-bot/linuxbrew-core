@@ -14,7 +14,7 @@ class NicovideoDl < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "bd14d4d14a48df2134225b9fd2de504a41f505140eeab321d49521298fb86345"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "bd14d4d14a48df2134225b9fd2de504a41f505140eeab321d49521298fb86345" # linuxbrew-core
   end
 
   depends_on "python@3.10"

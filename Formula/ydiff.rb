@@ -7,7 +7,7 @@ class Ydiff < Formula
   revision 2
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "6496ac2da3fe8681060dc732141f174db77cca1f3a8fe7aeffa8201ba2638c1b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6496ac2da3fe8681060dc732141f174db77cca1f3a8fe7aeffa8201ba2638c1b" # linuxbrew-core
   end
 
   depends_on "python@3.10"

@@ -14,7 +14,7 @@ class GitImerge < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6a8b30650ee668771ce8cac1011d239979b93d927da57137f5b2b00b2c3257e0"
     sha256 cellar: :any_skip_relocation, catalina:      "6a8b30650ee668771ce8cac1011d239979b93d927da57137f5b2b00b2c3257e0"
     sha256 cellar: :any_skip_relocation, mojave:        "6a8b30650ee668771ce8cac1011d239979b93d927da57137f5b2b00b2c3257e0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "83eba26e35804793bfb24d2591b93b4e7f655aa08c09ec5ab067c7668d7ab42c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "83eba26e35804793bfb24d2591b93b4e7f655aa08c09ec5ab067c7668d7ab42c" # linuxbrew-core
   end
 
   depends_on "python@3.10"
