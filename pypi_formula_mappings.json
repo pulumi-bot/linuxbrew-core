@@ -62,6 +62,9 @@
   "conan": {
     "exclude_packages": ["six"]
   },
+  "cppman": {
+    "exclude_packages": ["six"]
+  },
   "datalad": {
     "exclude_packages": ["six"]
   },
@@ -117,6 +120,9 @@
   "jupyterlab": {
     "exclude_packages": ["six"],
     "extra_packages": ["pydevd"]
+  },
+  "khard": {
+    "exclude_packages": ["six"]
   },
   "litecli": {
     "exclude_packages": ["tabulate"]

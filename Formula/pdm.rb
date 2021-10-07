@@ -6,17 +6,17 @@ class Pdm < Formula
   url "https://files.pythonhosted.org/packages/80/8f/5cc28c1ea23b12fa06e4167bd4261dc0b34cb62a24607cdc281da7b30b9c/pdm-1.8.5.tar.gz"
   sha256 "91c50a792b0af21c6e8b82c344281b4ce7e1f518010c362bee6a4b7434b5b97e"
   license "MIT"
+  revision 1
   head "https://github.com/pdm-project/pdm.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "6a5ef31b5aad652ba90c72c74752dbbb1109bea37297d3179a1996e2a78edb6d"
-    sha256 cellar: :any_skip_relocation, big_sur:       "c3018d1dab59ebaba0854ff43d33c6bc9b88942a7884fd773dcd3be9cd29cd97"
-    sha256 cellar: :any_skip_relocation, catalina:      "6abad2089ecf60b071d77103d319ba4c43f101afad669c858024b00060dbb390"
-    sha256 cellar: :any_skip_relocation, mojave:        "d840d65fdb6ed1f1efd6d5081f402924b4890a74921837eb76d9d369bf4801ca"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "edfd9aaa47ffd156cb488184df4ca54128b0ebf133eb98d1970f5c3d61c2c804" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "4e3272e10963921660de955019da95c692bf3db36cd5cb12e2cea39394978df6"
+    sha256 cellar: :any_skip_relocation, big_sur:       "72e9710f8308343b438c609a3c98abe89b90a8763d0cd19d518c60ecef1e48c6"
+    sha256 cellar: :any_skip_relocation, catalina:      "361f5fc2b9a255eba9e31a3fb64e180db329bbd3fec639c2fb51543ba75b480b"
+    sha256 cellar: :any_skip_relocation, mojave:        "b1ee19a86a73fecaa00eac9d727b52d90cece2ba66e6a385dccc4a17944cbf95"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
   depends_on "six"
 
   resource "appdirs" do
