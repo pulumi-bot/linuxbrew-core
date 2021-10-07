@@ -13,6 +13,7 @@ class Cppman < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b8d9a3470010dac2167e6bf34e165a5ed30ade83fd3d435e0ec47ecea37c7391"
     sha256 cellar: :any_skip_relocation, catalina:      "2604a65f2ec97aa523f1efdb7723fd85009ba2b357891dcfb9a912737fdc1b9b"
     sha256 cellar: :any_skip_relocation, mojave:        "cb190a51ebdbf7c322627b64665c9384cb2f161a30158e5211aa700fead3b507"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "73a0798a0ee3dd1a2d93c9dde0e4cc95f57144ed072a7edcc6c5f0fd171542e0"
   end
 
   depends_on "python@3.10"
