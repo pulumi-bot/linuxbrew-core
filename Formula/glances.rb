@@ -11,7 +11,7 @@ class Glances < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "bf357cfaa047f96c4cccd9671dc1c339af5022ae5d30fab2f5e31a267bddd2f8"
     sha256 cellar: :any_skip_relocation, catalina:      "6e77821dd7393ffbe14484ad40fcaf02446c3f283d8a07d0edfcc5e42bc1e0ad"
     sha256 cellar: :any_skip_relocation, mojave:        "e785dca2522e2e25b2d70e7da24b1409df1e8aa6ac6c0203bd49405b52722a53"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9b6e34031f4a8eafede6d4b490dfa8f5961d896b6ca9659631a55e2c902aa323"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9b6e34031f4a8eafede6d4b490dfa8f5961d896b6ca9659631a55e2c902aa323" # linuxbrew-core
   end
 
   depends_on "python@3.10"

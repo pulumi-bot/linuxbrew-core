@@ -13,7 +13,7 @@ class EgExamples < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9e766b57ef1ede0a5cd68da245d372573860545702af673ba18693159cc95657"
     sha256 cellar: :any_skip_relocation, catalina:      "9e766b57ef1ede0a5cd68da245d372573860545702af673ba18693159cc95657"
     sha256 cellar: :any_skip_relocation, mojave:        "9e766b57ef1ede0a5cd68da245d372573860545702af673ba18693159cc95657"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6d057caedc12f52baeaec1c47fa9b6f3346d9d7c4e8e519ca5781f1915e6f9bc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6d057caedc12f52baeaec1c47fa9b6f3346d9d7c4e8e519ca5781f1915e6f9bc" # linuxbrew-core
   end
 
   depends_on "python@3.10"
