@@ -14,6 +14,7 @@ class Vdirsyncer < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "bca2caf2e456db762a65b666f786c0d6c5f500643969c7e15d5546ea336649f6"
     sha256 cellar: :any_skip_relocation, catalina:      "bca2caf2e456db762a65b666f786c0d6c5f500643969c7e15d5546ea336649f6"
     sha256 cellar: :any_skip_relocation, mojave:        "bca2caf2e456db762a65b666f786c0d6c5f500643969c7e15d5546ea336649f6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2e3092fcf128119cf7a6a8131c4d16df5e44ab56a7fa07e2a661806c4f2ad2b9"
   end
 
   depends_on "python@3.10"
