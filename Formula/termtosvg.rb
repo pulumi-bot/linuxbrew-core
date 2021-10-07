@@ -13,6 +13,7 @@ class Termtosvg < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "32f1142366e73140d1d96f7003d9e3d745a08adb998278d3ec96acbea25888e4"
     sha256 cellar: :any_skip_relocation, catalina:      "085ece852b31385103c159ee5b81fac163264e803a1014ada30e0f4260fc43ac"
     sha256 cellar: :any_skip_relocation, mojave:        "9ddce257d68a972d67278fd51e2ac818fd13b7ad84932f0590bda076b1224aa9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c795544665a1fb1011ab45e01bc25dd97992e24e66304238405df43366aa630a"
   end
 
   deprecate! date: "2020-06-16", because: :repo_archived
