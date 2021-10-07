@@ -14,6 +14,7 @@ class Ranger < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f54c357510b236077169fe474ca5e14ff038293bbd96c5823f7333da0da92bd1"
     sha256 cellar: :any_skip_relocation, catalina:      "f54c357510b236077169fe474ca5e14ff038293bbd96c5823f7333da0da92bd1"
     sha256 cellar: :any_skip_relocation, mojave:        "f54c357510b236077169fe474ca5e14ff038293bbd96c5823f7333da0da92bd1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a02031ca657ef32cdf3560328dafafef9554d4268b94a8569055302e076341dd"
   end
 
   depends_on "python@3.10"
