@@ -6,17 +6,17 @@ class Parliament < Formula
   url "https://files.pythonhosted.org/packages/1a/29/e8c814819571c78c1f1e25dbe20f995fb86b854aa59db4fbab20a641a346/parliament-1.4.0.tar.gz"
   sha256 "cf40d5f5732bcf831fdb1a13f71c3cf4f3bdb8c8d9685592ecdd6d84675b947e"
   license "BSD-3-Clause"
+  revision 1
   head "https://github.com/duo-labs/parliament.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "70152e9beb86b2ee8e3e167abb8eb11afabff2834021ac3a13ead2833f78b018"
-    sha256 cellar: :any_skip_relocation, big_sur:       "055f7fefb957c5269ab8ec19654b06e0e7db865333bbebb62a5e2ea9940ddfca"
-    sha256 cellar: :any_skip_relocation, catalina:      "b29b423794a9ccb15f1509f6086b170f4f3393bad15a8bdaa9ab7312fc09ae31"
-    sha256 cellar: :any_skip_relocation, mojave:        "2e59a17e90ad49204bd45177cddf947bd1fda2405572ae62b194143bb9cab337"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9fd2df6d34ba118db03bc4fcc79decceabb1d559855634d730324d3d123a13a0" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "5d1d52665eb2f308b480fec601756d8638bf48c6cb0a7221897ab575d05a0ca9"
+    sha256 cellar: :any_skip_relocation, big_sur:       "7b8dd3a8b1011583160830f29dbbe46fdc95eceabad286ae868d90bc6fcad7d5"
+    sha256 cellar: :any_skip_relocation, catalina:      "ae64e77098ff1c5f1b9c44081ce7cb1982810c5173f7f12e08fbda49e9fead72"
+    sha256 cellar: :any_skip_relocation, mojave:        "5cb0472d17d81aa4b81fd05924f633541f87efcaa56b66a3ae60fa88f9eebd47"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   resource "boto3" do
     url "https://files.pythonhosted.org/packages/f4/ba/150dd700298b386152dc17582f4d62b0ccd1cb0431a6f0bb63c37cb76b8a/boto3-1.17.29.tar.gz"
