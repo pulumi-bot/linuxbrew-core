@@ -10,6 +10,7 @@ class Vsh < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "65d5395f60ec5fd1e9102d7f9e631771a81d0d4c82a21286dc7cd504c8b6a62f"
     sha256 cellar: :any_skip_relocation, catalina:      "a0d65e2cde343394ffa0fc8a83bae0f6e601c84021cead1768d5abab8be510c8"
     sha256 cellar: :any_skip_relocation, mojave:        "e3c6daf68d62eea77e5fd51499cbd7298ace43e98ebf9810a786dd2f89cd825d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b9c44954fac3407c4319195d5307124c880005cd4db29639385a5704c31a639f"
   end
 
   depends_on "go" => :build
