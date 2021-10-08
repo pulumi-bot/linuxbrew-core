@@ -11,7 +11,6 @@ class G2o < Formula
     sha256 cellar: :any,                 big_sur:       "b99527b4e0670ced76af5ad443df1b83d3c3a16a84b9a834be849336e76d99fc"
     sha256 cellar: :any,                 catalina:      "8d8d1b729449d5f6e5afd9ef70aa2531e75e60f2a3208dcfdf00ca3097e146c4"
     sha256 cellar: :any,                 mojave:        "92c77224cffd95acface4d59aeb65a8e4330059c7c183ca4cd8df7fb90be9ffd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "645f512ca275ccc7749cb6be5ae149c21c37547ec962961d3fbb835fccb784d0" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
