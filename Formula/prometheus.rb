@@ -15,7 +15,7 @@ class Prometheus < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "df45f718948efe0c8aac092333b79151aa9652b5927c2127c542cd40067f068d"
     sha256 cellar: :any_skip_relocation, catalina:      "16b43830daf9666454eef51b71b190295ef777abc4c0f736147d1ffa44f9301c"
     sha256 cellar: :any_skip_relocation, mojave:        "d4a48002a602a51a97a5a30206986979a6ff6bf751963d939ce706f3e4ff05d5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4aced2a641605885f7373fc44bd702fd42f080aac6e1615bb575e734a83bbf8a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4aced2a641605885f7373fc44bd702fd42f080aac6e1615bb575e734a83bbf8a" # linuxbrew-core
   end
 
   depends_on "go" => :build

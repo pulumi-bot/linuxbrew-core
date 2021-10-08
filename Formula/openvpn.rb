@@ -16,7 +16,7 @@ class Openvpn < Formula
     sha256 big_sur:       "682a9cd67a9ca4d1f3e98b2278bfb30cba39e30f532cdebbc25258fe7e4e69af"
     sha256 catalina:      "904507f9c962a7294f67a92e48d0c8cfc12a71bcf91c6d5d924e0f28a4836a3a"
     sha256 mojave:        "fec0ed2726d148cc96ac6a19a9dfa0e39703fba82c717020f5c6ccc1ee4deef9"
-    sha256 x86_64_linux:  "4b5428aeb8f2372135d4f213a157728ffc25257741672c6deb38d8f31b75f435"
+    sha256 x86_64_linux:  "4b5428aeb8f2372135d4f213a157728ffc25257741672c6deb38d8f31b75f435" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

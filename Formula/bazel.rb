@@ -16,7 +16,7 @@ class Bazel < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4e3ef1fcb3839d65621a635f4f6be6282e545563e5635ddad79a0b68bceee437"
     sha256 cellar: :any_skip_relocation, catalina:      "b59830d857e1ee86f119628524fa782127f71ba16a63f984f8f0b05a791c0405"
     sha256 cellar: :any_skip_relocation, mojave:        "31758f2ea241189a61feef8df58a12bb0d000c4bad4d79f2c9a2fe9f97c0d5ce"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "348e8fb910a6f9177bf79ac275b8a527194a81e002766bb48e010210550a7737"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "348e8fb910a6f9177bf79ac275b8a527194a81e002766bb48e010210550a7737" # linuxbrew-core
   end
 
   depends_on "python@3.10" => :build

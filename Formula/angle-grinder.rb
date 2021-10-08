@@ -10,7 +10,7 @@ class AngleGrinder < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d94050232f3ce01eb97c1c36f79aa5d2734b9e4e25ede7d81e32eaaeca4a4db7"
     sha256 cellar: :any_skip_relocation, catalina:      "f41ebbb8078940ecc259ffac8451f70dc49df53a8d8f1fcafe4b02bc6723dcbc"
     sha256 cellar: :any_skip_relocation, mojave:        "73c19bc8e8e2697797e46ba6e6dd8a24deaa77a8059f0546bf29bffba5e0c8ec"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "51f751d9a75883990dfb713d167f920897eec4d74fc16a689511ec74778734fe"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "51f751d9a75883990dfb713d167f920897eec4d74fc16a689511ec74778734fe" # linuxbrew-core
   end
 
   depends_on "rust" => :build

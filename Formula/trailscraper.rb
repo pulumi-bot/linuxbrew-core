@@ -14,7 +14,7 @@ class Trailscraper < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ce1e82edd535e305b5aa6f3cf1d3a955cc7bddfd18ba111b359e000e5de25371"
     sha256 cellar: :any_skip_relocation, catalina:      "ea5a55b56b736464322c2a79beb7ca984e23ea09a37a173157baee29a0862322"
     sha256 cellar: :any_skip_relocation, mojave:        "d5bb6b61cbc99d8bedbe34aeab424928867c8679e2ee78fb541dbb01df615749"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "31485830ca3c550cf67b3cacdadd6acef583260f95947a23d1b3e11cfdc1715f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "31485830ca3c550cf67b3cacdadd6acef583260f95947a23d1b3e11cfdc1715f" # linuxbrew-core
   end
 
   depends_on "python@3.10"

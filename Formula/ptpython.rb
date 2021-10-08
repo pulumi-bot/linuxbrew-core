@@ -14,7 +14,7 @@ class Ptpython < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "916a01805966942286942293e9e3b77c23bd8db91be83803cdcd8c5c5c7a7b20"
     sha256 cellar: :any_skip_relocation, catalina:      "3cbe9de5e60de6754eba2e1631759df14aa6e536e25b44d4665e16841124923e"
     sha256 cellar: :any_skip_relocation, mojave:        "4b2f693efede4f086e5b9042d2a24b5f1bc691f79c7f63dda3f925402356c392"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "81aafa265345e78925bfbb142c21dc471a484e189358dcec553de5872f24b89b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "81aafa265345e78925bfbb142c21dc471a484e189358dcec553de5872f24b89b" # linuxbrew-core
   end
 
   depends_on "python@3.10"
