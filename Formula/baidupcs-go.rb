@@ -11,7 +11,7 @@ class BaidupcsGo < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "4bef2623ea5296a38ad6063e35f732b21e14e65a163530da18763dec9a437469"
     sha256 cellar: :any_skip_relocation, catalina:      "a6a451cbf301960ddc61689355a4ed9d2bcb0889e2e25b0161b89358f6514000"
     sha256 cellar: :any_skip_relocation, mojave:        "b024815371b471e0fbce20f46cd4e2b3476873cf3e0b6563d630b9cacc51443f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "92dbe6b2a76a70eea669805d35cb0a84f811c208e14950e07f034f11c4b46525"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "92dbe6b2a76a70eea669805d35cb0a84f811c208e14950e07f034f11c4b46525" # linuxbrew-core
   end
 
   depends_on "go" => :build

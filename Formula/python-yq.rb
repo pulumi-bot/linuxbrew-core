@@ -11,7 +11,7 @@ class PythonYq < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9cf9533ef71e83cc6736a1f20b108895616644a8e437a73fbe45f6fe0670e46e"
     sha256 cellar: :any_skip_relocation, catalina:      "9cf9533ef71e83cc6736a1f20b108895616644a8e437a73fbe45f6fe0670e46e"
     sha256 cellar: :any_skip_relocation, mojave:        "9cf9533ef71e83cc6736a1f20b108895616644a8e437a73fbe45f6fe0670e46e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "01daaf8e43008c395ccf72223e825a93aa18a123dcb8d5d84209dbb8ecc87c92"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "01daaf8e43008c395ccf72223e825a93aa18a123dcb8d5d84209dbb8ecc87c92" # linuxbrew-core
   end
 
   depends_on "jq"

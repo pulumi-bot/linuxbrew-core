@@ -11,7 +11,7 @@ class Atlantis < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f2be21a4ccc836e5ae969eb7fb7747dfc9c44bfa30eb7800be804e5ec08ec043"
     sha256 cellar: :any_skip_relocation, catalina:      "5da4357cf27e81f814edb89b957ffb274bd2fbe9415d420b49a7bb5c2390270a"
     sha256 cellar: :any_skip_relocation, mojave:        "ee4f266cbe5de9c4dc285c9bbe28e832bb68a494cfd55a042d6d599616968759"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d211f5eb8ff4c46ce0aa6be40de32b5e5b560c782bc999183a21be4e14234bb5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d211f5eb8ff4c46ce0aa6be40de32b5e5b560c782bc999183a21be4e14234bb5" # linuxbrew-core
   end
 
   depends_on "go" => :build

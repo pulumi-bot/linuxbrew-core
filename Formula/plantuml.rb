@@ -12,7 +12,7 @@ class Plantuml < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ecb9c34ecd074a992b29b1cd742976f128bb768e89a42c9be25f5186154863f2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ecb9c34ecd074a992b29b1cd742976f128bb768e89a42c9be25f5186154863f2" # linuxbrew-core
   end
 
   depends_on "graphviz"
