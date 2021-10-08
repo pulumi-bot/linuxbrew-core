@@ -1,17 +1,13 @@
 class JenkinsLts < Formula
   desc "Extendable open-source CI server"
   homepage "https://www.jenkins.io/index.html#stable"
-  url "https://get.jenkins.io/war-stable/2.303.1/jenkins.war"
-  sha256 "4aae135cde63e398a1f59d37978d97604cb595314f7041d2d3bac3f0bb32c065"
+  url "https://get.jenkins.io/war-stable/2.303.2/jenkins.war"
+  sha256 "c4b8532e25a33001a3d8883d3cd87a664953ace239b486839b683065817d29cf"
   license "MIT"
 
   livecheck do
     url "https://www.jenkins.io/download/"
     regex(%r{href=.*?/war-stable/v?(\d+(?:\.\d+)+)/jenkins\.war}i)
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "61b8b2de8cb995485478c989f0d5838967033247ccf618052093ddd7514d9023" # linuxbrew-core
   end
 
   depends_on "openjdk@11"
