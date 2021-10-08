@@ -10,6 +10,10 @@ class JenkinsLts < Formula
     regex(%r{href=.*?/war-stable/v?(\d+(?:\.\d+)+)/jenkins\.war}i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "19233b311274c2124ad4fc8fd6fe44221f8b42f480d9bd6d247bec12e9108cd7"
+  end
+
   depends_on "openjdk@11"
 
   def install
