@@ -8,6 +8,7 @@ class Six < Formula
 
   bottle do
     rebuild 1
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "560f73cafaea617d44f93beffdac91ac3b93095b1b64ff3877c5c4903f1cb001"
   end
 
   depends_on "python@3.10" => [:build, :test]
