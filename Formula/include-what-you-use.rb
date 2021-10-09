@@ -26,6 +26,11 @@ class IncludeWhatYouUse < Formula
     sha256 cellar: :any,                 mojave:        "c2024ce23c44b1a084f144cf378fb56d9c5af4b52eca7502fc7c7961ffa82ed7"
   end
 
+  head do
+    url "https://github.com/include-what-you-use/include-what-you-use.git", branch: "master"
+    depends_on "llvm"
+  end
+
   depends_on "cmake" => :build
 
   uses_from_macos "ncurses"
