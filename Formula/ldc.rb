@@ -4,6 +4,7 @@ class Ldc < Formula
   url "https://github.com/ldc-developers/ldc/releases/download/v1.27.1/ldc-1.27.1-src.tar.gz"
   sha256 "93c8f500b39823dcdabbd73e1bcb487a1b93cb9a60144b0de1c81ab50200e59c"
   license "BSD-3-Clause"
+  revision 1
   head "https://github.com/ldc-developers/ldc.git"
 
   livecheck do
@@ -12,17 +13,16 @@ class Ldc < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "a08707a392ab7328a11f2534ce7831b41c082da562593071eff4cd2c97e05940"
-    sha256 big_sur:       "105e995ace02a6d41a833f1405192d0f7551c4b74d11760c69cf95eaa77c5518"
-    sha256 catalina:      "858571e2c58d67e0fe05f94182fcff9249dd09bc56ad0c6b5f20c54065a5987d"
-    sha256 mojave:        "7d36db8c9ff855a75fa5c93c992d7269e836b2562aece4de20185df77fbf04f4"
-    sha256 x86_64_linux:  "4ce23462094a7b4b95c5d36f4759e130f5b78232c003083658a6127978392aa4" # linuxbrew-core
+    sha256 arm64_big_sur: "723b7395eef711a988dd2e644c105303222c66de9e3ec3d651fead70d0beaa15"
+    sha256 big_sur:       "40344cb91c6fbce6d35bf779d1006063cb6a983471c9fb77f1709091da6e20be"
+    sha256 catalina:      "087d2442fbc40af6af86037941ab77cabf674a40a7e9b6cb7abdd6fdba41f8cb"
+    sha256 mojave:        "3018868df975db5a608d56b0a8a470e58c93fea77819000b5f5a76d93b1da5c8"
   end
 
   depends_on "cmake" => :build
   depends_on "libconfig" => :build
   depends_on "pkg-config" => :build
-  depends_on "llvm"
+  depends_on "llvm@12"
 
   uses_from_macos "libxml2" => :build
 
@@ -47,6 +47,10 @@ class Ldc < Formula
     end
   end
 
+  def llvm
+    deps.map(&:to_formula).find { |f| f.name.match? "^llvm" }
+  end
+
   def install
     ENV.cxx11
     (buildpath/"ldc-bootstrap").install resource("ldc-bootstrap")
@@ -58,19 +62,15 @@ class Ldc < Formula
 
     mkdir "build" do
       args = std_cmake_args + %W[
-        -DLLVM_ROOT_DIR=#{Formula["llvm"].opt_prefix}
+        -DLLVM_ROOT_DIR=#{llvm.opt_prefix}
         -DINCLUDE_INSTALL_DIR=#{include}/dlang/ldc
         -DD_COMPILER=#{buildpath}/ldc-bootstrap/bin/ldmd2
       ]
+      args << "-DCMAKE_INSTALL_RPATH=#{rpath};@loader_path/#{llvm.opt_lib.relative_path_from(lib)}" if OS.mac?
 
       system "cmake", "..", *args
       system "make"
       system "make", "install"
-
-      if OS.mac?
-        # Workaround for https://github.com/ldc-developers/ldc/issues/3670
-        cp Formula["llvm"].opt_lib/"libLLVM.dylib", lib/"libLLVM.dylib"
-      end
     end
   end
 

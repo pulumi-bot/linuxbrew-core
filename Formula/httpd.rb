@@ -1,17 +1,16 @@
 class Httpd < Formula
   desc "Apache HTTP server"
   homepage "https://httpd.apache.org/"
-  url "https://dlcdn.apache.org/httpd/httpd-2.4.50.tar.bz2"
-  mirror "https://downloads.apache.org/httpd/httpd-2.4.50.tar.bz2"
-  sha256 "6a2817c070c606682eb53ed963511407d3c3d7a379cdf855971467b00fb3890f"
+  url "https://dlcdn.apache.org/httpd/httpd-2.4.51.tar.bz2"
+  mirror "https://downloads.apache.org/httpd/httpd-2.4.51.tar.bz2"
+  sha256 "20e01d81fecf077690a4439e3969a9b22a09a8d43c525356e863407741b838f4"
   license "Apache-2.0"
 
   bottle do
-    sha256 arm64_big_sur: "1f162217774c42aa10e4cff7762eafd70efebfd705a59d0c11f4a2a7c9263eca"
-    sha256 big_sur:       "14e52944d2f4b281847a58bdf1974b5e889f7c7d685fa56ea4de3f5e710761b9"
-    sha256 catalina:      "783f9a2a7e1f40a07175da9b4fafcf12870048cd2b87858c8e4d015efc2be46f"
-    sha256 mojave:        "e42248707e54b495e780e65366abb771d278e051b3681a6e8fb2202d21ac08ed"
-    sha256 x86_64_linux:  "4d28b37f7cddadd0d0e3bb3d7ffcfb7dd5770e986ad7655385e445a95e92fd6a" # linuxbrew-core
+    sha256 arm64_big_sur: "edb36c0fbb5707b6ef74da3de849148d74fe4c63ec2d3191e4554223a63b9809"
+    sha256 big_sur:       "e4a6dcd62151d849dbe78831b38cac096808242e45301767841c209e1c2dd638"
+    sha256 catalina:      "4f2b18c4c0ee14638181679fe6d0565ef8dfc960d23411e4a81904bec206ced5"
+    sha256 mojave:        "709af186a8974ad3fe115d5ec8e2afc6311d709d8b027854e707a1862c0c9ac1"
   end
 
   depends_on "apr"
