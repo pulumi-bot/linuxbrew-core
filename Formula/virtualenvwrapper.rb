@@ -13,7 +13,7 @@ class Virtualenvwrapper < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f30e47c1440c9569a3d29c4ef5c7336c96fb2e1acba97b711d1b8f44c1c6b9f4"
     sha256 cellar: :any_skip_relocation, catalina:      "a212a51c8e9b92ac771f7fe2ef10817d7d50adae826720d67e949c3b1bd8216c"
     sha256 cellar: :any_skip_relocation, mojave:        "dedc8670462702a9d8e1afae32874b1236e0e2af43b27111cc33408d854cd1e3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bf0c852b99022221c9711ea921727838209b2415893708e30b6ebcd88af21a9f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bf0c852b99022221c9711ea921727838209b2415893708e30b6ebcd88af21a9f" # linuxbrew-core
   end
 
   depends_on "python@3.10"

@@ -9,7 +9,7 @@ class Babel < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "89e84dffcb1663c049453904ff5d7729f2075350b609b4595e17e83d812e30ef"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "89e84dffcb1663c049453904ff5d7729f2075350b609b4595e17e83d812e30ef" # linuxbrew-core
   end
 
   depends_on "node"

@@ -23,7 +23,7 @@ class Clusterctl < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "34607708549a05bff8c4144f2a1fd91cc0f6461322b2c299942e6b25a09ad456"
     sha256 cellar: :any_skip_relocation, catalina:      "25e082158e2f7ec8f5c248e4e409ff9c78e79f1753ce0ee9f30b698e638b5aa4"
     sha256 cellar: :any_skip_relocation, mojave:        "4d6a2d3e93b26cc928599c3c906a1c9418672e42d2199b12c8cb587662b603f4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a764c115fc5134e62d06411d0096e927f2a94101e333da8968fd9d328a990106"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a764c115fc5134e62d06411d0096e927f2a94101e333da8968fd9d328a990106" # linuxbrew-core
   end
 
   depends_on "go" => :build

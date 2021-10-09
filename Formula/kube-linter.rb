@@ -11,7 +11,7 @@ class KubeLinter < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c7153d6da6821e27d636c10474a5af10d15ff39d01d5acbed154829ae4b3c824"
     sha256 cellar: :any_skip_relocation, catalina:      "c7153d6da6821e27d636c10474a5af10d15ff39d01d5acbed154829ae4b3c824"
     sha256 cellar: :any_skip_relocation, mojave:        "c7153d6da6821e27d636c10474a5af10d15ff39d01d5acbed154829ae4b3c824"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8d1d227be6c5734af7cd11940e0429f5516e71f7574326bdc3722e0d2348bad2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8d1d227be6c5734af7cd11940e0429f5516e71f7574326bdc3722e0d2348bad2" # linuxbrew-core
   end
 
   depends_on "go" => :build
