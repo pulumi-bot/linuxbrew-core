@@ -24,6 +24,7 @@ class IncludeWhatYouUse < Formula
     sha256 cellar: :any,                 big_sur:       "4abf6a45d2f3215a71340ebf920af51b6737dd49b536d1c030bab31860616d23"
     sha256 cellar: :any,                 catalina:      "d7cf6d888dd73d6bf28ea4b455e749d5532ee2647b1168a575efa8107f6831d7"
     sha256 cellar: :any,                 mojave:        "c2024ce23c44b1a084f144cf378fb56d9c5af4b52eca7502fc7c7961ffa82ed7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0279d02e1b199d12a988c0c9a294e27d16c3ff8366d45f943d09d47a4e07d708"
   end
 
   head do
