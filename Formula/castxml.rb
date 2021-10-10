@@ -17,7 +17,7 @@ class Castxml < Formula
     sha256 cellar: :any,                 big_sur:       "8f6cf4bf0246dd2af8d297ea05a61d93687d1607084e8fb0e4c422b3f676889f"
     sha256 cellar: :any,                 catalina:      "180ea24e0b779c8003f0a76a9d9a2db7d2c32812ae9686bc47a14df208a326ec"
     sha256 cellar: :any,                 mojave:        "d334ea9ce46b1345b8bb79eb2f2f7f1d4d4f595f6d395a2fb4271eb985dd16e9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e1e0d381ef2d6403f64f356b7227dbce4a6a93441bbe0982aa7d8adf9cab9339"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e1e0d381ef2d6403f64f356b7227dbce4a6a93441bbe0982aa7d8adf9cab9339" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

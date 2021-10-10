@@ -10,7 +10,7 @@ class Ffsend < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b0cf6c1a3c746a12a9fb654c772ec117378d63acaa9027811641a7ce81493f2d"
     sha256 cellar: :any_skip_relocation, catalina:      "17e152eadf259130498d4b99008244646fa13d5ab35ca55998dbaa587b39283b"
     sha256 cellar: :any_skip_relocation, mojave:        "8721d410afecbffa858783fadedc162294924ea4aba35ba0c929956df7bbe899"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cd0975936bde1ea831a8b002a1bf4d2250018549f922c6998e1e3bf5e00e2394"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cd0975936bde1ea831a8b002a1bf4d2250018549f922c6998e1e3bf5e00e2394" # linuxbrew-core
   end
 
   depends_on "rust" => :build

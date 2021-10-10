@@ -15,7 +15,7 @@ class Asciidoc < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c9ddf877047f2b026bc790eb8f7414ea909dbd213c92b50fba336da80e1d8286"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c9ddf877047f2b026bc790eb8f7414ea909dbd213c92b50fba336da80e1d8286" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build

@@ -11,7 +11,7 @@ class Buildifier < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9f6f2318368bb64129a35dbdb151b215f6e426fedcca5c17d02f633dd147b45a"
     sha256 cellar: :any_skip_relocation, catalina:      "9f6f2318368bb64129a35dbdb151b215f6e426fedcca5c17d02f633dd147b45a"
     sha256 cellar: :any_skip_relocation, mojave:        "9f6f2318368bb64129a35dbdb151b215f6e426fedcca5c17d02f633dd147b45a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "678334bdc3881c60385393786c18f2e7dbe1871f27f1532be9b50bc09ddc2e69"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "678334bdc3881c60385393786c18f2e7dbe1871f27f1532be9b50bc09ddc2e69" # linuxbrew-core
   end
 
   depends_on "go" => :build

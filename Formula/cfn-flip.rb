@@ -12,7 +12,7 @@ class CfnFlip < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "2fc754ceec0d6bd7964c67c025dd6194396b3c5a8b7e857cffceb80d1d540869"
     sha256 cellar: :any_skip_relocation, catalina:      "173f26ac0f8cdd2e87e3555dbbab76c30b674b949a07bf27b5b8fe6ffbb406d7"
     sha256 cellar: :any_skip_relocation, mojave:        "49d83ff2732db641922de273119a56b99d286ef95b489a96a06cd509b004c65d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4c2ed6cf3d0c762c6acb724443749ab1a6021f12fb3ef90a4ad17bb160b73a6a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4c2ed6cf3d0c762c6acb724443749ab1a6021f12fb3ef90a4ad17bb160b73a6a" # linuxbrew-core
   end
 
   depends_on "python@3.10"

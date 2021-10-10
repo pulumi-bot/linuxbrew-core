@@ -16,7 +16,7 @@ class Coredns < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1c0da46e2f2b03f87c132bac4010dcd680ecae94350a28a071bfef996d86d772"
     sha256 cellar: :any_skip_relocation, catalina:      "2baa47d5beedf925d7595174c93491fe87717b891e922c923d9a2e70c1ce2107"
     sha256 cellar: :any_skip_relocation, mojave:        "f11cd09d935549bfe50c61520ae674ff4e5e559b065f11fc731ede96d0952213"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8f5972422a2caae4368304b18b3d289eb25aab80283f9f9327c4179ee2a0cf18"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8f5972422a2caae4368304b18b3d289eb25aab80283f9f9327c4179ee2a0cf18" # linuxbrew-core
   end
 
   depends_on "go" => :build

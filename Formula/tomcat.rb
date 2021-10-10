@@ -7,7 +7,7 @@ class Tomcat < Formula
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c21228ef35c66009179b04cbe966d120b3e6508edec7c588fba9a53f22137cb8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c21228ef35c66009179b04cbe966d120b3e6508edec7c588fba9a53f22137cb8" # linuxbrew-core
   end
 
   depends_on "openjdk"
