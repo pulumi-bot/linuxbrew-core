@@ -6,16 +6,17 @@ class Commitizen < Formula
   url "https://files.pythonhosted.org/packages/a9/54/216553c2f2bcc4375c7aa739619dc72c5de0081c5f7e8545e883bfb6b966/commitizen-2.19.0.tar.gz"
   sha256 "cf5b8ad49624847e90e390b8604d439a27c84bff5a70aaf6a0da6dc35addbfc1"
   license "MIT"
+  revision 1
   head "https://github.com/commitizen-tools/commitizen.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "3ee76c5751f875ff42544f7be23610e840bddf9e9da241fcd16131bb7f3829a0"
-    sha256 cellar: :any_skip_relocation, big_sur:       "ccb6d693f512d64477e8d17d2cb00be925e56c6b3cf24109a9ff017f4d0004c2"
-    sha256 cellar: :any_skip_relocation, catalina:      "267519580ae25d88863122c20e87346d5b5e9c830148b892ebdce5e975da788c"
-    sha256 cellar: :any_skip_relocation, mojave:        "c9736960d209fa5ff081afc2a7b1842727570e9b86a46ebf35adb64b7f268ba3"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "c5375210b7e5f4dd3ea23a1e27a55d61e8b2dfef131f53c81af5d95dd557245d"
+    sha256 cellar: :any_skip_relocation, big_sur:       "e552f948d4bc2193dc8a9a5bdc25eb2a9a6138f9d3dbe337f8415c78b00a43a1"
+    sha256 cellar: :any_skip_relocation, catalina:      "1937c7b07e85f403f85edb209d1bf332a3f89810374ed0ee00cd96377971d31e"
+    sha256 cellar: :any_skip_relocation, mojave:        "a56c4f6059a00aa532286bbd9a18f35488259344feacb67213b59a4e37ad7938"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   resource "argcomplete" do
     url "https://files.pythonhosted.org/packages/6a/b4/3b1d48b61be122c95f4a770b2f42fc2552857616feba4d51f34611bd1352/argcomplete-1.12.3.tar.gz"
