@@ -1,8 +1,8 @@
 class GhzWeb < Formula
   desc "Web interface for ghz"
   homepage "https://ghz.sh"
-  url "https://github.com/bojand/ghz/archive/v0.103.0.tar.gz"
-  sha256 "a8960d11cf7ee5bc132899ac237d4462c8597e81910b5e9d960c588cb2f46ff8"
+  url "https://github.com/bojand/ghz/archive/v0.104.0.tar.gz"
+  sha256 "045b2e0194f46bc610fe220d5eb953987c5d9f0a6ff2c59cc642803aaf589256"
   license "Apache-2.0"
 
   livecheck do
@@ -10,11 +10,10 @@ class GhzWeb < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "fd83ba6f5457a0f7fd16caf9668181b5d08867f37fc80090492287ec3495332c"
-    sha256 cellar: :any_skip_relocation, big_sur:       "0865f25d254cfdfa50d0170afbd76dc1276314f5d99610c8693ab7cf35f65035"
-    sha256 cellar: :any_skip_relocation, catalina:      "da34a4440fddbc8f471e1a00b5c4a53bb3aba8cfaaca4c4c5c85d46cbb9445c0"
-    sha256 cellar: :any_skip_relocation, mojave:        "323171d3f2f6b66c44cd725120958ae142d0a2f8f38bd143f788c0801abf4d4d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9e3701494ac01eb349192d5e9c66c97ff9c9a40d1e09cb5d08ad009932c811e2" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "4ba20774138482d7d44a88f4006242b2ab55fddaf2958b7a7fb87b353cf5da4b"
+    sha256 cellar: :any_skip_relocation, big_sur:       "f57fd218387fc28aa8617fd3941d39c8b127a1bfd5a6d2a661b7d46dd319e821"
+    sha256 cellar: :any_skip_relocation, catalina:      "e70516a651dc361154117d2e6f4030ab76db89674ffc788cd3f9b277b82482d1"
+    sha256 cellar: :any_skip_relocation, mojave:        "5f4720b5ba9b253102d6e0832751e7916a795dbcdc435c6efc48fe06ff2867f1"
   end
 
   depends_on "go" => :build
