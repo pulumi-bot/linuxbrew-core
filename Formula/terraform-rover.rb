@@ -11,7 +11,6 @@ class TerraformRover < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "cb2dc4dab8d77371813992ead874a94223269ee42f489d95846a0be627adc9ea"
     sha256 cellar: :any_skip_relocation, catalina:      "13de4d7c616eb75498f5f633025a6db46cd436d37386a5f94a97d120564fcb72"
     sha256 cellar: :any_skip_relocation, mojave:        "865c313e1f50c9da29fc570cc602727cf222050b337ab8e61b35ed544be145bb"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "64b4259285d662de26aec694874b0503ec05edc271915f8535c3b1b2afd35080"
   end
 
   depends_on "go" => :build
