@@ -11,7 +11,7 @@ class LeanCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "db63d361bede85efe0285ab80f41c20a860c4377bf7c3e175c027775a3a7db1d"
     sha256 cellar: :any_skip_relocation, catalina:      "311eb64400cd1f98edc8dc4589868fdb521b183d70017579e1cb7e053989bde9"
     sha256 cellar: :any_skip_relocation, mojave:        "86f52bf4114a9070f2deeeb3269e33b0a83f22109771948cb069544620a45d78"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2a1481596ba725ca6c93819fd9811db036d44569d9a8621eff59925b1f2139e1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2a1481596ba725ca6c93819fd9811db036d44569d9a8621eff59925b1f2139e1" # linuxbrew-core
   end
 
   depends_on "go" => :build

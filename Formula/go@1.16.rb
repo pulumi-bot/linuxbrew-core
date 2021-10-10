@@ -16,7 +16,7 @@ class GoAT116 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "cd7cf2ab4fff304367bc25472fdf1c87710735edd16f0dd26e3fee091b00f2b5"
     sha256 cellar: :any_skip_relocation, catalina:      "2f6a5856c9cc124335c1c85d35bfc344bff1aeb88215aa8fa3cde62e62d229b1"
     sha256 cellar: :any_skip_relocation, mojave:        "3c6db9bd28d82d8e8c5e09157faffe667b044c6c9296fe68b5657abe129b5d7a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3fa164e41dfc4c78ad1fc74d5f79805c200f5503e1c9b287c7a143fa7256a477"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3fa164e41dfc4c78ad1fc74d5f79805c200f5503e1c9b287c7a143fa7256a477" # linuxbrew-core
   end
 
   keg_only :versioned_formula
