@@ -7,7 +7,7 @@ class Kerl < Formula
   head "https://github.com/kerl/kerl.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "78a778f5160edd54ee6734ebb8548748cee511946866e4b6ae0a4df39f63be2e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "78a778f5160edd54ee6734ebb8548748cee511946866e4b6ae0a4df39f63be2e" # linuxbrew-core
   end
 
   def install

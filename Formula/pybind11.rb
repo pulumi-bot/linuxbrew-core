@@ -7,7 +7,7 @@ class Pybind11 < Formula
   revision 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2b7261c0bd9680888ad093a8299d6ab8d18358717fa3d62a45ac4e9554b1982a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2b7261c0bd9680888ad093a8299d6ab8d18358717fa3d62a45ac4e9554b1982a" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

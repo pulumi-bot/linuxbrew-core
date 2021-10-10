@@ -10,7 +10,7 @@ class Feroxbuster < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f8dfe94cde14ffd5ca38db282738275f871830b600017e7e626415ab2331db07"
     sha256 cellar: :any_skip_relocation, catalina:      "d383a8e59bf8e41d18975cb945eecf2700c3ee201197af8b56aa49f6dc3dc0c2"
     sha256 cellar: :any_skip_relocation, mojave:        "bd6cea2444b6383e0c1a88c61245974d287836c830194209620e8070616c5f78"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3600b341e58a5dc904dfed9d43b43f2a0736f2181934ca6a14160535ee46b90b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3600b341e58a5dc904dfed9d43b43f2a0736f2181934ca6a14160535ee46b90b" # linuxbrew-core
   end
 
   depends_on "rust" => :build
