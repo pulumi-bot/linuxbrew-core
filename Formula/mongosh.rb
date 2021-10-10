@@ -12,6 +12,7 @@ class Mongosh < Formula
     sha256                               big_sur:       "9705c160a5583742a9355491a325fecd6dcf54bab2bd1e60a9c8ab49cb7d4f62"
     sha256                               catalina:      "333d662c3361918866c62d972fafe30529e75f1de5f38f06f4bdadbae6d3a6f0"
     sha256                               mojave:        "e381d7d3a5bc08bf62c09fd484bb197244a79c207bee3a70c5b395877257f975"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e5f4fcf6cbf8e053164d0363eb3f61ada352ed42e8f26e1136dcad4b512ae82d"
   end
 
   depends_on "node@14"
