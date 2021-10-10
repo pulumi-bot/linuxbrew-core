@@ -15,6 +15,7 @@ class Oil < Formula
     sha256 big_sur:       "20b9de690d6833038f165ecb870df80862e2ee51bce3aee51938b69fb66fa05d"
     sha256 catalina:      "e4bd8dbcf5a9f183be2bc77f93eed84e8cfaae5b54864122890f1e6d5b26090d"
     sha256 mojave:        "89ad6d3b4af7cb8ef5517c69c7e6aa2c11c9e01ae2cf7cf25027ec0b7918dc3e"
+    sha256 x86_64_linux:  "7f36287404cee830b84e97f346e7e764bb9a036e203e9387edac04b8855d365a"
   end
 
   depends_on "readline"
