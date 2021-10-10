@@ -24,7 +24,7 @@ class Pcre2 < Formula
     sha256 cellar: :any,                 big_sur:       "c2f04108058a5cf4e9ad6ed127ea2b1195be6e13015241260683466cd49739d9"
     sha256 cellar: :any,                 catalina:      "1f81c9f906a96b87c922e4901e7f9f0057b259b82974737194f14f767bf437b0"
     sha256 cellar: :any,                 mojave:        "7eec2912f8a8248933a2c595185c4245b08f32f18b3a1a9dc84838a274aac16e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "502a9b9672c23b60b2a98db567171df17daf7851f8505f933c49b96699c3f64d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "502a9b9672c23b60b2a98db567171df17daf7851f8505f933c49b96699c3f64d" # linuxbrew-core
   end
 
   head do
