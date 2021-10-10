@@ -13,6 +13,7 @@ class Redo < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "db186be965150e95e72d55d47acb86cf4839fa7949149e01522870c7a640edce"
     sha256 cellar: :any_skip_relocation, catalina:      "ed58682729a217dcbfa7ace51f5ec8a3d57cdb30248173820d1bdbd599999675"
     sha256 cellar: :any_skip_relocation, mojave:        "653c09646f838dfed31e0f79f3364d2604cc688a8735e098736092a55a631d3e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2e899a319cc5986a646de31d3de9525ee93421a971b8f314d29747f4eb9fe898"
   end
 
   depends_on "python@3.10"
