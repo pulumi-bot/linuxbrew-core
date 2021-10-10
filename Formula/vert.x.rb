@@ -15,6 +15,7 @@ class VertX < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "90aa408565fe31888233081e492d64dcc3add72493ad617a1edb1017c58358da"
     sha256 cellar: :any_skip_relocation, catalina:      "90aa408565fe31888233081e492d64dcc3add72493ad617a1edb1017c58358da"
     sha256 cellar: :any_skip_relocation, mojave:        "90aa408565fe31888233081e492d64dcc3add72493ad617a1edb1017c58358da"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ec032fe17834c3e9235a84ed24557409c7517b0461ab44ce97d5d4297b499ad"
   end
 
   depends_on "openjdk"
