@@ -6,6 +6,10 @@ class Testssl < Formula
   license "GPL-2.0-or-later"
   head "https://github.com/drwetter/testssl.sh.git", branch: "3.1dev"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2fa5f3a1c687e37727afa1e2bfa1549b8d997c2f6e51b3d3077466bdd79be3f5"
+  end
+
   depends_on "openssl@1.1"
 
   on_linux do
