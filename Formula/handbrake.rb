@@ -12,6 +12,7 @@ class Handbrake < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "7ca402d6d31e8e0a8cd95d145c418081f7d463fb2038c8b699c9a14b5b97dcea"
     sha256 cellar: :any_skip_relocation, catalina:      "6264a00f9a6de388ea623778ce204d88fbe2638984685685f5081afc7847c7b4"
     sha256 cellar: :any_skip_relocation, mojave:        "fb8a0e4d9a85ceafe357b05148e2f457fc27c209772f09c6625ecc4a710ff645"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "711ce3cdb76b005f7f5e4ebca8a90a076e17d5979fd47870c84c8413be9f9018"
   end
 
   depends_on "autoconf" => :build
