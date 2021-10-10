@@ -14,6 +14,7 @@ class Webpack < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "9462d8a017979ee75912a51665a1415544b5ae1e099e3118d696a52313398d78"
     sha256 cellar: :any_skip_relocation, catalina:      "9462d8a017979ee75912a51665a1415544b5ae1e099e3118d696a52313398d78"
     sha256 cellar: :any_skip_relocation, mojave:        "9462d8a017979ee75912a51665a1415544b5ae1e099e3118d696a52313398d78"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "08b8c7a1762e359b11eec160e8df72278fcd1adb2e3e12c1b6a8ff08817f380f"
   end
 
   depends_on "node"
