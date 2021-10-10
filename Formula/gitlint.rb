@@ -13,6 +13,7 @@ class Gitlint < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "95e74a0cfd189c140ea05874f9a82e605992666cbff78b48f661189e83aec2f2"
     sha256 cellar: :any_skip_relocation, catalina:      "a2305c81e08d6910cc1332f5ffdb40866ae9b166c0687025a9400739461567ed"
     sha256 cellar: :any_skip_relocation, mojave:        "8a27c21879cfcd036c2acd9a1160b9467fdeff0121f3521150d962a29e1cc2a8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0f62bf006114169777df159c9441039d6b7ed2b2e4b7ad394df2e65b718aabea"
   end
 
   depends_on "python@3.10"
