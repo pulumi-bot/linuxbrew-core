@@ -1,8 +1,8 @@
 class Ghz < Formula
   desc "Simple gRPC benchmarking and load testing tool"
   homepage "https://ghz.sh"
-  url "https://github.com/bojand/ghz/archive/v0.103.0.tar.gz"
-  sha256 "a8960d11cf7ee5bc132899ac237d4462c8597e81910b5e9d960c588cb2f46ff8"
+  url "https://github.com/bojand/ghz/archive/v0.104.0.tar.gz"
+  sha256 "045b2e0194f46bc610fe220d5eb953987c5d9f0a6ff2c59cc642803aaf589256"
   license "Apache-2.0"
 
   livecheck do
@@ -11,11 +11,10 @@ class Ghz < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "27bc4cd5b1dc602d4962b0adc785ef6a2833df4693a24c53e890bcf614841491"
-    sha256 cellar: :any_skip_relocation, big_sur:       "c10f8bddead0fa5990a3a5d6117973f15a7ec15da4063c15a09b80931c434d93"
-    sha256 cellar: :any_skip_relocation, catalina:      "86bd9bc0b1189c74b5ad811d71a7872199bb1c1b173e7c0a3f774dbc36d5da05"
-    sha256 cellar: :any_skip_relocation, mojave:        "fbc5473bf4a360976c1d84e8364d2013bc5d80008af1a23bf231319539350950"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "85efbbe1de371bb1046c2eace6d58c91e10fee4a1a04f2781fe8dff2d1e7718f" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "7d4b32f0b7bbd3325ba02b8631e2c286d39ecb15a8213f702505d21547bed7d4"
+    sha256 cellar: :any_skip_relocation, big_sur:       "3e12c33006960b9b136c1245bf7a2187415cbcedb07cf43d93bb186a7673f9d0"
+    sha256 cellar: :any_skip_relocation, catalina:      "bb4207f48ffd0e1f013e16f05e570df3e48e376a8d6ec1e9b3ae6eee5b2d66d2"
+    sha256 cellar: :any_skip_relocation, mojave:        "3b3fa63f53a53c87bc14c7c3d5245080a644dfbe2bec2a29c72d0e9f8bf01e65"
   end
 
   depends_on "go" => :build
