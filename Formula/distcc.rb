@@ -17,6 +17,7 @@ class Distcc < Formula
     sha256 big_sur:       "18a8fd773714b43e5effec750afca17ff2c55c29cfcfbf43a70da804d0387be8"
     sha256 catalina:      "eeb7573a412908530b6deec90e1a8dea6d6e8ca543914ccdc8aa93cf390cacad"
     sha256 mojave:        "a2ed5a4d9b741a95a0ff3bb710f7382b6d3b4e01c30f6e0e9698da8796291504"
+    sha256 x86_64_linux:  "1c5befd01ca2e4c87b074ef98b7d23f33a5b08e9b63e77b71869d4da1b2a7e51"
   end
 
   depends_on "autoconf" => :build
