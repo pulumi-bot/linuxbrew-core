@@ -5,6 +5,10 @@ class PhpCodeSniffer < Formula
   sha256 "d0ce68aa469aff7e86935c6156a505c4d6dc90adcf2928d695d8331722ce706b"
   license "BSD-3-Clause"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6c101138b9167ca64611091d5baed1eda0d8550830105e2d065d10201f47d77e"
+  end
+
   uses_from_macos "php"
 
   resource "phpcbf.phar" do
