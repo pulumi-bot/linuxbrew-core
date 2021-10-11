@@ -15,7 +15,7 @@ class Aspectj < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f0ae7be29aa7df4960f1ae71a30f9ce57d9c28300591deb042b68fb439157ec8"
     sha256 cellar: :any_skip_relocation, catalina:      "445830c663aa8379176a05874f3689c13ebaf953e50afe8e193322353db9d4aa"
     sha256 cellar: :any_skip_relocation, mojave:        "751669f59894109ea55f8d8a22ded54b459f20505f74c33fd57fc9b47de36b26"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7e6fcaaf002adcf9e6fab54538e49990d16fbfca74334f6d6728ac72f14f2cce"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7e6fcaaf002adcf9e6fab54538e49990d16fbfca74334f6d6728ac72f14f2cce" # linuxbrew-core
   end
 
   depends_on "openjdk"

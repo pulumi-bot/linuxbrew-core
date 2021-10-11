@@ -9,7 +9,7 @@ class GitFilterRepo < Formula
   revision 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2f40e7daa98d667dfdee97ae3ea9e589d42518baabf07d0fc128fe70f41cfe34"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2f40e7daa98d667dfdee97ae3ea9e589d42518baabf07d0fc128fe70f41cfe34" # linuxbrew-core
   end
 
   depends_on "python@3.10"

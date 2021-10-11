@@ -14,7 +14,7 @@ class GalleryDl < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "57afdd3a6f83e754e3611f3535f23dfbfc433f5c890d2990ecb6d476a06389f8"
     sha256 cellar: :any_skip_relocation, catalina:      "57afdd3a6f83e754e3611f3535f23dfbfc433f5c890d2990ecb6d476a06389f8"
     sha256 cellar: :any_skip_relocation, mojave:        "57afdd3a6f83e754e3611f3535f23dfbfc433f5c890d2990ecb6d476a06389f8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e77a88f12070dffe24577f2ae853c879c30c6b6c5d35d0b29152eac5daee620e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e77a88f12070dffe24577f2ae853c879c30c6b6c5d35d0b29152eac5daee620e" # linuxbrew-core
   end
 
   depends_on "python@3.10"

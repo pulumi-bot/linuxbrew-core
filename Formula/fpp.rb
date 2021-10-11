@@ -12,7 +12,7 @@ class Fpp < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "6efaf75a2e334b6c87e51be515d5bd32ba6ad1aedc8cd64253020772a9be63da"
     sha256 cellar: :any_skip_relocation, catalina:      "6efaf75a2e334b6c87e51be515d5bd32ba6ad1aedc8cd64253020772a9be63da"
     sha256 cellar: :any_skip_relocation, mojave:        "6efaf75a2e334b6c87e51be515d5bd32ba6ad1aedc8cd64253020772a9be63da"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b8e7fb0e5a04f809804daf2e3c984027a50e875d75c7b8ea34b30dcbe99ba85a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b8e7fb0e5a04f809804daf2e3c984027a50e875d75c7b8ea34b30dcbe99ba85a" # linuxbrew-core
   end
 
   def install
