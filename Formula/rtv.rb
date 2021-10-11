@@ -14,6 +14,7 @@ class Rtv < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d49d1db203bfd3a0c8eb2ac8106f96fdb94cdd4ccfb9f3865ff411c3e6abe3e2"
     sha256 cellar: :any_skip_relocation, catalina:      "b8ea579f59636f222dc0da828906118a696612de5e689a4cdf273ddf2616e83b"
     sha256 cellar: :any_skip_relocation, mojave:        "36cbfd834d11711acb05e970207774611f246a124e818a30e1892a3f33d1143b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4218a2bc0ce60b8487647c2ce6a76a251c3ae24d6857cc19748d16814c7902e0"
   end
 
   deprecate! date: "2019-06-02", because: :repo_archived
