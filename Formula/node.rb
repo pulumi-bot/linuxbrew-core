@@ -1,10 +1,9 @@
 class Node < Formula
   desc "Platform built on V8 to build network applications"
   homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v16.10.0/node-v16.10.0.tar.xz"
-  sha256 "97dc1aca232b4911e0b9e5a23a03200ab8ef05157e03c732315b579481bf7912"
+  url "https://nodejs.org/dist/v16.11.0/node-v16.11.0.tar.xz"
+  sha256 "d3f631bd0d215ded26b49b2eae42c84de2ba1b46f00cc2930809900a0f7165ae"
   license "MIT"
-  revision 1
   head "https://github.com/nodejs/node.git", branch: "master"
 
   livecheck do
@@ -13,21 +12,20 @@ class Node < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "5791d76b6682336b81389e7a0288a4eea819e26976ba97021b2037de57414c05"
-    sha256 cellar: :any,                 big_sur:       "fedd9b448dfcde9e13a11dfdf61f093b2c3be05f0f2c61ec75965d58f0e90f3b"
-    sha256 cellar: :any,                 catalina:      "1b6c5eec16c95255cb051d3db008be20a2098e7bfe8fbbc0004f0d4a915551c0"
-    sha256 cellar: :any,                 mojave:        "32a13b902fed9cd40843b6ae4de956a7c23d8a1393085a245da32659bcb86ecd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "51970435650c565de0c76ba1d545470e0a3a879b3912232186f044e71cda4ab1" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "db33f793bd1d41bf2e9be7022c64e7b4a2d504af2501966f224adfe7ec67ad3e"
+    sha256 cellar: :any,                 big_sur:       "5bc17066bc6fc3259ad4c09e1cdf29fd0daac617934c2823c93deb2c0be313df"
+    sha256 cellar: :any,                 catalina:      "081cda2682400ea884959d6405468c3a59175149affd7c422cdce019e14e64ce"
+    sha256 cellar: :any,                 mojave:        "1431fd13f93826e917ee68b0ad95c0073c2229983164e1266b73587f6435f0a5"
   end
 
   depends_on "pkg-config" => :build
-  depends_on "python@3.9" => :build
   depends_on "brotli"
   depends_on "c-ares"
   depends_on "icu4c"
   depends_on "libnghttp2"
   depends_on "libuv"
   depends_on "openssl@1.1"
+  depends_on "python@3.9"
 
   uses_from_macos "zlib"
 
@@ -45,8 +43,8 @@ class Node < Formula
   # We track major/minor from upstream Node releases.
   # We will accept *important* npm patch releases when necessary.
   resource "npm" do
-    url "https://registry.npmjs.org/npm/-/npm-7.24.0.tgz"
-    sha256 "d2e8e006bf34a06314d41ad7b23417984d479e9834ce180551047b3ba89a7556"
+    url "https://registry.npmjs.org/npm/-/npm-8.0.0.tgz"
+    sha256 "7b42b3cc7deeda21df3a7e91ce81c6c466bdab99f204e20f2a336f4628366219"
   end
 
   # Fix build with brewed c-ares.
