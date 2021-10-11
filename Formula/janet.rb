@@ -11,6 +11,7 @@ class Janet < Formula
     sha256 cellar: :any,                 big_sur:       "4b407991ddbb0ef02fbc92721d687ce9e14372a31e6dd65eceac5bff4b9d864c"
     sha256 cellar: :any,                 catalina:      "3995b4d55dac5e712fc7818a8d36dc025218fbd73448da212526225ccbd01be1"
     sha256 cellar: :any,                 mojave:        "ba352fc38689d436baf0eafea5f2d9f95a392fe2f2306bda3f34f2a650ab401c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7982b429b5e2f8186a5e8313c62e36edf7cb1211429519a0d575509dbc2c8dde"
   end
 
   depends_on "meson" => :build
