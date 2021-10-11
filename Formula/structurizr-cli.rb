@@ -1,12 +1,15 @@
 class StructurizrCli < Formula
   desc "Command-line utility for Structurizr"
   homepage "https://structurizr.com"
-  url "https://github.com/structurizr/cli/releases/download/v1.14.0/structurizr-cli-1.14.0.zip"
-  sha256 "3239d0da724de4daa157f64097e5fe01cd9ef04aa205b7a521b30eb7c56ffc6e"
+  url "https://github.com/structurizr/cli/releases/download/v1.15.0/structurizr-cli-1.15.0.zip"
+  sha256 "f593f1dc36c1d851522ed269041e47a119885ebe4001825ba979b0ef04b9a7f3"
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "285c244f2acf5f85f7e961285090797d55ee3f4d59da38b267d65131d910f1ee" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "eac8def454971dc2895f53190738e9a374f2ef60cee4b77bd77866118292d2d6"
+    sha256 cellar: :any_skip_relocation, big_sur:       "eac8def454971dc2895f53190738e9a374f2ef60cee4b77bd77866118292d2d6"
+    sha256 cellar: :any_skip_relocation, catalina:      "eac8def454971dc2895f53190738e9a374f2ef60cee4b77bd77866118292d2d6"
+    sha256 cellar: :any_skip_relocation, mojave:        "eac8def454971dc2895f53190738e9a374f2ef60cee4b77bd77866118292d2d6"
   end
 
   depends_on "openjdk"
