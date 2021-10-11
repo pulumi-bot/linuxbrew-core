@@ -5,6 +5,7 @@ class Gnutls < Formula
   mirror "https://www.mirrorservice.org/sites/ftp.gnupg.org/gcrypt/gnutls/v3.6/gnutls-3.6.16.tar.xz"
   sha256 "1b79b381ac283d8b054368b335c408fedcb9b7144e0c07f531e3537d4328f3b3"
   license all_of: ["LGPL-2.1-or-later", "GPL-3.0-only"]
+  revision 1
 
   livecheck do
     url "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.6/"
@@ -12,13 +13,16 @@ class Gnutls < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 x86_64_linux: "022fb300ceaef9ad84519925fea3f01eaa63e137cf8da95bde8edef0ecb639a7" # linuxbrew-core
+    sha256 arm64_big_sur: "e1ec9389285dca7c52c0346cdd5112a2bfacfd31b1958d0267408573f1fb5ed0"
+    sha256 big_sur:       "f165f3c8e4ecac781e269e08c39f8af457d1d634ee21f0d8edb2ca6d1808f03a"
+    sha256 catalina:      "464f68e7e6f9c7698f921e3b8e23bd2302681041bb98c5f58c0be90833b4f48f"
+    sha256 mojave:        "ea18603d9f6337b7e9a77bec91124102a7a4680ab8358f1ee8d17023223816ed"
   end
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
+  depends_on "ca-certificates"
   depends_on "gmp"
   depends_on "guile"
   depends_on "libidn2"
@@ -30,13 +34,6 @@ class Gnutls < Formula
 
   on_linux do
     depends_on "autogen"
-
-    resource "cacert" do
-      # homepage "https://curl.se/docs/caextract.html"
-      url "https://curl.se/ca/cacert-2020-01-01.pem"
-      mirror "https://gist.githubusercontent.com/dawidd6/16d94180a019f31fd31bc679365387bc/raw/ef02c78b9d6427585d756528964d18a2b9e318f7/cacert-2020-01-01.pem"
-      sha256 "adf770dfd574a0d6026bfaa270cb6879b063957177a991d453ff1d302c02081f"
-    end
   end
 
   def install
@@ -69,79 +66,12 @@ class Gnutls < Formula
   end
 
   def post_install
-    if OS.mac?
-      macos_post_install
-    else
-      linux_post_install
-    end
-  end
-
-  def macos_post_install
-    ohai "Regenerating CA certificate bundle from keychain, this may take a while..."
-
-    keychains = %w[
-      /Library/Keychains/System.keychain
-      /System/Library/Keychains/SystemRootCertificates.keychain
-    ]
-
-    certs_list = `/usr/bin/security find-certificate -a -p #{keychains.join(" ")}`
-    certs = certs_list.scan(
-      /-----BEGIN CERTIFICATE-----.*?-----END CERTIFICATE-----/m,
-    )
-
-    # Check that the certificate has not expired
-    valid_certs = certs.select do |cert|
-      IO.popen("openssl x509 -inform pem -checkend 0 -noout &>/dev/null", "w") do |openssl_io|
-        openssl_io.write(cert)
-        openssl_io.close_write
-      end
-
-      next unless $CHILD_STATUS.success?
-
-      # XXX And drop Kerberos certs which may invalidate the whole trust store
-      # due to bug in gnutls (https://gitlab.com/gnutls/gnutls/-/issues/1255)
-      IO.popen("openssl x509 -inform pem -issuer -noout 2>/dev/null", "r+") do |openssl_io|
-        openssl_io.write(cert)
-        openssl_io.close_write
-        cn = openssl_io.read
-        openssl_io.close_read
-        cn.exclude? "CN=com.apple.kerberos.kdc"
-      end
-    end
-
-    # Check that the certificate is trusted in keychain
-    trusted_certs = begin
-      tmpfile = Tempfile.new
-
-      valid_certs.select do |cert|
-        tmpfile.rewind
-        tmpfile.write cert
-        tmpfile.truncate cert.size
-        tmpfile.flush
-        IO.popen("/usr/bin/security verify-cert -l -L -R offline -c #{tmpfile.path} &>/dev/null")
-
-        $CHILD_STATUS.success?
-      end
-    ensure
-      tmpfile&.close!
-    end
-
-    pkgetc.mkpath
-    (pkgetc/"cert.pem").atomic_write(trusted_certs.join("\n") << "\n")
+    rm_f pkgetc/"cert.pem"
+    pkgetc.install_symlink Formula["ca-certificates"].pkgetc/"cert.pem"
 
     # Touch gnutls.go to avoid Guile recompilation.
     # See https://github.com/Homebrew/homebrew-core/pull/60307#discussion_r478917491
-    touch "#{lib}/guile/3.0/site-ccache/gnutls.go"
-  end
-
-  def linux_post_install
-    # Download and install cacert.pem from curl.se
-    cacert = resource("cacert")
-    cacert.fetch
-
-    rm_f pkgetc/"cert.pem"
-    filename = Pathname.new(cacert.url).basename
-    pkgetc.install cacert.files(filename => "cert.pem")
+    touch lib/"guile/3.0/site-ccache/gnutls.go"
   end
 
   def caveats
