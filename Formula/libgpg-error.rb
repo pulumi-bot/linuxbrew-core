@@ -16,6 +16,7 @@ class LibgpgError < Formula
     sha256 big_sur:       "6fa4b76fb160c8c75d4d1f932c3c920902a97474741397def5d4000201e85436"
     sha256 catalina:      "b9b74abe24d72b7ffecc89aba01d370d5f60d232af1c4bbeebe4a8fd3f54b907"
     sha256 mojave:        "1708cb4a9d2a4ac4e49bc37d9b7bbd259e1c5cfb1ffeb070bc956058e3081f47"
+    sha256 x86_64_linux:  "f81788fbebc232e9d57e82ba29dc9e0387be0190f2e9e1fad802ef97b24b5358"
   end
 
   # libgpg-error's libtool.m4 doesn't properly support macOS >= 11.x (see
