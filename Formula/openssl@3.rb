@@ -17,7 +17,7 @@ class OpensslAT3 < Formula
     sha256 big_sur:       "b5a51da4059ef651824d284210f8c6bae62c58d53bedff020f51c24384b6a23a"
     sha256 catalina:      "c6ccff3db9265ab98f190357d8d324ca88a4126e47f5cfebea876a712a1adfba"
     sha256 mojave:        "60eea9f4dd2dc264490e18980ba1cd881877bd194e2cda3564e9fe56e6bdadf4"
-    sha256 x86_64_linux:  "6bdb460fc9a6d1b5436a21538866ce56c67956d8647c0efcda10e136dc8f77b9"
+    sha256 x86_64_linux:  "6bdb460fc9a6d1b5436a21538866ce56c67956d8647c0efcda10e136dc8f77b9" # linuxbrew-core
   end
 
   keg_only :shadowed_by_macos, "macOS provides LibreSSL"
