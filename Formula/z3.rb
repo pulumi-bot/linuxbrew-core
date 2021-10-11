@@ -17,7 +17,7 @@ class Z3 < Formula
     sha256 cellar: :any,                 big_sur:       "ec65441e86922c521bfee1ec48ddcedd7ddcadcaac5b0301ffa5b6ba4cde4895"
     sha256 cellar: :any,                 catalina:      "55d80044e8f62f8846d787c813fa0da76d20b84e278ea173cec922741854790b"
     sha256 cellar: :any,                 mojave:        "0c7796128c833fb0a0da6cafb1d3564d8f42484df722b84035ccbc07a737f69a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "71e6cfbc66602013ebcd77691de552ae274df6e2c8a9ada21e03a78f6b00456f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "71e6cfbc66602013ebcd77691de552ae274df6e2c8a9ada21e03a78f6b00456f" # linuxbrew-core
   end
 
   # Has Python bindings but are supplementary to the main library

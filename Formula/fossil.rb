@@ -16,7 +16,7 @@ class Fossil < Formula
     sha256 cellar: :any,                 big_sur:       "e4ab11e3b0739b51fa4ce5ef8b020df84704c2050a52b1a89a804008ad9fb9d8"
     sha256 cellar: :any,                 catalina:      "c2464646ca8502f36e67f1a0730d93192e6ddf0eb1b113690c1a64689f4a8d4e"
     sha256 cellar: :any,                 mojave:        "a0b10c2b031c7c54b51bf919fcd1d79c0f7047804851192af34b4d2c1e377bc8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b8b5b3ad3e442b166240b72299c66eb22b989d47b5e06ca96a13e2527be1dc48"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b8b5b3ad3e442b166240b72299c66eb22b989d47b5e06ca96a13e2527be1dc48" # linuxbrew-core
   end
 
   depends_on "openssl@1.1"
