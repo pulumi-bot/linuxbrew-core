@@ -7,14 +7,13 @@ class Global < Formula
   mirror "https://ftpmirror.gnu.org/global/global-6.6.7.tar.gz"
   sha256 "69a0f77f53827c5568176c1d382166df361e74263a047f0b3058aa2f2ad58a3c"
   license "GPL-3.0-or-later"
-  revision 1
+  revision 2
 
   bottle do
-    sha256 arm64_big_sur: "f2481ae1cb5d8077d7ac769ca1cda9c34a6cb8d0e89eeb831a452f3992dab6e0"
-    sha256 big_sur:       "7d48a07430d1c4197c031dbbeb2c9993e3470f67ef1b2148e76f433039cebd4d"
-    sha256 catalina:      "3814876d5cb67f8e914415fd2ff09b7ebf62ce272af19e9e4c03baebfbb3aa02"
-    sha256 mojave:        "cf6c674b4656adca75cfd7d34af6aa48c9c7f9ce9498137babe2f69a71bb429d"
-    sha256 x86_64_linux:  "c7ced61b617c07c0137631d18b74cb2987ddcdfa6b6bbb1a1429ecc26159e3e3" # linuxbrew-core
+    sha256 arm64_big_sur: "ac6e9593809808317fae95123ae900984864af0c1b7b75e1654943d4859755a3"
+    sha256 big_sur:       "9db539acdbe29519f9a658b014a9b7a76f0d0df4ed9dd8140360366059c3bc79"
+    sha256 catalina:      "004ddf5a7ed57fb0793fb2b3680342643f30ca3429175c3d471a6746865a641d"
+    sha256 mojave:        "25ac8252698696fb8c6dcac75d86d6e46f2c1a7c40442463a9183defedf098f8"
   end
 
   head do
@@ -33,7 +32,7 @@ class Global < Formula
   depends_on "ctags"
   depends_on "libtool"
   depends_on "ncurses"
-  depends_on "python@3.9"
+  depends_on "python@3.10"
   depends_on "sqlite"
 
   skip_clean "lib/gtags"

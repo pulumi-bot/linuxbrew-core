@@ -3,10 +3,9 @@ class AzureCli < Formula
 
   desc "Microsoft Azure CLI 2.0"
   homepage "https://docs.microsoft.com/cli/azure/overview"
-  url "https://github.com/Azure/azure-cli/archive/azure-cli-2.28.0.tar.gz"
-  sha256 "25db8848a8b9279e317d347bbce873cbd48c8ce4032b2546b7f19aa325165860"
+  url "https://github.com/Azure/azure-cli/archive/azure-cli-2.28.1.tar.gz"
+  sha256 "320cbff2a4163ea60f0d1cefe1312192c100f5996a470987c79bb027cf240ea9"
   license "MIT"
-  revision 1
   head "https://github.com/Azure/azure-cli.git", branch: "dev"
 
   livecheck do
@@ -16,11 +15,10 @@ class AzureCli < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "fbed57851de7c945dd042f2f4d99660a0d41e4e22b5b594c80aee25262f72639"
-    sha256 cellar: :any,                 big_sur:       "9aa90d9cc71658917c2ac71c93a7b5b9c122819446854678b037a195da88510c"
-    sha256 cellar: :any,                 catalina:      "ad731f8f1ad87e0145383fd7f3931166491e38d2206bdc4d805aa8e2709f9dbb"
-    sha256 cellar: :any,                 mojave:        "062d59bfa985ab5d5b8a41558294d2347b5899498ef3f6d00616067f20ea702a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2001e3134964e3c78b3875c226045a5129cc8e71b69406c8f1f49b530609f1c0" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "c41e86f9eebcaa313b69e0d42a530f7c1c0e88269a0ca42e6c140223a503a7ce"
+    sha256 cellar: :any,                 big_sur:       "62646e004d597707ec043610f1258b499a98c10bb7d2eb51bced643421dc5b26"
+    sha256 cellar: :any,                 catalina:      "9b819b888d2eda14b7ea1516e99249b4e2bd7a3d7c706fa8d23adc59e52375e7"
+    sha256 cellar: :any,                 mojave:        "b0c804761382e860d16e872ce1b4c20c330503836daba4bbeab10cfde4255c48"
   end
 
   depends_on "openssl@1.1"
