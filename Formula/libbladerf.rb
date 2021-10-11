@@ -17,6 +17,7 @@ class Libbladerf < Formula
     sha256 cellar: :any,                 big_sur:       "e563c2e379a6f2de5af7050e7f15ce925f37e1c13b09dcf7e334f9622b71305b"
     sha256 cellar: :any,                 catalina:      "853f4bbe7e420e746ddcf2ace1f6f5378d9deb77ca3c76ab9ee64e9025c737df"
     sha256 cellar: :any,                 mojave:        "c6820ffe7f3179c0ef363ff2c88b59001524e26899481a7edbb67e60e9ee32c3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4423933df10333a467c5886b798d492e891c9775d96448f2275eec1e8983308f"
   end
 
   depends_on "cmake" => :build
