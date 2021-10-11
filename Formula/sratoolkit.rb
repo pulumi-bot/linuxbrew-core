@@ -26,6 +26,7 @@ class Sratoolkit < Formula
     sha256 cellar: :any, big_sur:      "3ae6079cc1870308094b419e8141565c29030e139a2b3dd0065da4a64191a32b"
     sha256 cellar: :any, catalina:     "67df1b84b24a39677517d5f0af6d4d06a99a3aa5c5ae39d3a2af821669868649"
     sha256 cellar: :any, mojave:       "88cdb2651f23202d8f4c97df82e139edfcd2315d2be92021197e9183da007368"
+    sha256               x86_64_linux: "5a8c35e506bb565bea26b6269e0f5f180452be89aab830b053ea00cdf5f7a6a4"
   end
 
   head do
