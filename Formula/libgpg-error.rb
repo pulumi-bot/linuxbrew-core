@@ -4,6 +4,7 @@ class LibgpgError < Formula
   url "https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.42.tar.bz2"
   sha256 "fc07e70f6c615f8c4f590a8e37a9b8dd2e2ca1e9408f8e60459c67452b925e23"
   license "LGPL-2.1-or-later"
+  revision 1
 
   livecheck do
     url "https://gnupg.org/ftp/gcrypt/libgpg-error/"
@@ -11,12 +12,26 @@ class LibgpgError < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "72d70667728d9b1bfe4071913c800db2baa55af9fc603dbd96b2fcd477d828b0"
-    sha256 big_sur:       "453688272ae89f5f4b5a852ec1c2c31d3c2410abb95ca5039f5a0d4edfc4b64b"
-    sha256 catalina:      "bb8090fbf1399ed80904df570978a16b72af1b300c17f68493b602606e90d516"
-    sha256 mojave:        "ef3446809a6b3d9da0f5d4a45b9d2c21a7bf4549d14cc785843f4f969f13ea39"
-    sha256 x86_64_linux:  "5e64d9e33e503292a903f08783f4c994f4e66682f125c8fa04d0464dd8e82cc7" # linuxbrew-core
+    sha256 arm64_big_sur: "70e6813ed4afc576346a5fb6aa2670f0004bcc67c63b19bc4d83c9d88451ba0a"
+    sha256 big_sur:       "6fa4b76fb160c8c75d4d1f932c3c920902a97474741397def5d4000201e85436"
+    sha256 catalina:      "b9b74abe24d72b7ffecc89aba01d370d5f60d232af1c4bbeebe4a8fd3f54b907"
+    sha256 mojave:        "1708cb4a9d2a4ac4e49bc37d9b7bbd259e1c5cfb1ffeb070bc956058e3081f47"
   end
+
+  # libgpg-error's libtool.m4 doesn't properly support macOS >= 11.x (see
+  # libtool.rb formula). This causes the library to be linked with a flat
+  # namespace which might cause issues when dynamically loading the library with
+  # dlopen under some modes, see:
+  #
+  #  https://lists.gnupg.org/pipermail/gcrypt-devel/2021-September/005176.html
+  #
+  # We patch `configure` directly so we don't need additional build dependencies
+  # (e.g. autoconf, automake, libtool)
+  #
+  # This patch has been applied upstream so it can be removed in the next
+  # release.
+  #
+  # https://git.gnupg.org/cgi-bin/gitweb.cgi?p=libgpg-error.git;a=commit;h=a3987e44970505a5540f9702c1e41292c22b69cf
 
   def install
     system "./configure", "--disable-dependency-tracking",
