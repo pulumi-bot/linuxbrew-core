@@ -11,7 +11,7 @@ class Lightgbm < Formula
     sha256 cellar: :any,                 big_sur:       "137ff9e308c60618213afde25c067f20fd89a368beb2cfc458d4d6aa99818af1"
     sha256 cellar: :any,                 catalina:      "c53b3335405f3790c2ffe78fcd79aa566c6059f62116c9bee8052424c3cac413"
     sha256 cellar: :any,                 mojave:        "5466963bd6aaaf8b053ea1f16290b8cfbf286f5d84dadd0ede511a58d3888486"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0e763aa7f3c7402352fa9799f99c63286a379e005b378dd1fe0b2bd9c94a6e92"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0e763aa7f3c7402352fa9799f99c63286a379e005b378dd1fe0b2bd9c94a6e92" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

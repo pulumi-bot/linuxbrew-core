@@ -14,7 +14,7 @@ class SwaggerCodegenAT2 < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "aabed284837100eff46261bdae1fb7f70858becc4dc322b405b1cb4f1ecf4469"
     sha256 cellar: :any_skip_relocation, catalina:     "783ed614be01173501e9bd3537045e5e6d88b83d72a75cd2fae04bab59c3d9ce"
     sha256 cellar: :any_skip_relocation, mojave:       "790cb84f620ecd9d631f9b959376feafb34dc66e80cb848aad5023cda9017c2e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "43c1a8e8e45e86439c97a170d3dda4535770802b9e2297f405b9200b47801f70"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "43c1a8e8e45e86439c97a170d3dda4535770802b9e2297f405b9200b47801f70" # linuxbrew-core
   end
 
   keg_only :versioned_formula

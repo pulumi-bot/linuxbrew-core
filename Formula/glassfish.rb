@@ -16,7 +16,7 @@ class Glassfish < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "738cb660cdf1855f0aa1df4558a594e103467f45a4f7f5b8e4e7b74f9293db5f"
     sha256 cellar: :any_skip_relocation, catalina:      "738cb660cdf1855f0aa1df4558a594e103467f45a4f7f5b8e4e7b74f9293db5f"
     sha256 cellar: :any_skip_relocation, mojave:        "738cb660cdf1855f0aa1df4558a594e103467f45a4f7f5b8e4e7b74f9293db5f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "259a91be981f3551b2255578d6d782138168abb8b2dd6d0f19cfa6f66fcc76a5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "259a91be981f3551b2255578d6d782138168abb8b2dd6d0f19cfa6f66fcc76a5" # linuxbrew-core
   end
 
   depends_on "openjdk@11"

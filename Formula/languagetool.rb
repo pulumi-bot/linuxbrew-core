@@ -16,7 +16,7 @@ class Languagetool < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "b4ce087e229010a40944175a2a26fc6411f48adba76ea6fbba779270dee065f4"
     sha256 cellar: :any_skip_relocation, catalina:     "ac41ce087286dd11421a77324bbf80a43b3ada72f2e1469087982f3dc3310a75"
     sha256 cellar: :any_skip_relocation, mojave:       "88fcbe3f245913ab116db15b38409d7c309f1a5f3f49344ae774d441f87e991f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3e3c1a96d04df0a57b2a02834af423256311eb4a196d28d8a525baad71b49379"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3e3c1a96d04df0a57b2a02834af423256311eb4a196d28d8a525baad71b49379" # linuxbrew-core
   end
 
   depends_on "maven" => :build

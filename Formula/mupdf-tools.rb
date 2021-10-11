@@ -15,7 +15,7 @@ class MupdfTools < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "f18d6bf6297215b02ec8ba38eaa14a6454ca0c14c87b8639165bb5234242bde3"
     sha256 cellar: :any_skip_relocation, catalina:      "e62ce50b62eae2126a1db2b6e2a0bda1ecc703fc4b7128b1b0e09bdf4550f61e"
     sha256 cellar: :any_skip_relocation, mojave:        "bf252482b840116b1228b35444e85b405bcf6325dcb18be88e5b02c2c91df5c9"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d1c7257264ecf7e42c310fc98a5b1b0da8f781461bd26f893794f11200a5ed48"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d1c7257264ecf7e42c310fc98a5b1b0da8f781461bd26f893794f11200a5ed48" # linuxbrew-core
   end
 
   conflicts_with "mupdf",

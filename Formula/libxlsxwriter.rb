@@ -11,7 +11,7 @@ class Libxlsxwriter < Formula
     sha256 cellar: :any,                 big_sur:       "72348a4f461cd7bcaf647f543240df0b82440c1270b2dc822c01aedc234edf65"
     sha256 cellar: :any,                 catalina:      "fcfefb03bb85a8f98a4b826fb659cc37aa40313bd7a35b6d30e267414c1c6bc8"
     sha256 cellar: :any,                 mojave:        "22be91c9b0176f159ee48e0aecdd27bcf23f020bee636db81e396e5cdf31df8d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3e3019cb7fc349d51c5907f2059997927607dad187e9b610d9570d6b43ffe819"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3e3019cb7fc349d51c5907f2059997927607dad187e9b610d9570d6b43ffe819" # linuxbrew-core
   end
 
   uses_from_macos "zlib"

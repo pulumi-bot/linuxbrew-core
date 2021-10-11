@@ -16,7 +16,7 @@ class Mupdf < Formula
     sha256 cellar: :any,                 big_sur:       "d4d5eb0345a58ffb91e4119dc2c1204d0383ce9cf31a9a0e21b8b69be9e34e04"
     sha256 cellar: :any,                 catalina:      "ce072c384dc4f09671d8b2e531f4bf2a9f6c7a6fb296be86a56d39d3a9d20582"
     sha256 cellar: :any,                 mojave:        "9d6f5c2e18ac29be5611c6a4f7c00fe39d56ab61f96a85156c351f5bb491bace"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8514c022a9d5f79690aeaa1eac668abfe06c445e7e66382e0887a2674a634de4"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8514c022a9d5f79690aeaa1eac668abfe06c445e7e66382e0887a2674a634de4" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
