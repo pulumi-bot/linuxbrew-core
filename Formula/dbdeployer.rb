@@ -11,6 +11,7 @@ class Dbdeployer < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "94c56a683bf5816f8ae3e409736c266cffb4330de3a1d9d8a9a59f58ea78389f"
     sha256 cellar: :any_skip_relocation, catalina:      "5741f942c830b99b3abb96c80177288739917f45cced17ce281eb11b666097fd"
     sha256 cellar: :any_skip_relocation, mojave:        "c8e92e3d5354f34f8e7ae258d58ab6063d9b97e8e69c94f8367c9fd26b051b8e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c58830204b843368e664935c58eb4058a9bdbdca125a3581f80a10635e4b7b4e"
   end
 
   depends_on "go" => :build
