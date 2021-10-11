@@ -16,7 +16,7 @@ class Node < Formula
     sha256 cellar: :any,                 big_sur:       "5bc17066bc6fc3259ad4c09e1cdf29fd0daac617934c2823c93deb2c0be313df"
     sha256 cellar: :any,                 catalina:      "081cda2682400ea884959d6405468c3a59175149affd7c422cdce019e14e64ce"
     sha256 cellar: :any,                 mojave:        "1431fd13f93826e917ee68b0ad95c0073c2229983164e1266b73587f6435f0a5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5da2d96dd4d3e84be86e59238427ed11cb4cd6cf4cf84a71814aa493b8100d79"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5da2d96dd4d3e84be86e59238427ed11cb4cd6cf4cf84a71814aa493b8100d79" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

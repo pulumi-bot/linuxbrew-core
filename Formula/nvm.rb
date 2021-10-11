@@ -7,7 +7,7 @@ class Nvm < Formula
   head "https://github.com/nvm-sh/nvm.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0c15f715d32469ef94e2f6927c32b1e753da63d78231e025924adb389b7cc460"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0c15f715d32469ef94e2f6927c32b1e753da63d78231e025924adb389b7cc460" # linuxbrew-core
   end
 
   def install

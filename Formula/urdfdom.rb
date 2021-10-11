@@ -15,7 +15,7 @@ class Urdfdom < Formula
     sha256 cellar: :any,                 big_sur:       "61bdf95fadfdd5ec951efe254a57068f50037e6ee8a5f9e2a46333aca445c283"
     sha256 cellar: :any,                 catalina:      "75b9eb3c4cbc6a1f7ba49d9c664895f6b523d1c72c4a0829858e4cb85f36e5b1"
     sha256 cellar: :any,                 mojave:        "2b50fa0f77d4e0255488e1978f7550d007ac16da5caf7b74b73553673a15d0b4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "77520ee4cc2d29f980b74dbe5edc2eacf0a3305fcb5d687a8009a0298f7ee1e5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "77520ee4cc2d29f980b74dbe5edc2eacf0a3305fcb5d687a8009a0298f7ee1e5" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
