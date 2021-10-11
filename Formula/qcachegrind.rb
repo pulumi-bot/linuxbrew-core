@@ -17,6 +17,7 @@ class Qcachegrind < Formula
     sha256 cellar: :any,                 big_sur:       "b8b09416ce6dd7829da4c04044ed84dade46f3b652ff10bb9c1d2fab80a08691"
     sha256 cellar: :any,                 catalina:      "d6d92d76cb35a33f305e67810f5f6443c5cf1d56eab7e9de11d4f0df345141a2"
     sha256 cellar: :any,                 mojave:        "925fbdcc28c0b4f200414e3d957450619f9e1855ed87f60d2f56cd71fcded8d2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5015186bd3630d3dad1eca45438ceef8a7068327fa2405a8020a315f506916e0"
   end
 
   depends_on "graphviz"
