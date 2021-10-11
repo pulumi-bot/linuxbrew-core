@@ -8,7 +8,7 @@ class Whistle < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0f9ad1cfa876b626f2d9eda40581acfb49101f4c2335e2fb1393cbb34f2d7296"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0f9ad1cfa876b626f2d9eda40581acfb49101f4c2335e2fb1393cbb34f2d7296" # linuxbrew-core
   end
 
   depends_on "node"

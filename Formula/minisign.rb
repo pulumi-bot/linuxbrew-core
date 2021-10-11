@@ -10,7 +10,7 @@ class Minisign < Formula
     sha256 cellar: :any,                 big_sur:       "73272eb26875a7b1c219279f91c1e97c24f5343bc28698e0adf190cdfbb611f5"
     sha256 cellar: :any,                 catalina:      "6ef7ba174b48584911276e6491dea599b5e84f3747d2f25753c7b36b55ce3b3c"
     sha256 cellar: :any,                 mojave:        "9340a13b895807ec4dbfced552ec3a612a5dbcc88b64b363aef876ec57a4ae4a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "932f5e7be0cb17788c687f8c474363a2acdbfb1b33041ba8c7d9781dde1d2353"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "932f5e7be0cb17788c687f8c474363a2acdbfb1b33041ba8c7d9781dde1d2353" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

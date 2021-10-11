@@ -10,7 +10,7 @@ class Pgweb < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "ec49476c0f86d53843e63e7d0d19bce5a7f8db471bba1d050d0650bea83f8e21"
     sha256 cellar: :any_skip_relocation, catalina:      "973ebc01c360e25e1b88e274e93e6a948390eeaadd669901916aaffb91888d5f"
     sha256 cellar: :any_skip_relocation, mojave:        "94a5ede934e422a47e9ba408b6dd5ff7182ff4b69301420b220f4ec6fffdccfb"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2fcde820a38532a5a5371ff9a390841b9013ba5a40e814002092a40061c98b78"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2fcde820a38532a5a5371ff9a390841b9013ba5a40e814002092a40061c98b78" # linuxbrew-core
   end
 
   depends_on "go" => :build
