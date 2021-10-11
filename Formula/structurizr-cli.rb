@@ -10,6 +10,7 @@ class StructurizrCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "eac8def454971dc2895f53190738e9a374f2ef60cee4b77bd77866118292d2d6"
     sha256 cellar: :any_skip_relocation, catalina:      "eac8def454971dc2895f53190738e9a374f2ef60cee4b77bd77866118292d2d6"
     sha256 cellar: :any_skip_relocation, mojave:        "eac8def454971dc2895f53190738e9a374f2ef60cee4b77bd77866118292d2d6"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cd865a19734d5c5665b5aa1dd568f9da6415e163b138021a5b2e1e8bad795843"
   end
 
   depends_on "openjdk"
