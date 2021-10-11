@@ -12,6 +12,7 @@ class ScIm < Formula
     sha256 big_sur:       "3e73faa966c9b00428d60b741d88e66a64dbe0bd5943145b8f65b75a4172c8ba"
     sha256 catalina:      "bf2a132b303dac493a252b4668796bb27d608e76eeafe4a1f40b01517c5d35cf"
     sha256 mojave:        "ff69fd16113c4e1b85b47275b78d6398bdeaece2afea1db41ca61ab7865c1fbd"
+    sha256 x86_64_linux:  "130eea9e4e62fd9c0c161dec373a5039f2bcf5c639a2cf13ae66edfee0a324f4"
   end
 
   depends_on "libxlsxwriter"
