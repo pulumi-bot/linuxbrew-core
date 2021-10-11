@@ -21,6 +21,7 @@ class Minio < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "43f44201d2582135fb58efef430f039905ff1878ee3f884c96256cf38c765c3c"
     sha256 cellar: :any_skip_relocation, catalina:      "726f3ad5f6c6c18bfb7ddce7443fff946a7964391f4438305cee9b1ece95e6a8"
     sha256 cellar: :any_skip_relocation, mojave:        "73a57743d7c5506e0a7953fa5139dea8f2d0dc5d5f84525886721b516fbececb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "1141d9b888e86364172fc20c2693c365b751d914dc8246e00c9bb7ef03325bf0"
   end
 
   depends_on "go" => :build
