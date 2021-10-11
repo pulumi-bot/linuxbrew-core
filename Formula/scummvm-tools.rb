@@ -15,6 +15,7 @@ class ScummvmTools < Formula
     sha256 cellar: :any,                 big_sur:      "3259bdb62e715d7e14892449fb05c7bc2ca95f9717e0de856196168921d61ccc"
     sha256 cellar: :any,                 catalina:     "6657cc2a94b8564c480ef0f1528ec8722939b550f6b0e1f09f7b69cb8b0401cc"
     sha256 cellar: :any,                 mojave:       "aa47046cdfe324770d8bbe51f55ec086273b839dd40d97034506b607e837c431"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fad140bbc7bd0857a92374964ed1ff268dc620e89ee3ee91767847be76523119"
   end
 
   depends_on "boost"
