@@ -9,6 +9,10 @@ class Deheader < Formula
   revision 3
   head "https://gitlab.com/esr/deheader.git"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c796513f79f19f17be962e08802c9542d0dcddbe7fffdc44e2c66538c704a325"
+  end
+
   depends_on "xmlto" => :build
   depends_on "python@3.10"
 
