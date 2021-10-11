@@ -16,6 +16,7 @@ class Hashpump < Formula
     sha256 cellar: :any,                 big_sur:       "9938b4bc8733e829df629daa8b267211ab98b3dd6d2b7c16fee4eabbefa22372"
     sha256 cellar: :any,                 catalina:      "b3b0d80fb5caa9c4bcedb927c081bb9afc2cf12f016396c74800bc12a3228103"
     sha256 cellar: :any,                 mojave:        "1c37df365df42b7773727d6862320cec85bab17848caccb40f48521881f75a3a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b468625a89644a84b463c4d2a2d90fdfff3e31cb5bb8516eff8328659248c715"
   end
 
   depends_on "openssl@1.1"
