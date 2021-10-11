@@ -11,6 +11,7 @@ class Osm < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0c6ef34133a23883cb7dd319bb8c1e526caf4892c38a368b18e556e1e8318e33"
     sha256 cellar: :any_skip_relocation, catalina:      "9af32d22720e0d0504513c42bfb9c943bb42cc599d7ccfd24220e71da1b2b3aa"
     sha256 cellar: :any_skip_relocation, mojave:        "6f83eddd60a954b4bcfbbdd2720c646612b7b67e84280d0a5d7359ce549da8dd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4a0bad627670b565fa29019eb26a8c27da4be6ea4ed5efc9c2a5d26500b4eda4"
   end
 
   depends_on "go" => :build
