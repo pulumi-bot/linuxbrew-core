@@ -13,7 +13,7 @@ class Jhipster < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8b8150fdb29447bfc341eecdb4420e55e363b20ba6d855d8dbe1ea196c0fe549"
     sha256 cellar: :any_skip_relocation, catalina:      "a3e23bd1bb8a5617d52658e66a957702f77366a19901f1a9ce3c5cb102eaa976"
     sha256 cellar: :any_skip_relocation, mojave:        "dc822516f9a30a7dc214c7b02502f4ebbbe2887892f81a9ac368c888d0724ac4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ce9b191b6a956c13095b4799bd1b3d8d5182bfd579ed0c7c418af15df215854d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ce9b191b6a956c13095b4799bd1b3d8d5182bfd579ed0c7c418af15df215854d" # linuxbrew-core
   end
 
   depends_on "node@14"

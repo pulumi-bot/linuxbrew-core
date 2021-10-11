@@ -13,7 +13,7 @@ class Pywhat < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "61590ef5f88101a49a0ad8949c8802859c0c039e916360c8bd0276f7304dd3e8"
     sha256 cellar: :any_skip_relocation, catalina:      "8301e11f7a275af316ecc87bdc40fc498f9c1322a9fe3a5544e515bf74d741a5"
     sha256 cellar: :any_skip_relocation, mojave:        "c5d70a060f16418e613fd763b8d28b22c87a3e503b37429b6099c7a773a62736"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a3c3a88f15e6bd5601c69c1bc0ae73be5f1436e195bf7c81c28cbc93f30b596a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a3c3a88f15e6bd5601c69c1bc0ae73be5f1436e195bf7c81c28cbc93f30b596a" # linuxbrew-core
   end
 
   depends_on "python@3.9"
