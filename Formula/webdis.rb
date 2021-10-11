@@ -10,6 +10,7 @@ class Webdis < Formula
     sha256 cellar: :any,                 big_sur:       "4ba6120d66fced473e1159c45396fc212aa8a3f5d2a028569d51c3da7d600b0a"
     sha256 cellar: :any,                 catalina:      "8f8eeb34606f5bdea30c8fc0f59bed112a8dde210c67f3988a25a70efe746c61"
     sha256 cellar: :any,                 mojave:        "89e7945a6c8ee43d7cdb2d5ca7b28c203aa7c1c2d49444c21696fb43ad3caa55"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f1f4d7f194c3f93a39d22a9db363d9f0488a5175ebaa21e54e30a494a4a239a3"
   end
 
   depends_on "libevent"
