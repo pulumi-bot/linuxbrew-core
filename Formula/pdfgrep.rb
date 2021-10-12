@@ -12,6 +12,7 @@ class Pdfgrep < Formula
     sha256 cellar: :any,                 big_sur:       "626dcfe4a770d5fee8498dcc58aaa5152a4532c06a707b37d81076e6cd4b9ced"
     sha256 cellar: :any,                 catalina:      "536c672e1e8cad042b151f9d82143b71019aedfea23ab3d34df1c7844fa9e568"
     sha256 cellar: :any,                 mojave:        "f65e1a759163e3f50429241577b54fefc1b0640369129820979301156883e86d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a841f3d31b1e07c0f45a9339dd37009ce6015a88651eb8baecb7bbabca003914"
   end
 
   head do
