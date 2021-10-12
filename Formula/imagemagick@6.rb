@@ -4,6 +4,7 @@ class ImagemagickAT6 < Formula
   url "https://www.imagemagick.org/download/releases/ImageMagick-6.9.12-25.tar.xz"
   sha256 "e0c9956a4390c81c442152e446ac28c9f9808cf9f35241cd7a5f8be6381d0c8d"
   license "ImageMagick"
+  revision 1
   head "https://github.com/imagemagick/imagemagick6.git"
 
   livecheck do
@@ -12,11 +13,10 @@ class ImagemagickAT6 < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "14d09d932883362a2a6cba8db73be94aa58c4ed39b1881d1b685489da4c57b94"
-    sha256 big_sur:       "8466efcb49ce8b10df8a6de8aba8b9138b98b6c6fdb1137112aa1615f99a9146"
-    sha256 catalina:      "4e1142336a0213154db42a8ccc96d6c7be7d7d9f734a3d0e7c45541589e9fa26"
-    sha256 mojave:        "ef690f1f71c785a493ab44acbb756dfade1444393974a71c0fc8add2d46d413b"
-    sha256 x86_64_linux:  "a42736aed0e9f7f29016e7fe1ea63566bc2d55cbfde53fab774f08259745183d" # linuxbrew-core
+    sha256 arm64_big_sur: "37b56abc50f1103cb63c6f8e21102bd58129eb653fa815cbb4ccae0ff1321aff"
+    sha256 big_sur:       "8e8dcb35924d9dab94bd4b6581ca843acf54ee3b335b0a58f0384b5f3dd149d8"
+    sha256 catalina:      "9d58907a9fb856b936eccb6a54a27f97b348fe05f77516f58331e7d1c0ae3dfa"
+    sha256 mojave:        "b39a9eb965159a92957d04fe1d50f269f576540f3027d4a4566e119b5e50ba08"
   end
 
   keg_only :versioned_formula
