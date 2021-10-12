@@ -20,6 +20,7 @@ class Teleport < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "82322ab5f3f6d791a96cbb530c8b13417b2bdc3bd233375a946e8ee84c4c28cc"
     sha256 cellar: :any_skip_relocation, catalina:      "1b35b92036bbed489ae1f7ed91bf7d269870cfaf836e2f7e12128ff6ae3d7dce"
     sha256 cellar: :any_skip_relocation, mojave:        "57df152b7d09bad81e755e999f4b830d9f4381572d30cce06ea9aff2256b99a2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b5a941bec283eb4e4fbfbb2e011347dd9668fc0756b18e6c20b70ecec2638684"
   end
 
   depends_on "go" => :build
