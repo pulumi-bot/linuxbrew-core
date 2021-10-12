@@ -15,6 +15,7 @@ class Fail2ban < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "9db5992983e4db132111565b5eee72e6f7fd5f00eb63b00f5386e7b370ae0a21"
     sha256 cellar: :any_skip_relocation, catalina:     "9db5992983e4db132111565b5eee72e6f7fd5f00eb63b00f5386e7b370ae0a21"
     sha256 cellar: :any_skip_relocation, mojave:       "9db5992983e4db132111565b5eee72e6f7fd5f00eb63b00f5386e7b370ae0a21"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e842d2c8d7fe34eefe7e889fe31b597dbf398c2345efaec38af1cfabd268d0ec"
   end
 
   depends_on "help2man" => :build
