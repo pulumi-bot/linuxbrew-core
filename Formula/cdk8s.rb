@@ -7,6 +7,10 @@ class Cdk8s < Formula
   sha256 "d0ed159085f32d5d02d822d633bc62c9438117d1ee4c279bd5c9b26975f667fe"
   license "Apache-2.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e1f1695753ce8c96553fa1d8237bf41b90740ce2d69dce59900b6bdb7b95dfb1"
+  end
+
   depends_on "node"
 
   def install
