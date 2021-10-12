@@ -13,7 +13,7 @@ class Instalooter < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "da5e277f2cd0dbdef07b853b1952de7798195760885dc39185ba20783109a5e3"
     sha256 cellar: :any_skip_relocation, catalina:      "0f5793e71d06911c8345f2a8e4cb6c47ad92100695862f1e0cf7c0bbc16be5da"
     sha256 cellar: :any_skip_relocation, mojave:        "76edccfab0fe943afd0754e2bb142fb6eec24462718efc49d915b3f0517058bd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0460ede0db96ff2fc062fd7c63e361b5d205715247103358a5ba61f5d0da0b1b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0460ede0db96ff2fc062fd7c63e361b5d205715247103358a5ba61f5d0da0b1b" # linuxbrew-core
   end
 
   depends_on "python@3.10"

@@ -16,7 +16,7 @@ class Qwt < Formula
     sha256 cellar: :any,                 big_sur:       "9cefd2169467b5d22271cbe3d115897caddc19bfbe2a253af76aec928e15559d"
     sha256 cellar: :any,                 catalina:      "3b8cbcb41fd10fb2e8e97bdc39b19ad385a2f12eb60e2d86677236d9dd70ed50"
     sha256 cellar: :any,                 mojave:        "aebd5da799df7fa5e6d4478c6fc365bec09fcc4d01e4095dbed6b1f07ed2ad0b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d68459e308dc60ae968ba7700d7da5abd93f2e1ba870ef3d0a849b7b79d6557c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d68459e308dc60ae968ba7700d7da5abd93f2e1ba870ef3d0a849b7b79d6557c" # linuxbrew-core
   end
 
   depends_on "qt"

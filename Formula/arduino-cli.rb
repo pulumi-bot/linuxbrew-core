@@ -17,7 +17,7 @@ class ArduinoCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "90d2f9b3d059543a0f111f702f50e2766071c1070eb165128d96b3d2190ac225"
     sha256 cellar: :any_skip_relocation, catalina:      "a0610fecd4b7ad1d08cb3e4086f995102f4440ff3f76d157305ab74c120524bc"
     sha256 cellar: :any_skip_relocation, mojave:        "5e22540f58c5261d1963e0f4550f08696b016b3ac26bb1edf3a9e6753794b35f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9467a330e3df2f50d077c19af97e6a9cfa2e9a4546494f281c306a93450ca672"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9467a330e3df2f50d077c19af97e6a9cfa2e9a4546494f281c306a93450ca672" # linuxbrew-core
   end
 
   # Switch to Go 1.17 at version bump
