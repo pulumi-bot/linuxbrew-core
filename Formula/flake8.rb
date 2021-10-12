@@ -3,17 +3,16 @@ class Flake8 < Formula
 
   desc "Lint your Python code for style and logical errors"
   homepage "https://flake8.pycqa.org/"
-  url "https://files.pythonhosted.org/packages/24/1a/e7d61b77955efe0f5aa413625f3e3c2153768f3e0f234de5d0e91b633200/flake8-4.0.0.tar.gz"
-  sha256 "b52d27e627676b015340c3b1c72bc9259a6cacc9341712fb8f01ddfaaa2c651a"
+  url "https://files.pythonhosted.org/packages/e6/84/d8db922289195c435779b4ca3a3f583f263f87e67954f7b2e83c8da21f48/flake8-4.0.1.tar.gz"
+  sha256 "806e034dda44114815e23c16ef92f95c91e4c71100ff52813adf7132a6ad870d"
   license "MIT"
   head "https://gitlab.com/PyCQA/flake8.git"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "8825fc651aedaca0d41bef074d050ccd276b1c575e74c1626bc63b9307aaddc7"
-    sha256 cellar: :any_skip_relocation, big_sur:       "b1a2e83f304a6fd0a9e2f53a1239e3a41b37ce5c2bbdce901a371a35279eb0fd"
-    sha256 cellar: :any_skip_relocation, catalina:      "b1a2e83f304a6fd0a9e2f53a1239e3a41b37ce5c2bbdce901a371a35279eb0fd"
-    sha256 cellar: :any_skip_relocation, mojave:        "b1a2e83f304a6fd0a9e2f53a1239e3a41b37ce5c2bbdce901a371a35279eb0fd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "cda80a0abf0a9f5e121f941262273be2afada7628f8580f771832dfbe702f344" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "0df982d4a3ed80b694876262243dc7356b3f21bec95e016843964588ea268ef2"
+    sha256 cellar: :any_skip_relocation, big_sur:       "268cb65b355888176c6bbfdfb74547f79ad8faa8b207483bc03766bc33776401"
+    sha256 cellar: :any_skip_relocation, catalina:      "268cb65b355888176c6bbfdfb74547f79ad8faa8b207483bc03766bc33776401"
+    sha256 cellar: :any_skip_relocation, mojave:        "268cb65b355888176c6bbfdfb74547f79ad8faa8b207483bc03766bc33776401"
   end
 
   depends_on "python@3.10"
