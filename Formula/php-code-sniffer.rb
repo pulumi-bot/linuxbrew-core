@@ -6,7 +6,7 @@ class PhpCodeSniffer < Formula
   license "BSD-3-Clause"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "6c101138b9167ca64611091d5baed1eda0d8550830105e2d065d10201f47d77e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6c101138b9167ca64611091d5baed1eda0d8550830105e2d065d10201f47d77e" # linuxbrew-core
   end
 
   uses_from_macos "php"

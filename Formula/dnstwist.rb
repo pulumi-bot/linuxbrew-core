@@ -13,7 +13,7 @@ class Dnstwist < Formula
     sha256 cellar: :any,                 big_sur:       "db37fce3570b0b571f2683c4c088fdfc27df598bb164e4fac250ab208daa2a97"
     sha256 cellar: :any,                 catalina:      "04921cc3f53ea9e9cad458167fadfcc9f60e1b9c76e81954ee21b8f26ad51a5e"
     sha256 cellar: :any,                 mojave:        "188c9b6cfd70f1cd4f2921b6b0fe71b224f46949b67d292ba28e9bcf6fd8399b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "63af2a88affd5f0f06ca0d41a5998e3b8d3cb7e206f587a5645861a9e0aa59cb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "63af2a88affd5f0f06ca0d41a5998e3b8d3cb7e206f587a5645861a9e0aa59cb" # linuxbrew-core
   end
 
   depends_on "geoip"
