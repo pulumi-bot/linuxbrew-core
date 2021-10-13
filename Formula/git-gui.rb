@@ -11,6 +11,10 @@ class GitGui < Formula
     formula "git"
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "870dac917bc731120df164d6d54482ceec9090802a2b62ed0df1b2cbb349529d"
+  end
+
   depends_on "tcl-tk"
 
   # Patch to fix Homebrew/homebrew-core#68798.
