@@ -16,6 +16,7 @@ class Libgnt < Formula
     sha256 cellar: :any, big_sur:       "97d22f2f66bfc361cc88dd7ef38a912c11db9bf77346f20645bec433a3444f38"
     sha256 cellar: :any, catalina:      "ac0543b64dfccaed26f40fd585b9546dede02550afa4063fb76b8f970a2379d8"
     sha256 cellar: :any, mojave:        "b558ad3400f33a9559ace90c2d53e7e578ca674cbae105b2ec620ab277da21cf"
+    sha256               x86_64_linux:  "ebff16ba92fadae787c491dae1094706039b2c73a44a1fcacbc2371b031ee647"
   end
 
   depends_on "gtk-doc" => :build
