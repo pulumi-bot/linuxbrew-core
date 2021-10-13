@@ -12,7 +12,6 @@ class Ly < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "fc74795dee4608e3081f648201d7de3178ae56893525b0ea1ad46fbfc055787c"
     sha256 cellar: :any_skip_relocation, catalina:      "fc74795dee4608e3081f648201d7de3178ae56893525b0ea1ad46fbfc055787c"
     sha256 cellar: :any_skip_relocation, mojave:        "fc74795dee4608e3081f648201d7de3178ae56893525b0ea1ad46fbfc055787c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "07f31281d2b920050dc1a58c2b62ece43225fdbee9d4f0b3cf0a6bdc7a713ef2"
   end
 
   depends_on "python@3.10"
