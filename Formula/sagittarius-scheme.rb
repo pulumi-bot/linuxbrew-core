@@ -10,6 +10,7 @@ class SagittariusScheme < Formula
     sha256 cellar: :any,                 big_sur:      "a44076e41f030ddccfed6768ada1ff0201ff6ffb86cce425c3fbabda799883a0"
     sha256 cellar: :any,                 catalina:     "aa2fbe6b306de8d985d0e93f12d9f896b4f7ae5403778508d077bdf975868bcb"
     sha256 cellar: :any,                 mojave:       "dccfa0d38b7096e3c27676fd09d8984009128c1017948d711087dc9d66f44f6f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d0a5a73de0492ebe292dfb2b24c0aaafeef2b2c977436f8ebb96e61ab26108d0"
   end
 
   depends_on "cmake" => :build
