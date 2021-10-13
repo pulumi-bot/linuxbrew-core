@@ -6,13 +6,13 @@ class GobjectIntrospection < Formula
   url "https://download.gnome.org/sources/gobject-introspection/1.70/gobject-introspection-1.70.0.tar.xz"
   sha256 "902b4906e3102d17aa2fcb6dad1c19971c70f2a82a159ddc4a94df73a3cafc4a"
   license all_of: ["GPL-2.0-or-later", "LGPL-2.0-or-later", "MIT"]
+  revision 1
 
   bottle do
-    sha256 arm64_big_sur: "03b9152f0a5a212197934b2d9f0b403166a59f5e98a1f5641344d21a27640644"
-    sha256 big_sur:       "96e7c0007fa6a2b1d602d28761df216109f55d7e6722da1f5e04086960be6a09"
-    sha256 catalina:      "7502549ca04091d2956a9e75fafb6f11ec89b1f549f83d70eefd70aeca01ff02"
-    sha256 mojave:        "b54d2609d522a28371816f7c3a95f67e4024c7db372c1c0cb672c420f7faaf9b"
-    sha256 x86_64_linux:  "dd02a523270f6097e951591826f3bd4ad81aaf0bf1de4adcdffc808455f4f650" # linuxbrew-core
+    sha256 arm64_big_sur: "743867fe7cd99538df90b4a233e36bbc50878f8d97758efa06403b650baaedd6"
+    sha256 big_sur:       "8f3959289f6ffde7c6e547ea9736dbb4346302a5ebd8bb9780fa044656fa61f5"
+    sha256 catalina:      "140f94de2c097db9ac7f4a7de0293235a4354fd13f687df2791214d58b24e008"
+    sha256 mojave:        "c7f254c243c5c225c3079616174a22ed507e62cdbb47f23b5fb0bf4a8ef45b2f"
   end
 
   depends_on "bison" => :build

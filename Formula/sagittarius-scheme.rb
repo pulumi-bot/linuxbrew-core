@@ -4,12 +4,12 @@ class SagittariusScheme < Formula
   url "https://bitbucket.org/ktakashi/sagittarius-scheme/downloads/sagittarius-0.9.8.tar.gz"
   sha256 "09d9c1a53abe734e09762a5f848888f0491516c09cd341a1f9c039cd810d32a2"
   license "BSD-2-Clause"
+  revision 1
 
   bottle do
-    sha256 cellar: :any,                 big_sur:      "cf0368881b0be31b65715e3666aa1e98f57967c82cb10a9079bd47683796b4de"
-    sha256 cellar: :any,                 catalina:     "347eb95c934f3630ce8ff5f3c4a8512df5863c0735e088ecb40135f247c785d7"
-    sha256 cellar: :any,                 mojave:       "80ebf0f56a95c5652e8ff3bf2e975ced7cf3118b2abbfb51b23cb1c2969c8ca4"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "1b2526c82dac6f198a45d7097bea43d15fb7ac1d74a86275fccba2ac3411199b" # linuxbrew-core
+    sha256 cellar: :any,                 big_sur:      "a44076e41f030ddccfed6768ada1ff0201ff6ffb86cce425c3fbabda799883a0"
+    sha256 cellar: :any,                 catalina:     "aa2fbe6b306de8d985d0e93f12d9f896b4f7ae5403778508d077bdf975868bcb"
+    sha256 cellar: :any,                 mojave:       "dccfa0d38b7096e3c27676fd09d8984009128c1017948d711087dc9d66f44f6f"
   end
 
   depends_on "cmake" => :build

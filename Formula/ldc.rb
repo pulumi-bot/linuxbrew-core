@@ -4,7 +4,7 @@ class Ldc < Formula
   url "https://github.com/ldc-developers/ldc/releases/download/v1.27.1/ldc-1.27.1-src.tar.gz"
   sha256 "93c8f500b39823dcdabbd73e1bcb487a1b93cb9a60144b0de1c81ab50200e59c"
   license "BSD-3-Clause"
-  revision 1
+  revision 2
   head "https://github.com/ldc-developers/ldc.git"
 
   livecheck do
@@ -13,10 +13,10 @@ class Ldc < Formula
   end
 
   bottle do
-    sha256 arm64_big_sur: "723b7395eef711a988dd2e644c105303222c66de9e3ec3d651fead70d0beaa15"
-    sha256 big_sur:       "40344cb91c6fbce6d35bf779d1006063cb6a983471c9fb77f1709091da6e20be"
-    sha256 catalina:      "087d2442fbc40af6af86037941ab77cabf674a40a7e9b6cb7abdd6fdba41f8cb"
-    sha256 mojave:        "3018868df975db5a608d56b0a8a470e58c93fea77819000b5f5a76d93b1da5c8"
+    sha256 arm64_big_sur: "edba6cdbd6aeec055f9d73e83113d6d9f6ef8283ec5097aa11c542a5b2f42bec"
+    sha256 big_sur:       "cfe36977e1b7607e066c3978328195d475be77e040bc8562916e0c0c1edba187"
+    sha256 catalina:      "6a26dea81c20e12e65b8d118dff491cb0706374dc32a18beae194062f47b30fb"
+    sha256 mojave:        "3b837b63e0bf55c9f61ab69031b5c1b300c2d6f5e5b933418fae4b18630dad1d"
   end
 
   depends_on "cmake" => :build
