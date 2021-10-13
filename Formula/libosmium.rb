@@ -5,6 +5,10 @@ class Libosmium < Formula
   sha256 "6faa7952aa1210dcd9ae4ef83e7653a4f8eb880e6a4e5b37f87a5d4835f6327b"
   license "BSL-1.0"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9a8a971c899fefb81bb0a4bf4e6a047c6477b31a96bdef065670223e2ff1b976"
+  end
+
   depends_on "boost" => :build
   depends_on "cmake" => :build
 
