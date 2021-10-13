@@ -11,7 +11,7 @@ class DependencyCheck < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c85433298e211c685eb7d420561806a84e78a706301ce89c38c15fcde52424e9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c85433298e211c685eb7d420561806a84e78a706301ce89c38c15fcde52424e9" # linuxbrew-core
   end
 
   depends_on "openjdk"
