@@ -10,6 +10,7 @@ class Zoxide < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "a395f7068a4551cdcb970f177dd6b55fa9375e50c2a4da6daf08b37e7e90b7cb"
     sha256 cellar: :any_skip_relocation, catalina:      "9a0bd45f6d1a83857412c7ce9b2643543f4f4c0616bf36ee21a5b56935fe0f61"
     sha256 cellar: :any_skip_relocation, mojave:        "b5135a8b1703fd01e93db1bcf62c9c403c55a282ee67663fd1af42a9db52adaf"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c7e5d932cc1327b1ea777e8602f1748cd01b9834678312c31ac56b4685acaeaa"
   end
 
   depends_on "rust" => :build
