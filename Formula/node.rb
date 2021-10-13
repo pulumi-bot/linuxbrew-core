@@ -1,8 +1,8 @@
 class Node < Formula
   desc "Platform built on V8 to build network applications"
   homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v16.11.0/node-v16.11.0.tar.xz"
-  sha256 "d3f631bd0d215ded26b49b2eae42c84de2ba1b46f00cc2930809900a0f7165ae"
+  url "https://nodejs.org/dist/v16.11.1/node-v16.11.1.tar.xz"
+  sha256 "67587f4de25e30a9cc0b51a6033eca3bc82d7b4e0d79bb84a265e88f76ab6278"
   license "MIT"
   head "https://github.com/nodejs/node.git", branch: "master"
 
@@ -12,11 +12,10 @@ class Node < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "db33f793bd1d41bf2e9be7022c64e7b4a2d504af2501966f224adfe7ec67ad3e"
-    sha256 cellar: :any,                 big_sur:       "5bc17066bc6fc3259ad4c09e1cdf29fd0daac617934c2823c93deb2c0be313df"
-    sha256 cellar: :any,                 catalina:      "081cda2682400ea884959d6405468c3a59175149affd7c422cdce019e14e64ce"
-    sha256 cellar: :any,                 mojave:        "1431fd13f93826e917ee68b0ad95c0073c2229983164e1266b73587f6435f0a5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5da2d96dd4d3e84be86e59238427ed11cb4cd6cf4cf84a71814aa493b8100d79" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "a43113837382d103c08a9b7194928e0ffadfff89fe99b7613d774930e21a9940"
+    sha256 cellar: :any,                 big_sur:       "bc7ed2beff7569491d89733c6202d212bc2d2abceb7b4293aa865a8728574a6e"
+    sha256 cellar: :any,                 catalina:      "51d62734b48ec8638611cb96dd0fd01fed32a8b66dff2034e154ed5d7417b629"
+    sha256 cellar: :any,                 mojave:        "beaeecf1d092cb96c097536768b530ea3fedb9b46a12e070d6b408a8cbc8e9c6"
   end
 
   depends_on "pkg-config" => :build
