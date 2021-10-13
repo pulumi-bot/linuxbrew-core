@@ -8,7 +8,7 @@ class Cdk8s < Formula
   license "Apache-2.0"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e1f1695753ce8c96553fa1d8237bf41b90740ce2d69dce59900b6bdb7b95dfb1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e1f1695753ce8c96553fa1d8237bf41b90740ce2d69dce59900b6bdb7b95dfb1" # linuxbrew-core
   end
 
   depends_on "node"

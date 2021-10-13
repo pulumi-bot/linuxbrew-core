@@ -11,7 +11,7 @@ class Naabu < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d029d03fce9096c163de85b9084d2c7a8eab195fb3895196680fc3d7c9948801"
     sha256 cellar: :any_skip_relocation, catalina:      "93bbe2f3b71611f35213a7c6c2ed2938156858931254c7b6356e6527412d3cc6"
     sha256 cellar: :any_skip_relocation, mojave:        "0ede7021872b98becd1eea302209b11cbc0198a7fb812517a4cbbe1d8325f0a0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "788f0f18ac38c7047441dd6db332a176e27aef39830d77b78c85e08b280db424"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "788f0f18ac38c7047441dd6db332a176e27aef39830d77b78c85e08b280db424" # linuxbrew-core
   end
 
   depends_on "go" => :build
