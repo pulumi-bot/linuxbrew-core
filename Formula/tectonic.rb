@@ -18,6 +18,7 @@ class Tectonic < Formula
     sha256 cellar: :any,                 big_sur:       "f877391f52526e989cee32b8a6424a2c570c51c65f332134fb7fb94d11ede5f4"
     sha256 cellar: :any,                 catalina:      "90f93c343215ba86c8950e75309dbc241fe88ea25b3679c9c9c810bbc40ed198"
     sha256 cellar: :any,                 mojave:        "9efcd42f9b38b1d25f4144846ec107b6554be85dad65caf631da2923320be298"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "de4e82b7d5adc7b8adbb121d2b3b15bd1cb9effebd4c0f96e61ab57846cee164"
   end
 
   depends_on "pkg-config" => :build
