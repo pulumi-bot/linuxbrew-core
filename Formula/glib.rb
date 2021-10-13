@@ -13,6 +13,7 @@ class Glib < Formula
     sha256 big_sur:       "5346e79808e56e758840d86b100c14b855afe106a96a47c79d44235f9ba33ca5"
     sha256 catalina:      "200499c03ec0d35937690b489bd521b891481c54d323c08a123d6805a851ad2d"
     sha256 mojave:        "0062eaa3ca06362699604858c74047ae0bbd616330e0cb3aa52ab69015074d22"
+    sha256 x86_64_linux:  "c57c24301af492dd2713bc6fdf236b1aa5c07e6001e3150cd6f54a7409398624"
   end
 
   depends_on "meson" => :build
