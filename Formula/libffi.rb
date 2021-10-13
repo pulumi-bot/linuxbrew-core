@@ -10,7 +10,7 @@ class Libffi < Formula
     sha256 cellar: :any,                 big_sur:       "a461f6ad21a23a725691385dbbec3eff958cf61d5282e84dc3f0483e307e1875"
     sha256 cellar: :any,                 catalina:      "6dbeaf8209b24c0963a5c87cd99d68f8bf61ea532c1c55bec8467a621b64da1b"
     sha256 cellar: :any,                 mojave:        "ebd8f12d294d0194f4bfd158cc20b454ff97c02def465cb4cd69eea621665033"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "48e34a380ab065bda9191298bd3eefc895f1c2315d508cb83614eac01cf38301"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "48e34a380ab065bda9191298bd3eefc895f1c2315d508cb83614eac01cf38301" # linuxbrew-core
   end
 
   head do

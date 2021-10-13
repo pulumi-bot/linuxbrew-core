@@ -12,7 +12,7 @@ class Ecl < Formula
     sha256 big_sur:       "6881f61f6abc60969a668260a05ee06c2f7420b201b9ed4c2fb4b78b3ca4ae3c"
     sha256 catalina:      "81e01b8b899eaa0d835f6c303ad9346251c3f234c60ff34e2d70e59adefb21c6"
     sha256 mojave:        "fa6ce6c90d52cb11ec897693d18485fbcb7e2b066ea46fb3f588ff2cad3e1cc1"
-    sha256 x86_64_linux:  "5eb74e864f74480b0de73c0aeda92813b3cbf5e309d9e9d421c20b4fddb724ee"
+    sha256 x86_64_linux:  "5eb74e864f74480b0de73c0aeda92813b3cbf5e309d9e9d421c20b4fddb724ee" # linuxbrew-core
   end
 
   depends_on "texinfo" => :build # Apple's is too old

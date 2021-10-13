@@ -11,7 +11,7 @@ class Nqp < Formula
     sha256 big_sur:       "cc89fa68750a499ac0b163d68090d846cf112c4de6c21bfedddfe963dfdc3e18"
     sha256 catalina:      "a3a1c7bf1f1eebbb5b02c23f705a4857ca96607410babfed6258b05d2a692e28"
     sha256 mojave:        "a15709a3ef54e9cba15b708db9fdc8b8a8421344fe7bff7e1462757906389b7a"
-    sha256 x86_64_linux:  "11b8d863986d61e213904ff148df1e38cdd6593b6eff2cb027f02ce4ac8b6cec"
+    sha256 x86_64_linux:  "11b8d863986d61e213904ff148df1e38cdd6593b6eff2cb027f02ce4ac8b6cec" # linuxbrew-core
   end
 
   depends_on "libtommath"

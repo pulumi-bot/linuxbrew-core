@@ -13,7 +13,7 @@ class Fdroidserver < Formula
     sha256 cellar: :any,                 big_sur:       "7733f58e6c0e94222d8375e39d5415e2ef42174aa29e7fa4aca4c0d5f68efa7d"
     sha256 cellar: :any,                 catalina:      "9b5315edfc78307c497268baef00f764270eab650a679d0a2627c9b495ab5776"
     sha256 cellar: :any,                 mojave:        "e92c4afbab93204e862b3b380f54eb32c65f31af187bda9daf6a026a509f53ba"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9d9a69151ab9cbda9de6467d4aaa2100392dcf3d59660772cb2e727aecc6d8d7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9d9a69151ab9cbda9de6467d4aaa2100392dcf3d59660772cb2e727aecc6d8d7" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

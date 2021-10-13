@@ -12,7 +12,7 @@ class Inko < Formula
     sha256 cellar: :any,                 big_sur:       "ebceafed0b8fb72511c5788fe525ad83e204b9fce30116a76acd560ce6c36ba8"
     sha256 cellar: :any,                 catalina:      "fa964ccada840c98ea19efad5e62cda6f73df789b4b820148c0af2ff3793347e"
     sha256 cellar: :any,                 mojave:        "536ac0253c59601ac2f717af644997e37a6a801879904f99275c4112fb18c83c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7eb07ab6f5a3cddb616dcb8fc6841877ec7d9e8ba5b15581cd5448ba17ded203"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7eb07ab6f5a3cddb616dcb8fc6841877ec7d9e8ba5b15581cd5448ba17ded203" # linuxbrew-core
   end
 
   depends_on "coreutils" => :build

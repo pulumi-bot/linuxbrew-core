@@ -10,7 +10,7 @@ class CucumberRuby < Formula
     sha256                               big_sur:      "1dd04346b06c82870dd9efb59350a4ed25ac437b7c8af28898f79d1f6986cc0c"
     sha256 cellar: :any,                 catalina:     "4cb95855cffcbae6eef87f5be2fc6aaec0173604df39ab1dacad9b3d32ecba91"
     sha256 cellar: :any,                 mojave:       "878244bcd01e75f74aaf3adc5f3d4acb0ffc410529b7261df0b0966c9b0a1e32"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "6e22c8852f8a878f65c6e6e34ee7ca1354d402a9f0ac1fb83530dfc49f71a5e8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "6e22c8852f8a878f65c6e6e34ee7ca1354d402a9f0ac1fb83530dfc49f71a5e8" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

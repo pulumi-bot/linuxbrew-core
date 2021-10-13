@@ -10,7 +10,7 @@ class Gforth < Formula
     sha256 big_sur:       "9ccd086cd3885b5eb3b82459902f3a52516019d833a83f0253036c9eb3a34dfd"
     sha256 catalina:      "391af03b52dcc608abc5d796b9dd517ac1a5c3b70c56dc1ca5264003fe8643c6"
     sha256 mojave:        "e77595f6933d861063bbd5c91a668abb9608434f777f4c8e8c2bee99eba1e102"
-    sha256 x86_64_linux:  "de05258c0513ddae3298bc835723bf4eeae85e7b04b365dba6079f41013e857b"
+    sha256 x86_64_linux:  "de05258c0513ddae3298bc835723bf4eeae85e7b04b365dba6079f41013e857b" # linuxbrew-core
   end
 
   depends_on "emacs" => :build

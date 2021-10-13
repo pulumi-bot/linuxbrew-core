@@ -11,7 +11,7 @@ class GuileAT2 < Formula
     sha256 big_sur:       "f64b911916df32bf5b566f563d49d72fad81c9fac5ba564d761c779137abc750"
     sha256 catalina:      "580931e21ffeaeb0c3d86e97a7356f098a1b23bcabd7757fcb49a9501698f422"
     sha256 mojave:        "8c06caa2fd6aa55edc961ca1fb0df5865139e983ea6f331dd469215fab3d3661"
-    sha256 x86_64_linux:  "f9d1a095439d12e198f8995cb82b7776570b412dd88285315ae1a2fcb6b2000a"
+    sha256 x86_64_linux:  "f9d1a095439d12e198f8995cb82b7776570b412dd88285315ae1a2fcb6b2000a" # linuxbrew-core
   end
 
   keg_only :versioned_formula
