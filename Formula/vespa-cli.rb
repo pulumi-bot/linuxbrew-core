@@ -16,6 +16,7 @@ class VespaCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "158d96fee4eb387366d59f96b87c6cdf7c157b6ce1642abebd7d85be7f8d7e4e"
     sha256 cellar: :any_skip_relocation, catalina:      "8471f4f31e1a5e29967687e677936f8d99fbb246f3c60c1b16149dcdec91574b"
     sha256 cellar: :any_skip_relocation, mojave:        "8cb68d98fa78aa8c2ebb329e001d3f19d9dcc8d172611d44e041d2ee6967a237"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0266a3836c56c82a96932dd7896f871150a86c584d1d5c1916a6b4961fddf69b"
   end
 
   depends_on "go" => :build
