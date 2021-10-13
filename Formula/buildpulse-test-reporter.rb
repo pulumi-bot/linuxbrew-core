@@ -11,6 +11,7 @@ class BuildpulseTestReporter < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "63e7bbd72d62203b1f9c52181321c013d62d0f923935b8a73ea963667f91dbb4"
     sha256 cellar: :any_skip_relocation, catalina:      "e9d1b748e89b1499221e6b9568385216aea66c368b047a24e5595c10fab1d7e3"
     sha256 cellar: :any_skip_relocation, mojave:        "520d4afa812b340c2475245fb1b17349aca8bbb81692cfe15a1e74dadf7bfafd"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0fd17552ff2c625d62de2361a011de4703f794a8abcbb1c466a408b607bd18c4"
   end
 
   depends_on "go" => :build
