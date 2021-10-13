@@ -17,6 +17,7 @@ class Ledger < Formula
     sha256 cellar: :any,                 big_sur:       "43b45dca311aaac9d9beaa116d7460a9c8ae1018e196e627811f34b0a33b4e33"
     sha256 cellar: :any,                 catalina:      "339bea75fa51d131603613fb31e95c0b0774cc00e30a7accbcf0560bf8d8f900"
     sha256 cellar: :any,                 mojave:        "7a030e18924a202197ca72c04fd9f147930e021b428581c7e111dd00acb0dd2d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3712b10009b31cd62388568f4fc1530e25f89afe991f8ecc3a3a931d7ba4a9d5"
   end
 
   depends_on "cmake" => :build
