@@ -18,7 +18,7 @@ class Nsd < Formula
     sha256 big_sur:       "df218d39f9ad39cc5f02262a67dd0df660d4bfd7cc3647ebe9688f33de1d5431"
     sha256 catalina:      "5f36529e2b232c82c6f26ce53a68bc3b5f4256061ba6788cc318d6b888d49a4f"
     sha256 mojave:        "bbf84514d5ffb755af3fb96fecedbc69982ddc61874da7acab829f7ad44e3fca"
-    sha256 x86_64_linux:  "3e856341d7f6fe3377af54a78870cdbe1dce23ee672a6d3e05d49c61e32dabcc"
+    sha256 x86_64_linux:  "3e856341d7f6fe3377af54a78870cdbe1dce23ee672a6d3e05d49c61e32dabcc" # linuxbrew-core
   end
 
   depends_on "libevent"
