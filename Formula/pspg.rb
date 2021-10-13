@@ -11,6 +11,7 @@ class Pspg < Formula
     sha256 cellar: :any,                 big_sur:       "2900895ee36f13982baddb848990bb11a5bfc496910bf8741403f2cde63a2628"
     sha256 cellar: :any,                 catalina:      "687ac29e9c9b8b43fd9c278e4aa2d81e518d416aa23ea22179652abbb88f4836"
     sha256 cellar: :any,                 mojave:        "acc5956eb75c3a683e1bf11385686954dce46bc3e801cddefaa2342e4fdff7cc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "13db8abc441d8f11298ba99c611590d41b614eb20228fe3164c30cb99a203467"
   end
 
   depends_on "libpq"
