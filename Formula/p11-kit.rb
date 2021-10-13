@@ -11,6 +11,7 @@ class P11Kit < Formula
     sha256 big_sur:       "afd53d336262a0bb9983276eb6ea6b9c602a534d021dc9abc1f3ddfa20ec9869"
     sha256 catalina:      "37ee66ec71206a3077deef9d2f2452d0ea43a60d66a1d257a22947a189e115ea"
     sha256 mojave:        "8d25a20a23fbd9e5787369b86b2af53d1cb558e69de5f7f8ab25069ae7beb390"
+    sha256 x86_64_linux:  "a8d4ad8b26dd3742a23afacba624ce409425e83b49b118a056f28d1e6fb96637"
   end
 
   head do
