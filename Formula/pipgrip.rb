@@ -12,6 +12,7 @@ class Pipgrip < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "62da59feddfa4931e18bb3ccf0000c9b0837e4fec68096f91bcb68d2d9c431fd"
     sha256 cellar: :any_skip_relocation, catalina:      "902bc1a19ee681ff4c69d4c508c5b61a65acab6430ed7ab77d9a11ce7ae83d2d"
     sha256 cellar: :any_skip_relocation, mojave:        "f9187d5835670518d5668b3b2973863f0e666d0366d79cd0caedbbff3b6ea398"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "78d5dbfd45e0aa54563fd300836128145b0f3ce414a734b488a7f6d1717bd4b5"
   end
 
   depends_on "python@3.9"
