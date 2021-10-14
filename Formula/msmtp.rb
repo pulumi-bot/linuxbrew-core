@@ -15,6 +15,7 @@ class Msmtp < Formula
     sha256 big_sur:       "bc3bbdeb0e3334f9a60a37a24ec28c22f33364a37b53e01ad0a0a625f3eccde5"
     sha256 catalina:      "de21416d9080c652d1579c71309daa54b41f7ba93414399aeac8f0c83cce8637"
     sha256 mojave:        "a9cafc6ae8a4e6c0fd8ebc7db4bb6e06f0d4a3a981daf37d1d3deae1c02105e5"
+    sha256 x86_64_linux:  "577cbcb8bf6a7ee660b0d33d3cc6a0aaa1a785478af46bf9d59d242bf3b41bbc"
   end
 
   depends_on "autoconf" => :build
