@@ -15,6 +15,7 @@ class Mpop < Formula
     sha256 big_sur:       "23ad8bc64b32e93f151df2005b1160fc46f6c039764e18c4a7a42ce4140c6350"
     sha256 catalina:      "0555359b5c2935c7646ed26596e4b731b037fcbf49cd01f94d533d7701e39825"
     sha256 mojave:        "ac8892c6d8ec4142a3bd053ec53b99d678a4069ee070f40a0232c36283641a10"
+    sha256 x86_64_linux:  "d10d8a7e75b2dfd1c05bad7e92a870b934129317fedc3c37ec3f3f195d38f876"
   end
 
   depends_on "autoconf" => :build
