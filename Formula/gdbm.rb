@@ -12,7 +12,7 @@ class Gdbm < Formula
     sha256 cellar: :any, big_sur:       "a0390a4a2b661b19ca7ef9736aea3df13afda10d13600d7a7e25e0686f97a4d6"
     sha256 cellar: :any, catalina:      "5037ab5bfdebab730434d93c09ac44a19194edb49fabc25563736695aa2bc309"
     sha256 cellar: :any, mojave:        "fbe153ad0a746da6ee2dcadb81f6db06bd226945cfa71c61f9215944fa60971b"
-    sha256               x86_64_linux:  "9be34c0de7f42af7b6837a3d0e13bb6e0857bdee1e1e6020b805365c8b41070f"
+    sha256               x86_64_linux:  "9be34c0de7f42af7b6837a3d0e13bb6e0857bdee1e1e6020b805365c8b41070f" # linuxbrew-core
   end
 
   # Fix build failure on macOS. Merged upstream as

@@ -10,7 +10,7 @@ class Deno < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "872e0c32add967b349143574a681379450b9d4a6660ade8e92da0fc8307758c9"
     sha256 cellar: :any_skip_relocation, catalina:      "f2081b26cfea07a001f9ebd79cd13d53aa39d42885c07456787f694f634a95a2"
     sha256 cellar: :any_skip_relocation, mojave:        "ae318fdc613f05c075e76673616da1ff1639ae5d629216ca3dd152002a4e67e0"
-    sha256                               x86_64_linux:  "b184877497ab082f594c0f30d350f1cac4e367a8da04ab85e1170a1656549968"
+    sha256                               x86_64_linux:  "b184877497ab082f594c0f30d350f1cac4e367a8da04ab85e1170a1656549968" # linuxbrew-core
   end
 
   depends_on "llvm" => :build
