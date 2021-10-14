@@ -12,6 +12,7 @@ class Sail < Formula
     sha256 cellar: :any,                 big_sur:       "bf27e115f5a7417b887bbc8350a5b97d4e1a7bac52f98576393db9762f428777"
     sha256 cellar: :any,                 catalina:      "4aa5ef28530b5b28984303e3d6173bdacb402fd703d1361814236f436ce2f4c8"
     sha256 cellar: :any,                 mojave:        "4e33e87cb71cdce1691b253e6ce5975ed40ec11123aaaf600e092d689fb8961c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2247e05affc09b74ec89f8103f26eb537e81b6587ecd6cd579f68055107d921c"
   end
 
   depends_on "rust" => :build
