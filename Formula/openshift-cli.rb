@@ -26,6 +26,7 @@ class OpenshiftCli < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "870e98712efe5ea045356be3f36525c39e7cdef6239f68ec8c5957d750ae7022"
     sha256 cellar: :any_skip_relocation, catalina:      "f7a8fafdad3e268d2f8579c0c1500e4b1f45d247159986e0d3eed88f14672ea5"
     sha256 cellar: :any_skip_relocation, mojave:        "59b89010cda9ee308ff728704dccd919be1a12f3a1ea3454cf3f31e9c900d273"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "aafcfdd8cdbb4d85d8817ed556b61702b7dec9575f585de9770c676bc0b3c725"
   end
 
   depends_on "coreutils" => :build
