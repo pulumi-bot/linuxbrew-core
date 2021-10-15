@@ -2,17 +2,16 @@ class Helm < Formula
   desc "Kubernetes package manager"
   homepage "https://helm.sh/"
   url "https://github.com/helm/helm.git",
-      tag:      "v3.7.0",
-      revision: "eeac83883cb4014fe60267ec6373570374ce770b"
+      tag:      "v3.7.1",
+      revision: "1d11fcb5d3f3bf00dbe6fe31b8412839a96b3dc4"
   license "Apache-2.0"
   head "https://github.com/helm/helm.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "f95211c81c4c5128bb1b0c6f3eb20820e864317ae332d2aaeb905264aee4a897"
-    sha256 cellar: :any_skip_relocation, big_sur:       "eda6fb39f3ff1ea035eb17df32da654d0336ab529bf8a7b3661024fa917489c5"
-    sha256 cellar: :any_skip_relocation, catalina:      "9e852bf21732e4256ffd789d1a79d070d3291bcd2b45dbd853fecb8be30e5887"
-    sha256 cellar: :any_skip_relocation, mojave:        "89551dc9d21cb719d14280bc6d062a7220208a7a8c87a3a089f5692de395421d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "bb4184c24b936a479f5be153cd2bcc07cfd70fbed391dc2aab526473eea902ab" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "3ff5c5ebf92f73bf50637c24d5579b7608aa3dc8618244b7389f061bfe4875f1"
+    sha256 cellar: :any_skip_relocation, big_sur:       "f62c4a77bdf5f912129ed649222eb947fe4abe549163b44fe0d330ef736b6e33"
+    sha256 cellar: :any_skip_relocation, catalina:      "9335a6f8906210e2b832e07e6702df4726ae67c42fc017ebebdaab386ba8de2d"
+    sha256 cellar: :any_skip_relocation, mojave:        "85f1ddd0cfb9a20a927b1296a1df7a09081665d278893df62cb2ad7c4672a3f0"
   end
 
   depends_on "go" => :build

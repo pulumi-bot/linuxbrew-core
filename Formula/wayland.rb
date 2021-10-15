@@ -4,14 +4,11 @@ class Wayland < Formula
   url "https://wayland.freedesktop.org/releases/wayland-1.19.0.tar.xz"
   sha256 "baccd902300d354581cd5ad3cc49daa4921d55fb416a5883e218750fef166d15"
   license "MIT"
+  revision 1
 
   livecheck do
     url "https://wayland.freedesktop.org/releases.html"
     regex(/href=.*?wayland[._-]v?(\d+(?:\.\d+)+)\.t/i)
-  end
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "0765a47f4771507aaf3e9ab2576dec6ceaecd1279ce5f03ae777617bd58dab84" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build
