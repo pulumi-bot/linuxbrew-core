@@ -5,6 +5,11 @@ class Libnfnetlink < Formula
   sha256 "f270e19de9127642d2a11589ef2ec97ef90a649a74f56cf9a96306b04817b51a"
   license "LGPL-2.1-or-later"
 
+  livecheck do
+    url "https://www.netfilter.org/projects/libnfnetlink/downloads.html"
+    regex(/href=.*?libnfnetlink[._-]v?(\d+(?:\.\d+)+)\.t/i)
+  end
+
   bottle do
     sha256 cellar: :any_skip_relocation, x86_64_linux: "6935ad517877f2c838d8d44b87519b0862b586bf5344785e0da55d1460de7417" # linuxbrew-core
   end
