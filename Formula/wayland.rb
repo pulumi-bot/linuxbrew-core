@@ -12,7 +12,7 @@ class Wayland < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2f1d90edbb445d3aed8bb61eb9f2ab528a7f2a8d528ab960adb4942f7b29f952"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2f1d90edbb445d3aed8bb61eb9f2ab528a7f2a8d528ab960adb4942f7b29f952" # linuxbrew-core
   end
 
   depends_on "pkg-config" => :build

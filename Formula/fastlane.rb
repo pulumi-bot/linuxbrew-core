@@ -16,7 +16,7 @@ class Fastlane < Formula
     sha256 cellar: :any,                 big_sur:       "3ae550b124df3aa24dfbbc1f8d8764e5cf4eecc83129c57e77fe92123b6d300a"
     sha256 cellar: :any,                 catalina:      "1a9b729245007a58007ec74c3850dbedd0bd084de074bcea8879216630eef8fe"
     sha256 cellar: :any,                 mojave:        "083665b9ea18c979d909a548fc2a1a27b36dccad2ddbc3b0431def28dff49e03"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "68b8e680a2620abb95af5808ec9506c64bd7a701f8d459a005ce94343fb14a16"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "68b8e680a2620abb95af5808ec9506c64bd7a701f8d459a005ce94343fb14a16" # linuxbrew-core
   end
 
   depends_on "ruby"
