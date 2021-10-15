@@ -19,6 +19,7 @@ class Snapcraft < Formula
     sha256 cellar: :any,                 big_sur:       "b442a18012137247cf1822d0db825cca3c0e69bfdb244744de6672db76280e02"
     sha256 cellar: :any,                 catalina:      "a4b036213d992185bd3d61c00b7dc90b0e82dcbc2ec8ab842c1dfed298acd04e"
     sha256 cellar: :any,                 mojave:        "e4cc628cee8d1c5690296b4d60e4d306d92e5c8ad2a619540f4e833e63c54536"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e7f55d64f3fc629ae6feaabc62eceafb037a83dee447a1890edec52d47194fde"
   end
 
   depends_on "rust" => :build # for cryptography
