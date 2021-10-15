@@ -10,6 +10,10 @@ class Libmd < Formula
     regex(/href=.*?libmd[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1c8f94c04ca398bca1dd9d27512ae308e110f6dbf0c8a86761720c3e288c8a01"
+  end
+
   depends_on :linux
 
   def install
