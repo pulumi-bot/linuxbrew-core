@@ -11,7 +11,7 @@ class Librespot < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "1926141d397ff6dd7d6af509774e02e55654a40ccd5fed6710c25f808036390a"
     sha256 cellar: :any_skip_relocation, catalina:      "c1320dd2b002db2981de6fc6733d78826c2a4e8c4ed448761788224307c701c9"
     sha256 cellar: :any_skip_relocation, mojave:        "176c2bbb02d9550a528c582e84a19b79c1ab82fd5aa5041bf6c635969c592d17"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dc346e9be1430578e931141de1105be94b1446b1dd62cb7c8e982a18fbaf1d41"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "dc346e9be1430578e931141de1105be94b1446b1dd62cb7c8e982a18fbaf1d41" # linuxbrew-core
   end
 
   depends_on "rust" => :build
