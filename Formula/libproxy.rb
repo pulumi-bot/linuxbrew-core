@@ -4,7 +4,7 @@ class Libproxy < Formula
   url "https://github.com/libproxy/libproxy/archive/0.4.17.tar.gz"
   sha256 "88c624711412665515e2800a7e564aabb5b3ee781b9820eca9168035b0de60a9"
   license "LGPL-2.1-or-later"
-  revision OS.mac? ? 1 : 2
+  revision OS.mac? ? 1 : 3
   head "https://github.com/libproxy/libproxy.git"
 
   bottle do
