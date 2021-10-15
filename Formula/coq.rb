@@ -16,6 +16,7 @@ class Coq < Formula
     sha256 big_sur:       "713249fb2cd2bd966aee2f72650a903cacf73755827fe18145048558d7b046df"
     sha256 catalina:      "389f742cb25060e9a1ccfe95038a0894861d6d44dfcf5041baef6e68337cf383"
     sha256 mojave:        "122e19363864981f2c48354282cb5ecfad5ef2a729b070666e9df134220130c4"
+    sha256 x86_64_linux:  "0ce31e7eb60a8c3d3e96cedd7c43f2caee392a39a2c571b6bcc9deb4add9196c"
   end
 
   depends_on "dune" => :build
