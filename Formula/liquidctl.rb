@@ -13,7 +13,7 @@ class Liquidctl < Formula
     sha256 cellar: :any,                 big_sur:       "bad09035eeea790c15be5d4f888e5e7d289f2e6d826af9e5e568907275503d70"
     sha256 cellar: :any,                 catalina:      "c20cb061748d4bcc952ed77ab148ca73a4bed576bbe5e1c9b7595eca9a74f8e0"
     sha256 cellar: :any,                 mojave:        "68edf5e0b19b017ab73a4381525ea5cc9b365c4284ea6ea80e00c09cbbdd7299"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "55a9c04dbe2227042aaa33c4a4adbc6e843fcf3ca2f75c2e8c27813f994965f3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "55a9c04dbe2227042aaa33c4a4adbc6e843fcf3ca2f75c2e8c27813f994965f3" # linuxbrew-core
   end
 
   depends_on "hidapi"

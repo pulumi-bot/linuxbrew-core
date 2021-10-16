@@ -12,7 +12,7 @@ class MathComp < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "12f69823e237858152983c091233fb049f4217af965d4bd2c7714e8acfb1651b"
     sha256 cellar: :any_skip_relocation, catalina:      "ccab739e4ad1a508e393e328ea89cd1076ffa9e28e66d618dda52cf6ec0e20b5"
     sha256 cellar: :any_skip_relocation, mojave:        "ab4cc68722efabe217ff311e1918a04369f4456c729e9e7484f8110b495bd650"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "32c1d1db21a36bf5fc72f0afc52376bae6f0bb6fc5d0ccae6c7c4e9fef648b8d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "32c1d1db21a36bf5fc72f0afc52376bae6f0bb6fc5d0ccae6c7c4e9fef648b8d" # linuxbrew-core
   end
 
   depends_on "ocaml" => :build

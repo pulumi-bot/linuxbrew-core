@@ -12,7 +12,7 @@ class I2cTools < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "46b9e13482e901daf3744a8ba779cb12785bd85993d887c0b658a2db4df6efc0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "46b9e13482e901daf3744a8ba779cb12785bd85993d887c0b658a2db4df6efc0" # linuxbrew-core
   end
 
   depends_on "python@3.10" => [:build, :test]
