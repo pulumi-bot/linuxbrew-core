@@ -6,17 +6,16 @@ class Borgmatic < Formula
   url "https://files.pythonhosted.org/packages/39/4a/351a1442af40867d6310327b0e72f43276f3700bcb0f9a1ec66bbd5ac256/borgmatic-1.5.20.tar.gz"
   sha256 "0aa6705cd72c6bd8fec94ba9e5e13ba9e90e6671799af2f2f5cb91186b90b7e5"
   license "GPL-3.0-or-later"
+  revision 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "b5bcde7449f3450bec31a93f298f7f8f4810bf73b79b446e5eca620f6d8219e6"
-    sha256 cellar: :any_skip_relocation, big_sur:       "0e40ab6cfa84112ce0c030062a3afc999c73a34099ea8c58e42c00d35d99ceb5"
-    sha256 cellar: :any_skip_relocation, catalina:      "db64c0a5db7e2a0d2ad119250011d47c4673a5def8d12dab3c3455cfe68f2bae"
-    sha256 cellar: :any_skip_relocation, mojave:        "ecd4a8fb7679f74bac78df327f189703177bbb02d0f47e75cb027e99f139ac95"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "70c53449d34af84d446de485ff4eb598102a0d528b3cd3e8348046f903117ffd" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "3894128d914cd5b5f36ca1c11554c263ef4d43477c1035b6c9a46b9936ec2bd4"
+    sha256 cellar: :any_skip_relocation, big_sur:       "ffb96f48918bcb17d17bd4d608e9a2e7c28a642a637c7d159649c88beb9fafcd"
+    sha256 cellar: :any_skip_relocation, catalina:      "0e6a396464547cd86b692eb50b240563a324940877a8fbf0217084ce545c1555"
+    sha256 cellar: :any_skip_relocation, mojave:        "22173d4f9ca6c2c3537eef2f6bad1750c3706c367ce9e36361b16ccfaf438547"
   end
 
-  depends_on "libyaml"
-  depends_on "python@3.9"
+  depends_on "python@3.10"
 
   resource "attrs" do
     url "https://files.pythonhosted.org/packages/ed/d6/3ebca4ca65157c12bd08a63e20ac0bdc21ac7f3694040711f9fd073c0ffb/attrs-21.2.0.tar.gz"
@@ -39,8 +38,8 @@ class Borgmatic < Formula
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/cb/38/4c4d00ddfa48abe616d7e572e02a04273603db446975ab46bbcd36552005/idna-3.2.tar.gz"
-    sha256 "467fbad99067910785144ce333826c71fb0e63a425657295239737f7ecd125f3"
+    url "https://files.pythonhosted.org/packages/62/08/e3fc7c8161090f742f504f40b1bccbfc544d4a4e09eb774bf40aafce5436/idna-3.3.tar.gz"
+    sha256 "9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"
   end
 
   resource "jsonschema" do

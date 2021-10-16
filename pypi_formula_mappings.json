@@ -28,6 +28,9 @@
   "awscli@1": {
     "exclude_packages": ["six"]
   },
+  "awsume": {
+    "exclude_packages": ["six"]
+  },
   "b2-tools": {
     "exclude_packages": ["six"]
   },
@@ -41,7 +44,8 @@
     "exclude_packages": ["six"]
   },
   "certbot": {
-    "extra_packages": ["certbot-apache", "certbot-nginx"]
+    "extra_packages": ["certbot-apache", "certbot-nginx"],
+    "exclude_packages": ["six"]
   },
   "cfn-lint": {
     "exclude_packages": ["junit-xml", "six"]
@@ -95,9 +99,8 @@
   "dxpy": {
     "exclude_packages": ["six"]
   },
-  "ipython": {
-    "exclude_packages": ["six"],
-    "extra_packages": ["ipykernel"]
+  "esptool": {
+    "exclude_packages": ["six"]
   },
   "fava": {
     "exclude_packages": ["six"]
@@ -117,6 +120,10 @@
   },
   "internetarchive": {
     "exclude_packages": ["six"]
+  },
+  "ipython": {
+    "exclude_packages": ["six"],
+    "extra_packages": ["ipykernel"]
   },
   "jenkins-job-builder": {
     "exclude_packages": ["six"]
@@ -375,6 +382,9 @@
   },
   "sqlite-utils": {
     "exclude_packages": ["tabulate", "six"]
+  },
+  "tarsnapper": {
+    "exclude_packages": ["six"]
   },
   "theharvester": {
     "exclude_packages": ["six"]

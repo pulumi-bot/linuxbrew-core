@@ -6,18 +6,18 @@ class OciCli < Formula
   url "https://files.pythonhosted.org/packages/37/f0/3c97a7bff5b04c9d8108beb0d67c0cc47207eac5209385deaa664b98edea/oci-cli-3.1.2.tar.gz"
   sha256 "69a4ad3b64eefc8cc1675b0032ea89a2dfc24328b770ed4bb8baa4b91b103d26"
   license any_of: ["UPL-1.0", "Apache-2.0"]
+  revision 1
   head "https://github.com/oracle/oci-cli.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any,                 arm64_big_sur: "02bb8b19b80f9bcf1ccb236b389355f1a91aee1c52126c7a1526d69154ef04bd"
-    sha256 cellar: :any,                 big_sur:       "b4d36c8ce7d99b2e096b4b49a8c3f36b4fdd574d9836f7cd3d9ced90dc908b33"
-    sha256 cellar: :any,                 catalina:      "f97b5483193f8e3404aef559e444877b61f0c5f3677f1a0a8dfafd239f3613f1"
-    sha256 cellar: :any,                 mojave:        "e1b2ec466a6337e7f12052ad45050abd30860ecbe73e15a00bc971b6d90fc5df"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "727f1c21c911c0005f08a5a10c7feed57c8589a9e060fcf1ee53ed1c2831da4f" # linuxbrew-core
+    sha256 cellar: :any,                 arm64_big_sur: "4884a8e6e88eb309384519048f4e3815d318c73ba1bfcd0ed329a0562580cde4"
+    sha256 cellar: :any,                 big_sur:       "c359f1a007db246c4bd5dd2747b37808ae34783f3614fcded7958d095c92282e"
+    sha256 cellar: :any,                 catalina:      "6d5623874a4c619e673d1e1c6317323e8d4ddefdd5d5be0d8db8fa8ff3b44667"
+    sha256 cellar: :any,                 mojave:        "a6da1b8e17fe00485a9e604850d13eef893ca748fff6a9d1cd92640563d2f986"
   end
 
   depends_on "rust" => :build
-  depends_on "python@3.9"
+  depends_on "python@3.10"
   depends_on "six"
 
   resource "arrow" do
@@ -31,8 +31,8 @@ class OciCli < Formula
   end
 
   resource "cffi" do
-    url "https://files.pythonhosted.org/packages/2e/92/87bb61538d7e60da8a7ec247dc048f7671afe17016cd0008b3b710012804/cffi-1.14.6.tar.gz"
-    sha256 "c9a875ce9d7fe32887784274dd533c57909b7b1dcadcc128a2ac21331a9765dd"
+    url "https://files.pythonhosted.org/packages/00/9e/92de7e1217ccc3d5f352ba21e52398372525765b2e0c4530e6eb2ba9282a/cffi-1.15.0.tar.gz"
+    sha256 "920f0d66a896c2d99f0adbb391f990a84091179542c205fa53ce5787aff87954"
   end
 
   resource "click" do

@@ -6,16 +6,16 @@ class Pipgrip < Formula
   url "https://files.pythonhosted.org/packages/37/af/0240a7a53fc3375cd56e63e62c05f0a0d12b878b8e6709dc9e772fbe9182/pipgrip-0.6.11.tar.gz"
   sha256 "a9842a01985203cbc18afdf17671b4b41204bccf86a1a352a1cde2f461969d6f"
   license "BSD-3-Clause"
+  revision 1
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "4dcd9b8a31d0f6b48afdafa0ffe79795a9c49797d205aca4e806ce1154c58132"
-    sha256 cellar: :any_skip_relocation, big_sur:       "62da59feddfa4931e18bb3ccf0000c9b0837e4fec68096f91bcb68d2d9c431fd"
-    sha256 cellar: :any_skip_relocation, catalina:      "902bc1a19ee681ff4c69d4c508c5b61a65acab6430ed7ab77d9a11ce7ae83d2d"
-    sha256 cellar: :any_skip_relocation, mojave:        "f9187d5835670518d5668b3b2973863f0e666d0366d79cd0caedbbff3b6ea398"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "78d5dbfd45e0aa54563fd300836128145b0f3ce414a734b488a7f6d1717bd4b5" # linuxbrew-core
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "fc692e49f66513bb51a34430923aa3d1118a7f75b9152b46fdf2cd5cb7b95839"
+    sha256 cellar: :any_skip_relocation, big_sur:       "7a67a2c90e5074e757d5698572e5b9ab3ced8646fa404fbe593463099f5ff2eb"
+    sha256 cellar: :any_skip_relocation, catalina:      "e6c178b93ee57c1666364b397d4779804df9932f7dc6132e76a3211955fc16a9"
+    sha256 cellar: :any_skip_relocation, mojave:        "019e6176aa868cf0239c7453327efe451bc017c83f6a9a71bc1dccb080890556"
   end
 
-  depends_on "python@3.9"
+  depends_on "python@3.10"
   depends_on "six"
 
   resource "anytree" do
