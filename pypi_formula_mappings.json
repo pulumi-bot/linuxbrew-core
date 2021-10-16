@@ -66,6 +66,9 @@
   "cppman": {
     "exclude_packages": ["six"]
   },
+  "csvkit": {
+    "exclude_packages": ["six"]
+  },
   "datalad": {
     "exclude_packages": ["six"]
   },
@@ -174,6 +177,9 @@
   "pdm": {
     "exclude_packages": ["six"],
     "extra_packages": ["wheel"]
+  },
+  "percol": {
+    "exclude_packages": ["six"]
   },
   "pgcli": {
     "exclude_packages": ["six", "tabulate"]
