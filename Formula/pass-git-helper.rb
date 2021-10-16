@@ -13,7 +13,7 @@ class PassGitHelper < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "3fd61826747bde532d2b9e8898f75776d72b7eec02994d5ed4e2d0c42850cd93"
     sha256 cellar: :any_skip_relocation, catalina:      "3fd61826747bde532d2b9e8898f75776d72b7eec02994d5ed4e2d0c42850cd93"
     sha256 cellar: :any_skip_relocation, mojave:        "3fd61826747bde532d2b9e8898f75776d72b7eec02994d5ed4e2d0c42850cd93"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ba4eb72906bbc973d792d2378045213c85df621bca406ce06eb0cf0fce9d7e64"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ba4eb72906bbc973d792d2378045213c85df621bca406ce06eb0cf0fce9d7e64" # linuxbrew-core
   end
 
   depends_on "gnupg" => :test

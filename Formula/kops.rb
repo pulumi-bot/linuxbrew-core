@@ -16,7 +16,7 @@ class Kops < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "e879db425fa25e33df281fe902cece8f0049fcb7690a38e90ae4c32343c11121"
     sha256 cellar: :any_skip_relocation, catalina:      "7923d7b4c454def5265e7e83cd7b9ba8db72ba18447ceabf871e43034282b1e5"
     sha256 cellar: :any_skip_relocation, mojave:        "1cc28c8cf60517fe8304fdba0c8a3ca6d8477c8363690e7bcc6d8b4075204da5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d9027173ab6080a9f70598038fe5e628710a677794bfaaea74da05bccc2def3f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d9027173ab6080a9f70598038fe5e628710a677794bfaaea74da05bccc2def3f" # linuxbrew-core
   end
 
   depends_on "go" => :build
