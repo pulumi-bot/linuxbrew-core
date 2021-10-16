@@ -16,6 +16,7 @@ class Unum < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "910eb0162ba9336980a79b739558cd2c08fb4c0a65c806550743fff7cb003282"
     sha256 cellar: :any_skip_relocation, catalina:      "2a5ab6cf669d808d6eb522cd8b75d96f481c8ef94012c583378b07a0b0e00b9e"
     sha256 cellar: :any_skip_relocation, mojave:        "2a5ab6cf669d808d6eb522cd8b75d96f481c8ef94012c583378b07a0b0e00b9e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "6a6c75897ea34e9331c83a767742f6d0f90b1e0117bb5e4a396a58a74a010074"
   end
 
   depends_on "pod2man" => :build
