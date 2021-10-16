@@ -13,7 +13,7 @@ class Esptool < Formula
     sha256 cellar: :any,                 big_sur:       "d3a4cbd822bd16861fa00fe37b880e72eb7c6ae7ab7d016b029667541e673937"
     sha256 cellar: :any,                 catalina:      "e5b39fdc3964c37f45672d9f2e9136fbcc2dc176925b9c29fd853bc520aaf53d"
     sha256 cellar: :any,                 mojave:        "6b2bcfdac9a53b435c1f56e35797af1becfbd995a299fbe709e3efa18815793b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9909a244f58c827df7fed6c05066586b96dd86a06049d69f96c49874fef53148"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "9909a244f58c827df7fed6c05066586b96dd86a06049d69f96c49874fef53148" # linuxbrew-core
   end
 
   depends_on "rust" => :build

@@ -14,7 +14,7 @@ class Awsume < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5eb13db692e829105df6d6a3eed791e592161e888b8e0c03fd58e994db59f78a"
     sha256 cellar: :any_skip_relocation, catalina:      "f80c5c9be67fe1e07c3402f29c1ca9abe25c52a4d7224327300f59b299e87dcf"
     sha256 cellar: :any_skip_relocation, mojave:        "9dbe4b489474f9f08896f373c64e5ce1629395aa359715b382a1d376604d6888"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ad27b95b14cba0c03e647a31e87b125619e77603d988bb2e0502f3a7008570e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2ad27b95b14cba0c03e647a31e87b125619e77603d988bb2e0502f3a7008570e" # linuxbrew-core
   end
 
   depends_on "openssl@1.1"

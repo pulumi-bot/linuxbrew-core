@@ -16,7 +16,7 @@ class Fheroes2 < Formula
     sha256 big_sur:       "523afe6a1d558cf319881ec069436838fc4ca7c4fdf4f90ce8557d2c67b1e37d"
     sha256 catalina:      "2a924dca03f3aee82b368ed54081b14277d32e45ed312d23502cd557978d9182"
     sha256 mojave:        "a4564611e49cb8e859c8081ba1e2cf223a3fb7f91e437d20c41b63c1cf532c96"
-    sha256 x86_64_linux:  "7f6d4ba87391b020674704ad3b7155f6983b74c073b1d4b13f5e5b1fcb13ef73"
+    sha256 x86_64_linux:  "7f6d4ba87391b020674704ad3b7155f6983b74c073b1d4b13f5e5b1fcb13ef73" # linuxbrew-core
   end
 
   depends_on "cmake" => :build

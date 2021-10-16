@@ -16,7 +16,7 @@ class Clingo < Formula
     sha256 cellar: :any,                 big_sur:       "def9e572f86af37409a0f4f908e7caee183888b9ea506403464f3ce7d26a0bbc"
     sha256 cellar: :any,                 catalina:      "472868ff2dbf256f9cf8b01055b6a041b5a4ec1a1ecf83869f82e8367d3de007"
     sha256 cellar: :any,                 mojave:        "67e741141731249081fd2b4c24fac088f1a5020a6a2028606cd6e1623d51a7b6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3b670e139fcc657fc63ce183023587259adbd1a1cfa9fa9d9ea7f2a36c8d8553"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "3b670e139fcc657fc63ce183023587259adbd1a1cfa9fa9d9ea7f2a36c8d8553" # linuxbrew-core
   end
 
   head do
