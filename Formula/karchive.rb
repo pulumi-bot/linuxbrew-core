@@ -23,6 +23,7 @@ class Karchive < Formula
     sha256 cellar: :any,                 big_sur:       "9dbf24b216359a30749add98de038853aeea7ade8156d25160cde8f941c06d7a"
     sha256 cellar: :any,                 catalina:      "3acce027ea727bb256609b05a127eaacf5234e8c57ae9955669120c27bd1fb1d"
     sha256 cellar: :any,                 mojave:        "4509c01f7b0b035da8bfee3760330747de6c5f5916a353855d12516ec166c9e0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "40b57df5716b3dc33bbc903c50543564f7d6e21876f26e1580a8d86067cc5d5a"
   end
 
   depends_on "cmake" => [:build, :test]
