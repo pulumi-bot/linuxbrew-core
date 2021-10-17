@@ -10,6 +10,7 @@ class Libvmaf < Formula
     sha256 cellar: :any,                 big_sur:       "8392899eaf6b8b44a5c2da81711928f69f1eb6ebcc2ceedd7552cb63d73e9b11"
     sha256 cellar: :any,                 catalina:      "f98f34e7b0950ef2599c7ec880114a58beb37c4eebe328cbaff29ed9e4f0e839"
     sha256 cellar: :any,                 mojave:        "d1fa30cd6767fb44fdd01d03877ec8fcbd7aa140a243d74b85eb3ab7c49391d9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7e9b2b1c38c6bf47985c77509bc5f6458a84d90e06cc9aac18459ce9b5f79726"
   end
 
   depends_on "meson" => :build
