@@ -16,7 +16,7 @@ class Task < Formula
     sha256                               big_sur:       "dfce309ab06701933c0bc0f7d6d1c7ecbe4dd29e5b18accd9ba665fb99ba652d"
     sha256                               catalina:      "29ebd088d472e31ae57e83bd09a2eafc76a38ebb309cd6277939243a5bfbd4ad"
     sha256                               mojave:        "52bd72001be7ba3ebaf730dac5506fcb4f070cc756f2d06924b6997a689cf5d1"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7c6f580418109f7e31066b3224c11c50f5eb90649a532d095baf9fbef00cecfa"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7c6f580418109f7e31066b3224c11c50f5eb90649a532d095baf9fbef00cecfa" # linuxbrew-core
   end
 
   depends_on "cmake" => :build
