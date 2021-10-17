@@ -23,6 +23,7 @@ class Crystal < Formula
     sha256 big_sur:       "23cf55f4a49ae455c3ed4c3a93c4bee312ece4cf16d15ede267d014ee198ffab"
     sha256 catalina:      "db990000e20e515c18086f3fae50e823b4779249e06dff9e58c37e37249aedee"
     sha256 mojave:        "75f72279734c386f5e46943200cf5152df78325fe1443e04241ce9e6f846be5f"
+    sha256 x86_64_linux:  "460b432beab970151d4440c0ea2d880afad7c503b8f4a919ff198b02a5705a6d"
   end
 
   head do
