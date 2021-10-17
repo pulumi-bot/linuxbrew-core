@@ -10,6 +10,7 @@ class Liqoctl < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0e3ff868e626e694e7a99cb019fa4c8168ce63707d9507794e414e6d64c87b65"
     sha256 cellar: :any_skip_relocation, catalina:      "0e3ff868e626e694e7a99cb019fa4c8168ce63707d9507794e414e6d64c87b65"
     sha256 cellar: :any_skip_relocation, mojave:        "0e3ff868e626e694e7a99cb019fa4c8168ce63707d9507794e414e6d64c87b65"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "58aa8f09f2e9eeab4292829d8a09c2f33b16482864a8676ea7f4536e75138416"
   end
 
   depends_on "go" => :build
