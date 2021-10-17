@@ -6,6 +6,10 @@ class Pastebinit < Formula
   license "GPL-2.0-or-later"
   revision 4
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "811962a281bc547c1d6ca15ea68ee862798e88ccc4346ab5425432495bc4867c"
+  end
+
   depends_on "docbook2x" => :build
   depends_on "python@3.10"
 
