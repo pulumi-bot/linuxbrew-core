@@ -11,6 +11,7 @@ class Assh < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "b32614a996f726756faa62ca0b4e27ee7404e9f3341a8d8f1457d925e899bc65"
     sha256 cellar: :any_skip_relocation, catalina:      "77570e18528c106267cf4fe3f7a8160d7f788681885dfe16560280d9d450ad7a"
     sha256 cellar: :any_skip_relocation, mojave:        "46193d23bec30727a5a8b63d77e8f8a811dd4ffaf7b7023c832d7e3a24acc072"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "efa11877000c3a322c5ae8a1402910e95a122554ae80321f8c3557fbc9063625"
   end
 
   depends_on "go" => :build
