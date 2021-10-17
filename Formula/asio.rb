@@ -16,6 +16,7 @@ class Asio < Formula
     sha256 cellar: :any,                 big_sur:       "685e304d5cbb0291585a2941c4bc521e3d60175e31ecfc91146d480a84f04325"
     sha256 cellar: :any,                 catalina:      "d98a3f8267b7e3971fb5c712324858aa02252c718b55dc7e842c31922ad72d1c"
     sha256 cellar: :any,                 mojave:        "ae04393a3164eff530766bf44aa2983534d3eb1115879b0a9f9c6e027b1b9fca"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b6632cad83bfd75f9bead6e455e0e63531af679ace3e60c30a51360aeb6ffd54"
   end
 
   depends_on "autoconf" => :build
