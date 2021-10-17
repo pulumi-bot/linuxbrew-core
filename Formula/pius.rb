@@ -14,6 +14,7 @@ class Pius < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "d456a15477875e8973b2964c50a0e2a6ce032331d92ae4b8ffee13e74324ab00"
     sha256 cellar: :any_skip_relocation, catalina:      "d456a15477875e8973b2964c50a0e2a6ce032331d92ae4b8ffee13e74324ab00"
     sha256 cellar: :any_skip_relocation, mojave:        "d456a15477875e8973b2964c50a0e2a6ce032331d92ae4b8ffee13e74324ab00"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "10f9164c379e62ef4bed6e854e58b27e0523ed3fcd9ee27297c3b704dca05414"
   end
 
   depends_on "gnupg"
