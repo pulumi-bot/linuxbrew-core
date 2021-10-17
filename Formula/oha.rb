@@ -11,7 +11,7 @@ class Oha < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "c0fc8e64d2377bdfef80fce6108a88a99fca74eb7351f35340990482fabbbb73"
     sha256 cellar: :any_skip_relocation, catalina:      "11647d250ab6850ba72e7d7d98e066ac05c71779f2392e6c28d093e55abb5288"
     sha256 cellar: :any_skip_relocation, mojave:        "94358e4baccec0ba2b96dc17e1bdab41498379a4e7942fc31d02387f275b9ec2"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8fb370fd06c69c461c9f66eeac8d3a0182f2163f61ca7042fdc978fd853236f8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8fb370fd06c69c461c9f66eeac8d3a0182f2163f61ca7042fdc978fd853236f8" # linuxbrew-core
   end
 
   depends_on "rust" => :build

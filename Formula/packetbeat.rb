@@ -12,7 +12,7 @@ class Packetbeat < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "0878d3d9e02b2e1fc6d5ffb9676c2750561f58049733cdfad21eb244c46fb103"
     sha256 cellar: :any_skip_relocation, catalina:      "d47797ee81211e73dac7a616e55800a75738852b6a4522213d15a0c7d60e8169"
     sha256 cellar: :any_skip_relocation, mojave:        "342ed845e196eb6975bd40add28c79cd41864d2ab6b75595a18fa293b12c49f7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0b880759a84f2c9450807b4b2de46326241b1757d464329772f289dd017b5407"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0b880759a84f2c9450807b4b2de46326241b1757d464329772f289dd017b5407" # linuxbrew-core
   end
 
   depends_on "go" => :build

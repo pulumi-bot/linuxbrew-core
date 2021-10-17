@@ -16,7 +16,7 @@ class Duck < Formula
     sha256 cellar: :any, big_sur:      "74124ebf6531d1a01ad5d13425773c76a99e069269064637bdb27c7b66d0ae7c"
     sha256 cellar: :any, catalina:     "dac3d44df0fc024af52a6e571ea8f22d2cf570f1a2577ed510b0aaf68de3f35e"
     sha256 cellar: :any, mojave:       "673a7f8db2e85284b33c7bd06f526cf2821de441947afdfb7766772e635bc93a"
-    sha256               x86_64_linux: "b40e0c8bd0be886531fd09da81f71228b5542ccf3c4785d34a2dc52e885b73b8"
+    sha256               x86_64_linux: "b40e0c8bd0be886531fd09da81f71228b5542ccf3c4785d34a2dc52e885b73b8" # linuxbrew-core
   end
 
   depends_on "ant" => :build

@@ -17,7 +17,7 @@ class Tanka < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "7d419079b8bc5a8785f70c119f7a949856f527b3ad7af814012006ad03ae94c1"
     sha256 cellar: :any_skip_relocation, catalina:      "6ab384978628615590e13b8f78b6e9d4a7d45a1fe1c26e640b27cb9bd5d909a2"
     sha256 cellar: :any_skip_relocation, mojave:        "32608fe976b454e5a38818e213c916c0c1bc1e8b3ecb3aadb558f926073b452a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ac6c455c59e1f540aed3bce6655650602c294e72ce6f1943816879e77edaa988"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "ac6c455c59e1f540aed3bce6655650602c294e72ce6f1943816879e77edaa988" # linuxbrew-core
   end
 
   depends_on "go" => :build

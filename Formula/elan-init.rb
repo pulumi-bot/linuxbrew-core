@@ -10,7 +10,7 @@ class ElanInit < Formula
     sha256 cellar: :any_skip_relocation, big_sur:      "81356fdb3dbec32c9183f72786485cf2cd422a820d7593ec6569dd472424e62c"
     sha256 cellar: :any_skip_relocation, catalina:     "e9b7fc85e40b218f52b37da67f1ed90e219a00dcd419dbd4cba41a6b212762cc"
     sha256 cellar: :any_skip_relocation, mojave:       "a63e897eefafac7a60c7d6453870dc6dc6368b8ed4246293b60d441dfe1d6dec"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "e9809d14452c7c42a9212324edc4fac08cde4c13c12b9c6655e2806f83ec595e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e9809d14452c7c42a9212324edc4fac08cde4c13c12b9c6655e2806f83ec595e" # linuxbrew-core
   end
 
   depends_on "rust" => :build

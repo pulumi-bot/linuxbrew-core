@@ -11,7 +11,7 @@ class Scry < Formula
     sha256 big_sur:       "8560c26448338c483c2e5aaa488d39156260fa2e891bec02520ae8b8d9e1bcd1"
     sha256 catalina:      "da67d98abe3010dc12f6a4152a89dd86a79e1dd098d67afec4a07bfe30c0ccdd"
     sha256 mojave:        "0f243e9970f781e847c7b6906d743e08c1f684c37797ecfd962a1617f7ce8b8f"
-    sha256 x86_64_linux:  "b309e0590646f50aa82239938586a405687d5b8cae80dd9801fc65476452a2fd"
+    sha256 x86_64_linux:  "b309e0590646f50aa82239938586a405687d5b8cae80dd9801fc65476452a2fd" # linuxbrew-core
   end
 
   depends_on "bdw-gc"
