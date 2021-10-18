@@ -11,6 +11,7 @@ class Cgrep < Formula
     sha256 cellar: :any,                 big_sur:       "c802cbb5bae4c207cf1aa50add2c115621a20632a05129a386589c4b73ff036b"
     sha256 cellar: :any,                 catalina:      "1cde998562c4510e121298c30c12ccdc3b30f875950c6748103ab1d12469f740"
     sha256 cellar: :any,                 mojave:        "89bf1c8dacd4e56fd902ac26b5d0f89bac3fd314220fdb4c57f1fbb996d4db1c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "202a97fb00be894490060594e5f817cd22c2ddbc689ca61b4e411e729bd068de"
   end
 
   depends_on "cabal-install" => :build
