@@ -17,6 +17,7 @@ class Libressl < Formula
     sha256 big_sur:       "e3c8dae6f39e42a652df8e66f02a0e581e31697fbfdc7465813306c48f6931d5"
     sha256 catalina:      "4490e48658eab39495b885811d1762666d6c837013c3f990cda1eebf8bb400fc"
     sha256 mojave:        "7ce48d13e2e1cae8569598a6d456c8843263547fc1753f2a5869e61fd50c6fa6"
+    sha256 x86_64_linux:  "a238ec0899695526290e0bb26bb0d4cee8e9b9b83fd765cbda38351d26304859"
   end
 
   head do
