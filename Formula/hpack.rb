@@ -11,6 +11,7 @@ class Hpack < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "807f4c5ce6363b4051ae08c4a00089fd91c4bb7cab4e3247af0e9cd8c22ece37"
     sha256 cellar: :any_skip_relocation, catalina:      "9fbf23b07e7d3b61ff29a3c95f487456584db41011f3258a3b2ee3305b9f79a9"
     sha256 cellar: :any_skip_relocation, mojave:        "09ee5036e2bae87c171460857ed5fbb0abf83d4f3dee6605c1e3df7464aa02e9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "93a7d3b7d4f2d70b5c89ccc96b79a8baa04f71d220ed7db959188f074244d162"
   end
 
   depends_on "cabal-install" => :build
