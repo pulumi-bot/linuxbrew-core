@@ -6,7 +6,7 @@ class Toml11 < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f599c7820bc826902f7466f3bf72bf3b0765bb8d80618a52ed7e22eb1b313ce3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f599c7820bc826902f7466f3bf72bf3b0765bb8d80618a52ed7e22eb1b313ce3" # linuxbrew-core
     sha256 cellar: :any_skip_relocation, all:          "f599c7820bc826902f7466f3bf72bf3b0765bb8d80618a52ed7e22eb1b313ce3"
   end
 

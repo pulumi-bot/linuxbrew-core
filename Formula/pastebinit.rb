@@ -7,7 +7,7 @@ class Pastebinit < Formula
   revision 4
 
   bottle do
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "811962a281bc547c1d6ca15ea68ee862798e88ccc4346ab5425432495bc4867c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "811962a281bc547c1d6ca15ea68ee862798e88ccc4346ab5425432495bc4867c" # linuxbrew-core
   end
 
   depends_on "docbook2x" => :build

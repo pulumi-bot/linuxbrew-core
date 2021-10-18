@@ -13,7 +13,7 @@ class Peru < Formula
     sha256 cellar: :any,                 big_sur:       "d48061587fc2627b0584dcf23438c3097e280564955adb5f556023cad7ca46b1"
     sha256 cellar: :any,                 catalina:      "4fac7c1d51da92f85bb3b3be8f328d72154a6372cdc59864faae8d6c6f98baa7"
     sha256 cellar: :any,                 mojave:        "69a0a72326ffa8622569865a8121253e59c071d7d4e04b7a714d613074bd4724"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "89345636da0be97c07638a7b0dee967f705941d8edf21c507c7be75dbc995813"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "89345636da0be97c07638a7b0dee967f705941d8edf21c507c7be75dbc995813" # linuxbrew-core
   end
 
   depends_on "libyaml"
