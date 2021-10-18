@@ -27,7 +27,7 @@ class Dmd < Formula
     sha256 big_sur:      "b2c95835a1295b25169b3e96eacfddc479cd24efc6d58285e42a1436c2b097ce"
     sha256 catalina:     "ec5dec4305424b179a815a4d15a8f85591bfb73d5cc92ca34b4ada0f05c34743"
     sha256 mojave:       "82a178b02a4001d6a7f0e466d33bc6479be456b27bd29b124973164a164fde5f"
-    sha256 x86_64_linux: "dbbf394c29aabaa3f257846061ea34e465ed628cf8d8a2ea730ebf6575ac987e"
+    sha256 x86_64_linux: "dbbf394c29aabaa3f257846061ea34e465ed628cf8d8a2ea730ebf6575ac987e" # linuxbrew-core
   end
 
   head do

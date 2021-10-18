@@ -16,7 +16,7 @@ class Kvazaar < Formula
     sha256 cellar: :any,                 big_sur:       "68ec96b70d3098071e315f09d9b68d69971dd362d586e69f1c3d6938edc760f5"
     sha256 cellar: :any,                 catalina:      "09205d5d2e16355e031d467315842030923f4459fed71576889f372f895f3b98"
     sha256 cellar: :any,                 mojave:        "420616c74f44f1f604a2e4533d91bca6a4e014ae742d887200d927e007ae4fe0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d28aa580e27dade3635f38fa914f2975718e4e7ea2d89b7b1d46569efa6612b3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d28aa580e27dade3635f38fa914f2975718e4e7ea2d89b7b1d46569efa6612b3" # linuxbrew-core
   end
 
   depends_on "autoconf" => :build
