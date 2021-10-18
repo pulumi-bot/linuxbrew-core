@@ -16,6 +16,7 @@ class GlibmmAT266 < Formula
     sha256 cellar: :any, big_sur:       "b9f2b7cb1cc2332b1ee4790dc8477a7df86ecafcd8d40ba459f3131007148a28"
     sha256 cellar: :any, catalina:      "782035c5298608b93ed10bcb526e5e68425ca030b4d34c79a55ddda0e33c2ae9"
     sha256 cellar: :any, mojave:        "0295dd5e75ea0ed118702663a113a5651094d7aabafa6773ecc877dded162258"
+    sha256               x86_64_linux:  "e4f4d2271a4f469f779e3e3a39b877adf5d294bc176fee19c55efafc007174e4"
   end
 
   depends_on "meson" => :build
