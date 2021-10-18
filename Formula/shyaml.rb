@@ -14,7 +14,7 @@ class Shyaml < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "8929db2d65a2d8654dd55b1ea5baaa619a730887517d31097e99d47b2ec0bacd"
     sha256 cellar: :any_skip_relocation, catalina:      "8929db2d65a2d8654dd55b1ea5baaa619a730887517d31097e99d47b2ec0bacd"
     sha256 cellar: :any_skip_relocation, mojave:        "8929db2d65a2d8654dd55b1ea5baaa619a730887517d31097e99d47b2ec0bacd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f72387bb319b260214648632cd847356ca753e0193d8c7a0ce3f53ac5eed3f86"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "f72387bb319b260214648632cd847356ca753e0193d8c7a0ce3f53ac5eed3f86" # linuxbrew-core
   end
 
   depends_on "libyaml"
