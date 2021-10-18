@@ -15,6 +15,7 @@ class Modules < Formula
     sha256                               big_sur:       "c30c9be63dc8fc0f8d83ef063e56c6d459b8ded76e51f8b76ce90a48f89124f8"
     sha256 cellar: :any,                 catalina:      "32433c130fc3615af0fe6013201486f02cadfbaebf3af8dbf45bccf7f3942cc4"
     sha256 cellar: :any,                 mojave:        "c66463bc0006612e617657bc194d588f1f054196e4ab5a5b94078a0105482c0e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "59fd50c28a705deaf3ffb014e816ff6bc50877757134a0509cc11db4546cd79d"
   end
 
   depends_on "tcl-tk"
