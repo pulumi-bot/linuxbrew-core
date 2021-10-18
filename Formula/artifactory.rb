@@ -12,6 +12,10 @@ class Artifactory < Formula
     regex(/href=.*?v?(\d+(?:\.\d+)+)/i)
   end
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "12a0e3456e77c249bb78365b27dec9a347350b02d78a72b60779c6ea473c3bb6"
+  end
+
   depends_on "openjdk"
 
   def install
