@@ -8,6 +8,10 @@ class ApacheSpark < Formula
   license "Apache-2.0"
   head "https://github.com/apache/spark.git", branch: "master"
 
+  bottle do
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "38bb1c937822a04a206c78dc5d7992d2617c448e8e5adcb650fab83315627a89"
+  end
+
   depends_on "openjdk@11"
 
   def install
