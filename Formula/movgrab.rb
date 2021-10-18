@@ -11,6 +11,7 @@ class Movgrab < Formula
     sha256 cellar: :any,                 big_sur:       "d2e316d743c633fd84585d13beb1beeeffd3e3fd62bf2710c2ccdaf8c59f77a6"
     sha256 cellar: :any,                 catalina:      "dec3edfeac8cd03ab450cdd0196b488401ab38d459c603b0726726b6b886a599"
     sha256 cellar: :any,                 mojave:        "c7a2f93864d81d263606610375253820937134c9f6d90cb4c5697cf21dc7c23c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "be8c01fd9136b88a5b217a8581d7d7dd969eedffeb01aea19af5a8275e9e4b5c"
   end
 
   depends_on "libressl"
