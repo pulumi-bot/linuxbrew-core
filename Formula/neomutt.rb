@@ -11,6 +11,7 @@ class Neomutt < Formula
     sha256 big_sur:       "175d7359edf485abc51f63df44f1068ef7a727cea236189657ef6657b4869e07"
     sha256 catalina:      "80dee50fb2b138b82843a6a10fe3ded8803328cb85f1a3fc0432e927feb68059"
     sha256 mojave:        "c11cd76bd9a068ffdbd18a07b151d378b3567b2b986626d21c693ec53acd7a3c"
+    sha256 x86_64_linux:  "cf4b81f0455730ee70c306e83f8209b1ba776624e3cf9dae227586d7394c0c58"
   end
 
   depends_on "docbook-xsl" => :build
