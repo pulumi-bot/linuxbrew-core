@@ -17,6 +17,7 @@ class Dub < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "522469719933702ba030cce31f83a4f19638e17945efce2786eaa6ab29b38d4b"
     sha256 cellar: :any_skip_relocation, catalina:      "a708c2b342b00718471ec8427e56f7d36f91d1029939469110ca830d0a961748"
     sha256 cellar: :any_skip_relocation, mojave:        "5da8b64546f9436fcc1210c7acf63a9f95a2c300b7eec8192610e3ec25d7c124"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a2db86cb8961dcd8bd71e45a2dc0f729efe48bee337df58e19002d1705a2019d"
   end
 
   depends_on "ldc" => :build
