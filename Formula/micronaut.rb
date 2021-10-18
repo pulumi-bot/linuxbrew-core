@@ -15,6 +15,7 @@ class Micronaut < Formula
     sha256 cellar: :any_skip_relocation, big_sur:       "5a035be33a6a864a6f4ef8d06e62435b52c1968537f56aff9489f0bfd30d08ce"
     sha256 cellar: :any_skip_relocation, catalina:      "c49b17c932385f0cc93d05176d37912cd74f1fcf16318047b1f8caa36a03a3e9"
     sha256 cellar: :any_skip_relocation, mojave:        "0e772ebdec5f685f80dcb8dd47419f099d322a379f2fc8bd389c4ae1155bc6dc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "19d50927bf6cc50d0dd71be9c5126a126fe0dadeb3c70d7a1092851494204794"
   end
 
   # Uses a hardcoded list of supported JDKs. Try switching to `openjdk` on update.
