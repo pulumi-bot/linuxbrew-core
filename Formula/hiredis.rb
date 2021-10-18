@@ -11,6 +11,7 @@ class Hiredis < Formula
     sha256 cellar: :any,                 big_sur:       "5cbf446863123927636711ced21b342fa66568de9b25ec793fd54d3b3b53ca41"
     sha256 cellar: :any,                 catalina:      "14ae7b3adb354b673a3744e9d849d6698846d5162d3d5f0eb8f9d8837c858e75"
     sha256 cellar: :any,                 mojave:        "050805a747642516f0b8a9573f2b2935de26089b7f0380b84f6f8a6e4ab41b50"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "93cdd4749c4f2c4d3862de2a7bacd687a7900c9b3343b9a69ef163b16d3b0e94"
   end
 
   # remove in next release
